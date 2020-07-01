@@ -2,6 +2,11 @@
 // comparisons are true when they reference the same array in memory
 // psst. JS Tutor will help a lot with this example
 
+// this comparison is false!
+const huh = [1, 2, 3] === [1, 2, 3];
+console.assert('huh:', typeof huh, huh);
+
+// a more involved example:
 
 const array1 = ['hi', 'bye'];
 const alsoArray1 = array1;

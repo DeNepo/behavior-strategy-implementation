@@ -57,13 +57,13 @@ The topics you should focus on during your study this week.
 
 ### JavaScript
 
+- [Prepwork Practice Problems](https://hackyourfuture.be/testing/week-1/prep)
 - Arrays
   - [JS Tutor Video](https://www.youtube.com/watch?v=W1NTK09o-vM)
   - [Coding with Mosh](https://www.youtube.com/watch?v=oigfaZ5ApsM)
   - [30 Days of JavaScript](https://github.com/Asabeneh/30DaysOfJavaScript/blob/master/05_Day/05_day_arrays.md) (stop at array methods)
   - [javascript.info](https://javascript.info/array) (just the beginning)
 - Reference vs. Value
-  - [Prepwork Practice Problems](https://hackyourfuture.be/testing/week-1/prep)
   - [Academind](https://www.youtube.com/watch?v=9ooYYRLdg_g)
   - [Just JavaScript](https://github.com/HackYourFutureBelgium/just-javascript/tree/master/06-Equality-of-Values)
   - [Janke Learning](https://github.com/janke-learning/reference-vs-value)

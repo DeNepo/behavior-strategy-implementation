@@ -28,4 +28,6 @@ for (let i = trees.length - 1; i >= 0; i--) {
   console.log('- ' + tree);
 }
 
+
 // bonus! no infinite loops when you use for ... of
+//  because arrays can't store an infinite number of things :)

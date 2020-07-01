@@ -354,8 +354,8 @@ codeAlong.openIn = {
       const sanitizedJST = encodedJST
         .replace(/\(/g, '%28').replace(/\)/g, '%29')
         .replace(/%09/g, '%20%20');
-      // const jsTutorURL = "http://www.pythontutor.com/live.html#code=" + sanitizedJST + "&cumulative=false&curInstr=2&heapPrimitives=nevernest&mode=display&origin=opt-live.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false";
-      const URL = "http://www.pythontutor.com/javascript.html#code=" + sanitizedJST + "&curInstr=0&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D";
+      const URL = "http://www.pythontutor.com/live.html#code=" + sanitizedJST + "&cumulative=false&curInstr=2&heapPrimitives=nevernest&mode=display&origin=opt-live.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false";
+      // const URL = "http://www.pythontutor.com/javascript.html#code=" + sanitizedJST + "&curInstr=0&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D";
       window.open(URL, '_blank');
     };
     return button;
@@ -770,6 +770,7 @@ codeAlong.js = (iframe, steps, config) => {
   };
   collapseOutputButton.onclick = renderCollapsed;
 
+
   const visibleContainer = document.createElement('div');
   visibleContainer.appendChild(collapseOutputButton);
   // visibleContainer.style = 'height: 98vh; width: 55vw; border:solid 1px;';
@@ -841,7 +842,9 @@ codeAlong.js = (iframe, steps, config) => {
     }
   }
   collapsedOutput.appendChild(maxIterationsFormCopy);
-  collapsedOutput.appendChild(unCollapseOutputButton);
+  if (config.bare !== true) {
+    collapsedOutput.appendChild(unCollapseOutputButton);
+  }
 
   if (typeof title === 'string') {
     const titleEl = document.createElement('h3');
@@ -852,7 +855,7 @@ codeAlong.js = (iframe, steps, config) => {
 
   const outputContainer = document.createElement('div');
   outputContainer.style = 'height: 96vh; width: 45vw;';
-  if (config.collapsed === true) {
+  if (config.collapsed === true || config.bare === true) {
     renderCollapsed();
   } else {
     renderUnCollapsed();
@@ -873,7 +876,7 @@ codeAlong.format_and_loop_guard = (function with_infinite_loop_guard(your_source
       + js_beautify(
         your_source_code.replace(/for *\(.*\{|while *\(.*\{|do *\{/g, loopHead => {
           number_of_loops++;
-          return `let loop_${number_of_loops}_iterations = 0;\n ${loopHead}\n if (++loop_${number_of_loops}_iterations > ${max_iterations}) {throw new Error('Loop ${number_of_loops} exceeded ${max_iterations} iterations');}\n`
+          return `let loopGuard${number_of_loops} = 0;\n ${loopHead}\n if (++loopGuard${number_of_loops} > ${max_iterations}) {throw new Error('Loop ${number_of_loops} exceeded ${max_iterations} iterations');}\n`
         }),
         {
           indent_size: '  ',
@@ -896,7 +899,7 @@ codeAlong.with_infinite_loop_guard = (function with_infinite_loop_guard(your_sou
       +
       your_source_code.replace(/for *\(.*\{|while *\(.*\{|do *\{/g, loopHead => {
         number_of_loops++;
-        return `let loop_${number_of_loops}_iterations = 0;\n ${loopHead}\n if (++loop_${number_of_loops}_iterations > ${max_iterations}) {throw new Error('Loop ${number_of_loops} exceeded ${max_iterations} iterations');}\n`
+        return `let loopGuard${number_of_loops} = 0;\n ${loopHead}\n if (++loopGuard${number_of_loops} > ${max_iterations}) {throw new Error('Loop ${number_of_loops} exceeded ${max_iterations} iterations');}\n`
       })
     );
   } catch (err) {

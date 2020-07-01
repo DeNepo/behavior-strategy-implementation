@@ -18,14 +18,3 @@ for (let letter of _2_letters) {
 }
 
 
-const _3_booleans = [true, false, true, false];
-
-let _3_allTrue = true;
-for (let boolean of _3_booleans) {
-  _3_allTrue = _3_allTrue && boolean;
-}
-
-let _4_allFalse = true;
-for (let boolean of _3_booleans) {
-  _4_allFalse = _4_allFalse && !boolean;
-}
