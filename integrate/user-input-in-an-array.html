@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset='utf-8'>
+  <title>guessing game</title>
+
+  <style>
+    .centered {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+  </style>
+
+  <script id='script-variables'>
+    const inputsArray = [];
+  </script>
+
+  <script id='handlers'>
+    'use strict';
+
+    const pushToArrayHandler = () => {
+      debugger;
+
+      console.log('-- action: push to array --');
+      console.log('inputsArray (before):', typeof inputsArray, '\n', inputsArray);
+
+      const newInput = prompt('input some text to save');
+      console.log('newInput:', typeof newInput, '\n', newInput);
+
+      if (newInput === null) {
+        return;
+      }
+      inputsArray.push(newInput);
+
+      console.log('inputsArray (after):', typeof inputsArray, '\n', inputsArray);
+
+      displayValuesHandler();
+    };
+
+    const displayValuesHandler = () => {
+      debugger;
+
+      console.log('-- action: display values --');
+      console.log('inputsArray:', typeof inputsArray, '\n', inputsArray);
+
+      let stringToDisplay = '';
+      for (let string of inputsArray) {
+        stringToDisplay += string + '\n';
+      }
+      console.log('stringToDisplay:', typeof stringToDisplay, '\n', stringToDisplay);
+
+      alert(stringToDisplay);
+    };
+  </script>
+</head>
+
+<body>
+
+  <main id='user interface' class='centered'>
+    <button onclick="pushToArrayHandler()">add a string</button> <br>
+    <button onclick="displayValuesHandler()">display all strings</button>
+  </main>
+
+</body>
+
+</html>

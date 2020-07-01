@@ -1,0 +1,2 @@
+- https://github.com/ALPSquid/quizlib
+- https://alpsquid.github.io/quizlib
