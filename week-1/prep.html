@@ -90,6 +90,21 @@
         </section>
       </section>
 
+      <section id='for-of-example'>
+        <script>
+          codeAlong({
+            title: 'for ... of (example)',
+            container: 'for-of-example',
+            type: 'js',
+            source: [
+              {
+                title: "",
+                path: "../isolate/for-of/examples/for-of.js"
+              },
+            ],
+          })
+        </script>
+      </section>
 
       <section id='side-effects-examples'>
         <script>
@@ -144,12 +159,25 @@
                 path: "../integrate/about-testing/3-describe.js"
               },
               {
-                title: "all together",
-                path: "../integrate/about-testing/4-all-together.js"
-              },
-              {
                 title: ".deepStrictEqual",
-                path: "../integrate/about-testing/5-deep-strict-equal.js"
+                path: "../integrate/about-testing/4-deep-strict-equal.js"
+              },
+            ],
+          })
+        </script>
+      </section>
+
+      <section id='all-together'>
+        <script>
+          codeAlong({
+            title: 'All Together',
+            container: 'all-together',
+            type: 'js',
+            bare: true,
+            source: [
+              {
+                title: "assert",
+                path: "../integrate/about-testing/5-all-together.js"
               },
             ],
           })
