@@ -75,6 +75,7 @@ The topics you should focus on during your study this week.
 ### Testing?
 
 - FunFunFunction:
+  1. [Writing tests for personal projects](https://www.youtube.com/watch?v=ib2Pt9_zciA)
   1. [Why Unit Tests?](https://www.youtube.com/watch?v=Eu35xM76kKY)
   1. [Your First Tests](https://www.youtube.com/watch?v=XsFQEUP1MxI)
 
@@ -86,14 +87,16 @@ The topics you should focus on during your study this week.
 > during Sunday class
 > - [Lesson Plan Slides](https://hackyourfuture.be/testing/week-1)
 
-Learn about arrays:
+Learn some ways to use arrays:
 
-- Accessing and modifying entries
 - `for ... of` loops
+- _mapping_: transform each entry in an array
+- _filtering_: remove certain entries from an array
+- _reducing_: combine all entries in an array
+- _everying_: does each entry meet a certain criteria?
 
 ### Isolate
 
-<!-- - Arrays: [examples](../isolate/arrays/examples), [exercises](../isolate/arrays/exercises) -->
 - `for ... of`: [examples](../isolate/for-fo/examples), [exercises](../isolate/for-of/exercises)
 
 ### Integrate
@@ -107,11 +110,9 @@ The project this week is not collaborative.  You work together in your small gro
 Helpful code to study:
 
 - [User input in an array](../integrate/user-input-in-an-array.html)
-- example directories in the project repo
-  - `/about-testing`
-  - `/example`
+- The `/example` directory in the project repo
 
-[TOP](#debugging)
+[TOP](#testing)
 
 ---
 ---
