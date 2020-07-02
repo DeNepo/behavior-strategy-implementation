@@ -15,7 +15,7 @@ const reverseArray1 = (arr) => {
   return arr.reverse();
 };
 
-const reverseArray3 = (arr) => {
+const reverseArray2 = (arr) => {
   return [...arr].reverse();
 };
 

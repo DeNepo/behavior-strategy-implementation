@@ -4,17 +4,24 @@
 // psst.  use the Debugger or JS Tutor
 //  practice using breakpoints to skip to the lines you want to study
 
+// add all numbers together
 const _1_numbers = [-12, 3.6, 83, 0];
 let _1_sumOfNumbers = 0;
 for (let number of _1_numbers) {
   _1_sumOfNumbers += number;
 }
 
-const _2_letters = ['a', 'b', 'c', 'd'];
-let _2_snowball = '';
-for (let letter of _2_letters) {
-  const everythingSoFar = _2_snowball + letter;
-  _2_snowball += everythingSoFar;
+// cast each item to a string and concatenate them
+const _2_values = [10, false, 'hello', null, undefined];
+let _2_concatenated = '';
+for (let value of _2_values) {
+  _2_concatenated += String(value);
 }
 
-
+// huh, what is this?
+const _3_letters = ['a', 'b', 'c', 'd'];
+let _3_snowball = '';
+for (let letter of _3_letters) {
+  const everythingSoFar = _3_snowball + letter;
+  _3_snowball += everythingSoFar;
+}

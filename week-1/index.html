@@ -14,6 +14,8 @@
   <link rel="stylesheet" href="../dependencies/reveal.js/css/theme/night.css">
 
   <script src='../dependencies/beautify.js'></script>
+  <script src='../dependencies/chai.js'></script>
+  <script src='../dependencies/describe-it.js'></script>
 
   <style>
     /* https://stackoverflow.com/questions/25479420/how-to-add-a-fixed-footer-on-all-slides */
@@ -126,23 +128,94 @@
           <br>
           <ul>
             <li>
+              Understand reference vs. value
+            </li>
+            <li>
               Step through <code>for ... of</code> loops
+            </li>
+            <li>
+              <code>mapping</code>: changing each item in an array
+            </li>
+            <li>
+              <code>filtering</code>: removing some items from an array
+            </li>
+            <li>
+              <code>reducing</code>: combining all items in an array
+            </li>
+            <li>
+              <code>every</code>: is something true about every array item?
             </li>
           </ul>
         </section>
       </section>
 
+      <section id='reference-vs-value'>
+        <section>
+          <h3>Reference vs. Value</h3>
+        </section>
+        <section id='reference-vs-value-examples'>
+          <script>
+            codeAlong({
+              title: 'Reference vs. Value (examples)',
+              container: 'reference-vs-value-examples',
+              type: 'js',
+              source: [
+                {
+                  title: "shared reference",
+                  path: "../isolate/reference-vs-value/examples/shared-reference.js"
+                },
+                {
+                  title: "const",
+                  path: "../isolate/reference-vs-value/examples/const-reference-types.js"
+                },
+                {
+                  title: "comparing",
+                  path: "../isolate/reference-vs-value/examples/comparing.js"
+                },
+                {
+                  title: "deep comparing",
+                  path: "../isolate/reference-vs-value/examples/deep-comparing.js"
+                },
+              ],
+            })
+          </script>
+        </section>
+        <section id='reference-vs-value-exercises'>
+          <script>
+            codeAlong({
+              title: 'Reference vs. Value (exercises)',
+              container: 'reference-vs-value-exercises',
+              type: 'js',
+              source: [
+                {
+                  title: "1",
+                  path: "../isolate/reference-vs-value/exercises/1-fill-in-blanks.js"
+                },
+                {
+                  title: "2",
+                  path: "../isolate/reference-vs-value/exercises/2-fill-in-blanks.js"
+                },
+                {
+                  title: "3",
+                  path: "../isolate/reference-vs-value/exercises/3-fill-in-blanks.js"
+                },
+              ],
+            })
+          </script>
+        </section>
+      </section>
+
       <section>
         <section>
-          <h3>For Loops</h3>
+          <h3>Using for ... of</h3>
           <br>
           <code>for (let _ of _) { _ }</code>
         </section>
-        <section id='for-loops-examples'>
+        <section id='for-of-examples'>
           <script>
             codeAlong({
-              title: 'For Loops (examples)',
-              container: 'for-loops-examples',
+              title: 'for ... of (examples)',
+              container: 'for-of-examples',
               type: 'js',
               source: [
                 {
@@ -154,36 +227,49 @@
                   path: "../isolate/for-of/examples/mapping.js"
                 },
                 {
+                  title: "filtering",
+                  path: "../isolate/for-of/examples/filtering.js"
+                },
+                {
                   title: "reducing",
                   path: "../isolate/for-of/examples/reducing.js"
+                },
+                {
+                  title: "every",
+                  path: "../isolate/for-of/examples/every.js"
                 },
               ],
             })
           </script>
         </section>
-        <!-- <section id='for-loops-exercises'>
+        <section id='for-of-exercises'>
           <script>
             codeAlong({
-              title: 'For Loops (exercises)',
-              container: 'for-loops-exercises',
+              title: 'for ... of (exercises)',
+              container: 'for-of-exercises',
               type: 'js',
+              bare: true,
               source: [
                 {
-                  title: "write tests",
-                  path: "../isolate/loops-for/exercises/write-tests.js"
+                  title: "mapping",
+                  path: "../isolate/for-of/exercises/mapping.js"
                 },
                 {
-                  title: "pass tests 1",
-                  path: "../isolate/loops-for/exercises/pass-tests-1.js"
+                  title: "filtering",
+                  path: "../isolate/for-of/exercises/filtering.js"
                 },
                 {
-                  title: "pass tests 2",
-                  path: "../isolate/loops-for/exercises/pass-tests-2.js"
+                  title: "reducing",
+                  path: "../isolate/for-of/exercises/reducing.js"
+                },
+                {
+                  title: "everying",
+                  path: "../isolate/for-of/exercises/everying.js"
                 },
               ],
             })
           </script>
-        </section> -->
+        </section>
       </section>
 
       <section id='check-in-2'>
