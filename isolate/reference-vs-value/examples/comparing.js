@@ -4,7 +4,7 @@
 
 // this comparison is false!
 const huh = [1, 2, 3] === [1, 2, 3];
-console.assert('huh:', typeof huh, huh);
+console.log('huh:', typeof huh, huh);
 
 // a more involved example:
 
