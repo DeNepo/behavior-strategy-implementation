@@ -126,15 +126,29 @@ Helpful code to study:
 #### JavaScript
 
 - [`break` & `continue`](https://javascript.info/while-for)
+- `study.hackyourfuture.be`
+  - [Arrays & Objects](https://study.hackyourfuture.be/javascript/fundamentals#arrays-and-objects)
+  - [So Many Loops](https://study.hackyourfuture.be/javascript/fundamentals#so-many-loops)
 - Objects
   - [javascript.info](https://javascript.info/object)
   - [dots vs brackets](https://github.com/janke-learning/dots-vs-brackets)
   - [`for in`](https://javascript.info/object#the-for-in-loop)
+- [Controlling Logical Flow](https://shawnr.gitbooks.io/practical-introduction-to-javascript/controlling-logical-flow/)
 
+> Are we missing a great resource? Send us a PR!
 
 ---
 
 ### Exercises
+
+- [Behavior, Strategy, Implementation](https://github.com/HackYourFutureBelgium/behavior-strategy-implementation)
+  - Fork and clone this repo
+  - :egg: write up 3 Codewars challenges
+  - :hatching_chick_: why stop at 3?
+- [Document and Pass](https://github.com/HackYourFutureBelgium/document-and-pass/)
+  - Fork and clone this repo
+  - :egg: Document and pass any 4 of the exercises
+  - :hatching_chicks: Why stop at 4?
 
 ---
 
@@ -152,4 +166,4 @@ Helpful code to study:
 - [ ] [A project board](https://github.com/user-name/repo-name/projects/X) with all issues moved to "Done"
 ```
 
-####
+#### Coming Soon
