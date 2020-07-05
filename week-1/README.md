@@ -97,7 +97,7 @@ Learn some ways to use arrays:
 
 ### Isolate
 
-- `for ... of`: [examples](../isolate/for-fo/examples), [exercises](../isolate/for-of/exercises)
+- `for ... of`: [examples](../isolate/for-of/examples), [exercises](../isolate/for-of/exercises)
 
 ### Integrate
 
