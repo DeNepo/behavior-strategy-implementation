@@ -97,7 +97,7 @@ Learn some ways to use arrays:
 
 ### Isolate
 
-- `for ... of`: [examples](../isolate/for-fo/examples), [exercises](../isolate/for-of/exercises)
+- `for ... of`: [examples](../isolate/for-of/examples), [exercises](../isolate/for-of/exercises)
 
 ### Integrate
 
@@ -105,7 +105,7 @@ Build a simple website that stores user input in an array.
 
 The project this week is not collaborative.  You work together in your small groups, but should not be working on the same repository.
 
-- [Week 1 in-class project](https://github.com/HackYourFutureBelgium/testing-integrate-week-2) (starter repo)
+- [Week 1 in-class project](https://github.com/HackYourFutureBelgium/testing-integrate-week-1) (starter repo)
 
 Helpful code to study:
 
