@@ -71,11 +71,6 @@ describe('containsNoNumbers checks if an array contains no numbers', () => {
   });
 
   describe('it uses the argument array correctly', () => {
-    it('returns a new array', () => {
-      const arg = [];
-      const returned = containsNoNumbers([]);
-      assert.notStrictEqual(returned, arg);
-    });
     it('does not modify the argument', () => {
       const arg = ['a', 1, true, null, undefined];
       containsNoNumbers(arg);
