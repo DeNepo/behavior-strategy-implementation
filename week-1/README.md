@@ -147,8 +147,8 @@ Helpful code to study:
   - :hatching_chick_: why stop at 3?
 - [Document and Pass](https://github.com/HackYourFutureBelgium/document-and-pass/)
   - Fork and clone this repo
-  - :egg: Document and pass any 4 of the exercises
-  - :hatching_chicks: Why stop at 4?
+  - :egg: Document and pass any 3 of the exercises
+  - :hatching_chicks: Why stop at 3?
 
 ---
 
@@ -166,4 +166,13 @@ Helpful code to study:
 - [ ] [A project board](https://github.com/user-name/repo-name/projects/X) with all issues moved to "Done"
 ```
 
-#### Coming Soon
+#### `array-of-numbers`
+
+> [Starter Code](https://home.hackyourfuture.be/students/weekly-assignments#projects)
+
+Collaboration!  This project should be completed in groups.  Generate a new repo for your team using [array-of-numbers](https://github.com/HackYourFutureBelgium/array-of-numbers) and have at it.  There are is no right or wrong development strategy, and there is no right or wrong user interface!  What matters is that you agree as a team, and that your plan is clearly communicated in your repository.
+
+This project contains a fully-working version of the project you are supposed to build in the folder called `/demo`.  You can interact with the demo and read the console output to help reverse-engineer the functionality, but the source code is unreadable.  It has been [obfuscated](https://en.wikipedia.org/wiki/Obfuscation_(software)) using [obfuscator.io](https://www.obfuscator.io/).
+
+:shipit:
+
