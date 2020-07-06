@@ -147,8 +147,8 @@ Helpful code to study:
   - :hatching_chick_: why stop at 3?
 - [Document and Pass](https://github.com/HackYourFutureBelgium/document-and-pass/)
   - Fork and clone this repo
-  - :egg: Document and pass any 4 of the exercises
-  - :hatching_chicks: Why stop at 4?
+  - :egg: Document and pass any 3 of the exercises
+  - :hatching_chicks: Why stop at 3?
 
 ---
 
