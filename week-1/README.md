@@ -131,6 +131,7 @@ Helpful code to study:
   - [So Many Loops](https://study.hackyourfuture.be/javascript/fundamentals#so-many-loops)
 - Objects
   - [javascript.info](https://javascript.info/object)
+  - [dots vs brackets](https://www.youtube.com/watch?v=7lQ31dJEYoM)
   - [dots vs brackets](https://github.com/janke-learning/dots-vs-brackets)
   - [`for in`](https://javascript.info/object#the-for-in-loop)
 - [Controlling Logical Flow](https://shawnr.gitbooks.io/practical-introduction-to-javascript/controlling-logical-flow/)
