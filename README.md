@@ -15,8 +15,8 @@ All code is guilty until proven innocent.
   - Week 2: [Assignments](./week-2/README.md), [Lesson Plan](https://hackyourfuture.be/testing/week-2)
   - Week 3: [Assignments](./week-3/README.md), [Lesson Plan](https://hackyourfuture.be/testing/week-3)
 - Study Materials:
-  - [Isolate](./isolate/README.md) - examples and exercises
-  - [Integrate](./integrate/README.md) - projects to study
+  - [Isolate](https://hackyourfuture.be/testing/isolate/index.html) - JavaScript on it's own
+  - [Integrate](https://hackyourfuture.be/testing/integrate/index.html) - JavaScript in HTML
   - [Class Recordings](./class-recordings.md)
   - [Study Links](https://study.hackyourfuture.be) (external)
 - [Curriculum](https://home.hackyourfuture.be/curriculum) (external)
