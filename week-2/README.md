@@ -62,7 +62,7 @@ The topics you should focus on during your study this week.
   - [javascript.info](https://javascript.info/array-methods)
   - FunFun: [Map](https://www.youtube.com/watch?v=bCqtb-Z5YGQ&list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84&index=2), [Reduce Basics](https://www.youtube.com/watch?v=Wl98eZpkp-c&list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84&index=3)
   - [Una Kravets](https://css-tricks.com/an-illustrated-and-musical-guide-to-map-reduce-and-filter-array-methods/)
-- [Isolate Exercises](https://hackyourfuture.be/testing/isolate/index.html)
+- [Isolate Exercises](../isolate/index.html)
   - Higher Order Functions: _examples & exercises_
   - Array Methods: _examples & prep exercises_
 
@@ -72,7 +72,7 @@ The topics you should focus on during your study this week.
 ## Lesson Plan
 
 > during Sunday class
-> - [Lesson Plan Slides](https://hackyourfuture.be/testing/week-1)
+> - [Lesson Plan Slides](./week-1/index.html)
 
 
 

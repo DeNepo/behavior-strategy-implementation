@@ -11,12 +11,12 @@ All code is guilty until proven innocent.
 - [Study Tips](#study-tips)
 - [Module Projects](#module-projects)
 - Weekly Details:
-  - Week 1: [Assignments](./week-1/README.md), [Lesson Plan](https://hackyourfuture.be/testing/week-1)
-  - Week 2: [Assignments](./week-2/README.md), [Lesson Plan](https://hackyourfuture.be/testing/week-2)
-  - Week 3: [Assignments](./week-3/README.md), [Lesson Plan](https://hackyourfuture.be/testing/week-3)
+  - Week 1: [Assignments](./week-1/README.md), [Lesson Plan](./week-1/index.html)
+  - Week 2: [Assignments](./week-2/README.md), [Lesson Plan](./week-2/index.html)
+  - Week 3: [Assignments](./week-3/README.md), [Lesson Plan](./week-3/index.html)
 - Study Materials:
-  - [Isolate](./isolate/README.md) - examples and exercises
-  - [Integrate](./integrate/README.md) - projects to study
+  - [Isolate](./isolate/index.html) - examples and exercises
+  - [Integrate](./integrate/index.html) - projects to study
   - [Class Recordings](./class-recordings.md)
   - [Study Links](https://study.hackyourfuture.be) (external)
 - [Curriculum](https://home.hackyourfuture.be/curriculum) (external)

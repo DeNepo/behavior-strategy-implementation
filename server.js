@@ -1,6 +1,7 @@
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
+const marked = require('./dependencies/marked.js');
 
 const PORT = process.env.PORT || 3000;
 const LOG_DIRNAME = `server-logs`;
@@ -31,6 +32,7 @@ const log = (msg) => {
 };
 
 const mime = {
+  '.md': 'text/html',
   '.html': 'text/html',
   '.js': 'text/javascript',
   '.css': 'text/css',
@@ -54,7 +56,7 @@ const handleRequest = (req, res) => {
   const reqUrlMinusParams = req.url.split('?')[0];
 
   const relPath = reqUrlMinusParams === '/'
-    ? './index.html'
+    ? './README.md'
     : decodeURIComponent(reqUrlMinusParams);
 
   const requestedFilePath = path.normalize(path.join(__dirname, relPath));
@@ -79,7 +81,11 @@ const handleRequest = (req, res) => {
       }
     } else {
       res.writeHead(200, { 'Content-Type': contentType });
-      res.end(content, 'utf-8');
+      const finalContent = extension === '.md'
+        ? marked(content.toString())
+        : content;
+
+      res.end(finalContent, 'utf-8');
       logMsg = 'res: ' + relPath;
     };
     log(cycle + '. ' + logMsg);

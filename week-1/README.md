@@ -57,7 +57,7 @@ The topics you should focus on during your study this week.
 
 ### JavaScript
 
-- [Prepwork Practice Problems](https://hackyourfuture.be/testing/week-1/prep)
+- [Prepwork Practice Problems](./prep.html)
 - Arrays
   - [JS Tutor Video](https://www.youtube.com/watch?v=W1NTK09o-vM)
   - [Coding with Mosh](https://www.youtube.com/watch?v=oigfaZ5ApsM)
@@ -85,7 +85,7 @@ The topics you should focus on during your study this week.
 ## Lesson Plan
 
 > during Sunday class
-> - [Lesson Plan Slides](https://hackyourfuture.be/testing/week-1)
+> - [Lesson Plan Slides](./index.html)
 
 Learn some ways to use arrays:
 
