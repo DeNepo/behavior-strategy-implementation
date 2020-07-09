@@ -1,5 +1,7 @@
 # Testing
 
+[<< Week 3](./week-3/README.md) | Main Page | [Week 1 >>](./week-1/README.md)
+
 All code is guilty until proven innocent.
 
 > Program testing can be a very effective way to show the presence of bugs, but is hopelessly inadequate for showing their absence.
@@ -10,10 +12,6 @@ All code is guilty until proven innocent.
 - [Learning Objectives](#learning-objectives)
 - [Study Tips](#study-tips)
 - [Module Projects](#module-projects)
-- Weekly Details:
-  - Week 1: [Assignments](./week-1/README.md), [Lesson Plan](./week-1/index.html)
-  - Week 2: [Assignments](./week-2/README.md), [Lesson Plan](./week-2/index.html)
-  - Week 3: [Assignments](./week-3/README.md), [Lesson Plan](./week-3/index.html)
 - Study Materials:
   - [Isolate](./isolate/index.html) - examples and exercises
   - [Integrate](./integrate/index.html) - projects to study

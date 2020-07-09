@@ -1,8 +1,8 @@
 # Testing
 
-[<< Week 1](../week-1/README.md) | Week 2 | [Week 3 >>](../week-3/README.md)
+[<< Week 2](../week-1/README.md) | Week 3 | [Main Page >>](../README.md)
 
-## Week 2
+## Week 3
 
 - [Learning Objectives](#learning-objectives)
 - [Prep Work](#prep-work)
@@ -23,24 +23,14 @@ The topics you should focus on during your study this week.
 
 ### Isolating JavaScript
 
-- Higher Order Functions
-- Array Methods
-  - [].map
-  - [].filter
-  - [].reduce
-  - [].find
-  - [].every
+
 
 ### Programming Skills
 
-- Describing code
-  - Behavior
-  - Strategy
-  - Implementation
+
 
 ### Integrating JavaScript
 
-- Using array methods to process user input
 
 ---
 ---
@@ -52,19 +42,6 @@ The topics you should focus on during your study this week.
 > - [Create your Homework Issue](https://home.hackyourfuture.be/students/homework-submission#homework-issues)
 
 ### JavaScript
-
-- Higher Order Functions
-  - [FunFunFunction](https://medium.com/humans-create-software/a-dirt-simple-introduction-to-higher-order-functions-in-javascript-b33bf9e19056)
-  - [The Coding Train](https://www.youtube.com/watch?v=H4awPsyugS0)
-  - [Traversy](https://www.youtube.com/watch?v=rRgD1yVwIvE)
-  - [damcosset](https://dev.to/damcosset/higher-order-functions-in-javascript-4j8b)
-- Array Methods
-  - [javascript.info](https://javascript.info/array-methods)
-  - FunFun: [Map](https://www.youtube.com/watch?v=bCqtb-Z5YGQ&list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84&index=2), [Reduce Basics](https://www.youtube.com/watch?v=Wl98eZpkp-c&list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84&index=3)
-  - [Una Kravets](https://css-tricks.com/an-illustrated-and-musical-guide-to-map-reduce-and-filter-array-methods/)
-- [Isolate Exercises](../isolate/index.html)
-  - Higher Order Functions: _examples & exercises_
-  - Array Methods: _examples & prep exercises_
 
 ---
 ---

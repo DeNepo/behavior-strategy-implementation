@@ -5,17 +5,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-  <title>Testing: Week 1</title>
+  <title>Testing: Week 3</title>
 
-  <script src='../dependencies/code-along.js'></script>
 
   <link rel="stylesheet" href="../dependencies/reveal.js/css/reset.css">
   <link rel="stylesheet" href="../dependencies/reveal.js/css/reveal.css">
   <link rel="stylesheet" href="../dependencies/reveal.js/css/theme/night.css">
 
-  <script src='../dependencies/beautify.js'></script>
-  <script src='../dependencies/chai.js'></script>
-  <script src='../dependencies/describe-it.js'></script>
 
   <style>
     /* https://stackoverflow.com/questions/25479420/how-to-add-a-fixed-footer-on-all-slides */
@@ -37,7 +33,7 @@
       <ul id='footer-links' style='visibility: hidden;'>
         <li>
           <a id='to-repo' href="./README.md" target="_blank">
-            <code>week details</code>
+            <code>week 2 details</code>
           </a>
         </li>
         <li>
@@ -61,12 +57,12 @@
       <section id='cover-slide'>
         <h2>Testing</h2>
         <br>
-        <h3>week 1</h3>
+        <h3>week 2</h3>
         <br>
         <code>"s"</code> for speaker notes
         <br>
         <br>
-        <a href="./README.md" target='_blank'>
+        <a href="./index.html" target='_blank'>
           -- back to week --
         </a>
       </section>
@@ -117,7 +113,7 @@
           <h2>Isolate</h2>
           <br>
           <code>
-            Using Arrays
+            Using Array Methods
           </code>
           <br>
           <code>(small groups)</code>
@@ -127,148 +123,49 @@
           <br>
           <ul>
             <li>
-              Understand reference vs. value
+              What is a higher order function?
             </li>
             <li>
-              Step through <code>for ... of</code> loops
+              Separating logic from array method calls
             </li>
             <li>
-              <code>mapping</code>: changing each item in an array
+              <code>[].map</code>: changing each item in an array
             </li>
             <li>
-              <code>filtering</code>: removing some items from an array
+              <code>[].filter</code>: removing some items from an array
             </li>
             <li>
-              <code>reducing</code>: combining all items in an array
+              <code>[].reduce</code>: combining all items in an array
             </li>
             <li>
-              <code>every</code>: is something true about every array item?
+              <code>[].every</code>: is something true about every array item?
             </li>
           </ul>
         </section>
       </section>
 
-      <section id='reference-vs-value'>
-        <section>
-          <h3>Reference vs. Value</h3>
+      <section>
+        <section id='higher-order-functions'>
+          <h3>Higher Order Functions</h3>
+          <a href='../isolate/index.html' target='_blank'>
+            Examples & Exercises
+          </a>
         </section>
-        <section id='reference-vs-value-examples'>
-          <script>
-            codeAlong({
-              title: 'Reference vs. Value (examples)',
-              container: 'reference-vs-value-examples',
-              type: 'js',
-              source: [
-                {
-                  title: "shared reference",
-                  path: "../isolate/reference-vs-value/examples/shared-reference.js"
-                },
-                {
-                  title: "const",
-                  path: "../isolate/reference-vs-value/examples/const-reference-types.js"
-                },
-                {
-                  title: "comparing",
-                  path: "../isolate/reference-vs-value/examples/comparing.js"
-                },
-                {
-                  title: "deep comparing",
-                  path: "../isolate/reference-vs-value/examples/deep-comparing.js"
-                },
-              ],
-            })
-          </script>
-        </section>
-        <section id='reference-vs-value-exercises'>
-          <script>
-            codeAlong({
-              title: 'Reference vs. Value (exercises)',
-              container: 'reference-vs-value-exercises',
-              type: 'js',
-              source: [
-                {
-                  title: "1",
-                  path: "../isolate/reference-vs-value/exercises/1-fill-in-blanks.js"
-                },
-                {
-                  title: "2",
-                  path: "../isolate/reference-vs-value/exercises/2-fill-in-blanks.js"
-                },
-                {
-                  title: "3",
-                  path: "../isolate/reference-vs-value/exercises/3-fill-in-blanks.js"
-                },
-              ],
-            })
-          </script>
-        </section>
+        <!-- <section>
+          <h3>helpful links</h3>
+        </section> -->
       </section>
 
       <section>
-        <section>
-          <h3>Using for ... of</h3>
-          <br>
-          <code>for (let _ of _) { _ }</code>
+        <section id='array-methods'>
+          <h3>Array Methods</h3>
+          <a href='../isolate/index.html' target='_blank'>
+            Examples & Class Exercises
+          </a>
         </section>
-        <section id='for-of-examples'>
-          <script>
-            codeAlong({
-              title: 'for ... of (examples)',
-              container: 'for-of-examples',
-              type: 'js',
-              source: [
-                {
-                  title: "for ... of",
-                  path: "../isolate/for-of/examples/for-of.js"
-                },
-                {
-                  title: "mapping",
-                  path: "../isolate/for-of/examples/mapping.js"
-                },
-                {
-                  title: "filtering",
-                  path: "../isolate/for-of/examples/filtering.js"
-                },
-                {
-                  title: "reducing",
-                  path: "../isolate/for-of/examples/reducing.js"
-                },
-                {
-                  title: "every",
-                  path: "../isolate/for-of/examples/every.js"
-                },
-              ],
-            })
-          </script>
-        </section>
-        <section id='for-of-exercises'>
-          <script>
-            codeAlong({
-              title: 'for ... of (exercises)',
-              container: 'for-of-exercises',
-              type: 'js',
-              bare: true,
-              source: [
-                {
-                  title: "mapping",
-                  path: "../isolate/for-of/exercises/mapping.js"
-                },
-                {
-                  title: "filtering",
-                  path: "../isolate/for-of/exercises/filtering.js"
-                },
-                {
-                  title: "reducing",
-                  path: "../isolate/for-of/exercises/reducing.js"
-                },
-                {
-                  title: "everying",
-                  path: "../isolate/for-of/exercises/everying.js"
-                },
-              ],
-            })
-          </script>
-        </section>
+        <!-- <section>
+          <h3>helpful links</h3>
+        </section> -->
       </section>
 
       <section id='check-in-2'>
@@ -295,36 +192,11 @@
           <h2>Integrate</h2>
           <br>
           <p>
-            Using user input with arrays
+            Using array methods in handler functions
           </p>
           <br>
           <code>(small groups)</code>
         </section>
-        <section>
-          <h3>Main Objectives</h3>
-          <br>
-          <ul>
-            <li>
-              Using a shared array between handlers
-            </li>
-          </ul>
-        </section>
-      </section>
-
-      <section id='user-input-in-an-array'>
-        <script>
-          codeAlong({
-            title: 'User input in an array',
-            container: 'user-input-in-an-array',
-            type: 'html',
-            source: [
-              {
-                title: "",
-                path: "../integrate/user-input-in-an-array.html"
-              },
-            ],
-          })
-        </script>
       </section>
 
       <section>
@@ -334,13 +206,13 @@
           </p>
           <br>
           <h3>
-            <a href='https://github.com/HackYourFutureBelgium/testing-integrate-week-1' target='_blank'>
+            <a href='https://github.com/HackYourFutureBelgium/testing-integrate-week-2' target='_blank'>
               Template Repo</a>
           </h3>
           <br>
-          <p>Be sure to study the example!</p>
+          <p>Be sure to study the demo!</p>
           <ul>
-            <li><code>/example</code></li>
+            <li><code>/demo</code></li>
           </ul>
         </section>
       </section>
@@ -370,7 +242,7 @@
       <section id='cover-slide'>
         <h2>Testing</h2>
         <br>
-        <h3>Week 1</h3>
+        <h3>Week 2</h3>
         <br>
         <code>"s"</code> for speaker notes
         <br>
