@@ -7,9 +7,9 @@
 
   <title>Testing: Week 1</title>
 
-  <link rel="stylesheet" href="../dependencies/reveal.js/css/reset.css">
-  <link rel="stylesheet" href="../dependencies/reveal.js/css/reveal.css">
-  <link rel="stylesheet" href="../dependencies/reveal.js/css/theme/night.css">
+  <link rel="stylesheet" href="../lib/reveal.js/css/reset.css">
+  <link rel="stylesheet" href="../lib/reveal.js/css/reveal.css">
+  <link rel="stylesheet" href="../lib/reveal.js/css/theme/night.css">
 
   <style>
     /* https://stackoverflow.com/questions/25479420/how-to-add-a-fixed-footer-on-all-slides */
@@ -240,12 +240,12 @@
     </div>
   </div>
 
-  <script src="../dependencies/reveal.js/js/reveal.js"></script>
+  <script src="../lib/reveal.js/js/reveal.js"></script>
 
   <script>
-    // More info about config & dependencies:
+    // More info about config & lib:
     // - https://github.com/hakimel/reveal.js#configuration
-    // - https://github.com/hakimel/reveal.js#dependencies
+    // - https://github.com/hakimel/reveal.js#lib
     Reveal.initialize({
       controlsTutorial: true,
       slideNumber: 'h/t',
@@ -262,11 +262,11 @@
         // 88: function () { RevealChalkboard.colorNext() },	// cycle colors forward when 'x' is pressed
         // 89: function () { RevealChalkboard.colorPrev() },	// cycle colors backward when 'y' is pressed
       },
-      dependencies: [
+      lib: [
         // { src: 'plugin/markdown/marked.js' },
         // { src: 'plugin/markdown/markdown.js' },
-        { src: '../dependencies/reveal.js/plugin/notes/notes.js', async: true },
-        // { src: '../dependencies/reveal.js/plugin/chalkboard/chalkboard.js' },
+        { src: '../lib/reveal.js/plugin/notes/notes.js', async: true },
+        // { src: '../lib/reveal.js/plugin/chalkboard/chalkboard.js' },
         // { src: 'plugin/highlight/highlight.js', async: true }
       ],
     });
