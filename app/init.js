@@ -22,38 +22,53 @@ window.onload = async () => {
           return findFirstExercise(virDir.dirs[0]);
         }
       }
-      if (encodedPath) {
-        try {
-          const path = decodeURIComponent(encodedPath);
-          const splitPath = path.split('/');
-          let exerciseInstance = {};
-          let dirObj = liveStudyApp.populated;
-          for (let subPath of splitPath) {
-            if (!subPath) { continue; }
-            if (subPath.includes('.js')) {
-              exerciseInstance = dirObj.populated.find(file => file.path.rel === '/' + subPath);
-              break;
-            } else if (dirObj.path && dirObj.path === '/' + subPath) {
-              continue;
-            } else if (dirObj.dirs) {
-              dirObj = dirObj.dirs.find(dir => dir.path === '/' + subPath);
-            }
+      // if (encodedPath) {
+      try {
+        const path = decodeURIComponent(encodedPath);
+        const splitPath = path.split('/');
+        let exerciseInstance = {};
+        let dirObj = liveStudyApp.populated;
+        for (let subPath of splitPath) {
+          if (!subPath) { continue; }
+          if (subPath.includes('.js')) {
+            exerciseInstance = dirObj.populated.find(file => file.path.rel === '/' + subPath);
+            break;
+          } else if (dirObj.path && dirObj.path === '/' + subPath) {
+            continue;
+          } else if (dirObj.dirs) {
+            dirObj = dirObj.dirs.find(dir => dir.path === '/' + subPath);
           }
-          exercise = exerciseInstance
-        } catch (err) {
-          exercise = findFirstExercise(liveStudyApp.populated);
         }
-      } else {
+        exerciseInstance.load((err, code) => {
+          history.replaceState(null, "", `?path=${encodeURIComponent(exercise.path.abs)}`);
+          exercise.monacoModel.setValue(code);
+          editor.setModel(exercise.monacoModel);
+          if (index.config.language === 'html') {
+            document.getElementById('output').src = "data:text/html;charset=utf-8," + encodeURIComponent(code);
+          }
+        });
+      } catch (err) {
         exercise = findFirstExercise(liveStudyApp.populated);
+        exercise.load((err, code) => {
+          history.replaceState(null, "", `?path=${encodeURIComponent(exercise.path.abs)}`);
+          exercise.monacoModel.setValue(code);
+          editor.setModel(exercise.monacoModel);
+          if (index.config.language === 'html') {
+            document.getElementById('output').src = "data:text/html;charset=utf-8," + encodeURIComponent(code);
+          }
+        });
       }
-      exercise.load((err, code) => {
-        history.replaceState(null, "", `?path=${encodeURIComponent(exercise.path.abs)}`);
-        exercise.monacoModel.setValue(code);
-        editor.setModel(exercise.monacoModel);
-        if (index.config.language === 'html') {
-          document.getElementById('output').src = "data:text/html;charset=utf-8," + encodeURIComponent(code);
-        }
-      });
+      // } else {
+      //   exercise = findFirstExercise(liveStudyApp.populated);
+      //   exercise.load((err, code) => {
+      //     history.replaceState(null, "", `?path=${encodeURIComponent(exercise.path.abs)}`);
+      //     exercise.monacoModel.setValue(code);
+      //     editor.setModel(exercise.monacoModel);
+      //     if (index.config.language === 'html') {
+      //       document.getElementById('output').src = "data:text/html;charset=utf-8," + encodeURIComponent(code);
+      //     }
+      //   });
+      // }
       document.getElementById('current-path').innerHTML = exercise.path.abs.split('/').slice(2).join('/');
       liveStudyApp.active = exercise;
 

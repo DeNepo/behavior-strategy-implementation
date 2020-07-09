@@ -19,6 +19,7 @@ All code is guilty until proven innocent.
   - [Study Links](https://study.hackyourfuture.be) (external)
 - [Curriculum](https://home.hackyourfuture.be/curriculum) (external)
 - [HYF Home](https://home.hackyourfuture.be/) (external)
+- _[How to Study This](#how-to-study-this)_
 
 ---
 
@@ -95,5 +96,25 @@ Projects in this module will be simple websites with `onclick` attributes that c
 - User interactions will be handled with `prompt`, `confirm` and `alert`
 - Handler functions will use arrays and objects stored in script variables
 - There will be tests
+
+[TOP](#testing)
+
+---
+
+## How to Study This
+
+### Locally on your computer
+
+1. Clone this repo
+1. Open the directory in terminal
+1. `npm run start` (no need to install)
+1. Open `localhost:3000` in your browser
+1. Learn
+
+### Live on `hackyourfuture.be`
+
+1. Install [markdown-viewer](https://github.com/simov/markdown-viewer)
+1. [Add origin](https://github.com/simov/markdown-viewer#advanced-options) `hackyourfuture.be`
+1. Learn
 
 [TOP](#testing)
