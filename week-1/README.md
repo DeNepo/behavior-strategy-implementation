@@ -136,6 +136,12 @@ Helpful code to study:
   - [`for in`](https://javascript.info/object#the-for-in-loop)
 - [Controlling Logical Flow](https://shawnr.gitbooks.io/practical-introduction-to-javascript/controlling-logical-flow/)
 
+#### Endless Practice
+
+- [edabit](https://edabit.com/)
+- [fuzz](https://hackyourfuture.be/fuzz)
+- [codewars](https://www.codewars.com/)
+
 > Are we missing a great resource? Send us a PR!
 
 ---

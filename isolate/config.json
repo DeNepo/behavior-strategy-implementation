@@ -1,0 +1,19 @@
+{
+  "title": "testing/isolate",
+  "path": "/",
+  "loopGuard": {
+    "active": false,
+    "max": 20
+  },
+  "buttons": [
+    {
+      "console": true
+    },
+    {
+      "debugger": true
+    },
+    {
+      "jsTutor": true
+    }
+  ]
+}

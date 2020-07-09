@@ -1,0 +1,290 @@
+{
+  "path": "/",
+  "dirs": [
+    {
+      "path": "/1-reference-vs-value",
+      "dirs": [
+        {
+          "path": "/examples",
+          "files": [
+            {
+              "path": "/1-shared-reference.js"
+            },
+            {
+              "path": "/2-const-with-reference.js"
+            },
+            {
+              "path": "/3-comparing.js"
+            },
+            {
+              "path": "/4-deep-comparing.js"
+            }
+          ],
+          "isExample": true
+        },
+        {
+          "path": "/exercises",
+          "files": [
+            {
+              "path": "/1-fill-in-blanks.js"
+            },
+            {
+              "path": "/2-fill-in-blanks.js"
+            },
+            {
+              "path": "/3-fill-in-blanks.js"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/2-side-effects",
+      "dirs": [
+        {
+          "path": "/examples",
+          "files": [
+            {
+              "path": "/1-passing-arrays-as-arguments.js"
+            },
+            {
+              "path": "/2-side-effects.js"
+            },
+            {
+              "path": "/3-avoiding-side-effects.js"
+            },
+            {
+              "path": "/4-testing-for-side-effects.js"
+            },
+            {
+              "path": "/5-pure-functions.js"
+            }
+          ],
+          "isExample": true
+        }
+      ]
+    },
+    {
+      "path": "/3-about-testing",
+      "files": [
+        {
+          "path": "/1-assert.js"
+        },
+        {
+          "path": "/2-it.js"
+        },
+        {
+          "path": "/3-describe.js"
+        },
+        {
+          "path": "/4-deep-strict-equal.js"
+        },
+        {
+          "path": "/5-red-green-refactor.js"
+        },
+        {
+          "path": "/6-all-together.js"
+        }
+      ],
+      "config": {
+        "buttons": []
+      }
+    },
+    {
+      "path": "/4-for-of",
+      "dirs": [
+        {
+          "path": "/examples",
+          "files": [
+            {
+              "path": "/1-for-of.js"
+            },
+            {
+              "path": "/every.js"
+            },
+            {
+              "path": "/filtering.js"
+            },
+            {
+              "path": "/mapping.js"
+            },
+            {
+              "path": "/reducing.js"
+            }
+          ],
+          "isExample": true
+        },
+        {
+          "path": "/exercises",
+          "files": [
+            {
+              "path": "/everying.js"
+            },
+            {
+              "path": "/filtering.js"
+            },
+            {
+              "path": "/mapping.js"
+            },
+            {
+              "path": "/reducing.js"
+            }
+          ],
+          "config": {
+            "buttons": []
+          }
+        }
+      ]
+    },
+    {
+      "path": "/5-higher-order-functions",
+      "dirs": [
+        {
+          "path": "/examples",
+          "files": [
+            {
+              "path": "/everying.js"
+            },
+            {
+              "path": "/filtering.js"
+            },
+            {
+              "path": "/finding.js"
+            },
+            {
+              "path": "/functions-as-arguments.js"
+            },
+            {
+              "path": "/in-a-loop.js"
+            },
+            {
+              "path": "/mapping.js"
+            },
+            {
+              "path": "/the-callstack.js"
+            }
+          ],
+          "isExample": true
+        },
+        {
+          "path": "/exercises",
+          "files": [
+            {
+              "path": "/everying.js"
+            },
+            {
+              "path": "/filtering.js"
+            },
+            {
+              "path": "/finding.js"
+            },
+            {
+              "path": "/mapping.js"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/6-array-methods",
+      "dirs": [
+        {
+          "path": "/examples",
+          "files": [
+            {
+              "path": "/1-the-methods.js"
+            },
+            {
+              "path": "/2-chaining.js"
+            },
+            {
+              "path": "/3-all-together-separated.js"
+            },
+            {
+              "path": "/4-all-together-inline.js"
+            },
+            {
+              "path": "/every.js"
+            },
+            {
+              "path": "/filter.js"
+            },
+            {
+              "path": "/find.js"
+            },
+            {
+              "path": "/map.js"
+            },
+            {
+              "path": "/reduce.js"
+            }
+          ],
+          "isExample": true
+        },
+        {
+          "path": "/exercises-class",
+          "files": [
+            {
+              "path": "/use-logic-1.js"
+            },
+            {
+              "path": "/use-logic-2.js"
+            },
+            {
+              "path": "/use-logic-3.js"
+            },
+            {
+              "path": "/use-logic-4.js"
+            }
+          ],
+          "config": {
+            "buttons": []
+          }
+        },
+        {
+          "path": "/exercises-prep",
+          "files": [
+            {
+              "path": "/write-logic-every.js"
+            },
+            {
+              "path": "/write-logic-filter.js"
+            },
+            {
+              "path": "/write-logic-find.js"
+            },
+            {
+              "path": "/write-logic-map.js"
+            },
+            {
+              "path": "/write-logic-reduce.js"
+            }
+          ],
+          "config": {
+            "buttons": []
+          }
+        }
+      ]
+    }
+  ],
+  "config": {
+    "title": "testing/isolate",
+    "path": "/",
+    "loopGuard": {
+      "active": false,
+      "max": 20
+    },
+    "buttons": [
+      {
+        "console": true
+      },
+      {
+        "debugger": true
+      },
+      {
+        "jsTutor": true
+      }
+    ]
+  },
+  "lastBuild": "2020-07-09T11:24:07.528Z"
+}

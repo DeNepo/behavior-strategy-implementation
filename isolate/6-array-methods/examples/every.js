@@ -1,0 +1,36 @@
+'use strict';
+
+// write an isFalsy function to pass the tests
+
+/**
+ * checks if a value is falsy
+ * @param {any} val
+ * @returns {boolean}
+ */
+const isFalsy = (val) => !Boolean(val);
+
+
+// an empty array returns true
+const _1_array = [];
+const _1_expect = true;
+const _1_test = _1_array.every(isFalsy) === _1_expect;
+console.assert(_1_test, 'Test 1');
+
+// returns true when every entry is falsy
+const _2_array = ['', 0, null, undefined, false];
+const _2_expect = true;
+const _2_test = _2_array.every(isFalsy) === _2_expect;
+console.assert(_2_test, 'Test 2');
+
+// returns false when all entries are truthy
+const _3_array = [true, 100, 'hello'];
+const _3_expect = false;
+const _3_test = _3_array.every(isFalsy) === _3_expect;
+console.assert(_3_test, 'Test 3');
+
+// returns false if any entry is truthy
+const _4_array = ['', 0, 'hello', null, false];
+const _4_expect = false;
+const _4_test = _4_array.every(isFalsy) === _4_expect;
+console.assert(_4_test, 'Test 4');
+
