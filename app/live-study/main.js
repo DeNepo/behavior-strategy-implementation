@@ -13,6 +13,10 @@ export default class LiveStudy {
     active: false,
     max: 20
   }
+  clearAll = {
+    intervals: false,
+    timeouts: false
+  }
 
   constructor(index, editor, buttonsContainer) {
     this.virDir = index;

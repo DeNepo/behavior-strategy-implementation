@@ -57,7 +57,11 @@ The topics you should focus on during your study this week.
 
 ### JavaScript
 
-- [Prepwork Practice Problems](./prep.html)
+- [Isolate](../isolate/index.html)
+  - Reference vs. Value
+  - `for ... of` (examples)
+  - Side Effects (examples)
+  - About Testing
 - Arrays
   - [JS Tutor Video](https://www.youtube.com/watch?v=W1NTK09o-vM)
   - [Coding with Mosh](https://www.youtube.com/watch?v=oigfaZ5ApsM)
