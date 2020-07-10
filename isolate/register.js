@@ -108,7 +108,7 @@ const registered = register(EXERCISES_DIR);
 // merge the repository config into the virtual directory
 registered.config = config;
 // set the date/time of last build
-registered.lastBuild = (new Date()).toJSON();
+// registered.lastBuild = (new Date()).toJSON();
 
 console.log('\n--- writing /index.json ---\n');
 
