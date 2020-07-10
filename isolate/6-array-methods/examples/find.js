@@ -9,26 +9,26 @@ const isCurious = (str) => str.includes('?');
 
 
 // returns undefined if the array is empty
-const _1_array = [];
+const _1_arg = [];
 const _1_expect = undefined;
-const _1_test = _1_array.find(isCurious) === _1_expect;
+const _1_test = _1_arg.find(isCurious) === _1_expect ? 'pass' : 'fail';
 console.assert(_1_test, 'Test 1');
 
 // returns undefined if there are no curious strings
-const _2_array = ['!', 'hoy', ':)'];
+const _2_arg = ['!', 'hoy', ':)'];
 const _2_expect = undefined;
-const _2_test = _2_array.find(isCurious) === _2_expect;
+const _2_test = _2_arg.find(isCurious) === _2_expect ? 'pass' : 'fail';
 console.assert(_2_test, 'Test 2');
 
 // finds the only curious string
-const _3_array = ['huh', 'huh?', 'huh!'];
+const _3_arg = ['huh', 'huh?', 'huh!'];
 const _3_expect = 'huh?';
-const _3_test = _3_array.find(isCurious) === _3_expect;
+const _3_test = _3_arg.find(isCurious) === _3_expect ? 'pass' : 'fail';
 console.assert(_3_test, 'Test 3');
 
 // finds the first curious string
-const _4_array = ['huh', 'huh?', 'what?'];
+const _4_arg = ['huh', 'huh?', 'what?'];
 const _4_expect = 'huh?';
-const _4_test = _4_array.find(isCurious) === _4_expect;
+const _4_test = _4_arg.find(isCurious) === _4_expect ? 'pass' : 'fail';
 console.assert(_4_test, 'Test 4');
 

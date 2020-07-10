@@ -19,7 +19,7 @@ export default (() => {
     };
     this.path = {
       rel: path,
-      abs: dirPath ? dirPath + path : null,
+      abs: dirPath ? (dirPath + path).split('//').join('/') : null,
     };
     this.code = null;
     this.monacoModel = monaco.editor.createModel('', 'html');

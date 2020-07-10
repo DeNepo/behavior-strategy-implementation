@@ -66,6 +66,7 @@ export default class LiveStudy {
           history.replaceState(null, "", `?path=${encodeURIComponent(exercise.path.abs)}`);
           document.getElementById('current-path').innerHTML = exercise.path.abs.split('/').slice(2).join('/');
           editor.setModel(exercise.monacoModel);
+          this.renderStudyButtons(exercise)
           if (exercise.code === null) {
             exercise.load((err, code) => {
               exercise.monacoModel.setValue(code);
@@ -75,20 +76,20 @@ export default class LiveStudy {
           this.active = exercise;
         }
 
-        // const loadChangesEl = document.createElement('button');
-        // loadChangesEl.innerHTML = 'reload';
-        // loadChangesEl.onclick = () => {
-        //   exercise.load((err, code) => {
-        //     exercise.monacoModel.setValue(code);
-        //     editor.setModel(exercise.monacoModel);
-        //     this.renderStudyButtons(exercise);
-        //   });
-        // }
+        const loadChangesEl = document.createElement('button');
+        loadChangesEl.innerHTML = 'reload';
+        loadChangesEl.onclick = () => {
+          exercise.load((err, code) => {
+            exercise.monacoModel.setValue(code);
+            editor.setModel(exercise.monacoModel);
+            this.renderStudyButtons(exercise);
+          });
+        }
 
         const exerciseContainer = document.createElement('div');
         exerciseContainer.style = 'margin-top: 0.5em; margin-bottom: 0.5em;';
         exerciseContainer.appendChild(exerciseEl);
-        // exerciseContainer.appendChild(loadChangesEl);
+        exerciseContainer.appendChild(loadChangesEl);
         subListEl.appendChild(exerciseContainer);
       });
     };

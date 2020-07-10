@@ -6,10 +6,10 @@ window.onload = async () => {
     .then(res => res.json())
     .then(index => {
       document.getElementById('title').innerHTML = index.config.title;
-      document.getElementById('header').innerHTML = index.config.title + ':';
+      document.getElementById('header').innerHTML = index.config.title + '/';
 
       window.liveStudyApp = new LiveStudy(index, editor, document.getElementById('study-buttons'));
-      // console.log(liveStudyApp)
+      // console.log(liveStudyApp);
 
       const urlString = window.location.href;
       const url = new URL(urlString);
@@ -47,6 +47,7 @@ window.onload = async () => {
             document.getElementById('output').src = "data:text/html;charset=utf-8," + encodeURIComponent(code);
           }
         });
+        exercise = exerciseInstance;
       } catch (err) {
         exercise = findFirstExercise(liveStudyApp.populated);
         exercise.load((err, code) => {
@@ -58,17 +59,6 @@ window.onload = async () => {
           }
         });
       }
-      // } else {
-      //   exercise = findFirstExercise(liveStudyApp.populated);
-      //   exercise.load((err, code) => {
-      //     history.replaceState(null, "", `?path=${encodeURIComponent(exercise.path.abs)}`);
-      //     exercise.monacoModel.setValue(code);
-      //     editor.setModel(exercise.monacoModel);
-      //     if (index.config.language === 'html') {
-      //       document.getElementById('output').src = "data:text/html;charset=utf-8," + encodeURIComponent(code);
-      //     }
-      //   });
-      // }
       document.getElementById('current-path').innerHTML = exercise.path.abs.split('/').slice(2).join('/');
       liveStudyApp.active = exercise;
 

@@ -15,9 +15,9 @@ const sumEvenNumbers = (arr) => {
   if (!allAreNumbers) { throw new TypeError('arr is not all numbers'); }
 
   const isEven = (entry) => entry % 2 === 0;
-  const allEvenNumbers = arr.filter(isEven);
-
   const sumNumbers = (sum, next) => sum + next;
+
+  const allEvenNumbers = arr.filter(isEven);
   const sumOfEvens = allEvenNumbers.reduce(sumNumbers);
 
   return sumOfEvens;

@@ -1,3 +1,5 @@
+'use strict';
+
 const assert = chai.assert;
 
 /**
@@ -28,9 +30,14 @@ describe('numberyNumberify: converts an array of strings into an array of number
       const actual = numberyNumberify([]);
       assert.deepStrictEqual(actual, expected);
     });
-    it('returns an empty array for the empty array', () => {
-      const expected = [];
-      const actual = numberyNumberify([]);
+    it('maps all entries to Number', () => {
+      const expected = [1, 2, 3];
+      const actual = numberyNumberify(['1', '2', '3']);
+      assert.deepStrictEqual(actual, expected);
+    });
+    it('filters all NaN values', () => {
+      const expected = [1, 2, 3];
+      const actual = numberyNumberify(['1', '$%@#', '2', 'e', '3']);
       assert.deepStrictEqual(actual, expected);
     });
   });
