@@ -155,11 +155,11 @@ Helpful code to study:
 - [Behavior, Strategy, Implementation](https://github.com/HackYourFutureBelgium/behavior-strategy-implementation)
   - Fork and clone this repo
   - :egg: write up 3 Codewars challenges
-  - :hatching_chick_: why stop at 3?
+  - :hatching_chick: why stop at 3?
 - [Document and Pass](https://github.com/HackYourFutureBelgium/document-and-pass/)
   - Fork and clone this repo
   - :egg: Document and pass any 3 of the exercises
-  - :hatching_chicks: Why stop at 3?
+  - :hatching_chick: Why stop at 3?
 
 ---
 

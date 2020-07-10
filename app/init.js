@@ -22,15 +22,16 @@ window.onload = async () => {
           return findFirstExercise(virDir.dirs[0]);
         }
       }
-      try {
+      if (encodedPath) {
         const path = decodeURIComponent(encodedPath);
         const splitPath = path.split('/');
         let exerciseInstance = {};
         let dirObj = liveStudyApp.populated;
         for (let subPath of splitPath) {
           if (!subPath) { continue; }
-          if (index.config.language === 'javascript' && subPath.includes('.js')
-            || index.config.language === 'html' && subPath.includes('.html')) {
+          if (
+            ((index.config.language === 'javascript' || !index.config.language) && subPath.includes('.js'))
+            || (index.config.language === 'html' && subPath.includes('.html'))) {
             exerciseInstance = dirObj.populated.find(file => file.path.rel === '/' + subPath);
             break;
           } else if (dirObj.path && dirObj.path === '/' + subPath) {
@@ -39,26 +40,25 @@ window.onload = async () => {
             dirObj = dirObj.dirs.find(dir => dir.path === '/' + subPath);
           }
         }
-        exerciseInstance.load((err, code) => {
-          history.replaceState(null, "", `?path=${encodeURIComponent(exercise.path.abs)}`);
-          exercise.monacoModel.setValue(code);
-          editor.setModel(exercise.monacoModel);
-          if (index.config.language === 'html') {
-            document.getElementById('output').src = "data:text/html;charset=utf-8," + encodeURIComponent(code);
+        exercise = exerciseInstance
+      } else {
+        const findFirstExercise = (virDir) => {
+          if (virDir.populated) {
+            return virDir.populated[0]
+          } else if (virDir.dirs) {
+            return findFirstExercise(virDir.dirs[0]);
           }
-        });
-        exercise = exerciseInstance;
-      } catch (err) {
+        }
         exercise = findFirstExercise(liveStudyApp.populated);
-        exercise.load((err, code) => {
-          history.replaceState(null, "", `?path=${encodeURIComponent(exercise.path.abs)}`);
-          exercise.monacoModel.setValue(code);
-          editor.setModel(exercise.monacoModel);
-          if (index.config.language === 'html') {
-            document.getElementById('output').src = "data:text/html;charset=utf-8," + encodeURIComponent(code);
-          }
-        });
       }
+      exercise.load((err, code) => {
+        history.replaceState(null, "", `?path=${encodeURIComponent(exercise.path.abs)}`);
+        exercise.monacoModel.setValue(code);
+        editor.setModel(exercise.monacoModel);
+        if (index.config.language === 'html') {
+          document.getElementById('output').src = "data:text/html;charset=utf-8," + encodeURIComponent(code);
+        }
+      });
       document.getElementById('current-path').innerHTML = exercise.path.abs;
       liveStudyApp.active = exercise;
 

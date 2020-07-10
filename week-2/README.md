@@ -99,10 +99,12 @@ Practice using Array Methods and Higher Order Functions
 
 #### JavaScript
 
+- [Functional Programming in JS](https://www.youtube.com/playlist?list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84)
+
 #### Endless Practice
 
 - [edabit](https://edabit.com/)
-<!-- - [fuzz](https://hackyourfuture.be/fuzz) -->
+- [fuzz](https://hackyourfuture.be/fuzz)
 - [codewars](https://www.codewars.com/)
 
 > Are we missing a great resource? Send us a PR!
@@ -114,11 +116,13 @@ Practice using Array Methods and Higher Order Functions
 - [Behavior, Strategy, Implementation](https://github.com/HackYourFutureBelgium/behavior-strategy-implementation)
   - Fork and clone this repo
   - :egg: write up 3 Codewars challenges
-  - :hatching_chick_: why stop at 3?
+  - :hatching_chick: why stop at 3?
 - [Document and Pass](https://github.com/HackYourFutureBelgium/document-and-pass/)
   - Fork and clone this repo
   - :egg: Document and pass any 3 of the exercises
-  - :hatching_chicks: Why stop at 3?
+  - :hatching_chick: Why stop at 3?
+- :hatched_chick: [8pointers/JavaScript-Koans/4-arrays](https://github.com/8pointers/JavaScript-Koans/tree/master/src/4-arrays)
+
 
 ---
 
@@ -136,7 +140,7 @@ Practice using Array Methods and Higher Order Functions
 - [ ] [A project board](https://github.com/user-name/repo-name/projects/X) with all issues moved to "Done"
 ```
 
-#### ``
+#### TBD after sunday class
 
 :shipit:
 
