@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset='utf-8'>
+  <title>Favorite Words</title>
+
+  <style>
+    .centered {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+  </style>
+
+  <script id='script-variables'>
+    let words = [];
+  </script>
+
+  <script id='handlers'>
+    'use strict';
+
+    const displayWordsHandler = () => {
+      debugger;
+      const joinStrings = (acc, next) => `${acc}\n${next}`;
+      const allWords = words.reduce(joinStrings, `your favorite words:`);
+      alert(allWords);
+    };
+
+    const addNewWordHandler = () => {
+      debugger;
+      const userInput = prompt(`add a new favorite word`);
+      if (userInput === null) {
+        return;
+      }
+      words.push(userInput);
+      displayWordsHandler();
+    };
+
+    const findWordHandler = () => {
+      debugger;
+      const userInput = prompt(`enter a word to find`);
+      if (userInput === null) {
+        return;
+      }
+      const foundWord = words.find((entry) => entry === userInput);
+      if (foundWord === undefined) {
+        alert(`you don't like ${userInput}`);
+      } else {
+        alert(`you really like ${userInput}`);
+      }
+    };
+
+    const removeWordHandler = () => {
+      debugger;
+      const userInput = prompt(`enter a word to remove`);
+      if (userInput === null) {
+        return;
+      }
+      words = words
+        .filter((entry) => entry !== userInput);
+      displayWordsHandler();
+    };
+  </script>
+</head>
+
+<body>
+
+  <main id='user interface' class='centered'>
+    <button onclick="addNewWordHandler()">add a word</button> <br>
+    <button onclick="findWordHandler()">find a word</button> <br>
+    <button onclick="removeWordHandler()">remove a word</button> <br>
+    <br>
+    <button onclick="displayWordsHandler()">display all words</button>
+  </main>
+
+</body>
+
+</html>

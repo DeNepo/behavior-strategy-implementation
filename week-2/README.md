@@ -74,15 +74,17 @@ The topics you should focus on during your study this week.
 > during Sunday class
 > - [Lesson Plan Slides](./week-1/index.html)
 
-
+Practice using Array Methods and Higher Order Functions
 
 ### Isolate
 
-
+- [/isolate exercises](../isolate/index.html)
+  - Higher Order Functions (examples & exercises)
+  - Array Methods (examples & class exercises)
 
 ### Integrate
 
-
+- [/integrate Using Array Methods](../integrate/index.html)
 
 [TOP](#testing)
 

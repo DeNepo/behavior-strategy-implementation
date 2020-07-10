@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset='utf-8'>
+  <title>Temp Converter</title>
+
+  <style>
+    .centered {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+  </style>
+
+  <script id='script-variables'>
+    let degrees = 'fahrenheit';
+    let temperatures = [];
+  </script>
+
+  <script id='handlers'>
+    'use strict';
+
+    const displayTemperatureHandler = () => {
+      debugger;
+      const joinStrings = (acc, next) => `${acc}\n${next}`;
+      const allTemperatures = temperatures
+        .reduce(joinStrings, `${degrees}:`);
+      alert(allTemperatures);
+    };
+
+    const addNewTemperatureHandler = () => {
+      debugger;
+      const newInput = prompt(`add a temperature in ${degrees}`);
+      if (newInput === null) { return; }
+
+      const newTemperature = Number(newInput);
+      if (Number.isNaN(newTemperature)) {
+        alert('not a valid temperature'); s
+        return;
+      }
+      temperatures.push(newTemperature);
+      displayTemperaturesHandler();
+    };
+
+    const convertTemperaturesHandler = () => {
+      debugger;
+      if (degrees === 'fahrenheit') {
+        const toCelsius = (tempF) => (5 / 9) * (tempF - 32);
+        temperatures = temperatures.map(toCelsius);
+        degrees = 'celsius';
+      } else {
+        const toFahrenheit = (tempC) => tempC * 9 / 5 + 32;
+        temperatures = temperatures.map(toFahrenheit);
+        degrees = 'fahrenheit';
+      }
+      displayTemperatureHandler();
+    };
+  </script>
+</head>
+
+<body>
+
+  <main id='user interface' class='centered'>
+    <button onclick="addNewTemperatureHandler()">add a temperature</button> <br>
+    <button onclick="convertTemperaturesHandler()">convert temperatures</button> <br>
+    <br>
+    <button onclick="displayTemperatureHandler()">display all temperatures</button>
+  </main>
+
+</body>
+
+</html>

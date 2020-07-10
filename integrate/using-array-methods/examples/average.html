@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset='utf-8'>
+  <title>Average</title>
+
+  <style>
+    .centered {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+  </style>
+
+  <script id='script-variables'>
+    let numbers = [];
+  </script>
+
+  <script id='handlers'>
+    'use strict';
+
+    const displayNumbersHandler = () => {
+      debugger;
+      const joinNumbers = (acc, next) => `${acc}\n${String(next)}`;
+      const allNumbers = numbers.reduce(joinNumbers, `all numbers:`);
+      alert(allNumbers);
+    };
+
+    const addNewNumberHandler = () => {
+      debugger;
+      const userInput = prompt(`add a new number`);
+      if (userInput === null) { return; }
+
+      const userNumber = Number(userInput);
+      if (Number.isNaN(userNumber)) {
+        alert(`${userInput} is not a valid number`);
+        return;
+      }
+
+      numbers.push(userNumber);
+      displayNumbersHandler();
+    };
+
+    const removeNumberHandler = () => {
+      debugger;
+      const userInput = prompt(`enter a number to remove`);
+      if (userInput === null) { return; }
+
+      const userNumber = Number(userInput);
+      if (Number.isNaN(userNumber)) {
+        alert(`${userInput} is not a valid number`);
+        return;
+      }
+
+      numbers = numbers.filter((entry) => entry !== userNumber);
+      displayNumbersHandler();
+    };
+
+    const calculateAverageHandler = () => {
+      debugger;
+      const sum = numbers.reduce((acc, next) => acc + next, 0);
+      const average = sum / numbers.length;
+      alert(`the average is: ${average}`);
+    };
+  </script>
+</head>
+
+<body>
+
+  <main id='user interface' class='centered'>
+    <button onclick="addNewNumberHandler()">add a number</button> <br>
+    <button onclick="removeNumberHandler()">remove a number</button> <br>
+    <button onclick="calculateAverageHandler()">find the average</button> <br>
+    <br>
+    <button onclick="displayNumbersHandler()">display all numbers</button>
+  </main>
+
+</body>
+
+</html>

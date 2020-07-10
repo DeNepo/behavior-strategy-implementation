@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset='utf-8'>
+  <title>So Many Numbers</title>
+
+  <style>
+    .centered {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+  </style>
+
+  <script id='script-variables'>
+    let numbers = [0, 1, 2, 3, 4];
+  </script>
+
+  <script id='handlers'>
+    'use strict';
+    // Study the demo for this exercise then fill in the blanks
+    //  hint: use ctr-f to find all of the blanks _
+
+    // solve this one first, the others depend on it
+    const displayNumbersHandler = (arrayOfNumbers = numbers, message = _) => {
+      debugger;
+      const joinNumbers = (acc, next) => _;
+      const allNumbersListed = arrayOfNumbers
+        ._(joinNumbers, _);
+      alert(`${message}: ${allNumbersListed}`);
+    };
+
+    const resetNumbersHandler = () => {
+      debugger;
+      const userInput = prompt(_);
+      if (_) { return; }
+
+      const userNumber = Number(userInput);
+      if (_) {
+        alert(_);
+        return;
+      }
+
+      // a basic for loop, not for ... of
+      numbers = [];
+      for (_; _; _) {
+        numbers._(_);
+      };
+
+      displayNumbersHandler(); // no arguments! this is correct like it is
+    };
+
+    const greaterThanHandler = () => {
+      debugger;
+      const userInput = prompt(_);
+      if (_) { return; }
+
+      const userNumber = _;
+      if (_) {
+        alert(_);
+        return;
+      }
+
+      const numbersGreaterThan = numbers._(_);
+      const howMany = numbersGreaterThan.length;
+      const newMessage = _;
+
+      _(numbersGreaterThan, newMessage);
+    };
+
+    const lessThanHandler = () => {
+      debugger;
+      const userInput = _;
+      if (_) { return; }
+
+      const userNumber = _;
+      if (_) {
+        _;
+        return;
+      }
+
+      const numbersLessThan = numbers._(_);
+      const howMany = numbersLessThan.length;
+      const newMessage = _;
+
+      _(numbersLessThan, newMessage);
+    };
+
+
+    const divisibleByHandler = () => {
+      debugger;
+      const userInput = _;
+      if (_) { return; }
+
+      const userNumber = _;
+      if (_) {
+        alert(_);
+        return;
+      }
+
+      const numbersDivisible = _;
+      const howMany = numbersDivisible.length;
+      const newMessage = _;
+
+      _(numbersDivisible, newMessage);
+    };
+  </script>
+</head>
+
+<body>
+
+  <main id='user interface' class='centered'>
+    <button onclick="greaterThanHandler()">how many greater than X</button> <br>
+    <button onclick="lessThanHandler()">how many less than X</button> <br>
+    <button onclick="divisibleByHandler()">how many divisible by X</button> <br>
+    <br>
+    <button onclick="displayNumbersHandler()">display numbers</button> <br>
+    <button onclick="resetNumbersHandler()">reset numbers</button>
+  </main>
+
+</body>
+
+</html>

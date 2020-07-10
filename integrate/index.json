@@ -1,5 +1,42 @@
 {
   "path": "/",
+  "dirs": [
+    {
+      "path": "/using-array-methods",
+      "dirs": [
+        {
+          "path": "/examples",
+          "files": [
+            {
+              "path": "/average.html"
+            },
+            {
+              "path": "/favorite-words.html"
+            },
+            {
+              "path": "/temp-converter.html"
+            }
+          ],
+          "isExample": true
+        },
+        {
+          "path": "/exercises",
+          "files": [
+            {
+              "path": "/2.html"
+            },
+            {
+              "path": "/so-many-numbers-demo.html",
+              "isExample": true
+            },
+            {
+              "path": "/so-many-numbers.html"
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "files": [
     {
       "path": "/user-input-in-an-array.html"
@@ -10,10 +47,5 @@
     "path": "/",
     "language": "html",
     "buttons": []
-  },
-<<<<<<< HEAD
-  "lastBuild": "2020-07-10T08:49:37.138Z"
-=======
-  "lastBuild": "2020-07-09T17:35:43.197Z"
->>>>>>> 2029e0b039b37e96f61ed557f634d0da1c1a8bd7
+  }
 }

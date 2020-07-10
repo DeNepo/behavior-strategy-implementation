@@ -9,6 +9,7 @@ export default class LiveStudy {
   active = null;
   editor = null;
   buttonsContainer = null;
+  language = '';
   loopGuard = {
     active: false,
     max: 20
@@ -64,14 +65,22 @@ export default class LiveStudy {
         exerciseEl.innerHTML = exercise.path.rel;
         exerciseEl.onclick = () => {
           history.replaceState(null, "", `?path=${encodeURIComponent(exercise.path.abs)}`);
-          document.getElementById('current-path').innerHTML = exercise.path.abs.split('/').slice(2).join('/');
+          document.getElementById('current-path').innerHTML = exercise.path.abs;
           editor.setModel(exercise.monacoModel);
-          this.renderStudyButtons(exercise)
+
           if (exercise.code === null) {
             exercise.load((err, code) => {
               exercise.monacoModel.setValue(code);
-              this.renderStudyButtons(exercise)
+              this.renderStudyButtons(exercise);
+              if (exercise.language === 'html') {
+                document.getElementById('output').src = "data:text/html;charset=utf-8," + encodeURIComponent(code);
+              }
             });
+          } else {
+            this.renderStudyButtons(exercise);
+            if (exercise.language === 'html') {
+              document.getElementById('output').src = "data:text/html;charset=utf-8," + encodeURIComponent(exercise.code);
+            }
           }
           this.active = exercise;
         }
@@ -83,6 +92,9 @@ export default class LiveStudy {
             exercise.monacoModel.setValue(code);
             editor.setModel(exercise.monacoModel);
             this.renderStudyButtons(exercise);
+            if (exercise.language === 'html') {
+              document.getElementById('output').src = "data:text/html;charset=utf-8," + encodeURIComponent(code);
+            }
           });
         }
 

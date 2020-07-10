@@ -6,7 +6,7 @@ window.onload = async () => {
     .then(res => res.json())
     .then(index => {
       document.getElementById('title').innerHTML = index.config.title;
-      document.getElementById('header').innerHTML = index.config.title + '/';
+      document.getElementById('header').innerHTML = index.config.title;
 
       window.liveStudyApp = new LiveStudy(index, editor, document.getElementById('study-buttons'));
       // console.log(liveStudyApp);
@@ -22,7 +22,6 @@ window.onload = async () => {
           return findFirstExercise(virDir.dirs[0]);
         }
       }
-      // if (encodedPath) {
       try {
         const path = decodeURIComponent(encodedPath);
         const splitPath = path.split('/');
@@ -30,7 +29,8 @@ window.onload = async () => {
         let dirObj = liveStudyApp.populated;
         for (let subPath of splitPath) {
           if (!subPath) { continue; }
-          if (subPath.includes('.js')) {
+          if (index.config.language === 'javascript' && subPath.includes('.js')
+            || index.config.language === 'html' && subPath.includes('.html')) {
             exerciseInstance = dirObj.populated.find(file => file.path.rel === '/' + subPath);
             break;
           } else if (dirObj.path && dirObj.path === '/' + subPath) {
@@ -59,7 +59,7 @@ window.onload = async () => {
           }
         });
       }
-      document.getElementById('current-path').innerHTML = exercise.path.abs.split('/').slice(2).join('/');
+      document.getElementById('current-path').innerHTML = exercise.path.abs;
       liveStudyApp.active = exercise;
 
       const view = liveStudyApp.render(exercise);
@@ -70,19 +70,3 @@ window.onload = async () => {
 };
 
 
-// fetch('.' + path)
-//   .then(res => {
-//     if (!res.ok) {
-//       throw res;
-//     }
-//     return res.text()
-//   })
-//   .then(exercise => {
-//     editor.setValue(exercise);
-//     document.getElementById('current-path')
-//       .innerHTML = exercise.path.abs;
-//   })
-//   .catch(err => {
-//     console.error(err);
-//     editor.setValue(`unable to load ${path}`)
-//   });
