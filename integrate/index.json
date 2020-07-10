@@ -23,9 +23,6 @@
           "path": "/exercises",
           "files": [
             {
-              "path": "/2.html"
-            },
-            {
               "path": "/so-many-numbers-demo.html",
               "isExample": true
             },
