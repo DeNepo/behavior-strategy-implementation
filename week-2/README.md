@@ -118,6 +118,10 @@ Practice using Array Methods and Higher Order Functions
 ### Exercises
 
 - A Pull Request into the `/shared-notes/testing` directory of you class repo
+  - A helpful link, diagram, or image
+  - An important code snippet
+  - A paragraph, or even a new markdown file
+  - ... anything you found helpful this week :rocket:
 - [Behavior, Strategy, Implementation](https://github.com/HackYourFutureBelgium/behavior-strategy-implementation)
   - Fork and clone this repo
   - :egg: write up 3 Codewars challenges
