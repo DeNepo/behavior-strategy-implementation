@@ -21,12 +21,6 @@ window.onload = async () => {
         } else if (virDir.dirs) {
           return findFirstExercise(virDir.dirs[0]);
         }
-      }      const findFirstExercise = (virDir) => {
-        if (virDir.populated) {
-          return virDir.populated[0]
-        } else if (virDir.dirs) {
-          return findFirstExercise(virDir.dirs[0]);
-        }
       }
       if (encodedPath) {
         try {
