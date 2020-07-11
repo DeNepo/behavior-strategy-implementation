@@ -101,6 +101,10 @@ Practice using Array Methods and Higher Order Functions
 
 - [Functional Programming in JS](https://www.youtube.com/playlist?list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84)
 
+### Reading Code
+
+- [Helpful Links from _Behavior, Strategy, Implementation](https://github.com/HackYourFutureBelgium/behavior-strategy-implementation#helpful-links)
+
 #### Endless Practice
 
 - [edabit](https://edabit.com/)

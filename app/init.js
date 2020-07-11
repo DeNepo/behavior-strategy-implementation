@@ -21,34 +21,35 @@ window.onload = async () => {
         } else if (virDir.dirs) {
           return findFirstExercise(virDir.dirs[0]);
         }
+      }      const findFirstExercise = (virDir) => {
+        if (virDir.populated) {
+          return virDir.populated[0]
+        } else if (virDir.dirs) {
+          return findFirstExercise(virDir.dirs[0]);
+        }
       }
       if (encodedPath) {
-        const path = decodeURIComponent(encodedPath);
-        const splitPath = path.split('/');
-        let exerciseInstance = {};
-        let dirObj = liveStudyApp.populated;
-        for (let subPath of splitPath) {
-          if (!subPath) { continue; }
-          if (
-            ((index.config.language === 'javascript' || !index.config.language) && subPath.includes('.js'))
-            || (index.config.language === 'html' && subPath.includes('.html'))) {
-            exerciseInstance = dirObj.populated.find(file => file.path.rel === '/' + subPath);
-            break;
-          } else if (dirObj.path && dirObj.path === '/' + subPath) {
-            continue;
-          } else if (dirObj.dirs) {
-            dirObj = dirObj.dirs.find(dir => dir.path === '/' + subPath);
+        try {
+          const path = decodeURIComponent(encodedPath);
+          const splitPath = path.split('/');
+          let exerciseInstance = {};
+          let dirObj = liveStudyApp.populated;
+          for (let subPath of splitPath) {
+            if (!subPath) { continue; }
+            if (subPath.includes('.js')) {
+              exerciseInstance = dirObj.populated.find(file => file.path.rel === '/' + subPath);
+              break;
+            } else if (dirObj.path && dirObj.path === '/' + subPath) {
+              continue;
+            } else if (dirObj.dirs) {
+              dirObj = dirObj.dirs.find(dir => dir.path === '/' + subPath);
+            }
           }
+          exercise = exerciseInstance
+        } catch (err) {
+          exercise = findFirstExercise(liveStudyApp.populated);
         }
-        exercise = exerciseInstance
       } else {
-        const findFirstExercise = (virDir) => {
-          if (virDir.populated) {
-            return virDir.populated[0]
-          } else if (virDir.dirs) {
-            return findFirstExercise(virDir.dirs[0]);
-          }
-        }
         exercise = findFirstExercise(liveStudyApp.populated);
       }
       exercise.load((err, code) => {
