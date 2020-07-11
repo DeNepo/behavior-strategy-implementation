@@ -117,6 +117,7 @@ Practice using Array Methods and Higher Order Functions
 
 ### Exercises
 
+- A Pull Request into the `/shared-notes/testing` directory of you class repo
 - [Behavior, Strategy, Implementation](https://github.com/HackYourFutureBelgium/behavior-strategy-implementation)
   - Fork and clone this repo
   - :egg: write up 3 Codewars challenges
