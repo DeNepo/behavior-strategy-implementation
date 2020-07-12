@@ -14,6 +14,12 @@
 const printHello = () => console.log('hello');
 const printGoodbye = () => console.log('goodbye');
 
+/**
+ * calls it's two parameters in order, first then second
+ * @param {Function} first
+ * @param {Function} second
+ * @returns {undefined}
+ */
 const callTwoFunctions = (first, second) => {
   first();
   second();
