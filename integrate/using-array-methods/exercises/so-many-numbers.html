@@ -21,10 +21,12 @@
 
   <script id='handlers'>
     'use strict';
-    // Study the demo for this exercise then fill in the blanks
-    //  hint: use ctr-f to find all of the blanks _
+    /* Study the demo for this exercise then fill in the blanks
+      the goal is to exactly recreate the behavior of the demo
+      hint: use ctr-f to find all of the blanks _
+    */
 
-    // solve this one first, the others depend on it
+    // 1. A user can see all numbers listed in an alert
     const displayNumbersHandler = (arrayOfNumbers = numbers, message = _) => {
       debugger;
       const joinNumbers = (acc, next) => _;
@@ -33,6 +35,8 @@
       alert(`${message}: ${allNumbersListed}`);
     };
 
+    // 2. A user can fill the array with as many numbers as they like
+    //  (beginning with zero, ending with userNumber - 1)
     const resetNumbersHandler = () => {
       debugger;
       const userInput = prompt(_);
@@ -53,6 +57,7 @@
       displayNumbersHandler(); // no arguments! this is correct like it is
     };
 
+    // 3. A user can see a list of all numbers greater than their input
     const greaterThanHandler = () => {
       debugger;
       const userInput = prompt(_);
@@ -71,6 +76,7 @@
       _(numbersGreaterThan, newMessage);
     };
 
+    // 4. A user can see a list of all numbers less than their input
     const lessThanHandler = () => {
       debugger;
       const userInput = _;
@@ -89,7 +95,7 @@
       _(numbersLessThan, newMessage);
     };
 
-
+    // 5. A user can see a list of all numbers divisible by their input
     const divisibleByHandler = () => {
       debugger;
       const userInput = _;
