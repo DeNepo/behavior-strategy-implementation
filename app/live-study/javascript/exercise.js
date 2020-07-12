@@ -2,7 +2,7 @@ import studyIn from './study-in.js'
 
 export default (() => {
   function Exercise(path, dirPath, userConfig = {}) {
-    this.language = 'html';
+    this.language = 'js';
     if (typeof path !== 'string') {
       throw new TypeError('path must be a string');
     };

@@ -32,8 +32,8 @@ export default class LiveStudy {
 
   static populate(data, path, config) {
     const Exercise = (!config.language
-      || config.language.toLowerCase() === 'javascript'
-      || config.language.toLowerCase() === 'js')
+      || config.language.toLowerCase().includes('javascript')
+      || config.language.toLowerCase().includes('js'))
       ? ExerciseJS
       : ExerciseHTML;
     const copy = Object.assign({}, data);

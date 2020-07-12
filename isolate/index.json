@@ -143,6 +143,18 @@
           "path": "/examples",
           "files": [
             {
+              "path": "/1-the-callstack.js"
+            },
+            {
+              "path": "/2-callstack-error-messages.js"
+            },
+            {
+              "path": "/3-functions-as-arguments.js"
+            },
+            {
+              "path": "/4-in-a-loop.js"
+            },
+            {
               "path": "/everying.js"
             },
             {
@@ -152,16 +164,7 @@
               "path": "/finding.js"
             },
             {
-              "path": "/functions-as-arguments.js"
-            },
-            {
-              "path": "/in-a-loop.js"
-            },
-            {
               "path": "/mapping.js"
-            },
-            {
-              "path": "/the-callstack.js"
             }
           ],
           "isExample": true
