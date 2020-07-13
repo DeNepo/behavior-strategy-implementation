@@ -27,7 +27,7 @@ const filter = (arr, callback) => {
 
 const argArray = [3, true, 'hi', '', 0];
 
-// Callback to check if a number is greater than 5
+// Callback to check if the value is a string
 const isAString = (val) => {
   return typeof val === 'string';
 };
@@ -37,7 +37,7 @@ const _1_actual = filter(argArray, isAString);
 console.assert(deepCompare(_1_actual, _1_expect), 'Test 1: all string values');
 
 
-// Callback to check if a value is a string
+// Callback to cast a value to Boolean
 const isTruthy = (val) => {
   return Boolean(val);
 };
