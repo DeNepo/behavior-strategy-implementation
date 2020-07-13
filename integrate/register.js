@@ -70,7 +70,7 @@ const register = function (dirPath) {
     }
   };
 
-  // if the folder contains no .js files, ignore it
+  // if the folder contains no .html files, ignore it
   const noExercises = files.length === 0 && dirs.length === 0;
   if (noExercises) {
     return null;
@@ -88,7 +88,7 @@ const register = function (dirPath) {
   if (dirs.length > 0) { virDir.dirs = dirs; }
   if (files.length > 0) {
     const readme = files
-      .find(fileObj => fileObj.path.toLowerCase() === '/readme.js')
+      .find(fileObj => fileObj.path.toLowerCase() === '/readme.html')
     if (readme) {
       virDir.files = files
         .filter(fileObj => fileObj !== readme);
@@ -103,7 +103,7 @@ const register = function (dirPath) {
 };
 
 
-console.log('\n--- registering .js files in ' + removeDirname(EXERCISES_DIR) + ' ---\n');
+console.log('\n--- registering .html files in ' + removeDirname(EXERCISES_DIR) + ' ---\n');
 
 // register the /exercises directory
 let root = true;

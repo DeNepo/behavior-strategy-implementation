@@ -149,7 +149,17 @@ Practice using Array Methods and Higher Order Functions
 - [ ] [A project board](https://github.com/user-name/repo-name/projects/X) with all issues moved to "Done"
 ```
 
-#### TBD after sunday class
+#### `favorite-words`
+
+> [Starter Code](https://home.hackyourfuture.be/students/weekly-assignments#projects)
+
+Collaboration!  This project should be completed in groups.  Generate a new repo for your team using [favorite-words](https://github.com/HackYourFutureBelgium/favorite-words) and have at it.  There are is no right or wrong development strategy, and there is no right or wrong user interface!  What matters is that you agree as a team, and that your plan is clearly communicated in your repository.
+
+_**Reverse Engineering**_
+
+This week's project does not have any tests, instead the objective is to practice _reverse engineering_.  There is a fully-working version of the project in `/demo` with  [obfuscated](https://en.wikipedia.org/wiki/Obfuscation_(software)) source code.  You can interact with the demo to understand how your scripts should behave, but will not be able to read the source code.
+
+You'll know the project is complete when it's impossible to tell if you're interacting with the demo or the code your team wrote.  Pay attention to details!
 
 :shipit:
 
