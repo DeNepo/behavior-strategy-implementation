@@ -10,12 +10,18 @@
  * @returns {number} the sum of all even numbers in the array
  */
 const sumEvenNumbers = (arr) => {
-  const isANumber = (entry) => typeof entry === 'number';
+  const isANumber = (entry) => {
+    return typeof entry === 'number';
+  };
   const allAreNumbers = arr.every(isANumber);
   if (!allAreNumbers) { throw new TypeError('arr is not all numbers'); }
 
-  const isEven = (entry) => entry % 2 === 0;
-  const sumNumbers = (sum, next) => sum + next;
+  const isEven = (entry) => {
+    return entry % 2 === 0;
+  };
+  const sumNumbers = (sum, next) => {
+    return sum + next;
+  };
 
   const allEvenNumbers = arr.filter(isEven);
   const sumOfEvens = allEvenNumbers.reduce(sumNumbers);

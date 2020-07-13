@@ -7,7 +7,9 @@ const deepCompare = (actual, expect) => actual === expect || Object.is(actual, e
  * @param {string} str - string to check for "!"
  * @returns {boolean} if str contains "!" or not
  */
-const isEnthusiastic = (str) => str.includes('!');
+const isEnthusiastic = (str) => {
+  return str.includes('!');
+};
 
 
 // an empty array returns an empty array

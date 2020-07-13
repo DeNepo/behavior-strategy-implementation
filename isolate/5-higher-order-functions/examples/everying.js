@@ -27,7 +27,9 @@ const every = (arr, callback) => {
 const argArray = [3, 2, null, 8, 'hi'];
 
 // are all values numbers?
-const isANumber = (val) => typeof val === 'number';
+const isANumber = (val) => {
+  return typeof val === 'number';
+};
 
 const _1_expect = false;
 const _1_actual = every(argArray, isANumber);
@@ -35,7 +37,9 @@ console.assert(deepCompare(_1_actual, _1_expect), 'Test 1');
 
 
 // are all values not boolean?
-const isNotBoolean = (val) => typeof val !== 'boolean';
+const isNotBoolean = (val) => {
+  return typeof val !== 'boolean';
+};
 
 const _2_expect = true;
 const _2_actual = every(argArray, isNotBoolean);

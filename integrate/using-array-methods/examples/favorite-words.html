@@ -24,7 +24,9 @@
 
     const displayWordsHandler = () => {
       debugger;
-      const joinStrings = (acc, next) => `${acc}\n${next}`;
+      const joinStrings = (acc, next) => {
+        return `${acc}\n${next}`
+      };
       const allWords = words.reduce(joinStrings, `your favorite words:`);
       alert(allWords);
     };
@@ -45,7 +47,10 @@
       if (userInput === null) {
         return;
       }
-      const foundWord = words.find((entry) => entry === userInput);
+      const foundWord = words
+        .find((entry) => {
+          return entry === userInput;
+        });
       if (foundWord === undefined) {
         alert(`you don't like ${userInput}`);
       } else {
@@ -60,7 +65,9 @@
         return;
       }
       words = words
-        .filter((entry) => entry !== userInput);
+        .filter((entry) => {
+          return entry !== userInput;
+        });
       displayWordsHandler();
     };
   </script>

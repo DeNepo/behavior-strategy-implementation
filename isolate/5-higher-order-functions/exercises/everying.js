@@ -7,7 +7,9 @@
  * @param {any} val
  * @returns {boolean}
  */
-const isFalsy = _;
+const isFalsy = (_) => {
+  return _;
+};
 
 
 // this works!  no need to change it

@@ -28,7 +28,9 @@ const filter = (arr, callback) => {
 const argArray = [3, true, 'hi', '', 0];
 
 // Callback to check if a number is greater than 5
-const isAString = (val) => typeof val === 'string';
+const isAString = (val) => {
+  return typeof val === 'string';
+};
 
 const _1_expect = ['hi', ''];
 const _1_actual = filter(argArray, isAString);
@@ -36,7 +38,9 @@ console.assert(deepCompare(_1_actual, _1_expect), 'Test 1: all string values');
 
 
 // Callback to check if a value is a string
-const isTruthy = (val) => Boolean(val);
+const isTruthy = (val) => {
+  return Boolean(val);
+};
 
 const _2_expect = [3, true, 'hi'];
 const _2_actual = filter(argArray, isTruthy);

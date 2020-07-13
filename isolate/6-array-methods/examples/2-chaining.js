@@ -10,9 +10,15 @@ const array = ['1', '2', 'x', '', '-6'];
 const expected = -3;
 
 // callbacks: the logic used for each step
-const castToNumber = (entry) => Number(entry);
-const isNotNaN = (entry) => !Number.isNaN(entry);
-const sumNumbers = (sum, next) => sum + next;
+const castToNumber = (entry) => {
+  return Number(entry);
+};
+const isNotNaN = (entry) => {
+  return !Number.isNaN(entry);
+};
+const sumNumbers = (sum, next) => {
+  return sum + next;
+};
 
 
 /* option 1: one variable per step with separated logic
@@ -47,8 +53,14 @@ console.assert(_2_test, 'Test option 2');
       callback logic can be harder to read than variable names
 */
 const _3_chainedInlineLogic = array
-  .map((entry) => Number(entry))
-  .filter((entry) => !Number.isNaN(entry))
-  .reduce((sum, next) => sum + next);
+  .map((entry) => {
+    return Number(entry);
+  })
+  .filter((entry) => {
+    return !Number.isNaN(entry);
+  })
+  .reduce((sum, next) => {
+    return sum + next;
+  });
 const _3_test = _3_chainedInlineLogic === expected;
 console.assert(_3_test, 'Test option 3');

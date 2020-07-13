@@ -9,10 +9,14 @@ const inALoop = (iterations, callback) => {
 };
 
 
-const logValue = (value) => console.log(value);
+const logValue = (value) => {
+  console.log(value);
+};
 inALoop(2, logValue);
 
 
-const bottlesOfMilk = (number) => console.log(`${number} bottles of milk`);
+const bottlesOfMilk = (number) => {
+  console.log(`${number} bottles of milk`);
+};
 inALoop(5, bottlesOfMilk);
 

@@ -5,7 +5,9 @@
  * @param {any} val
  * @returns {boolean}
  */
-const isFalsy = (val) => !Boolean(val);
+const isFalsy = (val) => {
+  return !Boolean(val);
+};
 
 
 // an empty array returns true

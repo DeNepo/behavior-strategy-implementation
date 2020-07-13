@@ -10,10 +10,18 @@ const assert = chai.assert;
  */
 const sumNumbery = (arr) => {
   // these work, you need to pass them to the right array methods
-  const isNotNaN = (entry) => !Number.isNaN(entry);
-  const sumNumbers = (acc, next) => acc + next;
-  const isString = (entry) => typeof entry === 'string';
-  const castToNumber = (entry) => Number(entry);
+  const isNotNaN = (entry) => {
+    return !Number.isNaN(entry);
+  };
+  const sumNumbers = (acc, next) => {
+    return acc + next;
+  };
+  const isString = (entry) => {
+    return typeof entry === 'string';
+  };
+  const castToNumber = (entry) => {
+    return Number(entry);
+  };
 
   // fill in the array methods and pass the correct logic
   const areAllStrings = arr._(_);

@@ -24,8 +24,11 @@
 
     const displayNumbersHandler = () => {
       debugger;
-      const joinNumbers = (acc, next) => `${acc}\n${String(next)}`;
-      const allNumbers = numbers.reduce(joinNumbers, `all numbers:`);
+      const joinNumbers = (acc, next) => {
+        return `${acc}\n${String(next)}`;
+      };
+      const allNumbers = numbers
+        .reduce(joinNumbers, `all numbers:`);
       alert(allNumbers);
     };
 
@@ -55,13 +58,19 @@
         return;
       }
 
-      numbers = numbers.filter((entry) => entry !== userNumber);
+      numbers = numbers
+        .filter((entry) => {
+          return entry !== userNumber;
+        });
       displayNumbersHandler();
     };
 
     const calculateAverageHandler = () => {
       debugger;
-      const sum = numbers.reduce((acc, next) => acc + next, 0);
+      const sum = numbers
+        .reduce((acc, next) => {
+          return acc + next, 0;
+        });
       const average = sum / numbers.length;
       alert(`the average is: ${average}`);
     };
