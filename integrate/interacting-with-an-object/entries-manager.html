@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset='utf-8'>
+  <title>Entries Manager</title>
+
+  <style>
+    .centered {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+  </style>
+
+  <script id='script-variables'>
+    const userEntries = {
+      wood: 'oak',
+      television: '>:)'
+    };
+  </script>
+
+  <script id='handlers'>
+    'use strict';
+
+    const displayEntriesHandler = (message = '_', object = _) => {
+      debugger;
+      const starter = message + ':';
+      const stringToDisplay = Object._(object)
+        .reduce((message, nextEntry) => {
+          const nextLine = nextEntry[_] + ': ' + nextEntry[_];
+          return _;
+        }, starter);
+      alert(stringToDisplay);
+    };
+
+    const resetHandler = () => {
+      debugger;
+      userEntries = _;
+      displayEntriesHandler();
+    };
+
+    const writeEntryHandler = () => {
+      debugger;
+      const key = prompt('');
+      if (_) { return; }
+
+      const newValue = prompt('');
+      if (_) { return; }
+
+      _[_] = _;
+
+      displayEntriesHandler();
+    };
+
+    const deleteEntryHandler = () => {
+      debugger;
+      const key = prompt('');
+      if (key === null) { return; }
+
+      const keyExists = Object._(userEntries)
+        .includes(key); // does the array include the exact string?
+
+      if (keyExists) {
+        delete _;
+        _();
+      } else {
+        alert(``);
+      }
+    };
+
+    const findKeyHandler = () => {
+      debugger;
+      const key = prompt('');
+      if (key === null) { return; }
+
+      const keyExists = Object._(_)
+        ._(key); // does the array include the exact string?
+
+      if (_) {
+        const foundEntry = ``;
+        alert(foundEntry);
+      } else {
+        alert(``);
+      }
+    };
+
+    const searchValuesHandler = () => {
+      debugger;
+      const query = prompt('');
+      if (query === null) { return; }
+
+      const matchingEntries = Object._(_)
+        ._((entry) => {
+          return entry[1]._(query); // does the string include this substring?
+        });
+      const searchResults = Object._(_);
+      displayEntriesHandler(``, _);
+    };
+  </script>
+</head>
+
+<body>
+
+  <main id='user interface' class='centered'>
+    <button onclick="writeEntryHandler()">write an entry</button> <br>
+    <button onclick="deleteEntryHandler()">delete an entry</button> <br>
+    <button onclick="searchValuesHandler()">search in values</button> <br>
+    <button onclick="findKeyHandler()">find by key</button> <br>
+    <br>
+    <button onclick="displayEntriesHandler()">display all userEntries</button> <br>
+    <button onclick="resetHandler()">reset entries</button>
+  </main>
+
+</body>
+
+</html>

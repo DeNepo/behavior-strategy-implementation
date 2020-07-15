@@ -2,7 +2,41 @@
   "path": "/",
   "dirs": [
     {
-      "path": "/1-reference-vs-value",
+      "path": "/01-arrays",
+      "dirs": [
+        {
+          "path": "/examples",
+          "files": [
+            {
+              "path": "/holding-many-things.js"
+            },
+            {
+              "path": "/setting-entries-by-index.js"
+            }
+          ],
+          "isExample": true
+        },
+        {
+          "path": "/exercises",
+          "files": [
+            {
+              "path": "/1-assert-one-array.js"
+            },
+            {
+              "path": "/2-write-one-array.js"
+            },
+            {
+              "path": "/3-assert-array-comparisons.js"
+            },
+            {
+              "path": "/4-write-second-array.js"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/02-reference-vs-value",
       "dirs": [
         {
           "path": "/examples",
@@ -39,7 +73,7 @@
       ]
     },
     {
-      "path": "/2-side-effects",
+      "path": "/03-side-effects",
       "dirs": [
         {
           "path": "/examples",
@@ -65,7 +99,7 @@
       ]
     },
     {
-      "path": "/3-about-testing",
+      "path": "/04-about-testing",
       "files": [
         {
           "path": "/1-assert.js"
@@ -91,7 +125,7 @@
       }
     },
     {
-      "path": "/4-for-of",
+      "path": "/05-for-of",
       "dirs": [
         {
           "path": "/examples",
@@ -137,7 +171,7 @@
       ]
     },
     {
-      "path": "/5-higher-order-functions",
+      "path": "/06-higher-order-functions",
       "dirs": [
         {
           "path": "/examples",
@@ -189,7 +223,7 @@
       ]
     },
     {
-      "path": "/6-array-methods",
+      "path": "/07-functional-array-methods",
       "dirs": [
         {
           "path": "/examples",
@@ -261,6 +295,159 @@
             },
             {
               "path": "/write-logic-reduce.js"
+            }
+          ],
+          "config": {
+            "buttons": []
+          }
+        }
+      ]
+    },
+    {
+      "path": "/08-objects",
+      "dirs": [
+        {
+          "path": "/examples",
+          "files": [
+            {
+              "path": "/1-key-value-pairs.js"
+            },
+            {
+              "path": "/2-dots-vs-brackets-access.js"
+            },
+            {
+              "path": "/3-computed-property-names.js"
+            },
+            {
+              "path": "/4-es6-shorthand.js"
+            },
+            {
+              "path": "/5-all-ways-to-assign.js"
+            },
+            {
+              "path": "/6-object-destructuring.js"
+            },
+            {
+              "path": "/7-all-the-ways-to-read.js"
+            }
+          ],
+          "isExample": true
+        },
+        {
+          "path": "/exercises",
+          "files": [
+            {
+              "path": "/bracket-notation.js"
+            },
+            {
+              "path": "/computed-properties.js"
+            },
+            {
+              "path": "/destructuring.js"
+            },
+            {
+              "path": "/dot-notation.js"
+            },
+            {
+              "path": "/es6-shorthand.js"
+            }
+          ],
+          "config": {
+            "buttons": []
+          }
+        }
+      ]
+    },
+    {
+      "path": "/09-for-in",
+      "dirs": [
+        {
+          "path": "/examples",
+          "files": [
+            {
+              "path": "/1-for-in.js"
+            },
+            {
+              "path": "/2-all-keys.js"
+            },
+            {
+              "path": "/2-all-values.js"
+            },
+            {
+              "path": "/3-entries-as-arrays.js"
+            },
+            {
+              "path": "/3-entries-as-objects.js"
+            },
+            {
+              "path": "/from-entry-arrays.js"
+            }
+          ],
+          "isExample": true
+        },
+        {
+          "path": "/exercises",
+          "files": [
+            {
+              "path": "/1-all-defined.js"
+            },
+            {
+              "path": "/2-keep-truthy-entries.js"
+            },
+            {
+              "path": "/3-swapem.js"
+            }
+          ],
+          "config": {
+            "buttons": []
+          }
+        }
+      ]
+    },
+    {
+      "path": "/10-object-transformations",
+      "dirs": [
+        {
+          "path": "/examples",
+          "files": [
+            {
+              "path": "/1-keys.js"
+            },
+            {
+              "path": "/2-values.js"
+            },
+            {
+              "path": "/3-entries.js"
+            },
+            {
+              "path": "/4-from-entries.js"
+            },
+            {
+              "path": "/capitalize-menagerie.js"
+            }
+          ],
+          "isExample": true
+        },
+        {
+          "path": "/exercises",
+          "files": [
+            {
+              "path": "/1-all-defined.js"
+            },
+            {
+              "path": "/2-remove-private-keys.js"
+            },
+            {
+              "path": "/3-truthy-values-from-entries.js"
+            },
+            {
+              "path": "/3-truthy-values-reduce.js"
+            },
+            {
+              "path": "/4-swapem-from-entries.js"
+            },
+            {
+              "path": "/4-swapem-reduce.js"
             }
           ],
           "config": {

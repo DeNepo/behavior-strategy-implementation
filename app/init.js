@@ -46,6 +46,9 @@ window.onload = async () => {
       } else {
         exercise = findFirstExercise(liveStudyApp.populated);
       }
+      if (!exercise.load) {
+        exercise = findFirstExercise(liveStudyApp.populated);
+      }
       exercise.load((err, code) => {
         history.replaceState(null, "", `?path=${encodeURIComponent(exercise.path.abs)}`);
         exercise.monacoModel.setValue(code);

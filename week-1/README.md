@@ -59,8 +59,9 @@ The topics you should focus on during your study this week.
 
 - [Isolate](../isolate/index.html)
   - Reference vs. Value
-  - `for ... of` (examples)
+  - Arrays
   - Side Effects (examples)
+  - `for ... of` (examples)
   - About Testing
 - Arrays
   - [JS Tutor Video](https://www.youtube.com/watch?v=W1NTK09o-vM)
@@ -69,6 +70,8 @@ The topics you should focus on during your study this week.
   - [javascript.info](https://javascript.info/array) (just the beginning)
 - Reference vs. Value
   - [Academind](https://www.youtube.com/watch?v=9ooYYRLdg_g)
+  - [Mosh video](https://www.youtube.com/watch?v=fD0t_DKREbE)
+  - [CodeBurst article](https://codeburst.io/javascript-passing-by-value-vs-reference-explained-in-plain-english-8d00fd06a47c)
   - [Just JavaScript](https://github.com/HackYourFutureBelgium/just-javascript/tree/master/06-Equality-of-Values)
   - [Janke Learning](https://github.com/janke-learning/reference-vs-value)
   - [javascript.info](https://javascript.info/object-copy#comparison-by-reference)
@@ -139,6 +142,21 @@ Helpful code to study:
   - [dots vs brackets](https://github.com/janke-learning/dots-vs-brackets)
   - [`for in`](https://javascript.info/object#the-for-in-loop)
 - [Controlling Logical Flow](https://shawnr.gitbooks.io/practical-introduction-to-javascript/controlling-logical-flow/)
+
+### Reading Code
+
+- [Helpful Links from _Behavior, Strategy, Implementation](https://github.com/HackYourFutureBelgium/behavior-strategy-implementation#helpful-links)
+- [dinanathsj29/javascript-exercise-beginners](https://github.com/dinanathsj29/javascript-exercise-beginners)
+  - Finished solutions to study
+  - Multiple solutions to the same problem
+- [KBPsystem777](https://github.com/KBPsystem777/JSexercises)
+
+#### Exercise Repos
+
+- [devleague/js-functions](https://github.com/devleague/js-functions/) (easy practice)
+- [dinanathsj29/javascript-exercise-beginners](https://github.com/dinanathsj29/javascript-exercise-beginners)
+  - Finished solutions to study
+  - Multiple solutions to the same problem
 
 #### Endless Practice
 

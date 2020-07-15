@@ -2,6 +2,18 @@
   "path": "/",
   "dirs": [
     {
+      "path": "/interacting-with-an-object",
+      "files": [
+        {
+          "path": "/entries-manager-demo.html",
+          "isExample": true
+        },
+        {
+          "path": "/entries-manager.html"
+        }
+      ]
+    },
+    {
       "path": "/using-array-methods",
       "dirs": [
         {
@@ -37,6 +49,9 @@
   "files": [
     {
       "path": "/user-input-in-an-array.html"
+    },
+    {
+      "path": "/user-input-in-an-object.html"
     }
   ],
   "config": {
