@@ -102,6 +102,12 @@ Using objects to store data in a project.
 - [Create, Update and Loop](https://www.freecodecamp.org/news/javascript-array-of-objects-tutorial-how-to-create-update-and-loop-through-objects-using-js-array-methods/) (article)
 - [The Coding Train](https://www.youtube.com/watch?v=fBqaA7zRO58) (video)
 
+#### Recursion
+
+- [FunFunFunction](https://www.youtube.com/watch?v=k7-N8R0-KY4&list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84&index=7)
+- [javascriptutorial](https://www.javascripttutorial.net/javascript-recursive-function/)
+- [Beau](https://www.youtube.com/watch?v=vPEJSJMg4jY)
+
 ### Reading Code
 
 - [Helpful Links from _Behavior, Strategy, Implementation](https://github.com/HackYourFutureBelgium/behavior-strategy-implementation#helpful-links)
