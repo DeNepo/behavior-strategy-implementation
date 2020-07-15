@@ -40,7 +40,7 @@ Manipulating data stored in Objects
 
 ### JavaScript
 
-- [Isolate](./index.html)
+- [Isolate](../isolate/index.html)
   - Objects (examples & exercises)
   - For ... In (examples)
   - Object Transformations (examples)
