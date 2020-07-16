@@ -161,14 +161,41 @@ Using objects to store data in a project.
 ```md
 - [ ] [repo](https://github.com/user-name/project-name) with a complete README
 - [ ] [live demo](https://user-name.github.io/project-name)
+- [ ] [user-stories](https://github.com/user-name/project-name/tree/master/user-stories.md)
 - [ ] [development-strategy](https://github.com/user-name/project-name/tree/master/development-strategy.md)
 - [ ] [One branch per step in `development-strategy.md`](https://github.com/user-name/repo-name/network)
-- [ ] [One closed Issue per step in `development-strategy.md`](https://github.com/user-name/repo-name/issues?q=is%3Aissue+is%3Aclosed)
-- [ ] [One closed PR per step in `development-strategy.md`](https://github.com/user-name/repo-name/pulls?q=is%3Apr+is%3Aclosed)
+- [ ] [One closed issue per task](https://github.com/user-name/repo-name/issues?q=is%3Aissue+is%3Aclosed) (you can have more than task per development step!)
+- [ ] [One closed PR per task issue](https://github.com/user-name/repo-name/pulls?q=is%3Apr+is%3Aclosed)
 - [ ] [A project board](https://github.com/user-name/repo-name/projects/X) with all issues moved to "Done"
 ```
 
-#### coming soon
+#### Impress yourselves!
+
+> [Open-Ended](https://home.hackyourfuture.be/students/weekly-assignments#projects)
+
+You and your team are on your own this week.  Using [this boilerplate repository](https://github.com/HackYourFutureBelgium/testing-module-project-boilerplate) as a starting point, build something to impress yourselves.  Anything goes.  Remember just a month ago when you were still uncomfortable making a pull request? That was sooo last month! Take a minute to realize that you might not have learned everything you wanted to, but you've still learned more than you thought you would ;)
+
+The most difficult part of this week will be coming up with your _project requirements_ and _project scope_.  You and your team will be writing your own user stories this week which means it's up to you how large or small, complex or simple your project is.  It will be better practice to plan a simple project you can finish, than a mind-blowing project you can't.
+
+A good way to manage your project's scope is to plan the user stories first and then stick to them. Focusing on the end user and the project use cases will help to keep the big picture in mind, making it easier to notice when you're going too far into the code.  For this reason, you will be required to write two planning documents this week:
+
+1. `user-stories.md`: decide as a team what a user will (and won't!) be able to do on your website. Don't move on to #2 until you have finalized your user stories
+1. `development-strategy.md`: write a plan for how to implement these user stories
+
+Here are some links and search results to help you get started planning your projects:
+
+- What is project scope, and how to plan it
+  - [be SMART](https://www.fool.com/the-blueprint/project-scope/)
+  - [6 steps](https://www.potential.com/articles/project-scope/)
+  - [cio.com](https://www.cio.com/article/3542776/what-is-project-scope-defining-and-outlining-project-success.html)
+  - [clickup.com](https://clickup.com/blog/project-scope/)
+- [What about Project Scope Management?](https://www.youtube.com/watch?v=cXAL56knUpE)
+- [Requirements Gathering](https://www.brighthubpm.com/agile/123103-assembling-a-toolbox-for-agile-requirements/)
+- [Scope Creep](https://duckduckgo.com/?q=scope+creep&atb=v214-1&ia=web)
+- [Scope Statement Statement](https://duckduckgo.com/?q=project+scope+statement&atb=v214-1&ia=web)
+- [study.hyf.be/collaborating/agile-development](https://study.hackyourfuture.be/collaborating/agile-development)
+
+
 
 :shipit:
 
