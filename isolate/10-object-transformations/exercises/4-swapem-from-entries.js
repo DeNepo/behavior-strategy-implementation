@@ -9,7 +9,8 @@ const assert = chai.assert;
  */
 const swapem = (obj) => {
 
-  const swappedEntries = Object._(_)
+  const objEntries = Object._(_);
+  const swappedEntries = objEntries
     .map((entry) => {
       const key = _;
       const value = _;

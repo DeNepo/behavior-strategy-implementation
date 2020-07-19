@@ -14,12 +14,13 @@ const assert = chai.assert;
  * @returns {Array} a copy of the array with one entry modified
  */
 const replaceEntry = (arr, index, newEntry) => {
-  if (index <= 0) {
+  if (index < 0) {
     return 'index cannot be less than 0';
   }
 
-  arr[index] === newEntry;
-  return arr;
+  const copy = [...arr];
+  copy[index] = newEntry;
+  return copy;
 };
 
 
@@ -27,35 +28,46 @@ const replaceEntry = (arr, index, newEntry) => {
 // can you read the tests & test results to figure out what the function actually does?
 //  be sure to expand all the failing logs in the console!
 describe('replaceEntry: replaces a specific entry in an array', () => {
-  it('the index cannot be less than 0', () => {
-    const expected = 'index cannot be less than 0';
-    const actual = replaceEntry(['a', 'b', 'c'], -1, 'x');
-    assert.strictEqual(actual, expected);
+  describe('replaceEntry checks for a valid index', () => {
+    it('the index cannot be less than 0', () => {
+      const expected = 'index cannot be less than 0';
+      const actual = replaceEntry(['a', 'b', 'c'], -1, 'x');
+      assert.strictEqual(actual, expected);
+    });
+    it('the index can be 0', () => {
+      const expected = ['x', 'b', 'c'];
+      const actual = replaceEntry(['a', 'b', 'c'], 0, 'x');
+      assert.deepStrictEqual(actual, expected);
+    });
   });
-  it('the index can be 0', () => {
-    const expected = ['x', 'b', 'c'];
-    const actual = replaceEntry(['a', 'b', 'c'], 0, 'x');
-    assert.deepStrictEqual(actual, expected);
+  describe('replaceEntry replaces the correct entry', () => {
+    it('it can replace the first value', () => {
+      const expected = ['x', 'b', 'c'];
+      const actual = replaceEntry(['a', 'b', 'c'], 0, 'x');
+      assert.deepStrictEqual(actual, expected);
+    });
+    it('it can add a new value at 1', () => {
+      const expected = ['a', 'x', 'c'];
+      const actual = replaceEntry(['a', 'b', 'c'], 1, 'x');
+      assert.deepStrictEqual(actual, expected);
+    });
+    it('it can add the same value at 1', () => {
+      const expected = ['a', 'b', 'c'];
+      const actual = replaceEntry(['a', 'b', 'c'], 1, 'b');
+      assert.deepStrictEqual(actual, expected);
+    });
+    it('it can replace the last value', () => {
+      const expected = ['a', 'b', 'x'];
+      const actual = replaceEntry(['a', 'b', 'c'], expected.length - 1, 'x');
+      assert.deepStrictEqual(actual, expected);
+    });
   });
-  it('it can add a new value at 1', () => {
-    const expected = ['a', 'x', 'c'];
-    const actual = replaceEntry(['a', 'b', 'c'], 1, 'x');
-    assert.deepStrictEqual(actual, expected);
-  });
-  it('it can add the same value at 1', () => {
-    const expected = ['a', 'b', 'c'];
-    const actual = replaceEntry(['a', 'b', 'c'], 1, 'b');
-    assert.deepStrictEqual(actual, expected);
-  });
-  it('it can replace the last value', () => {
-    const expected = ['a', 'x', 'c'];
-    const actual = replaceEntry(['a', 'b', 'c'], expected.length - 1, 'x');
-    assert.deepStrictEqual(actual, expected);
-  });
-  it('it does not modify the original array', () => {
-    const argArray = ['a', 'b', 'c'];
-    replaceEntry(argArray, 1, 'x');
-    assert.deepStrictEqual(argArray, ['a', 'b', 'c']);
+  describe('replaceEntry has no side-effects', () => {
+    it('it does not modify the argument array', () => {
+      const argArray = ['a', 'b', 'c'];
+      replaceEntry(argArray, 1, 'x');
+      assert.deepStrictEqual(argArray, ['a', 'b', 'c']);
+    });
   });
 });
 

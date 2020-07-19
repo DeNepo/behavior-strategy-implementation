@@ -9,7 +9,8 @@ const assert = chai.assert;
  */
 const swapem = (obj) => {
 
-  const swapped = Object._(_)
+  const objEntries = Object._(_);
+  const swappedEntries = objEntries
     ._((entry) => {
       const key = _;
       const value = _;
@@ -19,6 +20,7 @@ const swapem = (obj) => {
         _;
       }
     })
+  const swappedObj = swappedEntries
     ._((newObj, entry) => {
       const key = _;
       const value = _;
@@ -26,7 +28,7 @@ const swapem = (obj) => {
       return _;
     }, _);
 
-  return swapped;
+  return swappedObj;
 };
 
 
