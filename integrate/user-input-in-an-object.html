@@ -16,7 +16,7 @@
   </style>
 
   <script id='script-variables'>
-    const userEntries = {};
+    let userEntries = {};
   </script>
 
   <script id='handlers'>
@@ -76,7 +76,6 @@
 
       const keyExists = Object.keys(userEntries)
         .includes(key); // does the array include this exact string?
-
 
       if (keyExists) {
         delete userEntries[key];
