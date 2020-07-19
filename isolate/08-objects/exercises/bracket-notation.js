@@ -21,7 +21,7 @@ describe('bracket notation', () => {
     };
     obj[_] = _;
     obj['flying'] = _;
-    expect(object.flying).to.eql('crane');
+    expect(obj.flying).to.eql('crane');
     expect(obj.running).to.eql(fastAnimal);
     expect(obj[water]).to.eql('mackerel')
   });
