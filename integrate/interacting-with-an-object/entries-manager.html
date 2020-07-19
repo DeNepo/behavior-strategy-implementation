@@ -29,8 +29,8 @@
       debugger;
       const starter = message + ':';
       let stringToDisplay = starter;
-      for (const _ in userEntries) {
-        const nextLine = ` ${_}: ${userEntries[_]}`;
+      for (const _ in object) {
+        const nextLine = ` ${_}: ${object[_]}`;
         stringToDisplay += '\n' + nextLine;
       }
       alert(stringToDisplay);
