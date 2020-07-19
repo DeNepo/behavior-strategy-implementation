@@ -28,11 +28,11 @@
       console.log('-- action: display values --');
       console.log('userEntries:', typeof userEntries, '\n', userEntries);
 
-      const stringToDisplay = Object.entries(userEntries)
-        .reduce((message, nextEntry) => {
-          const nextLine = nextEntry[0] + ': ' + nextEntry[1];
-          return message + '\n' + nextLine;
-        }, 'all entries:');
+      let stringToDisplay = 'all entries:';
+      for (const key in userEntries) {
+        const nextLine = ` ${key}: ${userEntries[key]}`;
+        stringToDisplay += '\n' + nextLine;
+      }
       console.log('stringToDisplay:', typeof stringToDisplay, '\n', stringToDisplay);
 
       alert(stringToDisplay);

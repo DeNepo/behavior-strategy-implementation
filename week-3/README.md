@@ -74,8 +74,8 @@ Iterating over objects using `for ... in` loops & object transformations.
 
 ### Isolate
 
-Comparing `for ... in` loops to object transformation methods.
-- [For In & Object Transformations](../isolate/index.html)
+Using `for ... in` loops.
+- [For In](../isolate/index.html)
 
 ### Integrate
 
