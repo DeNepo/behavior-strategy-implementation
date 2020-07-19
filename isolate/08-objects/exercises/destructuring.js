@@ -8,7 +8,7 @@ describe('destructuring', () => {
       wet: _,
       dry: 'bread'
     };
-    expect(obj._).to.eql(dry);
+    expect(_).to.eql('bread');
     expect(wet).to.eql('soup');
   });
   it('a menagerie', () => {
