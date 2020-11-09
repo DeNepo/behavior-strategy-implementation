@@ -1,4 +1,4 @@
-# Testing
+# Behavior, Strategy, Implementation
 
 [<< Week 3](./week-3/README.md) | Main Page | [Week 1 >>](./week-1/README.md)
 
@@ -6,6 +6,10 @@ All code is guilty until proven innocent.
 
 > Program testing can be a very effective way to show the presence of bugs, but is hopelessly inadequate for showing their absence.
 > - [Edsger Dijkstra](https://en.wikipedia.org/wiki/Edsger_W._Dijkstra)
+
+- Behavior: What does code do? What are it’s arguments and it’s return value? How could you use it in a program? Behavior is checked by tests
+- Strategy: How could you transform the arguments to the return value in small steps, focusing on the data not the code. This is the realm of flow charts, diagrams, and pseudocode.
+- Implementation: Which language features and which lines of code can you use to make your strategy a reality?
 
 ## Contents
 
