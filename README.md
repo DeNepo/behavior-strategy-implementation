@@ -1,11 +1,9 @@
-# Testing
+# Behavior, Strategy, Implementation
 
 [<< Week 3](./week-3/README.md) | Main Page | [Week 1 >>](./week-1/README.md)
 
-All code is guilty until proven innocent.
-
-> Program testing can be a very effective way to show the presence of bugs, but is hopelessly inadequate for showing their absence.
-> - [Edsger Dijkstra](https://en.wikipedia.org/wiki/Edsger_W._Dijkstra)
+> Be creative while inventing ideas, but be disciplined while implementing them.
+> - [Amit Kalantri](https://amitkalantri.com/tag/quotes-about-creativity/)
 
 ## Contents
 
