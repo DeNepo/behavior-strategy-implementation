@@ -5,6 +5,11 @@
 > Be creative while inventing ideas, but be disciplined while implementing them.
 > - [Amit Kalantri](https://amitkalantri.com/tag/quotes-about-creativity/)
 
+- Behavior: What does your code do? What are it’s arguments and it’s return value? How could you use it in a program? Behavior is checked by tests
+- Strategy: How could you go from initial data to final result in small steps, focusing on the data not the lines code. This is the realm of flow charts, diagrams, and pseudocode.
+- Implementation: Which language features and which lines of code can you use to make your strategy a reality?
+
+
 ## Contents
 
 - [Learning Objectives](#learning-objectives)
