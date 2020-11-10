@@ -1,0 +1,7 @@
+{
+  "study": {
+    "append": [
+      "lib/deep-compare.js"
+    ]
+  }
+}
