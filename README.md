@@ -1,7 +1,5 @@
 # Behavior, Strategy, Implementation
 
-[<< Week 3](./week-3/README.md) | Main Page | [Week 1 >>](./week-1/README.md)
-
 > Be creative while inventing ideas, but be disciplined while implementing them.
 > - [Amit Kalantri](https://amitkalantri.com/tag/quotes-about-creativity/)
 
@@ -140,7 +138,7 @@ Helpful resources for this module
 
 ## Repos of Exercises
 
-- [Reading Codewars](https://github.com/HackYourFutureBelgium/reading-codewars)
+- [Reading Codewars](https://github.com/HackYourFutureBelgium/reading-codewars) (important!)
 - [Document and Pass](https://github.com/HackYourFutureBelgium/document-and-pass)
 
 </details>
