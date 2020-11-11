@@ -34,9 +34,9 @@
     - `$ npm install -g study-lenses` (if you do not have it already)
     - `$ npm update -g study-lenses` (if you already have it installed)
 2. Clone this repository
-    - `$ git clone git@github.com:HackYourFutureBelgium/debugging.git`
+    - `$ git clone git@github.com:HackYourFutureBelgium/behavior-strategy-implementation.git`
 3. `cd` into the repository
-    - `$ cd debugging`
+    - `$ cd behavior-strategy-implementation`
 4. Open the repository using `study`
     - `$ study`
 5. The material will open in your default browser, you're good to go!
@@ -47,7 +47,7 @@
 >
 > follow the instructions in [this StackOverflow answer](https://stackoverflow.com/a/63424744), that should take care of it ; )
 
-[TOP](#debugging)
+[TOP](#behavior-strategy-implementation)
 
 ---
 
@@ -61,7 +61,13 @@
 - Practice [Pair Programming](https://study.hackyourfuture.be/collaborating/pair-programming): two people, one computer.
 - Take a look through the [Learning From Code](https://study.hackyourfuture.be/learning/learning-from-code) guide for more study tips
 
-[TOP](#debugging)
+Not all assignments are created equal. These 3 emoji's will help you figure out how to spend your study time as effectively as possible.
+
+- 🥚 `:egg:` - these assignments are required, they cover the base skills you'll need to move on.
+- 🐣 `:hatching_chick:` - do your best to start these exercises. you don't need to finish or master them (yet) but getting the main idea will be helpful in coming weeks
+- 🐥 `:hatched_chick:` - Have you finished all the 🥚's and started all the 🐣's? push yourself with these challenges!
+
+[TOP](#behavior-strategy-implementation)
 
 ---
 
@@ -122,7 +128,7 @@ What can you expect to learn in this module?
 <br>
 
 
-[TOP](#debugging)
+[TOP](#behavior-strategy-implementation)
 
 ---
 
@@ -136,20 +142,123 @@ Helpful resources for this module
 
 > [study.hackyourfuture.be/javascript](https://study.hackyourfuture.be/javascript)
 
-## Repos of Exercises
+### Exercises & Practice
 
-- [Reading Codewars](https://github.com/HackYourFutureBelgium/reading-codewars) (important!)
-- [Document and Pass](https://github.com/HackYourFutureBelgium/document-and-pass)
+- 🥚,🐣,🐥: [Reading Codewars](https://github.com/HackYourFutureBelgium/reading-codewars) (important!)
+- 🥚: [Document and Pass](https://github.com/HackYourFutureBelgium/document-and-pass)
+- Study Lense Exercises
+  - 🥚: [./isolate](./isolate): Practice core JavaScript without any user input or HTML/CSS
+  - 🥚: [./integrate](./integrate): Learn how to integrate JS into simple projects using HTML & CSS
+  - 🐣: `./function-design`: _coming soon_
+  - 🐣: [./write-tests](./write-tests): Write tests for a working function.  Practice reading code and describing it's _behavior_ with unit tests
+  - 🐣: [./pass-tests](./pass-tests): Write multiple solutions to the same set of tests -> same _behavior_, different _strategies_ and _implementation_
+  - 🐥: `./using-errors`: _coming soon_
+  - 🐥: [./koans](./koans): Explore the JS language by completing code and writing unit tests
+- 🐣: [fuzz testing](https://hackyourfuturebelgium.github.io/fuzz)
+- 🐥: More Repos of Exercises:
+  - [JavaScript-Koans](https://github.com/HackYourFutureBelgium/JavaScript-Koans/tree/master/src) (1-4)
+  - [Functions and Arrays](https://github.com/ironhack-labs/lab-javascript-functions-and-arrays/)
+  - [Advanced Collection Methods](https://github.com/ironhack-labs/lab-javascript-advanced-collection-methods)
+  - [Native Array Methods](https://github.com/gSchool/native-array-methods-exercises/)
+  - [clue](https://github.com/ironhack-labs/lab-javascript-clue/)
+- [edabit](https://edabit.com/) (more endless practice)
+
+> Are we missing a great set of exercises? Send a PR!
+
+### Reading Code
+
+- [Code Reading Exercises](https://github.com/neontribe/code-reading-club/blob/trunk/exercises.md)
+- [Learning from Code](https://study.hackyourfuture.be/learning/learning-from-code)
+- [Links from `reading-codewars`](https://github.com/HackYourFutureBelgium/behavior-strategy-implementation#helpful-links)
+- More code to read
+  - [dinanathsj29/javascript-exercise-beginners](https://github.com/dinanathsj29/javascript-exercise-beginners)
+  - [KBPsystem777](https://github.com/KBPsystem777/JSexercises)
+
+### About Testing
+
+- FunFunFunction:
+  1. [Writing tests for personal projects](https://www.youtube.com/watch?v=ib2Pt9_zciA)
+  1. [Why Unit Tests?](https://www.youtube.com/watch?v=Eu35xM76kKY)
+  1. [Your First Tests](https://www.youtube.com/watch?v=XsFQEUP1MxI)
+- Oliverjam
+  - [roman-numeral-tdd-codealong](https://github.com/oliverjam/roman-numeral-tdd-codealong)
+  - [learn-unit-testing](https://github.com/oliverjam/learn-unit-testing)
+
+### JS References & Tutorials
+
+#### Reference vs. Values
+
+- [Academind](https://www.youtube.com/watch?v=9ooYYRLdg_g)
+- [Mosh video](https://www.youtube.com/watch?v=fD0t_DKREbE)
+- [CodeBurst article](https://codeburst.io/javascript-passing-by-value-vs-reference-explained-in-plain-english-8d00fd06a47c)
+- [Just JavaScript](https://github.com/HackYourFutureBelgium/just-javascript/tree/master/06-Equality-of-Values)
+- [Janke Learning](https://github.com/janke-learning/reference-vs-value)
+- [javascript.info](https://javascript.info/object-copy#comparison-by-reference)
+
+#### Arrays
+
+- [JS Tutor Video](https://www.youtube.com/watch?v=W1NTK09o-vM)
+- [Coding with Mosh](https://www.youtube.com/watch?v=oigfaZ5ApsM)
+- [30 Days of JavaScript](https://github.com/Asabeneh/30DaysOfJavaScript/blob/master/05_Day/05_day_arrays.md) (stop at array methods)
+- [javascript.info](https://javascript.info/array) (just the beginning)
+- `for of` loops
+  - [javascript.info](https://javascript.info/array#loops)
+  - [Coding Train](https://www.youtube.com/watch?v=Y8sMnRQYr3c)
+- Higher Order Functions
+  - [FunFunFunction](https://medium.com/humans-create-software/a-dirt-simple-introduction-to-higher-order-functions-in-javascript-b33bf9e19056)
+  - [The Coding Train](https://www.youtube.com/watch?v=H4awPsyugS0)
+  - [Traversy](https://www.youtube.com/watch?v=rRgD1yVwIvE)
+  - [damcosset](https://dev.to/damcosset/higher-order-functions-in-javascript-4j8b)
+- Array Methods
+  - [javascript.info](https://javascript.info/array-methods)
+  - FunFun: [Map](https://www.youtube.com/watch?v=bCqtb-Z5YGQ&list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84&index=2), [Reduce Basics](https://www.youtube.com/watch?v=Wl98eZpkp-c&list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84&index=3)
+  - [Una Kravets](https://css-tricks.com/an-illustrated-and-musical-guide-to-map-reduce-and-filter-array-methods/)
+
+#### Objects
+
+- [javascript.info](https://javascript.info/object)
+- [Just JavaScript](https://github.com/HackYourFutureBelgium/just-javascript/tree/master/07-Properties)
+- [dots vs brackets](https://www.youtube.com/watch?v=7lQ31dJEYoM) (video)
+- [dots vs brackets](https://github.com/janke-learning/dots-vs-brackets) (example)
+- `for ... in`
+  - [javascript.info](https://javascript.info/object#the-for-in-loop)
+  - [`for in`, vs `for of`](https://alligator.io/js/for-of-for-in-loops/)
+  - [a video](https://www.youtube.com/watch?v=prl73KRkB34)
+  - [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in)
+  - [w3schools](https://www.w3schools.com/jsref/jsref_forin.asp)
+- Object Transformations
+  - [tutorialcup](https://www.tutorialcup.com/javascript/object-to-array-in-javascript.htm)
+  - [chrisburgin](https://medium.com/chrisburgin/javascript-converting-an-object-to-an-array-94b030a1604c)
+  - [steve griffith](https://www.youtube.com/watch?v=VmicKaGcs5g) (video)
+  - [all things javascript](https://www.youtube.com/watch?v=A0g7sga28Zg) (video)
+  - [stackoverflow](https://stackoverflow.com/questions/38824349/how-to-convert-an-object-to-an-array-of-key-value-pairs-in-javascript)
+- Arrays of Objects
+  - [short, sweet, with a loop](https://www.youtube.com/watch?v=ivNWS9s7vhA) (video)
+  - [Sorting an Array of Objects](https://www.youtube.com/watch?v=0d76_2sksWY) (video)
+  - [another Sorting](https://flaviocopes.com/how-to-sort-array-of-objects-by-property-javascript/) (video+article)
+  - [Search from Array of Objects](https://www.youtube.com/watch?v=US63Q6AL0GI) (video)
+  - [Create, Update and Loop](https://www.freecodecamp.org/news/javascript-array-of-objects-tutorial-how-to-create-update-and-loop-through-objects-using-js-array-methods/) (article)
+  - [The Coding Train](https://www.youtube.com/watch?v=fBqaA7zRO58) (video)
+
+#### Recursion
+
+- [FunFunFunction](https://www.youtube.com/watch?v=k7-N8R0-KY4&list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84&index=7)
+- [javascriptutorial](https://www.javascripttutorial.net/javascript-recursive-function/)
+- [Beau](https://www.youtube.com/watch?v=vPEJSJMg4jY)
 
 </details>
 <br>
 
-[TOP](#debugging)
+[TOP](#behavior-strategy-implementation)
 
 ---
 
 ## Week 1
 
+- Reference vs. Value & side-effects
+- Testing: `describe`, `it` and `chai`
+- Using arrays
+- Connecting HTML/CSS with JavaScript
 
 <details>
 <summary>expand/collapse</summary>
@@ -157,23 +266,40 @@ Helpful resources for this module
 
 ### Before Class
 
-https://github.com/HackYourFutureBelgium/reading-codewars
-
-#### Software Installations
-
-
-#### Coding Prep
+- Reference vs. Value
+  - [Academind](https://www.youtube.com/watch?v=9ooYYRLdg_g)
+  - [Mosh video](https://www.youtube.com/watch?v=fD0t_DKREbE)
+  - [CodeBurst article](https://codeburst.io/javascript-passing-by-value-vs-reference-explained-in-plain-english-8d00fd06a47c)
+  - [Just JavaScript](https://github.com/HackYourFutureBelgium/just-javascript/tree/master/06-Equality-of-Values)
+- Isolate (examples):
+  - `arrays`
+  - `reference-vs-value`
+  - `about-testing`
+  - `for-of`
+- [Read the `reading-codewars` README](https://github.com/HackYourFutureBelgium/reading-codewars)
 
 
 ### During Class
 
 #### Before Break
 
+- Isolate:
+  - `reference-vs-value`
+  - `side-effects`
+
 #### After Break
 
+- Isolate:
+  - `for-of`
+- Integrate:
+  - `user-input-in-arrays`
+- Introduction to _Reading Codewars_
 
 ### After Class
 
+> Group Project
+
+_coming soon_
 
 ```markdown
 - [ ] [repo](https://github.com/_/_) (with a complete README)
@@ -186,16 +312,16 @@ https://github.com/HackYourFutureBelgium/reading-codewars
 - [ ] [one closed PR per step](https://github.com/_/_/pulls)
 ```
 
-
 </details>
 <br>
 
-[TOP](#debugging)
+[TOP](#behavior-strategy-implementation)
 
 ---
 
 ## Week 2
 
+Higher-Order Functions and Functional Array Methods
 
 <details>
 <summary>expand/collapse</summary>
@@ -203,6 +329,15 @@ https://github.com/HackYourFutureBelgium/reading-codewars
 
 ### Before Class
 
+- The Coding Train: [Higher-Order Functions](https://www.youtube.com/watch?v=H4awPsyugS0)
+- FunFunFunction:
+  - [Higher-Order Functions](https://medium.com/humans-create-software/a-dirt-simple-introduction-to-higher-order-functions-in-javascript-b33bf9e19056)
+  - [Map](https://www.youtube.com/watch?v=bCqtb-Z5YGQ&list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84&index=2)
+  - [Reduce Basics](https://www.youtube.com/watch?v=Wl98eZpkp-c&list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84&index=3)
+- Isolate (examples):
+  - `the-callstack`
+  - `higher-order-functions`
+  - `functional-array-methods`
 
 ### During Class
 
@@ -217,13 +352,14 @@ https://github.com/HackYourFutureBelgium/reading-codewars
 </details>
 <br>
 
-[TOP](#debugging)
+[TOP](#behavior-strategy-implementation)
 
 ---
 
 ## Week 3
 
-
+- Iterating over objects using `for ... in` loops
+- Using objects to store project data
 
 <details open>
 <summary>expand/collapse</summary>
@@ -247,7 +383,7 @@ https://github.com/HackYourFutureBelgium/reading-codewars
 </details>
 <br>
 
-[TOP](#debugging)
+[TOP](#behavior-strategy-implementation)
 
 ---
 
