@@ -175,7 +175,7 @@ Helpful resources for this module
 
 - [Code Reading Exercises](https://github.com/neontribe/code-reading-club/blob/trunk/exercises.md)
 - [Learning from Code](https://study.hackyourfuture.be/learning/learning-from-code)
-- [Links from `reading-codewars`](https://github.com/HackYourFutureBelgium/behavior-strategy-implementation#helpful-links)
+- [Links from `solution-write-ups`](https://github.com/HackYourFutureBelgium/solution-write-ups#helpful-links)
 - More code to read
   - [dinanathsj29/javascript-exercise-beginners](https://github.com/dinanathsj29/javascript-exercise-beginners)
   - [KBPsystem777](https://github.com/KBPsystem777/JSexercises)
@@ -290,7 +290,7 @@ Helpful resources for this module
   - `reference-vs-value`
   - `about-testing`
   - `for-of`
-- [Read the `reading-codewars` README](https://github.com/HackYourFutureBelgium/reading-codewars)
+- [Read the `solution-write-ups` README](https://github.com/HackYourFutureBelgium/solution-write-ups)
 
 
 ### During Class
