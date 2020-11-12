@@ -299,8 +299,6 @@ Helpful resources for this module
 
 - Isolate:
   - `for-of`
-- Integrate:
-  - `user-input-in-arrays`
 - Introduction to _Reading Codewars_
 
 ### After Class
