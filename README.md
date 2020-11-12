@@ -153,10 +153,10 @@ Helpful resources for this module
   - 🐣: [./user-data](./user-data): An intro to using arrays and objects to store user data, integrated with HTML & CSS
   - 🐥: `./using-errors`: _coming soon_
   - 🐥: [./koans](./koans): Explore the JS language by completing code and writing unit tests
-- 🐣: [fuzz testing](https://hackyourfuturebelgium.github.io/fuzz)
 - 🐣, 🐥: More Coding Challenges:
   - [rolling-scopes-school](https://github.com/rolling-scopes-school/js-assignments)
   - [Functions and Arrays](https://github.com/ironhack-labs/lab-javascript-functions-and-arrays/)
+  - [fuzz testing](https://hackyourfuturebelgium.github.io/fuzz)
   - [Advanced Collection Methods](https://github.com/ironhack-labs/lab-javascript-advanced-collection-methods)
   - [Native Array Methods](https://github.com/gSchool/native-array-methods-exercises/)
   - [clue](https://github.com/ironhack-labs/lab-javascript-clue/)
