@@ -292,7 +292,6 @@ Helpful resources for this module
   - `for-of`
 - [Read the `solution-write-ups` README](https://github.com/HackYourFutureBelgium/solution-write-ups)
 
-
 ### During Class
 
 #### Before Break
@@ -303,8 +302,8 @@ Helpful resources for this module
 
 #### After Break
 
-- Isolate:
-  - `for-of`
+- Isolate
+  - `about-testing`
 - Introduction to _Reading Codewars_
 
 ### After Class
