@@ -148,20 +148,21 @@ Helpful resources for this module
 - 🥚: [Document and Pass](https://github.com/HackYourFutureBelgium/document-and-pass)
 - Study Lense Exercises
   - 🥚: [./isolate](./isolate): Practice core JavaScript without any user input or HTML/CSS
-  - 🥚: [./integrate](./integrate): Learn how to integrate JS into simple projects using HTML & CSS
-  - 🐣: `./function-design`: _coming soon_
+  - 🥚: [./separate](./separate): Learn to divide your project code into separate files and folders for easy collaboration
+  - 🐣: [./refactor-and-test](./refactor-and-test): Practice refactoring the logic from user interactions and testing it in isolation
   - 🐣: [./write-tests](./write-tests): Write tests for a working function.  Practice reading code and describing it's _behavior_ with unit tests
-  - 🐣: [./pass-tests](./pass-tests): Write multiple solutions to the same set of tests -> same _behavior_, different _strategies_ and _implementation_
+  - 🐣: `./function-design`: _coming soon_ Learn a structured approach to understanding and solving coding challenges
   - 🐥: `./using-errors`: _coming soon_
   - 🐥: [./koans](./koans): Explore the JS language by completing code and writing unit tests
 - 🐣: [fuzz testing](https://hackyourfuturebelgium.github.io/fuzz)
-- 🐥: More Repos of Exercises:
-  - [JavaScript-Koans](https://github.com/HackYourFutureBelgium/JavaScript-Koans/tree/master/src) (1-4)
+- 🐣, 🐥: More Repos of Exercises:
+  - [rolling-scopes-school](https://github.com/rolling-scopes-school/js-assignments)
   - [Functions and Arrays](https://github.com/ironhack-labs/lab-javascript-functions-and-arrays/)
   - [Advanced Collection Methods](https://github.com/ironhack-labs/lab-javascript-advanced-collection-methods)
   - [Native Array Methods](https://github.com/gSchool/native-array-methods-exercises/)
   - [clue](https://github.com/ironhack-labs/lab-javascript-clue/)
-- [edabit](https://edabit.com/) (more endless practice)
+  - [JavaScript-Koans](https://github.com/HackYourFutureBelgium/JavaScript-Koans/tree/master/src) (1-4)
+- [edabit](https://edabit.com/) (endless coding challenges)
 
 > Are we missing a great set of exercises? Send a PR!
 
@@ -173,6 +174,7 @@ Helpful resources for this module
 - More code to read
   - [dinanathsj29/javascript-exercise-beginners](https://github.com/dinanathsj29/javascript-exercise-beginners)
   - [KBPsystem777](https://github.com/KBPsystem777/JSexercises)
+  - [JavaScript Questions](https://github.com/lydiahallie/javascript-questions/)
 
 ### About Testing
 
@@ -195,6 +197,15 @@ Helpful resources for this module
 - [Janke Learning](https://github.com/janke-learning/reference-vs-value)
 - [javascript.info](https://javascript.info/object-copy#comparison-by-reference)
 
+### Higher-Order Functions
+
+- [FunFunFunction](https://medium.com/humans-create-software/a-dirt-simple-introduction-to-higher-order-functions-in-javascript-b33bf9e19056)
+- [The Coding Train](https://www.youtube.com/watch?v=H4awPsyugS0)
+- [Traversy](https://www.youtube.com/watch?v=rRgD1yVwIvE)
+- [damcosset](https://dev.to/damcosset/higher-order-functions-in-javascript-4j8b)
+- [bitsrc](https://blog.bitsrc.io/understanding-higher-order-functions-in-javascript-75461803bad)
+- [Mosh](https://programmingwithmosh.com/javascript/what-are-higher-order-functions-in-javascript/)
+
 #### Arrays
 
 - [JS Tutor Video](https://www.youtube.com/watch?v=W1NTK09o-vM)
@@ -204,15 +215,13 @@ Helpful resources for this module
 - `for of` loops
   - [javascript.info](https://javascript.info/array#loops)
   - [Coding Train](https://www.youtube.com/watch?v=Y8sMnRQYr3c)
-- Higher Order Functions
-  - [FunFunFunction](https://medium.com/humans-create-software/a-dirt-simple-introduction-to-higher-order-functions-in-javascript-b33bf9e19056)
-  - [The Coding Train](https://www.youtube.com/watch?v=H4awPsyugS0)
-  - [Traversy](https://www.youtube.com/watch?v=rRgD1yVwIvE)
-  - [damcosset](https://dev.to/damcosset/higher-order-functions-in-javascript-4j8b)
 - Array Methods
   - [javascript.info](https://javascript.info/array-methods)
   - FunFun: [Map](https://www.youtube.com/watch?v=bCqtb-Z5YGQ&list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84&index=2), [Reduce Basics](https://www.youtube.com/watch?v=Wl98eZpkp-c&list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84&index=3)
+  - [CYF](https://codeyourfuture.github.io/syllabus-london/js-core-3/array-methods.html)
   - [Una Kravets](https://css-tricks.com/an-illustrated-and-musical-guide-to-map-reduce-and-filter-array-methods/)
+  - [Cheat Sheet](https://jrsinclair.com/javascript-array-methods-cheat-sheet)
+  - Oliverjam: [learn-map-filter](https://github.com/oliverjam/learn-map-filter), [tdd-array-methods](https://github.com/oliverjam/tdd-array-methods)
 
 #### Objects
 
