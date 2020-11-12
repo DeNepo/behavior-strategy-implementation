@@ -144,24 +144,30 @@ Helpful resources for this module
 
 ### Exercises & Practice
 
-- 🥚,🐣,🐥: [Reading Codewars](https://github.com/HackYourFutureBelgium/reading-codewars) (important!)
+- 🥚,🐣,🐥: [Solution Write-Ups](https://github.com/HackYourFutureBelgium/solution-write-ups) (important!)
 - 🥚: [Document and Pass](https://github.com/HackYourFutureBelgium/document-and-pass)
 - Study Lense Exercises
   - 🥚: [./isolate](./isolate): Practice core JavaScript without any user input or HTML/CSS
-  - 🐣: [./refactor-and-test](./refactor-and-test): Practice refactoring the logic from user interactions and testing it in isolation
-  - 🐣: [./write-tests](./write-tests): Write tests for a working function.  Practice reading code and describing it's _behavior_ with unit tests
+  - 🥚: [./refactor-and-test](./refactor-and-test): Practice refactoring the logic from user interactions and testing it in isolation
   - 🐣: `./function-design`: _coming soon_ Learn a structured approach to understanding and solving coding challenges
+  - 🐣: [./user-data](./user-data): An intro to using arrays and objects to store user data, integrated with HTML & CSS
   - 🐥: `./using-errors`: _coming soon_
   - 🐥: [./koans](./koans): Explore the JS language by completing code and writing unit tests
 - 🐣: [fuzz testing](https://hackyourfuturebelgium.github.io/fuzz)
-- 🐣, 🐥: More Repos of Exercises:
+- 🐣, 🐥: More Coding Challenges:
   - [rolling-scopes-school](https://github.com/rolling-scopes-school/js-assignments)
   - [Functions and Arrays](https://github.com/ironhack-labs/lab-javascript-functions-and-arrays/)
   - [Advanced Collection Methods](https://github.com/ironhack-labs/lab-javascript-advanced-collection-methods)
   - [Native Array Methods](https://github.com/gSchool/native-array-methods-exercises/)
   - [clue](https://github.com/ironhack-labs/lab-javascript-clue/)
   - [JavaScript-Koans](https://github.com/HackYourFutureBelgium/JavaScript-Koans/tree/master/src) (1-4)
-- [edabit](https://edabit.com/) (endless coding challenges)
+- 🐣, 🐥: Integrating JS with HTML & CSS
+  - [4 challenges](https://github.com/HackYourFutureBelgium/debugging-integrate-week-1)
+  - [6 challenges](https://github.com/HackYourFutureBelgium/debugging-project-week-1)
+  - [shared program data](https://github.com/HackYourFutureBelgium/debugging-integrate-week-2)
+  - [user data in an array](https://github.com/HackYourFutureBelgium/testing-integrate-week-1)
+  - [array of numbers](https://github.com/HackYourFutureBelgium/array-of-numbers)
+  - [favorite words](https://github.com/HackYourFutureBelgium/favorite-words)
 
 > Are we missing a great set of exercises? Send a PR!
 
