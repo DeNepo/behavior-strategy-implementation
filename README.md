@@ -148,7 +148,6 @@ Helpful resources for this module
 - 🥚: [Document and Pass](https://github.com/HackYourFutureBelgium/document-and-pass)
 - Study Lense Exercises
   - 🥚: [./isolate](./isolate): Practice core JavaScript without any user input or HTML/CSS
-  - 🥚: [./separate](./separate): Learn to divide your project code into separate files and folders for easy collaboration
   - 🐣: [./refactor-and-test](./refactor-and-test): Practice refactoring the logic from user interactions and testing it in isolation
   - 🐣: [./write-tests](./write-tests): Write tests for a working function.  Practice reading code and describing it's _behavior_ with unit tests
   - 🐣: `./function-design`: _coming soon_ Learn a structured approach to understanding and solving coding challenges
@@ -306,20 +305,7 @@ Helpful resources for this module
 
 ### After Class
 
-> Group Project
-
-_coming soon_
-
-```markdown
-- [ ] [repo](https://github.com/_/_) (with a complete README)
-- [ ] [live demo](https://_.github.io/_)
-- [ ] [backlog](https://github.com/_/_/tree/master/planning/backlog.md)
-- [ ] [Figma planning document](_)
-- [ ] [development strategy](https://github.com/_/_/tree/master/planning/development-strategy.md)
-- [ ] [project board](https://github.com/_/_/projects/_)
-- [ ] [one branch per step](https://github.com/_/_/branches)
-- [ ] [one closed PR per step](https://github.com/_/_/pulls)
-```
+No project this week, but you are encouraged to add new pages to your JS Study Guide web pages.
 
 </details>
 <br>
@@ -356,7 +342,20 @@ Higher-Order Functions and Functional Array Methods
 
 ### After Class
 
-#### Checklist
+
+_coming soon_
+
+```markdown
+- [ ] [repo](https://github.com/_/_) (with a complete README)
+- [ ] [live demo](https://_.github.io/_)
+- [ ] [backlog](https://github.com/_/_/tree/master/planning/backlog.md)
+- [ ] [Figma planning document](_)
+- [ ] [development strategy](https://github.com/_/_/tree/master/planning/development-strategy.md)
+- [ ] [project board](https://github.com/_/_/projects/_)
+- [ ] [one branch per step](https://github.com/_/_/branches)
+- [ ] [one closed PR per step](https://github.com/_/_/pulls)
+```
+
 
 </details>
 <br>
