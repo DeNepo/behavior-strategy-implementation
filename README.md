@@ -150,7 +150,7 @@ Helpful resources for this module
   - 🥚: [./about-testing](./about-testing): A quick introduction to `describe`, `it`, and `chai`
   - 🥚: [./isolate](./isolate): Practice core JavaScript without any user input or HTML/CSS
   - 🥚: [./refactor-and-test](./refactor-and-test): Practice refactoring the logic from user interactions and testing it in isolation
-  - 🐣: `./function-design`: _coming soon_ Learn a structured approach to understanding and solving coding challenges
+  - 🐣: [./function-design](./function-design): Learn a structured approach to understanding and solving coding challenges
   - 🐣: [./user-data](./user-data): An intro to using arrays and objects to store user data, integrated with HTML & CSS
   - 🐥: `./using-errors`: _coming soon_
   - 🐥: [./koans](./koans): Explore the JS language by completing code and writing unit tests
@@ -184,7 +184,7 @@ Helpful resources for this module
 
 ### About Testing
 
-- FunFunFunction:
+- [FunFunFunction](https://www.youtube.com/watch?v=Eu35xM76kKY&list=PL0zVEGEvSaeF_zoW9o66wa_UCNE3a7BEr):
   1. [Writing tests for personal projects](https://www.youtube.com/watch?v=ib2Pt9_zciA)
   1. [Why Unit Tests?](https://www.youtube.com/watch?v=Eu35xM76kKY)
   1. [Your First Tests](https://www.youtube.com/watch?v=XsFQEUP1MxI)
@@ -271,9 +271,10 @@ Helpful resources for this module
 ## Week 1
 
 - Reference vs. Value & side-effects
-- Testing: `describe`, `it` and `chai`
 - Using arrays
-- Connecting HTML/CSS with JavaScript
+- Testing: `describe`, `it` and `chai`
+- Analyzing code challenge solutions
+- The Function Design Workflow
 
 <details>
 <summary>expand/collapse</summary>
@@ -289,7 +290,6 @@ Helpful resources for this module
 - Isolate (examples):
   - `arrays`
   - `reference-vs-value`
-  - `for-of`
 - [About Testing](./about-testing?hyf)
 - [Read the `solution-write-ups` README](https://github.com/HackYourFutureBelgium/solution-write-ups)
 
@@ -308,8 +308,8 @@ Helpful resources for this module
   - Breakpoints will become very important
   - So will understanding the different step buttons in your devtools
 - `function-design`:
-  - Solve one Function Design exercise together
-- Introduction to _Reading Codewars_
+  - Step through a Function Design example together
+- Introduction to _Solution Write-Ups_
 
 ### After Class
 
