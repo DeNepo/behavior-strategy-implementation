@@ -145,7 +145,7 @@ Helpful resources for this module
 ### Exercises & Practice
 
 - 🥚,🐣,🐥: [Solution Write-Ups](https://github.com/HackYourFutureBelgium/solution-write-ups) (important!)
-- 🥚: [Document and Pass](https://github.com/HackYourFutureBelgium/document-and-pass)
+- 🐣: [document-and-pass](https://github.com/HackYourFutureBelgium/document-and-pass)
 - Study Lense Exercises
   - 🥚: [./about-testing](./about-testing): A quick introduction to `describe`, `it`, and `chai`
   - 🥚: [./isolate](./isolate): Practice core JavaScript without any user input or HTML/CSS
