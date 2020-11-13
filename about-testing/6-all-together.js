@@ -5,6 +5,7 @@ const assert = chai.assert;
 // this comment describes how the function should behave
 //  maybe the function does not do that!
 //  the test will help you find out ;)
+
 /**
  * replaces a specific entry in an array
  * this function does not modify the original array
