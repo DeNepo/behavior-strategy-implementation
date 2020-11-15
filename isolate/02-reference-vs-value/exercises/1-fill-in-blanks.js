@@ -1,5 +1,6 @@
 'use strict';
 
+// one array
 // psst.  use JS Tutor & the debugger!
 
 const array1 = _;

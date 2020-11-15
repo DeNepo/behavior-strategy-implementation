@@ -1,5 +1,6 @@
 'use strict';
 
+// two different arrays with the same values
 // psst.  use JS Tutor & the debugger!
 
 const array1 = _;

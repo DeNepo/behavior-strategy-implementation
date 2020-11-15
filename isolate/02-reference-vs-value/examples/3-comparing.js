@@ -5,7 +5,9 @@
 // psst. JS Tutor will help a lot with this example
 
 // this comparison is false!
-const huh = [1, 2, 3] === [1, 2, 3];
+const notTheSame1 = [1, 2, 3];
+const notTheSame2 = [1, 2, 3];
+const huh = notTheSame1 === notTheSame2;
 console.log('huh:', typeof huh, huh);
 
 // a more involved example:

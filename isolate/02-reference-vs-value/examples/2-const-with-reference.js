@@ -10,4 +10,12 @@ constantArray[0] = 6; // no error
 constantArray[1] = 7; // no error
 constantArray.push(12); // no error
 constantArray.pop(); // no error
-constantArray = [6]; // error!
+// constantArray = [6]; // error!
+
+let letArray = [4];
+letArray[0] = 6; // no error
+letArray[1] = 7; // no error
+letArray.push(12); // no error
+letArray.pop(); // no error
+letArray = [6]; // no error
+
