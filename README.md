@@ -433,3 +433,10 @@ _coming soon_
     - Sunday Part 1: [Objects 2](https://vimeo.com/440023799)
     - Sunday Part 2: [User input in Objects](https://vimeo.com/440024065)
 
+## class-11-12
+
+> [Evan](https://github.com/), [Thibault](https://github.com/ThibaultLesuisse), [Joel](https://github.com/JoeCamacho)
+
+1. [Week 1](https://meet.openknowledge.be/playback/presentation/2.0/playback.html?meetingId=48966e92bc14f80c53d450f9e59dc77e812b2f8b-1605437686426)
+2. Week 2
+3. Week 3

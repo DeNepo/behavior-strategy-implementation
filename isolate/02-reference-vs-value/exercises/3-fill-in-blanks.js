@@ -22,6 +22,7 @@ console.assert(test4, 'Test 4');
 
 
 
+// you don't need to understand this code
 // hoisted, to keep it out of your way
 function deepCompare(actual, expect) {
   // are they the same thing?
