@@ -4,6 +4,7 @@
     "tests": true,
     "flowchart": true,
     "loopGuard": true,
-    "save": true
+    "save": true,
+    "port": 4005
   }
 }
