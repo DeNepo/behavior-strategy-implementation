@@ -10,6 +10,8 @@
 ## Contents
 
 - [Getting Started](#getting-started)
+  - [In the Browser](#in-the-browser)
+  - [In Node.js](#in-Node-js)
 - [Study Tips](#study-tips)
 - [About Programming](#about-programming)
 - [Learning Objectives](#learning-objectives)
@@ -27,25 +29,43 @@
 ## Getting Started
 
 > You will need [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) and [nvm](https://github.com/nvm-sh/nvm#installing-and-updating) on your computer to study this material
->
+
+1. Clone this repository:
+    - `git clone git@github.com:HackYourFutureBelgium/behavior-strategy-implementation.git` (SSH)
+    - `git clone https://github.com/HackYourFutureBelgium/behavior-strategy-implementation.git` (HTTPS)
+    - `gh repo clone HackYourFutureBelgium/behavior-strategy-implementation` (GH CLI)
+1. `cd` into the repository
+    - `cd behavior-strategy-implementation`
+
+### In the Browser
+
 > Using a browser with good DevTools will make your life easier: [Chromium](http://www.chromium.org/getting-involved/download-chromium), [FireFox](https://www.mozilla.org/en-US/firefox/new/), [Edge](https://www.microsoft.com/edge), [Chrome](https://www.google.com/chrome/)
 
 1. Install or update the `study-lenses` package globally
-    - `$ npm install -g study-lenses` (if you do not have it already)
-    - `$ npm update -g study-lenses` (if you already have it installed)
-2. Clone this repository
-    - `$ git clone git@github.com:HackYourFutureBelgium/behavior-strategy-implementation.git`
-3. `cd` into the repository
-    - `$ cd behavior-strategy-implementation`
-4. Open the repository using `study`
-    - `$ study`
-5. The material will open in your default browser, you're good to go!
+    - `npm install -g study-lenses` (if you do not have it already)
+    - `npm update -g study-lenses` (if you already have it installed)
+2. Run the `study` command from your CLI
+    - `study`
+3. The material will open in your default browser, you're good to go!
 
 > If you have a windows computer and get this error:
 >
 > - `... /study.ps1 cannot be loaded because running scripts ...`
 >
 > follow the instructions in [this StackOverflow answer](https://stackoverflow.com/a/63424744), that should take care of it ; )
+
+### In Node.js
+
+> The [debugger built into VSCode](https://code.visualstudio.com/Docs/editor/debugging) is very good, it's all you'll need.  Don't forget to set [breakpoints](https://code.visualstudio.com/Docs/editor/debugging#_breakpoints)!
+
+1. Install the repository's local dependencies:
+    - `npm install`
+2. Running files in `.js` (without .test):
+   - _debugger_: open the file, select the debug option from your VSCode side-bar, choose the `Current JS File (no tests)` option, and click `|>`.
+   - _console_: `node path/to/file.js`, simple and easy
+3. Running files ending in `.test.js`:
+    - _debugger_: open the file, select the debug option from your VSCode side-bar, choose the `Current JS File (with tests)` option, and click `|>`.
+    - _console_: files ending in .test.js must be run with `mocha` -> `mocha path/to/file.test.js`. You will need to globally install mocha for this (`npm install -g mocha`)
 
 [TOP](#behavior-strategy-implementation)
 

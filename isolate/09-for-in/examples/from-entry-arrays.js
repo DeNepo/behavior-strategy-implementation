@@ -32,11 +32,6 @@ console.assert(isPassing, 'Test 1');
 // * https://www.freecodecamp.org/news/array-and-object-destructuring-in-javascript/
 
 
-function deepCompare(actual, expect) {
-  // are they the same thing?
-  return actual === expect || Object.is(actual, expect)
-    // compare arrays
-    || (Object(actual) === actual && Object(expect) === expect) && (Array.isArray(actual) && Array.isArray(expect) && actual.length === expect.length && expect.every((expect, index) => deepCompare(actual[index], expect))
-      // compare objects
-      || Reflect.ownKeys(actual).length === Reflect.ownKeys(expect).length && Reflect.ownKeys(expect).every((key) => deepCompare(actual[key], expect[key])));
-};
+// hoisted to keep it out of your way in the editor
+// in one line so it's out of your way in JS Tutor
+function deepCompare(actual, expect) { return actual === expect || Object.is(actual, expect) || (Object(actual) === actual && Object(expect) === expect) && (Array.isArray(actual) && Array.isArray(expect) && actual.length === expect.length && expect.every((expect, index) => deepCompare(actual[index], expect)) || Reflect.ownKeys(actual).length === Reflect.ownKeys(expect).length && Reflect.ownKeys(expect).every((key) => deepCompare(actual[key], expect[key]))); };

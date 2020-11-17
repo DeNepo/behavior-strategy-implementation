@@ -1,5 +1,5 @@
 {
-  "name": "testing",
+  "name": "behavior-strategy-implementation",
   "version": "1.0.0",
   "description": "the testing module for HYF Belgium",
   "main": "server.js",
@@ -13,10 +13,17 @@
     "type": "git",
     "url": "git+https://github.com/HackYourFutureBelgium/testing.git"
   },
-  "author": "",
-  "license": "SEE LICENSE IN LICENSE.md",
+  "author": "HackYourFutureBelgium",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/HackYourFutureBelgium/testing/issues"
   },
-  "homepage": "https://github.com/HackYourFutureBelgium/testing#readme"
+  "homepage": "https://github.com/HackYourFutureBelgium/testing#readme",
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^8.2.1"
+  }
 }

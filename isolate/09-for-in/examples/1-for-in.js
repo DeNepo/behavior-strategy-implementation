@@ -21,3 +21,6 @@ for (const key in menagerie) {
   const value = menagerie[key];
   console.log('-' + value);
 }
+
+
+

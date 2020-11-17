@@ -1,10 +1,9 @@
 {
   "study": {
     "eval": true,
-    "tests": true,
     "flowchart": true,
     "loopGuard": true,
-    "save": true,
-    "port": 4005
-  }
+    "save": true
+  },
+  "port": 4005
 }
