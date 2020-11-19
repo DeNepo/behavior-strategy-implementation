@@ -8,8 +8,8 @@ const assert = require('chai').assert;
  * @param {Array} arr - the array of items to coerce
  * @returns {Array} - a new array of number values
  */
-const mapToNumber = (arr) => {
-  if (!Array.isArray(arr)) { throw new TypeError('arr'); }
+const mapToNumber = (arr = []) => {
+  if (!Array.isArray(arr)) { throw new TypeError('arr is not an array'); }
 
   const numberValues = [];
   for (const _ of _) {

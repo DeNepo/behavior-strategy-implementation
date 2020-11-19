@@ -38,6 +38,6 @@ console.assert(_4_test, 'Test 4');
 // reduce can use the initial value at the beginning
 const _5_arg = ['huh', 'huh?', 'what?', 'what!?'];
 const _5_expect = 'confusion, huh, huh?, what?, what!?';
-const _5_test = _5_arg.reduce(commaSpace, 'confusion') === _5_expect ? 'pass' : 'fail';
+const _5_test = _5_arg.reduce(commaSpace, 'confusion') === _5_expect;
 console.assert(_5_test, 'Test 4');
 

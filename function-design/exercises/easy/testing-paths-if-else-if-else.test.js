@@ -4,6 +4,9 @@ const expect = require('chai').expect;
 
 /**
  * returns a description of how similar two values are
+ *  if they are strictly equal -> 'strictly equal'
+ *  if they have the same type -> 'same type'
+ *  else -> 'totally different'
  * @param {any} val1
  * @param {any} val2
  * @returns {string} the values' solution

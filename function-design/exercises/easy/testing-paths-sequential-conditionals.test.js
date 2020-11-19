@@ -11,6 +11,7 @@ const expect = require('chai').expect;
  * @example
  *  // true, false --> '10'
  *  // false, false --> '00'
+ *  // false, true --> '01'
  */
 const stub = () => { };
 
@@ -26,9 +27,6 @@ const stub = () => { };
 for (const solution of [
   secretSolution,
   // stub,
-  // whileLoop,
-  // oneLineforLoop,
-  // manySmallFunctions,
 ]) {
   // this function only 4 possible combinations of arguments
   //  it's possible test them all and have 100% confidence in the function
