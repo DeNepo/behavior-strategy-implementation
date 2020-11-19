@@ -169,8 +169,8 @@ Helpful resources for this module
 - Study Lense Exercises
   - 🥚: [./about-testing](./about-testing): A quick introduction to `describe`, `it`, and `chai`
   - 🥚: [./isolate](./isolate): Practice core JavaScript without any user input or HTML/CSS
-  - 🥚: [./refactor-and-test](./refactor-and-test): Practice refactoring the logic from user interactions and testing it in isolation
   - 🐣: [./function-design](./function-design): Learn a structured approach to understanding and solving coding challenges
+  - 🐣: [./refactor-and-test](./refactor-and-test): Practice refactoring the logic from user interactions and testing it in isolation
   - 🐣: [./user-data](./user-data): An intro to using arrays and objects to store user data, integrated with HTML & CSS
   - 🐥: `./using-errors`: _coming soon_
   - 🐥: [./koans](./koans): Explore the JS language by completing code and writing unit tests
@@ -370,19 +370,7 @@ Higher-Order Functions and Functional Array Methods
 
 ### After Class
 
-
-_coming soon_
-
-```markdown
-- [ ] [repo](https://github.com/_/_) (with a complete README)
-- [ ] [live demo](https://_.github.io/_)
-- [ ] [backlog](https://github.com/_/_/tree/master/planning/backlog.md)
-- [ ] [Figma planning document](_)
-- [ ] [development strategy](https://github.com/_/_/tree/master/planning/development-strategy.md)
-- [ ] [project board](https://github.com/_/_/projects/_)
-- [ ] [one branch per step](https://github.com/_/_/branches)
-- [ ] [one closed PR per step](https://github.com/_/_/pulls)
-```
+No project this week, but a group project next week.  To prepare for next week's project you can study [Abstracting Behavior](https://github.com/HackYourFutureBelgium/debugging/tree/master/interact/5-abstracting-behavior) from the Debugging module
 
 
 </details>
@@ -414,6 +402,20 @@ _coming soon_
 
 
 ### After Class
+
+
+
+
+```markdown
+- [ ] [repo](https://github.com/_/_) (with a complete README)
+- [ ] [live demo](https://_.github.io/_)
+- [ ] [backlog](https://github.com/_/_/tree/master/planning/backlog.md)
+- [ ] [Figma planning document](_)
+- [ ] [development strategy](https://github.com/_/_/tree/master/planning/development-strategy.md)
+- [ ] [project board](https://github.com/_/_/projects/_)
+- [ ] [one branch per step](https://github.com/_/_/branches)
+- [ ] [one closed PR per step](https://github.com/_/_/pulls)
+```
 
 
 </details>
