@@ -22,7 +22,7 @@ for (const solution of [
   // stub
 ]) {
   // the main test suite for the function
-  describe(solution.name + ': reverses a string', () => {
+  describe(solution.name + ': counts up from 0', () => {
     it('default parameter', () => {
       expect(solution()).to.deep.equal([0]);
     });
