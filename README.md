@@ -366,7 +366,14 @@ Higher-Order Functions and Functional Array Methods
 
 #### Before Break
 
+- Isolate
+  - The Callstack
+  - Higher Order Functions
+
 #### After Break
+
+- Isolate
+  - Function Array Methods
 
 ### After Class
 
@@ -385,26 +392,38 @@ No project this week, but a group project next week.  To prepare for next week's
 - Iterating over objects using `for ... in` loops
 - Using objects to store project data
 
-<details open>
+<details>
 <summary>expand/collapse</summary>
 <br>
 
 ### Before Class
 
-
+- Objects
+  - [javascript.info](https://javascript.info/object)
+  - [Just JavaScript](https://github.com/HackYourFutureBelgium/just-javascript/tree/master/07-Properties)
+  - [dots vs brackets](https://www.youtube.com/watch?v=7lQ31dJEYoM) (video)
+  - [dots vs brackets](https://github.com/janke-learning/dots-vs-brackets) (example)
+- `for ... in`
+  - [javascript.info](https://javascript.info/object#the-for-in-loop)
+  - [`for in`, vs `for of`](https://alligator.io/js/for-of-for-in-loops/)
+  - [a video](https://www.youtube.com/watch?v=prl73KRkB34)
+- [Abstracting Behavior](https://github.com/HackYourFutureBelgium/debugging/tree/master/interact/5-abstracting-behavior) (examples)
 
 ### During Class
 
 #### Before Break
 
+- Isolate
+  - Objects
+  - `for-in`
 
 #### After Break
 
+- Present this week's Project (details coming)
 
 ### After Class
 
-
-
+_coming soon_
 
 ```markdown
 - [ ] [repo](https://github.com/_/_) (with a complete README)
