@@ -1,27 +1,17 @@
 {
   "name": "behavior-strategy-implementation",
   "version": "1.0.0",
-  "description": "the testing module for HYF Belgium",
-  "main": "server.js",
-  "scripts": {
-    "register-isolate": "node isolate/register.js",
-    "register-integrate": "node integrate/register.js",
-    "register": "npm run register-isolate && npm run register-integrate",
-    "start": "npm run register && node server.js"
-  },
+  "description": "when you learn how to solve coding challenges",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/HackYourFutureBelgium/testing.git"
+    "url": "git+https://github.com/HackYourFutureBelgium/behavior-strategy-implementation.git"
   },
   "author": "HackYourFutureBelgium",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/HackYourFutureBelgium/testing/issues"
+    "url": "https://github.com/HackYourFutureBelgium/behavior-strategy-implementation/issues"
   },
-  "homepage": "https://github.com/HackYourFutureBelgium/testing#readme",
-  "directories": {
-    "lib": "lib"
-  },
+  "homepage": "https://github.com/HackYourFutureBelgium/behavior-strategy-implementation#readme",
   "devDependencies": {
     "chai": "^3.5.0",
     "mocha": "^8.2.1"
