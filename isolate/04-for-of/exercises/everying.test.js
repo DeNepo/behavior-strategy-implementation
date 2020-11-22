@@ -4,7 +4,7 @@ const assert = require('chai').assert;
 
 /**
  * returns true if no values are numbers, otherwise returns false
- * returns a new array without modifying the original
+ * does not modify the argument array
  * @param {Array} arr - the array of values to filter
  * @returns {Array} - a new array with no strings
  */
