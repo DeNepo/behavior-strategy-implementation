@@ -24,7 +24,8 @@ for (const solution of [
   // the main test suite for the function
   describe(solution.name + ': counts up from 0', () => {
     it('default parameter', () => {
-      expect(solution()).to.deep.equal([0]);
+      const actual = solution();
+      expect(actual).to.deep.equal([0]);
     });
     it('0', () => {
       expect(solution(0)).to.deep.equal([0]);
