@@ -11,6 +11,7 @@
 
     expect(actualValue).to.equal(expectedValue);
 
+  It's a best practice to have only one `expect` inside each `it`
 
   chai is an assertion library that supports expect syntax
     it is what you will use for tests in this repo's exercises

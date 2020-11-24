@@ -165,6 +165,9 @@ Helpful resources for this module
 ### Exercises & Practice
 
 - 🥚,🐣,🐥: [Solution Write-Ups](https://github.com/HackYourFutureBelgium/solution-write-ups) (important!)
+  1. Fork the repository
+  2. Clone your fork
+  3. Push your work regularly so others can review it
 - 🐣: [document-and-pass](https://github.com/HackYourFutureBelgium/document-and-pass)
 - Study Lense Exercises
   - 🥚: [./about-testing](./about-testing): A quick introduction to `describe`, `it`, and `chai`
@@ -173,7 +176,6 @@ Helpful resources for this module
   - 🐣: [./refactor-and-test](./refactor-and-test): Practice refactoring the logic from user interactions and testing it in isolation
   - 🐣: [./user-data](./user-data): An intro to using arrays and objects to store user data, integrated with HTML & CSS
   - 🐥: `./using-errors`: _coming soon_
-  - 🐥: [./koans](./koans): Explore the JS language by completing code and writing unit tests
 - 🐣: Integrating JS with HTML & CSS
   - [4 challenges](https://github.com/HackYourFutureBelgium/debugging-integrate-week-1)
   - [6 challenges](https://github.com/HackYourFutureBelgium/debugging-project-week-1)
