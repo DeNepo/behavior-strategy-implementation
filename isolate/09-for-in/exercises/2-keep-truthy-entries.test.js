@@ -11,7 +11,7 @@ const keepTruthyEntries = (obj) => {
 
   let onlyTruthyEntries = _;
   for (const _ in _) {
-    const value = _;
+    const value = _[_];
     if (_) {
       _[_] = _;
     }

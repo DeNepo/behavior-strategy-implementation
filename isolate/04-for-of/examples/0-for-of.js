@@ -32,8 +32,8 @@ for (let i = trees.length - 1; i >= 0; i--) {
 
 // infinite loops are still possible with for-of
 
-const allNumbers = [0];
-for (const number of allNumbers) {
-  allNumbers.push(number + 1);
-  console.log(allNumbers)
+const naturalNumbers = [0];
+for (const number of naturalNumbers) {
+  naturalNumbers.push(number + 1);
+  console.log(naturalNumbers)
 }
