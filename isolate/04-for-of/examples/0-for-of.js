@@ -30,7 +30,8 @@ for (let i = trees.length - 1; i >= 0; i--) {
   console.log('- ' + tree);
 }
 
-// infinite loops are still possible with for-of
+
+console.log('infinite loops are still possible with for-of');
 
 const allNumbers = [0];
 for (const number of allNumbers) {
