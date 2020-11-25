@@ -30,6 +30,10 @@ for (let i = trees.length - 1; i >= 0; i--) {
   console.log('- ' + tree);
 }
 
+// infinite loops are still possible with for-of
 
-// bonus! no infinite loops when you use for ... of
-//  because arrays can't store an infinite number of things :)
+const allNumbers = [0];
+for (const number of allNumbers) {
+  allNumbers.push(number + 1);
+  console.log(allNumbers)
+}
