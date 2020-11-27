@@ -18,19 +18,19 @@ for (const solution of [
   describe(solution.name + ': filters out non-passing objects', () => {
     describe('correctly filters an array', () => {
       it('an empty array returns an empty array', () => {
-        const actual = allPassingObjects(_);
+        const actual = solution(_);
         expect(_).to.deep.equal(_);
       });
       it('keeps all entries when all are passing', () => {
-        const actual = allPassingObjects([{ pass: _ }, { pass: _ }]);
+        const actual = solution([{ pass: _ }, { pass: _ }]);
         expect(actual).to.deep.equal([{ pass: true }, { pass: true }]);
       });
       it('removes all entries when all are not passing', () => {
-        const actual = allPassingObjects([{ pass: _ }, { pass: _ }]);
+        const actual = solution([{ pass: _ }, { pass: _ }]);
         expect(actual).to.deep.equal(_);
       });
       it('removes only not-passing entries', () => {
-        const actual = allPassingObjects([
+        const actual = solution([
           { pass: true },
           { pass: false },
           { pass: true },
@@ -38,15 +38,11 @@ for (const solution of [
         expect(actual).to.deep.equal([{ _: _ }, { _: _ }]);
       });
       it('removes entries with a truthy, but not true, .pass value', () => {
-        const actual = allPassingObjects([
-          { pass: 100 },
-          { pass: 'hello' },
-          { _: _ },
-        ]);
+        const actual = solution([{ pass: 100 }, { pass: 'hello' }, { _: _ }]);
         expect(actual).to.deep.equal([{ pass: true }]);
       });
       it('removes entries with no .pass property', () => {
-        const actual = allPassingObjects([
+        const actual = solution([
           { hello: _ },
           { bye: _ },
           { pass: _ },
@@ -58,12 +54,12 @@ for (const solution of [
     describe('does not modify the argument', () => {
       it('returns a new array', () => {
         const arg = [];
-        const actual = allPassingObjects(arg);
+        const actual = solution(arg);
         expect(actual)._.not._(arg);
       });
       it('does not modify the argument', () => {
         const arg = [{ pass: true }, { pass: false }, { hello: 'good bye' }];
-        allPassingObjects(arg);
+        solution(arg);
         expect(arg).to.deep.equal([{ _: _ }, { _: _ }, { _: _ }]);
       });
     });
