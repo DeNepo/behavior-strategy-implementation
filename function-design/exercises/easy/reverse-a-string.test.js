@@ -7,10 +7,7 @@ const expect = require('chai').expect;
  * @param {string} [toReverse=''] - the string to reverse
  * @returns {string} the reversed argument
  */
-const stub = () => {
-
-};
-
+const stub = () => {};
 
 /*
   your notes go here
@@ -32,10 +29,9 @@ for (const solution of [
       expect(solution('ASDF')).to.equal('FDSA');
     });
     // write at least 5 more tests ...
-
   });
-};
-
+}
 
 // minified solution for testing your tests
+// prettier-ignore
 function secretSolution(a = '') { if ("string" != typeof a) throw new TypeError("toReverse is not a string"); return a.split("").reverse().join("") }

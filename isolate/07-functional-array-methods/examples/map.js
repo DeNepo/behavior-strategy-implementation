@@ -1,16 +1,13 @@
 'use strict';
 
-const deepCompare = (actual, expect) => actual === expect || Object.is(actual, expect) || (Object(actual) === actual && Object(expect) === expect) && (Array.isArray(actual) && Array.isArray(expect) && actual.length === expect.length && expect.every((expect, index) => deepCompare(actual[index], expect)) || Reflect.ownKeys(actual).length === Reflect.ownKeys(expect).length && Reflect.ownKeys(expect).every((key) => deepCompare(actual[key], expect[key])));
-
 /**
  * converts a value to it's truthiness
  * @param {any} val - the value to convert
  * @returns {string} "truey" or "falsey"
  */
-const truthiness = (val) => {
+const truthiness = val => {
   return `${Boolean(val)}y`;
 };
-
 
 // returns an empty array for an empty array
 const _1_arg = [];
@@ -35,3 +32,6 @@ const _4_arg = [true, 0, NaN, 'hello'];
 const _4_expect = ['truey', 'falsey', 'falsey', 'truey'];
 const _4_test = deepCompare(_4_arg.map(truthiness), _4_expect);
 console.assert(_4_test, 'Test 4');
+
+// prettier-ignore
+function deepCompare(actual, expect) { return ( actual === expect || Object.is(actual, expect) || (Object(actual) === actual && Object(expect) === expect && ((Array.isArray(actual) && Array.isArray(expect) && actual.length === expect.length && expect.every((expect, index) => deepCompare(actual[index], expect))) || (Object.keys(actual).length === Object.keys(expect).length && Object.keys(expect).every(key => deepCompare(actual[key], expect[key]))))));}

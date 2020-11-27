@@ -25,7 +25,7 @@ const map = (arr, callback) => {
 const argArray = [3, true, 'hi', '', 0];
 
 // Callback to cast to Number
-const castToNumber = (val) => {
+const castToNumber = val => {
   return Number(val);
 };
 
@@ -33,18 +33,20 @@ const _1_expect = [3, 1, NaN, 0, 0];
 const _1_actual = map(argArray, castToNumber);
 console.assert(deepCompare(_1_actual, _1_expect), 'Test 1: map to type number');
 
-
 // Callback that converts to the type
-const typeOfValue = (val) => {
+const typeOfValue = val => {
   return typeof val;
 };
 
-const _2_expect = ['number', 'boolean', 'string', 'string', 'number']
+const _2_expect = ['number', 'boolean', 'string', 'string', 'number'];
 const _2_actual = map(argArray, typeOfValue);
-console.assert(deepCompare(_2_actual, _2_expect), 'Test 2: map to the value\'s type');
-
-
+console.assert(
+  deepCompare(_2_actual, _2_expect),
+  "Test 2: map to the value's type"
+);
 
 // hoisted to keep it out of your way in the editor
 // in one line so it's out of your way in JS Tutor
-function deepCompare(actual, expect) { return actual === expect || Object.is(actual, expect) || (Object(actual) === actual && Object(expect) === expect) && (Array.isArray(actual) && Array.isArray(expect) && actual.length === expect.length && expect.every((expect, index) => deepCompare(actual[index], expect)) || Reflect.ownKeys(actual).length === Reflect.ownKeys(expect).length && Reflect.ownKeys(expect).every((key) => deepCompare(actual[key], expect[key]))); };
+
+// prettier-ignore
+function deepCompare(actual, expect) { return ( actual === expect || Object.is(actual, expect) || (Object(actual) === actual && Object(expect) === expect && ((Array.isArray(actual) && Array.isArray(expect) && actual.length === expect.length && expect.every((expect, index) => deepCompare(actual[index], expect))) || (Object.keys(actual).length === Object.keys(expect).length && Object.keys(expect).every(key => deepCompare(actual[key], expect[key]))))));}

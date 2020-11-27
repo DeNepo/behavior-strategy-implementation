@@ -1,6 +1,5 @@
 'use strict';
 
-
 /* describe
 
   describe is used to group test cases
@@ -24,8 +23,3 @@ describe('this is what describe does', () => {
     throw new Error('something went wrong!');
   });
 });
-
-
-
-
-

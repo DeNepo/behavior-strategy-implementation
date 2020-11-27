@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 const expect = require('chai').expect;
 
@@ -12,45 +12,42 @@ const expect = require('chai').expect;
  *    max must be an integer greater than or equal to 0
  *  @returns {(number|string)[]} an array of length max
  */
-const stub = () => { };
+const stub = () => {};
 
 /* */
-const whileLoop = (max) => {
+const whileLoop = max => {
   let countUp = _;
   const result = [];
   while (++countUp < max) {
-    const nextEntry = countUp % 15 === 0 ? "_"
-      : _ ? "buzz"
-        : _ ? "fizz"
-          : _
+    const nextEntry = countUp % 15 === 0 ? '_' : _ ? 'buzz' : _ ? 'fizz' : _;
     result.push(nextEntry);
   }
   return result;
 };
 
 /* */
-const oneLineforLoop = (max) => {
+const oneLineforLoop = max => {
   const result = [];
-  for (let i = 0; i < _;) result._((++i % _ ? "" : "_") + (i % _ ? "" : "_") || i);
+  for (let i = 0; i < _; )
+    result._((++i % _ ? '' : '_') + (i % _ ? '' : '_') || i);
   return result;
 
   // https://codeburst.io/javascript-breaking-down-the-shortest-possible-fizzbuzz-answer-94a0ad9d128a
 };
 
-
 /* */
-const manySmallFunctions = (max) => {
-  const threeDivides = (n) => n % _ === 0;
-  const fiveDivides = (n) => n % _ === 0;
-  const fifteenDivides = (n) => n % _ === 0;
+const manySmallFunctions = max => {
+  const threeDivides = n => n % _ === 0;
+  const fiveDivides = n => n % _ === 0;
+  const fifteenDivides = n => n % _ === 0;
 
-  const fizzbuzzOrNumber = (num) => {
+  const fizzbuzzOrNumber = num => {
     if (_) {
-      return "fizzbuzz";
+      return 'fizzbuzz';
     } else if (_) {
-      return "fizz";
+      return 'fizz';
     } else if (_) {
-      return "buzz";
+      return 'buzz';
     } else {
       return num;
     }
@@ -62,12 +59,9 @@ const manySmallFunctions = (max) => {
   return fizzBuzzedArray;
 };
 
-
-
 /*
 
 */
-
 
 for (const solution of [
   secretSolution,
@@ -76,37 +70,51 @@ for (const solution of [
   // oneLineforLoop,
   // manySmallFunctions,
 ]) {
-  describe(solution.name + ": fizzbuzz", () => {
-    describe("numbers divisible by 3", () => {
-      it("3", () => {
-        expect(solution(3)).to.deep.equal(["fizzbuzz", 1, 2]);
+  describe(solution.name + ': fizzbuzz', () => {
+    describe('numbers divisible by 3', () => {
+      it('3', () => {
+        expect(solution(3)).to.deep.equal(['fizzbuzz', 1, 2]);
       });
       // write more of these
     });
-    describe("numbers divisible by neither 3 nor 5", () => {
-      it("4", () => {
-        expect(solution(4)).to.deep.equal(["fizzbuzz", 1, 2, 'fizz']);
+    describe('numbers divisible by neither 3 nor 5', () => {
+      it('4', () => {
+        expect(solution(4)).to.deep.equal(['fizzbuzz', 1, 2, 'fizz']);
       });
       // write more of these
     });
-    describe("numbers divisible by 5", () => {
-      it("5", () => {
-        expect(solution(5)).to.deep.equal(["fizzbuzz", 1, 2, "fizz", 4]);
+    describe('numbers divisible by 5', () => {
+      it('5', () => {
+        expect(solution(5)).to.deep.equal(['fizzbuzz', 1, 2, 'fizz', 4]);
       });
       // write more of these
     });
-    describe("numbers divisible by 3 and 5", () => {
-      it("15", () => {
-        expect(solution(15)).to.deep.equal(["fizzbuzz", 1, 2, "fizz", 4, "buzz", "fizz", 7, 8, "fizz", "buzz", 11, "fizz", 13, 14,]);
+    describe('numbers divisible by 3 and 5', () => {
+      it('15', () => {
+        expect(solution(15)).to.deep.equal([
+          'fizzbuzz',
+          1,
+          2,
+          'fizz',
+          4,
+          'buzz',
+          'fizz',
+          7,
+          8,
+          'fizz',
+          'buzz',
+          11,
+          'fizz',
+          13,
+          14,
+        ]);
       });
       // write more of these
     });
   });
 }
 
-
-
-
 // minified solution for testing your tests
 
+// prettier-ignore
 function secretSolution(a) { if ("number" != typeof a) { throw new TypeError("max is not a number"); } if (0 > a) { throw new RangeError("max is less than 0"); } if (!Number.isInteger(a)) { throw new RangeError("max is not an integer"); } const b = []; for (let c = 0; c < a; c++) { 0 == c % 3 && 0 == c % 5 ? b.push("fizzbuzz") : 0 == c % 3 ? b.push("fizz") : 0 == c % 5 ? b.push("buzz") : b.push(c); } return b; }

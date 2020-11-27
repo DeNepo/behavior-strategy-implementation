@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 /* chai
 
@@ -21,64 +21,63 @@
 
 const expect = require('chai').expect;
 
-describe("about expect", () => {
-
-  describe("strict equality : ===", () => {
-    it("passing", () => {
+describe('about expect', () => {
+  describe('strict equality : ===', () => {
+    it('passing', () => {
       expect(true).equal(true);
     });
-    it("failing", () => {
+    it('failing', () => {
       expect(true).equal(false);
     });
   });
 
-  describe(".to : for readability", () => {
+  describe('.to : for readability', () => {
     // you can add .to. in your tests to make it more readable
     // this won't change how the test works
-    it("passing", () => {
+    it('passing', () => {
       expect(true).to.equal(true);
     });
-    it("failing", () => {
+    it('failing', () => {
       expect(true).to.equal(false);
     });
   });
 
-  describe("deep equality", () => {
+  describe('deep equality', () => {
     // to compare arrays and objects you will need .deep
     // this will check that they store the same values
     //  remember isolate/reference-vs-value?
-    it("passing array", () => {
+    it('passing array', () => {
       expect([1, 2, 3]).to.deep.equal([1, 2, 3]);
     });
-    it("failing array", () => {
-      expect([1, 2, 3]).to.deep.equal([1, "2", 3]);
+    it('failing array', () => {
+      expect([1, '2', 3]).to.deep.equal([1, 2, 3]);
     });
-    it("passing object", () => {
+    it('passing object', () => {
       expect({ a: 1, b: 2 }).to.deep.equal({ b: 2, a: 1 });
     });
-    it("failing object", () => {
-      expect({ a: "x", b: 2 }).to.deep.equal({ b: 2, a: 1 });
+    it('failing object', () => {
+      expect({ a: 'x', b: 2 }).to.deep.equal({ b: 2, a: 1 });
     });
   });
 
-  describe(".throw", () => {
+  describe('.throw', () => {
     // this assertion checks to make sure a function throws an error
     // you wont' need to know this unless you study /using-errors
-    it("passing", () => {
+    it('passing', () => {
       const throwsCorrectError = () => {
-        throw Error("hello");
+        throw Error('hello');
       };
-      expect(throwsCorrectError).to.throw(Error, "hello");
+      expect(throwsCorrectError).to.throw(Error, 'hello');
     });
-    it("failing: wrong error", () => {
+    it('failing: wrong error', () => {
       const throwsWrongError = () => {
-        throw TypeError("userName is not a string");
+        throw TypeError('userName is not a string');
       };
-      expect(throwsWrongError).to.throw(Error, "hello");
+      expect(throwsWrongError).to.throw(Error, 'hello');
     });
-    it("failing: does not throw", () => {
-      const doesNotThrow = () => { };
-      expect(doesNotThrow).to.throw(Error, "hello");
+    it('failing: does not throw', () => {
+      const doesNotThrow = () => {};
+      expect(doesNotThrow).to.throw(Error, 'hello');
     });
   });
 });

@@ -9,11 +9,7 @@ const expect = require('chai').expect;
  *  repetitions must be greater than zero, and must be an integer
  * @return {string} the text repeated as many times as repetitions
  */
-const stub = () => {
-
-};
-
-
+const stub = () => {};
 
 /*
   your notes go here
@@ -25,26 +21,26 @@ for (const solution of [
 ]) {
   // the main test suite for the function
   describe(solution.name + ': repeating a string:', () => {
-    describe("default parameters", () => {
-      it("repeat once if no repetitions is passed", () => {
-        expect(solution("asdf")).to.equal("asdf");
+    describe('default parameters', () => {
+      it('repeat once if no repetitions is passed', () => {
+        expect(solution('asdf')).to.equal('asdf');
       });
-      it("expect an empty string if no arguments are passed", () => {
+      it('expect an empty string if no arguments are passed', () => {
         expect(solution()).to.equal('');
       });
     });
-    describe("an empty string", () => {
-      it("0 times", () => {
+    describe('an empty string', () => {
+      it('0 times', () => {
         expect(solution('', 0)).to.equal('');
       });
-      it("10 times", () => {
+      it('10 times', () => {
         expect(solution('', 10)).to.equal('');
       });
-      it("100 times", () => {
+      it('100 times', () => {
         expect(solution('', 100)).to.equal('');
       });
     });
-    describe("zero repetitions", () => {
+    describe('zero repetitions', () => {
       it('"asdf"', () => {
         expect(solution('asdf', 0)).to.equal('');
       });
@@ -52,19 +48,22 @@ for (const solution of [
         expect(solution('tommywalk', 0)).to.equal('');
       });
     });
-    describe("standard use cases", () => {
+    describe('standard use cases', () => {
       it('repeat a phrase 3 times', () => {
-        expect(solution('go to school', 3)).to.equal('go to schoolgo to schoolgo to school');
+        expect(solution('go to school', 3)).to.equal(
+          'go to schoolgo to schoolgo to school'
+        );
       });
       it('phrases with punctuation', () => {
-        expect(solution('"Go!", said Dr. Seuss?', 2)).to.equal('"Go!", said Dr. Seuss?"Go!", said Dr. Seuss?');
+        expect(solution('"Go!", said Dr. Seuss?', 2)).to.equal(
+          '"Go!", said Dr. Seuss?"Go!", said Dr. Seuss?'
+        );
       });
       it('special characters', () => {
-        expect(solution('\\ \n \t \s', 2)).to.equal('\\ \n \t \s\\ \n \t \s');
+        expect(solution('\\ \n \t s', 2)).to.equal('\\ \n \t s\\ \n \t s');
       });
     });
   });
-};
-
+}
 
 // minified solution for testing your tests

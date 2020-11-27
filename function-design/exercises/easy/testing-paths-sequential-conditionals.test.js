@@ -13,16 +13,11 @@ const expect = require('chai').expect;
  *  // false, false --> '00'
  *  // false, true --> '01'
  */
-const stub = () => { };
-
-
-
-
+const stub = () => {};
 
 /*
 
 */
-
 
 for (const solution of [
   secretSolution,
@@ -43,12 +38,11 @@ for (const solution of [
       const actual = _;
       _;
     });
-    it('_', () => {
-    });
+    it('_', () => {});
   });
 }
 
-
 // minified solution for testing your tests
 
+// prettier-ignore
 function secretSolution(c = false, a = false) { if ("boolean" != typeof c) { throw new TypeError("a is not boolean"); } if ("boolean" != typeof a) { throw new TypeError("b is not boolean"); } let b = ""; return b += c ? "1" : "0", b += a ? "1" : "0", b }

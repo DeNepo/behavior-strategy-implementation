@@ -8,15 +8,11 @@ const expect = require('chai').expect;
  * @param {any} value
  * @returns {boolean}
  */
-const stub = () => { };
-
-
-
+const stub = () => {};
 
 /*
 
 */
-
 
 for (const solution of [
   secretSolution,
@@ -61,7 +57,7 @@ for (const solution of [
   });
 }
 
-
 // minified solution for testing your tests
 
-function secretSolution(value) { return value ? true : false; };
+// prettier-ignore
+function secretSolution(value) { return value ? true : false; }

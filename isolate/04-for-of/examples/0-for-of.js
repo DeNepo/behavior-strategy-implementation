@@ -36,5 +36,5 @@ console.log('infinite loops are still possible with for-of');
 const naturalNumbers = [0];
 for (const number of naturalNumbers) {
   naturalNumbers.push(number + 1);
-  console.log(naturalNumbers)
+  console.log(naturalNumbers);
 }

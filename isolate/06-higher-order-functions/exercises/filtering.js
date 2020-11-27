@@ -7,17 +7,18 @@
  * @param {string} str - string to check for "!"
  * @returns {boolean} if str contains "!" or not
  */
-const isEnthusiastic = (_) => {
+const isEnthusiastic = _ => {
   return _;
 };
-
 
 // this works!  no need to change it
 const filter = (arr, callback) => {
   const filtered = [];
   for (let entry of arr) {
     const keepIt = callback(entry);
-    if (keepIt) { filtered.push(entry); }
+    if (keepIt) {
+      filtered.push(entry);
+    }
   }
   return filtered;
 };
@@ -46,10 +47,8 @@ const _4_actual = filter([':(', 'hi!', '!', ''], isEnthusiastic);
 const _4_test = deepCompare(_4_actual, _4_expect);
 console.assert(_4_test, 'Test 4');
 
-
-
-
-
 // hoisted to keep it out of your way in the editor
 // in one line so it's out of your way in JS Tutor
-function deepCompare(actual, expect) { return actual === expect || Object.is(actual, expect) || (Object(actual) === actual && Object(expect) === expect) && (Array.isArray(actual) && Array.isArray(expect) && actual.length === expect.length && expect.every((expect, index) => deepCompare(actual[index], expect)) || Reflect.ownKeys(actual).length === Reflect.ownKeys(expect).length && Reflect.ownKeys(expect).every((key) => deepCompare(actual[key], expect[key]))); };
+
+// prettier-ignore
+function deepCompare(actual, expect) { return ( actual === expect || Object.is(actual, expect) || (Object(actual) === actual && Object(expect) === expect && ((Array.isArray(actual) && Array.isArray(expect) && actual.length === expect.length && expect.every((expect, index) => deepCompare(actual[index], expect))) || (Object.keys(actual).length === Object.keys(expect).length && Object.keys(expect).every(key => deepCompare(actual[key], expect[key]))))));}

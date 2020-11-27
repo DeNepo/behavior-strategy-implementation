@@ -11,10 +11,7 @@ const expect = require('chai').expect;
  * @example
  *  ['1', '2', 'e', '.'] // --> [1, 2]
  */
-const stub = () => {
-
-};
-
+const stub = () => {};
 
 /*
 
@@ -26,14 +23,11 @@ for (const solution of [
 ]) {
   describe(solution.name + ': _', () => {
     describe('_', () => {
-      it('_', () => {
-
-      });
+      it('_', () => {});
     });
   });
-};
-
-
+}
 
 // minified solution for testing your tests
+// prettier-ignore
 function secretSolution(a) { if (!Array.isArray(a)) { throw new TypeError("arrayOfStrings is not an array"); } const b = a.some(a => "string" != typeof a); if (b) { throw new TypeError("arrayOfStrings contains non-strings"); } const c = a.map(a => +a), d = c.filter(a => !Number.isNaN(a)); return d }

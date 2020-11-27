@@ -1,6 +1,7 @@
 # Behavior, Strategy, Implementation
 
 > Be creative while inventing ideas, but be disciplined while implementing them.
+>
 > - [Amit Kalantri](https://amitkalantri.com/tag/quotes-about-creativity/)
 
 - Behavior: What does code do? What are it’s arguments and it’s return value? How could you use it in a program? Behavior is checked by tests
@@ -31,21 +32,21 @@
 > You will need [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) and [nvm](https://github.com/nvm-sh/nvm#installing-and-updating) on your computer to study this material
 
 1. Clone this repository:
-    - `git clone git@github.com:HackYourFutureBelgium/behavior-strategy-implementation.git` (SSH)
-    - `git clone https://github.com/HackYourFutureBelgium/behavior-strategy-implementation.git` (HTTPS)
-    - `gh repo clone HackYourFutureBelgium/behavior-strategy-implementation` (GH CLI)
+   - `git clone git@github.com:HackYourFutureBelgium/behavior-strategy-implementation.git` (SSH)
+   - `git clone https://github.com/HackYourFutureBelgium/behavior-strategy-implementation.git` (HTTPS)
+   - `gh repo clone HackYourFutureBelgium/behavior-strategy-implementation` (GH CLI)
 1. `cd` into the repository
-    - `cd behavior-strategy-implementation`
+   - `cd behavior-strategy-implementation`
 
 ### In the Browser
 
 > Using a browser with good DevTools will make your life easier: [Chromium](http://www.chromium.org/getting-involved/download-chromium), [FireFox](https://www.mozilla.org/en-US/firefox/new/), [Edge](https://www.microsoft.com/edge), [Chrome](https://www.google.com/chrome/)
 
 1. Install or update the `study-lenses` package globally
-    - `npm install -g study-lenses` (if you do not have it already)
-    - `npm update -g study-lenses` (if you already have it installed)
+   - `npm install -g study-lenses` (if you do not have it already)
+   - `npm update -g study-lenses` (if you already have it installed)
 2. Run the `study` command from your CLI
-    - `study`
+   - `study`
 3. The material will open in your default browser, you're good to go!
 
 > If you have a windows computer and get this error:
@@ -56,16 +57,16 @@
 
 ### In Node.js
 
-> The [debugger built into VSCode](https://code.visualstudio.com/Docs/editor/debugging) is very good, it's all you'll need.  Don't forget to set [breakpoints](https://code.visualstudio.com/Docs/editor/debugging#_breakpoints)!
+> The [debugger built into VSCode](https://code.visualstudio.com/Docs/editor/debugging) is very good, it's all you'll need. Don't forget to set [breakpoints](https://code.visualstudio.com/Docs/editor/debugging#_breakpoints)!
 
 1. Install the repository's local dependencies:
-    - `npm install`
+   - `npm install`
 2. Running files in `.js` (without .test):
    - _debugger_: open the file, select the debug option from your VSCode side-bar, choose the `Current JS File (no tests)` option, and click `|>`.
    - _console_: `node path/to/file.js`, simple and easy
 3. Running files ending in `.test.js`:
-    - _debugger_: open the file, select the debug option from your VSCode side-bar, choose the `Current JS File (with tests)` option, and click `|>`.
-    - _console_: files ending in .test.js must be run with `mocha` -> `mocha path/to/file.test.js`. You will need to globally install mocha for this (`npm install -g mocha`)
+   - _debugger_: open the file, select the debug option from your VSCode side-bar, choose the `Current JS File (with tests)` option, and click `|>`.
+   - _console_: files ending in .test.js must be run with `mocha` -> `mocha path/to/file.test.js`. You will need to globally install mocha for this (`npm install -g mocha`)
 
 [TOP](#behavior-strategy-implementation)
 
@@ -73,10 +74,10 @@
 
 ## Study Tips
 
-- Don't rush, understand!  Programming is hard.
+- Don't rush, understand! Programming is hard.
   - The examples and exercises will still be there to study later.
   - It's better to fail tests slowly and learn from your mistakes than to pass tests quickly and not understand why.
-- Don't skip the examples!  Understanding and experimenting with working code is a very effective way to learn programming.
+- Don't skip the examples! Understanding and experimenting with working code is a very effective way to learn programming.
 - Write lots of good comments, learn more about this in [./studying-javascript](./studying-javascript)
 - Practice [Pair Programming](https://study.hackyourfuture.be/collaborating/pair-programming): two people, one computer.
 - Take a look through the [Learning From Code](https://study.hackyourfuture.be/learning/learning-from-code) guide for more study tips
@@ -146,7 +147,6 @@ What can you expect to learn in this module?
 
 </details>
 <br>
-
 
 [TOP](#behavior-strategy-implementation)
 
@@ -379,8 +379,7 @@ Higher-Order Functions and Functional Array Methods
 
 ### After Class
 
-No project this week, but a group project next week.  To prepare for next week's project you can study [Abstracting Behavior](https://github.com/HackYourFutureBelgium/debugging/tree/master/interact/5-abstracting-behavior) from the Debugging module
-
+No project this week, but a group project next week. To prepare for next week's project you can study [Abstracting Behavior](https://github.com/HackYourFutureBelgium/debugging/tree/master/interact/5-abstracting-behavior) from the Debugging module
 
 </details>
 <br>
@@ -416,8 +415,8 @@ No project this week, but a group project next week.  To prepare for next week's
 #### Before Break
 
 - Isolate
-  - Objects
-  - `for-in`
+  - Objects: 1, 2
+  - `for-in`: 1, 2 and 4
 
 #### After Break
 
@@ -438,7 +437,6 @@ _coming soon_
 - [ ] [one closed PR per step](https://github.com/_/_/pulls)
 ```
 
-
 </details>
 <br>
 
@@ -448,7 +446,7 @@ _coming soon_
 
 ## Class Recordings
 
-- **Students**: Here you can find recordings of this module from past classes.  Enjoy!
+- **Students**: Here you can find recordings of this module from past classes. Enjoy!
 - **Coaches**: When sending your PR's with links please ...
   - Indicate which class you were teaching
   - Which week it was (if the module is more than 1 week)
@@ -460,21 +458,21 @@ _coming soon_
 > [Charles](https://github.com/cpauwels), [Sali](https://github.com/Sali-Almurshidi) & [Evan](https://github.com/)
 
 1. Week 1:
-    - Sunday Part 1: [Reference vs. Value](https://vimeo.com/435470622)
-    - Sunday Part 1: [Map, Reduce, Filter, Every](https://vimeo.com/435470848)
-    - Sunday Part 2: [Mini-project intro](https://vimeo.com/435471018)
-    - Sunday Part 3: [Recap & Homework](https://vimeo.com/435485572)
+   - Sunday Part 1: [Reference vs. Value](https://vimeo.com/435470622)
+   - Sunday Part 1: [Map, Reduce, Filter, Every](https://vimeo.com/435470848)
+   - Sunday Part 2: [Mini-project intro](https://vimeo.com/435471018)
+   - Sunday Part 3: [Recap & Homework](https://vimeo.com/435485572)
 2. Week 2:
-    - Sunday Part 1: [The Callstack](https://vimeo.com/437861452)
-    - Sunday Part 1: [Higher Order Functions](https://vimeo.com/437861558)
-    - Sunday Part 1: [Arrows vs. Functions](https://vimeo.com/437861744)
-    - Sunday Part 1: [Error: EADDRINUSE](https://vimeo.com/437862520)
-    - Sunday Part 2: [Reverse-Engineering](https://vimeo.com/437861934)
-    - Sunday Part 2: [R-E & Assignments](https://vimeo.com/437862407)
+   - Sunday Part 1: [The Callstack](https://vimeo.com/437861452)
+   - Sunday Part 1: [Higher Order Functions](https://vimeo.com/437861558)
+   - Sunday Part 1: [Arrows vs. Functions](https://vimeo.com/437861744)
+   - Sunday Part 1: [Error: EADDRINUSE](https://vimeo.com/437862520)
+   - Sunday Part 2: [Reverse-Engineering](https://vimeo.com/437861934)
+   - Sunday Part 2: [R-E & Assignments](https://vimeo.com/437862407)
 3. Week 3:
-    - Sunday Part 1: [Objects 1](https://vimeo.com/440023525)
-    - Sunday Part 1: [Objects 2](https://vimeo.com/440023799)
-    - Sunday Part 2: [User input in Objects](https://vimeo.com/440024065)
+   - Sunday Part 1: [Objects 1](https://vimeo.com/440023525)
+   - Sunday Part 1: [Objects 2](https://vimeo.com/440023799)
+   - Sunday Part 2: [User input in Objects](https://vimeo.com/440024065)
 
 ## class-11-12
 

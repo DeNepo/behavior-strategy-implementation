@@ -7,7 +7,7 @@ const assert = require('chai').assert;
  * @param {Object} obj - the object to filter
  * @returns {Object} - the filtered object
  */
-const keepTruthyEntries = (obj) => {
+const keepTruthyEntries = (obj = {}) => {
 
   let onlyTruthyEntries = _;
   for (const _ in _) {

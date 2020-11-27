@@ -11,15 +11,11 @@ const expect = require('chai').expect;
  * @param {any} val2
  * @returns {string} the values' solution
  */
-const stub = () => { };
-
-
-
+const stub = () => {};
 
 /*
 
 */
-
 
 for (const solution of [
   secretSolution,
@@ -33,9 +29,7 @@ for (const solution of [
       it('numbers', () => {
         // 1, 1.0
       });
-      it('booleans', () => {
-
-      });
+      it('booleans', () => {});
     });
     describe('when values have the same type', () => {
       it('strings', () => {
@@ -44,9 +38,7 @@ for (const solution of [
       it('numbers', () => {
         expect(_).to.equal(_);
       });
-      it('booleans', () => {
-
-      });
+      it('booleans', () => {});
     });
     describe('when values are nothing alike', () => {
       it('obvious comparisons', () => {
@@ -59,6 +51,6 @@ for (const solution of [
   });
 }
 
-
 // minified solution for testing your tests
+// prettier-ignore
 function secretSolution(a, b) { let c = ""; return c = a === b ? "strictly equal" : typeof a == typeof b ? "same type" : "totally different", c }

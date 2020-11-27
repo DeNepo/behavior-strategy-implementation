@@ -7,7 +7,7 @@
  * @param {any} val - the value to convert
  * @returns {string} "truey" or "falsey"
  */
-const truthiness = (_) => {
+const truthiness = _ => {
   return _;
 };
 
@@ -45,8 +45,8 @@ const _4_actual = map([true, 0, NaN, 'hello'], truthiness);
 const _4_test = deepCompare(_4_actual, _4_expect);
 console.assert(_4_test, 'Test 4');
 
-
-
 // hoisted to keep it out of your way in the editor
 // in one line so it's out of your way in JS Tutor
-function deepCompare(actual, expect) { return actual === expect || Object.is(actual, expect) || (Object(actual) === actual && Object(expect) === expect) && (Array.isArray(actual) && Array.isArray(expect) && actual.length === expect.length && expect.every((expect, index) => deepCompare(actual[index], expect)) || Reflect.ownKeys(actual).length === Reflect.ownKeys(expect).length && Reflect.ownKeys(expect).every((key) => deepCompare(actual[key], expect[key]))); };
+
+// prettier-ignore
+function deepCompare(actual, expect) { return ( actual === expect || Object.is(actual, expect) || (Object(actual) === actual && Object(expect) === expect && ((Array.isArray(actual) && Array.isArray(expect) && actual.length === expect.length && expect.every((expect, index) => deepCompare(actual[index], expect))) || (Object.keys(actual).length === Object.keys(expect).length && Object.keys(expect).every(key => deepCompare(actual[key], expect[key]))))));}

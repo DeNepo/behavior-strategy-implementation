@@ -10,10 +10,7 @@ const expect = require('chai').expect;
  *  false: set the string to upper case
  * @returns {string} the text in all lower or upper case
  */
-const stub = () => {
-
-};
-
+const stub = () => {};
 
 /*
   your notes go here
@@ -24,7 +21,7 @@ for (const solution of [
   // stub
 ]) {
   describe(solution.name + ': sets a text to lower or upper case', () => {
-    describe('the function\'s default parameters', () => {
+    describe("the function's default parameters", () => {
       it('second parameter defaults to true', () => {
         expect(solution('asdf')).to.equal('asdf');
       });
@@ -53,8 +50,8 @@ for (const solution of [
       // when the text contains numbers
     });
   });
-};
-
+}
 
 // minified solution for testing your tests
+// prettier-ignore
 function secretSolution(a = "", b = !0) { if ("string" != typeof a) { throw new TypeError("text is not a string"); } if ("boolean" != typeof b) { throw new TypeError("lowerCase is not a boolean"); } let c = ""; return c = b ? a.toLowerCase() : a.toUpperCase(), c }
