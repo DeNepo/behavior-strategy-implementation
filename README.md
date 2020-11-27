@@ -479,5 +479,5 @@ _coming soon_
 > [Evan](https://github.com/), [Thibault](https://github.com/ThibaultLesuisse), [Joel](https://github.com/JoeCamacho)
 
 1. [Week 1](https://meet.openknowledge.be/playback/presentation/2.0/playback.html?meetingId=48966e92bc14f80c53d450f9e59dc77e812b2f8b-1605437686426)
-2. Week 2
+2. Week 2 - server crash :(
 3. Week 3
