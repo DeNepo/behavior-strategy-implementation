@@ -14,10 +14,10 @@ const es6shortHand = {
   lastName
 };
 
-const testKey1 = computedPropertyNames.firstName === 'Brendan';
+const testKey1 = es6shortHand.firstName === 'Brendan';
 console.assert(testKey1, 'Test: key 1');
 
-const testKey2 = computedPropertyNames.lastName === 'Eich';
+const testKey2 = es6shortHand.lastName === 'Eich';
 console.assert(testKey2, 'Test: key 2');
 
 // https://ui.dev/computed-property-names/
