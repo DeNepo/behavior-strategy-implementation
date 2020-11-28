@@ -27,4 +27,6 @@ const favoriteDishes = [spaghetti, steak];
 */
 const healthiestDishes = favoriteDishes.sort((a, b) => a.kcal - b.kcal);
 
+
+
 (dishes => dishes.forEach(dish => console.log(dish.name)))(healthiestDishes); 

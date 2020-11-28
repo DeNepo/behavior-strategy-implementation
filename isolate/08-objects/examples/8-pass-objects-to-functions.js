@@ -1,16 +1,16 @@
 // We start by creating a simple object
 const foods = {
-    bread: 'for dipping',
-    chili: 'a soup',
-    milk: 'drink it'
-  };
+  bread: 'for dipping',
+  chili: 'a soup',
+  milk: 'drink it'
+};
 
-  // We declare our function that accepts an object 
-  function displayFood(food){
-      for(let key of Object.keys(food)){
-          console.log(key)
-      }
+// We declare our function that accepts an object 
+const startDisplaying = (food) => {
+  for (let key of Object.keys(food)) {
+    console.log(key)
   }
+}
 
 // We call the function with a reference
-  displayFood(foods);
+startDisplaying(foods);
