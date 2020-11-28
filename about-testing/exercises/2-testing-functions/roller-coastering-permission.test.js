@@ -29,30 +29,30 @@ describe('a function that tells you are tall enough', () => {
   describe('when height is not a number', () => {
     it('passing true', () => {
       const actual = rollerCoasterPermission(true);
-      const expected = _;
+      const expected = 'height is not a number';
       expect(actual).to.equal(expected);
     });
     it('passing "tall"', () => {
-      const expected = _;
+      const expected = 'hop on the roller coaster!';
       const actual = rollerCoasterPermission('tall');
-      _;
+      expect(actual).not.to.equal(expected);
     });
   });
   describe('when height is a number', () => {
     it('less than 100', () => {
       const expected = 'too short, sorry  :(';
-      const actual = rollerCoasterPermission(_);
-      _;
+      const actual = rollerCoasterPermission(90);
+      expect(actual).to.equal(expected);
     });
     it('exactly 100', () => {
       const expected = 'just right, hop on!';
-      const actual = rollerCoasterPermission(_);
-      _;
+      const actual = rollerCoasterPermission(100);
+      expect(actual).to.equal(expected);
     });
     it('greater than 100', () => {
       const expected = 'hop on the roller coaster!';
-      const actual = rollerCoasterPermission(_);
-      _;
+      const actual = rollerCoasterPermission(120);
+       expect(actual).to.equal(expected);
     });
   });
 });

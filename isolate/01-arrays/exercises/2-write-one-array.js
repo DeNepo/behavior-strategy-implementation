@@ -2,7 +2,7 @@
 
 // write arrays to pass the assertions
 
-const food = _;
+const food = ['grape','apple','cookie','milk','carrot'];
 
 console.assert(food.length === 5, 'Test 1: length');
 console.assert(food[4] === 'carrot', 'Test 1: a');
@@ -12,7 +12,7 @@ console.assert(food[1] === 'apple', 'Test 1: d');
 console.assert(food[3] === 'milk', 'Test 1: e');
 
 
-const animals = _;
+const animals = ['cat','dolphin','mouse','dolphin'];
 
 console.assert(animals.length === 4, 'Test 2: length');
 console.assert(animals[0] === 'cat', 'Test 2: a');
@@ -21,11 +21,12 @@ console.assert(animals[2] === 'mouse', 'Test 2: c');
 console.assert(animals[3] === 'dolphin', 'Test 2: d');
 
 
-const plants = _;
+const plants = ['bush','tree','carrot','grass'];
 // leave this code as it is!
 const temp = plants[2];
 plants[2] = plants[0];
 plants[0] = temp;
+//['carrot','tree','bush','grass']
 
 console.assert(plants.length === 4, 'Test 3: length');
 console.assert(plants[0] === 'carrot', 'Test 3: a');
@@ -34,7 +35,7 @@ console.assert(plants[2] === 'bush', 'Test 3: c');
 console.assert(plants[3] === 'grass', 'Test 3: d');
 
 
-const mixed = _;
+const mixed = [false, null,true, 'tall'];
 // leave this code as it is!
 mixed[1] = false;
 mixed[0] = mixed[1];

@@ -7,8 +7,8 @@ const expect = require('chai').expect;
  * @param {any} value - any javascript value
  * @returns {string} the value's type
  */
-const typeofValue = () => {
-
+const typeofValue = (arg) => {
+  return typeof arg;
 };
 
 

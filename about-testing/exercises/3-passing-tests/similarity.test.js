@@ -8,10 +8,18 @@ const expect = require('chai').expect;
  * @param {any} b - the second value
  * @returns {string} how similar are a and b?
  */
-const howSimilarAre = () => {
+const howSimilarAre = (a,b) => {
 
+ if (typeof a === typeof b && a !== b && !Number.isNaN(a) && !Number.isNaN(b)){
+   return 'the same type';
+ }
+ else if (a === b || Number.isNaN(a) && Number.isNaN(b)){
+   return 'exactly the same';
+ }
+ else{
+   return 'nothing alike';
+ }
 };
-
 
 describe('determine how similar two values are', () => {
   describe('exactly the same', () => {
@@ -29,7 +37,7 @@ describe('determine how similar two values are', () => {
       expect(actual).to.equal(expected);
     });
     it(' and ', () => {
-      const actual = howSimilarAre('hello', 'hello');
+      const actual = howSimilarAre();
       expect(actual).to.equal(expected);
     });
   });
