@@ -8,7 +8,7 @@
     _: _,
   };
   console.assert(obj.soup === 'wet', 'Test 1');
-  console.assert(obj.dry === _, 'Test 2');
+  console.assert(obj.bread === _, 'Test 2');
   console.assert(deepCompare(obj, {}), 'Test 3');
 })();
 
