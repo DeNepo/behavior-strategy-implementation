@@ -10,7 +10,7 @@ const milk = 'a white beverage';
 const foods = {
   bread: 'for dipping',
   chili: 'a soup',
-  milk: 'drink it'
+  milk: 'drink it',
 };
 
 // access individual entries with a . followed by the key
@@ -21,7 +21,10 @@ console.assert(foods.milk === 'drink it', 'Test 1: milk');
 // non-existent keys have the value undefined
 console.assert(foods.tables === undefined, 'Test 2: undefined entries');
 
-// you can add key/value pairs like so:
+// you can add key/value pairs because objects are like backpacks
+//  using const is like locking a backpack outside
+//  people can still add and remove things from the object
+//  but the same object will always be referenced by this variable
 foods.nuts = 'roasted, salted';
 console.assert(foods.nuts === 'roasted, salted', 'Test 3: add entry');
 
