@@ -4,20 +4,20 @@ const tables = ['wood', 'metal', 'plastic'];
 const sofas = ['cotton', 'wool', 'pleather'];
 
 // fill in the empty array to pass the tests
-const test1 = deepCompare([_], sofas);
+const test1 = deepCompare(['cotton', 'wool', 'pleather'], sofas);
 console.assert(test1, 'Test 1');
 
 sofas[1] = 'plaid';
 
-const test2 = deepCompare([_], tables);
+const test2 = deepCompare(['wood', 'metal', 'plastic'], tables);
 console.assert(test2, 'Test 2');
 
-const test3 = deepCompare([_], sofas);
+const test3 = deepCompare(['cotton', 'plaid', 'pleather'], sofas);
 console.assert(test3, 'Test 3');
 
 tables.shift();
 
-const test4 = deepCompare([_], tables);
+const test4 = deepCompare(['metal', 'plastic'], tables);
 console.assert(test4, 'Test 4');
 
 // you don't need to understand this code

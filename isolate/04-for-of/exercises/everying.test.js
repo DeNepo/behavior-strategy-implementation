@@ -11,9 +11,9 @@ const assert = require('chai').assert;
 const containsNoNumbers = (arr = []) => {
   if (!Array.isArray(arr)) { throw new TypeError('arr is not an array'); }
 
-  let noNumbers = _;
-  for (const _ of _) {
-
+  let noNumbers = true;
+  for (const item of arr) {
+    noNumbers = typeof item !== 'number' && noNumbers;
   }
 
   return noNumbers;

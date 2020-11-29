@@ -12,8 +12,8 @@ const filterOutStrings = (arr = []) => {
   if (!Array.isArray(arr)) { throw new TypeError('arr is not an array'); }
 
   const noStrings = [];
-  for (const _ of _) {
-
+  for (const noString of arr) {
+    typeof noString !== 'string'? noStrings.push(noString): noStrings.push();
   }
 
   return noStrings;
