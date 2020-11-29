@@ -1,11 +1,5 @@
 {
   "study": {
-    "append": [
-      {
-        "relative": true,
-        "path": "./secret-solution.js"
-      }
-    ],
     "save": false
   }
 }
