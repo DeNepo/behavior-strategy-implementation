@@ -340,8 +340,8 @@ const repeatString = (text = '', repetitions = 1) => {
 ```js
 // in all it's ES6 one-line glory
 // beautiful to look at, harder to read
-const recursionWithTernary = (text = '', repetitions = 1) =>
-  repetitions === 0 ? '' : text + recursionTry4(text, nextRepetitions - 1);
+const repeatString = (text = '', repetitions = 1) =>
+  repetitions === 0 ? '' : text + repeatString(text, nextRepetitions - 1);
 ```
 
 </details>
