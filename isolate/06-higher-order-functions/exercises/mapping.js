@@ -7,8 +7,8 @@
  * @param {any} val - the value to convert
  * @returns {string} "truey" or "falsey"
  */
-const truthiness = _ => {
-  return _;
+const truthiness = val => {
+  return Boolean(val)? 'truey': 'falsey';
 };
 
 // this works! no need to change it

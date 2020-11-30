@@ -9,8 +9,8 @@
  * @param {any} val
  * @returns {boolean}
  */
-const isFalsy = (_) => {
-
+const isFalsy = (val) => {
+  return !val;
 };
 
 
