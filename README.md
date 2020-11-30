@@ -592,7 +592,6 @@ Helpful resources for this module
   - 🥚: [./about-testing](./about-testing): A quick introduction to `describe`, `it`, and `chai`
   - 🥚: [./isolate](./isolate): Practice core JavaScript without any user input or HTML/CSS
   - 🐣: [./function-design](./function-design): Learn a structured approach to understanding and solving coding challenges
-  - 🐣: [./refactor-and-test](./refactor-and-test): Practice refactoring the logic from user interactions and testing it in isolation
   - 🐣: [./user-data](./user-data): An intro to using arrays and objects to store user data, integrated with HTML & CSS
   - 🐥: `./using-errors`: _coming soon_
 - 🐣: Integrating JS with HTML & CSS
