@@ -123,7 +123,7 @@ How do you approach solving the problem? There are many strategies to solve the 
 
 One way to approach strategy is to solve the problem a few different ways by hand, writing what you expect to change in memory at each step. Like if you were the debugger and you couldn't see the source code. Using a pencil and paper is a the best way to go, pick a few test cases and see how you'd solve them manually.
 
-Here are three possible strategies to approach repeating a string. Each one is written as block comment with step-by-step goals focusing on _what_ should happen at each step, not _how_ it will happen. This type of comment is helpful to include in your code:
+Here are four possible strategies to approach repeating a string. Each one is written as block comment with step-by-step goals focusing on _what_ should happen at each step, not _how_ it will happen. This type of comment is helpful to include in your code:
 
 <details>
 <summary>Iterate until string is long enough</summary>
@@ -193,9 +193,25 @@ Here are three possible strategies to approach repeating a string. Each one is w
 
 </details>
 
+<details>
+<summary>Native JS methods</summary>
+
+```js
+/* use native .js methods
+
+  repeatString(text, repetitions) =>
+    1. make sure the data is the correct type and format for the method you're using
+    2. use the method
+    return: the result
+
+*/
+```
+
+</details>
+
 ## Implementation
 
-Which language features and which lines of code can you use to make your strategy a reality? There are many ways to code the same strategy. let's look at three implementations for each strategy described above, all of these functions will pass the unit tests written in the _Behavior_ section:
+Which language features and which lines of code can you use to make your strategy a reality? There are many ways to code the same strategy. let's look at multiple implementations for each strategy described above, all of these functions will pass the unit tests written in the _Behavior_ section:
 
 ### Iterate Until String is Long Enough
 
@@ -372,7 +388,6 @@ const repeatString = (text = '', repetitions = 1) => {
   that means that it has a different signature (the extra `repeated` parameter)
   but can still replace previous implementations without breaking anything
 */
-
 const repeatString = (text = '', repetitions = 1, repeated = '') => {
   if (repetitions === 0) {
     return repeated;
@@ -381,6 +396,32 @@ const repeatString = (text = '', repetitions = 1, repeated = '') => {
     const nextRepetitions = repetitions - 1;
     return repeatString(text, nextRepetitions, nextRepeated);
   }
+};
+```
+
+</details>
+
+### Native JS Methods
+
+<details>
+<summary>Sting.prototype.repeat</summary>
+
+```js
+// short and sweet, no room for mistakes
+const repeatString = (text = '', repetitions = 1) => text.repeat(repetitions);
+```
+
+</details>
+
+<details>
+<summary>Array.prototype.fill</summary>
+
+```js
+// less clear and more complex, but still pretty clear to read
+const repeatString = (text = '', repetitions = 1) => {
+  const oneEntryPerRepetition = Array(repetitions).fill(text);
+  const repeatedString = oneEntryPerRepetition.join('');
+  return repeatedString;
 };
 ```
 
