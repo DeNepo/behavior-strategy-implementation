@@ -177,6 +177,8 @@ Here are three possible strategies to approach repeating a string. Each one is w
   i'm using 0 as the base-case because that is the fewest possible repetitions
   zero repetitions is an empty string, so if repetitions is 0 it will return ''
 
+  otherwise i'll need to combine the text with a string that has one fewer reptitions
+
   repeatString(text, repetitions) =>
     base-case: repetitions is 0
       return: an empty string
