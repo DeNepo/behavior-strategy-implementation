@@ -4,9 +4,385 @@
 >
 > - [Amit Kalantri](https://amitkalantri.com/tag/quotes-about-creativity/)
 
-- Behavior: What does code do? What are it’s arguments and it’s return value? How could you use it in a program? Behavior is checked by tests
-- Strategy: How could you transform the arguments to the return value in small steps, focusing on the data not the code. This is the realm of flow charts, diagrams, and pseudocode.
-- Implementation: Which language features and which lines of code can you use to make your strategy a reality?
+In this module you will explore different ways to break down and solve coding challenges. Along with structured workflows for approaching challenges, you will learn the JavaScript you need to write clear and maintainable solutions including: reading and writing tests, higher order functions, arrays and object.
+
+## Behavior
+
+What does the function do? What are it’s arguments and it’s return value? How could you use it in a program? Behavior is all about what your function looks like "from the outside", without caring about what is written inside.
+
+Functions behavior is generally described using **use cases**, **documentation** and/or **unit tests**:
+
+<details>
+<summary>Use Cases ("real-world" examples)</summary>
+
+```js
+// repeating a string inside an I/O loop
+let repeatedText = '';
+while (true) {
+  const userString = promptForSomething('input a string to repeat');
+  const userRepetitions = promptForNumber('how many times to repeat it?');
+  const repeatedInput = repeatString(userString, userRepetitions);
+  const userConfirmed = confirm(`is this correct: "${repeatedInput}"`);
+  if (userConfirmed) {
+    repeatedText = repeatedInput;
+    break;
+  }
+}
+console.log(repeatedText);
+```
+
+```js
+// repeating a string from the DOM
+const userString = document.getElementById('text-input').value;
+const userRepetitions = document.getElementById('number-input').value;
+const repeatedInput = repeatString(userString, userRepetitions);
+document.getElementById('repeated-value-display').innerHTML = repeatedInput;
+```
+
+</details>
+
+<details>
+<summary>Documentation (JSDoc comment)</summary>
+
+```js
+/**
+ * repeats a string a specific number of times
+ * @param {string} [text=''] - the string to repeat. defaults to empty string
+ * @param {number} [repetitions=1] - how many times to repeat. defaults to 1
+ *  repetitions cannot be negative, and must be an integer
+ * @return {string} the text repeated as many times as repetitions
+ */
+const repeatString = (text = '', repetitions = 0) => {
+  // some code
+};
+```
+
+</details>
+
+<details>
+<summary>Unit Tests (pass/fail assertions)</summary>
+
+```js
+'use strict';
+
+const expect = require('chai').expect;
+
+const repeatString = require('./repeat-string.js');
+
+describe('repeats a string any number of times:', () => {
+  describe('default values', () => {
+    it('repetitions default should be 1', () => {
+      expect(repeatString('asdf')).to.equal('asdf');
+    });
+    it('text default should be an empty string', () => {
+      expect(repeatString().to.equal('');
+    });
+  });
+  describe('an empty string', () => {
+    it('0 times', () => {
+      expect(repeatString('', 0)).to.equal('');
+    });
+    it('10 times', () => {
+      expect(repeatString('', 10)).to.equal('');
+    });
+    it('100 times', () => {
+      expect(repeatString('', 100)).to.equal('');
+    });
+  });
+  describe('zero repetitions', () => {
+    it('"asdf"', () => {
+      expect(repeatString('asdf', 0)).to.equal('');
+    });
+    it('"tommywalk"', () => {
+      expect(repeatString('tommywalk', 0)).to.equal('');
+    });
+  });
+  describe('standard use cases', () => {
+    it('repeat a phrase 3 times', () => {
+      expect(repeatString('go to school', 3)).to.equal(
+        'go to schoolgo to schoolgo to school'
+      );
+    });
+    it('phrases with punctuation', () => {
+      expect(repeatString('"Go!", said Dr. Seuss?', 2)).to.equal(
+        '"Go!", said Dr. Seuss?"Go!", said Dr. Seuss?'
+      );
+    });
+    it('special characters', () => {
+      expect(repeatString('\\ \n \t s', 2)).to.equal('\\ \n \t s\\ \n \t s');
+    });
+  });
+});
+```
+
+</details>
+
+## Strategy
+
+How do you approach solving the problem? There are many strategies to solve the same problem! A way to practice strategy is to think of transforming the arguments to the return value in small steps, _focusing on the data not the code_. This is the realm of flow charts, diagrams, and pseudo-code.
+
+One way to approach strategy is to solve the problem a few different ways by hand, writing what you expect to change in memory at each step. Like if you were the debugger and you couldn't see the source code. Using a pencil and paper is a the best way to go, pick a few test cases and see how you'd solve them manually.
+
+Here are three possible strategies to approach repeating a string. Each one is written as block comment with step-by-step goals focusing on _what_ should happen at each step, not _how_ it will happen. This type of comment is helpful to include in your code:
+
+<details>
+<summary>Iterate until string is long enough</summary>
+
+```js
+/* iterating until the new string's length is correct
+
+  repeatString(text, repetitions) =>
+    1. calculate the final length for the new string
+    2. create a new string to fill with many text's
+    3. iterate as long as the new string is too short
+      a. check if the new string is long enough
+        stop if it is, keep going if it is not
+      b. append text to the new
+      c. repeat
+    return: the new repeated string
+
+*/
+```
+
+</details>
+
+<details>
+<summary>Iteration with a stepper variable</summary>
+
+```js
+/* iterating over the number of repetitions
+
+  repeatString(text, repetitions) =>
+    1. create a new string to fill with many text's
+    2. create a stepper variable, starting at 0
+    3. iterate from 0 to repetitions
+      a. check if stepper is still less than repetitions
+        keep going if it is, otherwise stop iterating
+      b. append text to the new string
+      c. increment the stepper
+      d. repeat
+    return: the new repeated string
+
+*/
+```
+
+</details>
+
+<details>
+<summary>Recurse with base-case 0</summary>
+
+```js
+/* recursion with base-case 0
+
+  i'm using 0 as the base-case because that is the fewest possible repetitions
+  zero repetitions is an empty string, so if repetitions is 0 it will return ''
+
+  repeatString(text, repetitions) =>
+    base-case: repetitions is 0
+      return: an empty string
+    recursive case: repetitions is greater than 0
+      nextRepetitions = subtract one from repetitions
+      recursedValue = recursively call repeatString with text and nextRepetitions
+      return: text + recursedValue
+
+
+*/
+```
+
+</details>
+
+## Implementation
+
+Which language features and which lines of code can you use to make your strategy a reality? There are many ways to code the same strategy. let's look at three implementations for each strategy described above, all of these functions will pass the unit tests written in the _Behavior_ section:
+
+### Iterate Until String is Long Enough
+
+<details>
+<summary>While loop, true and break</summary>
+
+```js
+/* unconventional and pretty old-school
+  there is a lot of reinventing the wheel
+  while loops are designed to check conditions
+  this is not the simplest solution to read or maintin
+*/
+const repeatString = (text = '', repetitions = 1) => {
+  const finalLength = text.length * repetitions;
+  let repeatedText = '';
+  while (true) {
+    if (repeatedText.length === finalLength) {
+      break;
+    }
+    repeatedText = repeatedText + text;
+  }
+  return repeatedText;
+};
+```
+
+</details>
+
+<details>
+<summary>While loop, logic in head</summary>
+
+```js
+/* the cleanest implementation for this strategy
+  it uses the language feature designed for this type of strategy
+*/
+const repeatString = (text = '', repetitions = 1) => {
+  const finalLength = text.length * repetitions;
+  let repeatedText = '';
+  while (repeatedText.length < finalLength) {
+    repeatedText += text;
+  }
+  return repeatedText;
+};
+```
+
+</details>
+
+<details>
+<summary>For loop with only a condition check</summary>
+
+```js
+/* not the best implementation, it's confusing to read
+  this strategy does not use stepping, and for loops are designed for stepping
+  implementing this strategy with a for loop is putting a square peg in a round hole
+
+  when someone sees a for loop they expect it to be used like a for loop
+  this implementation uses a for loop like a while loop
+  the computer doesn't care, but the intention is confusing for other devs
+*/
+const repeatString = (text = '', repetitions = 1) => {
+  const finalLength = text.length * repetitions;
+  let repeatedText = '';
+  for (; repeatedText.length < finalLength; ) {
+    repeatedText += text;
+  }
+  return repeatedText;
+};
+```
+
+</details>
+
+### Iteration with Stepper Variable
+
+<details>
+<summary>While loop, true and break</summary>
+
+```js
+/* unconventional and pretty old-school
+  there is a lot of reinventing the wheel
+  while loops are designed to check conditions
+  this is not the simplest solution to read or maintain
+*/
+const repeatString = (text = '', repetitions = 1) => {
+  let repeatedText = '';
+  let count = 0;
+  while (true) {
+    if (count === repetitions) {
+      break;
+    }
+    repeatedText += text;
+    count++;
+  }
+  return repeatedText;
+};
+```
+
+</details>
+
+<details>
+<summary>While loop, condition in head</summary>
+
+```js
+/* a better way to user the while loop since the condition is known
+  easier to read and more conventional than the previous implementation
+  maybe you find this easier to read than a for loop
+*/
+const repeatString = (text = '', repetitions = 1) => {
+  let repeatedText = '';
+  let count = 0;
+  while (count < repetitions) {
+    repeatedText = repeatedText + text;
+    count++;
+  }
+  return repeatedText;
+};
+```
+
+</details>
+
+<details>
+<summary>For loop</summary>
+
+```js
+/* the cleanest implementation for this strategy
+  it uses the language feature designed for stepping
+*/
+const repeatString = (text = '', repetitions = 1) => {
+  let repeatedText = '';
+  for (let count = 0; count < repetitions; count++) {
+    repeatedText += text;
+  }
+  return repeatedText;
+};
+```
+
+</details>
+
+### Recursion with Base-Case 0
+
+<details>
+<summary>Ternary Operator</summary>
+
+```js
+// in all it's ES6 one-line glory
+// beautiful to look at, harder to read
+const recursionWithTernary = (text = '', repetitions = 1) =>
+  repetitions === 0 ? '' : text + recursionTry4(text, nextRepetitions - 1);
+```
+
+</details>
+
+<details>
+<summary>Conditional Statement</summary>
+
+```js
+// good old fashioned (readable) conditional blocks
+const repeatString = (text = '', repetitions = 1) => {
+  if (repetitions === 0) {
+    return '';
+  } else {
+    const nextRepetitions = repetitions - 1;
+    const oneRepetitionShort = repeatString(text, nextRepetitions);
+    return text + oneRepetitionShort;
+  }
+};
+```
+
+</details>
+
+<details>
+<summary>Conditional Statement (tail-call recursion)</summary>
+
+```js
+/* this implementation is "backwards compatible"
+  that means that it has a different signature (the extra `repeated` parameter)
+  but can still replace previous implementations without breaking anything
+*/
+
+const repeatString = (text = '', repetitions = 1, repeated = '') => {
+  if (repetitions === 0) {
+    return repeated;
+  } else {
+    const nextRepeated = repeated + text;
+    const nextRepetitions = repetitions - 1;
+    return repeatString(text, nextRepetitions, nextRepeated);
+  }
+};
+```
+
+</details>
 
 ## Contents
 
