@@ -8,7 +8,7 @@
     _: _,
   };
   console.assert(obj.soup === 'wet', 'Test 1');
-  console.assert(obj.dry === _, 'Test 2');
+  console.assert(obj.bread === _, 'Test 2');
   console.assert(deepCompare(obj, {}), 'Test 3');
 })();
 
@@ -18,12 +18,12 @@
   const inTheSky = _;
   const obj = {
     [_]: 'crane',
-    [_]: _,
+    [_]: _, // use existing variables to complete this one
     running: _,
   };
   console.assert(obj.flying === 'crane', 'Test 4');
   console.assert(_ === 'cheetah', 'Test 5');
-  console.assert(obj[mackerel] === swimming, 'Test 6');
+  console.assert(obj.swimming === 'mackerel', 'Test 6');
   console.assert(deepCompare(obj, {}), 'Test 7');
 })();
 

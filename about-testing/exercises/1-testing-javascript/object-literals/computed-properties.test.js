@@ -8,13 +8,13 @@ describe('computed properties', () => {
     const dry = 'bread';
     const obj = {
       [_]: 'wet',
-      _: _
+      _: _,
     };
     it('obj.soup', () => {
       expect(obj.soup).to.equal('wet');
     });
     it('obj.dry', () => {
-      expect(obj.dry).to.equal(_);
+      expect(obj.bread).to.equal(_);
     });
   });
   describe('a menagerie', () => {
@@ -24,7 +24,7 @@ describe('computed properties', () => {
     const obj = {
       [_]: 'crane',
       [_]: _,
-      running: _
+      running: _,
     };
     it('obj.flying', () => {
       expect(obj.flying).to.equal('crane');

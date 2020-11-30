@@ -408,7 +408,7 @@ No project this week, but a group project next week. To prepare for next week's 
   - [javascript.info](https://javascript.info/object#the-for-in-loop)
   - [`for in`, vs `for of`](https://alligator.io/js/for-of-for-in-loops/)
   - [a video](https://www.youtube.com/watch?v=prl73KRkB34)
-- [Abstracting Behavior](https://github.com/HackYourFutureBelgium/debugging/tree/master/interact/5-abstracting-behavior) (examples)
+- [abstracting-behavior](https://github.com/HackYourFutureBelgium/debugging/tree/master/interact/5-abstracting-behavior) (examples)
 
 ### During Class
 
@@ -420,18 +420,50 @@ No project this week, but a group project next week. To prepare for next week's 
 
 #### After Break
 
-- Present this week's Project (details coming)
+- Review [abstracting-behavior](https://github.com/HackYourFutureBelgium/debugging/tree/master/interact/5-abstracting-behavior)
+- Present this week's Project (with a capital "P')
 
 ### After Class
 
-_coming soon_
+> Group Project, [favorite-word](https://github.com/HackYourFutureBelgium/favorite-word)
+
+Bring it all together and prepare for the next module with this large project. Practice everything you've learned about JavaScript, problem solving and collaboration. There is no need to improve the UI in this project, you'll get plenty of time for that in the next module. The starter repository comes with these steps completed for you:
+
+- Project Planning
+- Repository Structure
+- Description and tests for every .js except interactions
+- Documentation for the `/src` folder
+- A GitHub action to auto-generate docs so they are always up to date with master branch
+- First 2 steps of the Dev Strategy
+
+The rest is up to you! Here are some tips:
+
+- Create one label for each folder in `/src`: `interactions`, `logic`, ...
+- Create one milestone for each step in the dev-strategy
+- Create an issue for each incomplete `.js` file in the `/src` folder
+  - label each issue according to which folder the file is in (`interactions`, `logic`, ...)
+  - milestone each issue according to it's step in the dev-strategy
+  - assign each issue to a team member
+- Develop each javascript file on a separate branch
+  - create a PR for each branch when it is ready
+  - link your PR to this task's issue
+  - complete a code review before merging each file to master
+- These types of functions can be developed on their own, they do not use other functions:
+  - `prompts`, `logic`, `renders`
+  - all of these files have tests
+- Interactions cannot be developed until the functions they use are ready:
+  - your team will need to coordinate!
+  - you will need to reverse-engineer these using `index.re.html`
+
+#### Checklist
+
+Use this in your `group-project` issue:
 
 ```markdown
 - [ ] [repo](https://github.com/_/_) (with a complete README)
 - [ ] [live demo](https://_.github.io/_)
-- [ ] [backlog](https://github.com/_/_/tree/master/planning/backlog.md)
 - [ ] [Figma planning document](_)
-- [ ] [development strategy](https://github.com/_/_/tree/master/planning/development-strategy.md)
+- [ ] [one issue per .js file](https://github.com/_/_/issues)
 - [ ] [project board](https://github.com/_/_/projects/_)
 - [ ] [one branch per step](https://github.com/_/_/branches)
 - [ ] [one closed PR per step](https://github.com/_/_/pulls)
@@ -480,4 +512,4 @@ _coming soon_
 
 1. [Week 1](https://meet.openknowledge.be/playback/presentation/2.0/playback.html?meetingId=48966e92bc14f80c53d450f9e59dc77e812b2f8b-1605437686426)
 2. Week 2 - server crash :(
-3. Week 3
+3. Week 3: [Objects Pt. 1](https://meet.openknowledge.be/playback/presentation/2.0/playback.html?meetingId=48966e92bc14f80c53d450f9e59dc77e812b2f8b-1606646910775), [Objects Pt. 2](https://vimeo.com/485101057), [Project Intro](https://vimeo.com/485101478)
