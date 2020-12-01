@@ -19,7 +19,7 @@ const isFalsyTest1 = isFalsy(0) === true;
 console.assert(isFalsyTest1, '0 is not truthy');
 
 const isFalsyTest2 = isFalsy(1) === false;
-console.assert(isFalsyTest2, '1 is not truthy');
+console.assert(isFalsyTest2, '1 is truthy');
 
 const isFalsyTest3 = isFalsy('') === true;
 console.assert(isFalsyTest3, '"" is not truthy');
