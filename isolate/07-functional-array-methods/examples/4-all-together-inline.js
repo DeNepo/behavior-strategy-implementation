@@ -15,7 +15,7 @@ const sumEvenNumbers = (arr) => {
   const isNotANumber = (entry) => {
     return typeof entry !== 'number';
   };
-  if (!arr.some(isNotANumber)) {
+  if (arr.some(isNotANumber)) {
     throw new TypeError('arr is not all numbers');
   }
 
