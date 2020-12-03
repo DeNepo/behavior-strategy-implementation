@@ -9,7 +9,7 @@ const assert = require('chai').assert;
  * @returns {boolean} is the string longer than 5?
  */
 const longerThanFive = (str) => {
-  return _;
+  return str.length > 5;
 };
 
 

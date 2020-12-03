@@ -9,7 +9,7 @@ const assert = require('chai').assert;
  * @returns {string} the strings, joined
  */
 const joinWithComma = (acc, next) => {
-  return _;
+  return `${acc}, ${next}`;
 };
 
 
@@ -29,6 +29,7 @@ describe('joinWithComma: joins two strings with a comma and a space', () => {
     });
   });
   describe('can be used as a callback for Array.reduce', () => {
+    //this will fail anyway
     it('Array.reduce throws an error if the array is empty', () => {
       const errorsOut = () => [].reduce(joinWithComma);
       assert.throws(errorsOut, TypeError, 'Reduce of empty array with no initial value');

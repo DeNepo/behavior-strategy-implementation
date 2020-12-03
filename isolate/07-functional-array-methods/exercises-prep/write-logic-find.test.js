@@ -9,7 +9,7 @@ const assert = require('chai').assert;
  * @returns {boolean} is it excited?
  */
 const isExcited = (str) => {
-  return _;
+  return str.includes('!');
 };
 
 describe('isExcited: determines if a string is excited or not', () => {

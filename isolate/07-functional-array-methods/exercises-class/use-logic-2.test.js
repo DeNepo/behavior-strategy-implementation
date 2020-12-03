@@ -19,8 +19,8 @@ const firstNegativeNumber = (arr) => {
 
   // fill in the array methods and pass the correct logic
   const negativeNumber = arr
-    ._(_)
-    ._(_);
+    .filter(isNumber)
+    .filter(isNegative)[0];
 
   return negativeNumber;
 };
@@ -66,4 +66,26 @@ describe('firstNegativeNumber: returns the first falsy string', () => {
       assert.deepStrictEqual(arg, ['hello', 'goodbye']);
     });
   });
+
+  /* as example:
+  
+  const firstNegativeNumber = (arr) => {
+  // these work, you need to pass them to the right array methods
+  const isNegative = (entry) => {
+    return entry < 0;
+  };
+  const isNumber = (entry) => {
+    return typeof entry === 'number';
+  };
+
+  // fill in the array methods and pass the correct logic
+  const negativeNumber = arr
+    .filter(isNumber)
+    .filter(isNegative);
+
+  return negativeNumber;
+};
+
+firstNegativeNumber([false, undefined, '-100', 3, -3, 40]);
+*/
 });

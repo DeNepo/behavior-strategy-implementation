@@ -20,8 +20,8 @@ const sentenceIt = (arr) => {
 
   // fill in the array method to use the logic above
   const sentenceIt = arr
-    ._(_)
-    ._(_, _);
+    .filter(isWord)
+    .reduce(twoWords,'');
 
   return sentenceIt;
 };
