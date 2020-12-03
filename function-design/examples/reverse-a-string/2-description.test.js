@@ -12,7 +12,7 @@ const expect = require('chai').expect;
 const stub = () => {};
 
 /*
-  your notes go here
+  your strategy goes here
 */
 
 for (const solution of [

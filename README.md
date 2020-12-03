@@ -668,6 +668,7 @@ Helpful resources for this module
   - [Una Kravets](https://css-tricks.com/an-illustrated-and-musical-guide-to-map-reduce-and-filter-array-methods/)
   - [Cheat Sheet](https://jrsinclair.com/javascript-array-methods-cheat-sheet)
   - Oliverjam: [learn-map-filter](https://github.com/oliverjam/learn-map-filter), [tdd-array-methods](https://github.com/oliverjam/tdd-array-methods)
+  -
 
 #### Objects
 
@@ -687,13 +688,15 @@ Helpful resources for this module
   - [steve griffith](https://www.youtube.com/watch?v=VmicKaGcs5g) (video)
   - [all things javascript](https://www.youtube.com/watch?v=A0g7sga28Zg) (video)
   - [stackoverflow](https://stackoverflow.com/questions/38824349/how-to-convert-an-object-to-an-array-of-key-value-pairs-in-javascript)
-- Arrays of Objects
-  - [short, sweet, with a loop](https://www.youtube.com/watch?v=ivNWS9s7vhA) (video)
-  - [Sorting an Array of Objects](https://www.youtube.com/watch?v=0d76_2sksWY) (video)
-  - [another Sorting](https://flaviocopes.com/how-to-sort-array-of-objects-by-property-javascript/) (video+article)
-  - [Search from Array of Objects](https://www.youtube.com/watch?v=US63Q6AL0GI) (video)
-  - [Create, Update and Loop](https://www.freecodecamp.org/news/javascript-array-of-objects-tutorial-how-to-create-update-and-loop-through-objects-using-js-array-methods/) (article)
-  - [The Coding Train](https://www.youtube.com/watch?v=fBqaA7zRO58) (video)
+
+#### Arrays of Objects
+
+- [short, sweet, with a loop](https://www.youtube.com/watch?v=ivNWS9s7vhA) (video)
+- [Sorting an Array of Objects](https://www.youtube.com/watch?v=0d76_2sksWY) (video)
+- [another Sorting](https://flaviocopes.com/how-to-sort-array-of-objects-by-property-javascript/) (video+article)
+- [Search from Array of Objects](https://www.youtube.com/watch?v=US63Q6AL0GI) (video)
+- [Create, Update and Loop](https://www.freecodecamp.org/news/javascript-array-of-objects-tutorial-how-to-create-update-and-loop-through-objects-using-js-array-methods/) (article)
+- [The Coding Train](https://www.youtube.com/watch?v=fBqaA7zRO58) (video)
 
 #### Recursion
 

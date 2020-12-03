@@ -13,7 +13,14 @@ const stub = (text = '', repetitions = 1) => {
   return '';
 };
 
-// --- trying iteration strategy ---
+/* -- iteration: append the string to itself once for each repetition --
+
+  1. create a new empty string to store the accumulated result
+  2. iterate from zero the the number of repetitions
+    a. add the text to the accumulator one more time
+  return: the accumulated result
+
+*/
 
 /* failed all the tests - always returned undefined
   repeated is declared and returnd, but never modified
@@ -61,7 +68,36 @@ const withoutExtraVariable = (text = '', repetitions = 1) => {
   return text;
 };
 
-// --- trying a recursion strategy ---
+/* iterate while the final string length is too short
+
+  1. declare new empty string
+  2. calculate how long the final string should be
+  3. iterate while new string is too short
+    a. add the text to the accumulator
+  return: the new string
+
+*/
+
+const iterateWhileTooShort = (text = '', repetitions = 1) => {
+  let finalString = '';
+  const finalLength = text.length * repetitions;
+  while (finalString.length < finalLength) {
+    finalString += text;
+  }
+  return finalString;
+};
+
+/* -- recursion --
+
+  repeatString(text, repetitions)
+    base-case: repetitions is 0
+      return: the text
+    recursive case: repetitions is more than 0
+      1. add the text to the text
+      2. subtract one from repetitions
+      return: repeatString(combinedText, smallerRepetitions)
+
+*/
 
 /* not at all
   infinite recursion for repetitions === 0
@@ -77,6 +113,18 @@ const recursionTry1 = (text = '', repetitions = 1) => {
   }
 };
 
+/* -- recursion --
+
+  repeatString(text, repetitions)
+    base-case: repetitions is 0
+      return: empty string
+    recursive case: repetitions is more than 0
+      1. add the text to the text
+      2. subtract one from repetitions
+      return: repeatString(combinedText, smallerRepetitions)
+
+*/
+
 // no go - wrote extra tests for different lenghts
 //  all lenghts return empty string
 // ha!  i never combine the retruned recursion with the current text value
@@ -90,6 +138,18 @@ const recursionTry2 = (text = '', repetitions = 1) => {
     return recursionTry2(nextText, nextRepetitions); // recurse!
   }
 };
+
+/* -- recursion --
+
+  repeatString(text, repetitions)
+    base-case: repetitions is 0
+      return: empty string
+    recursive case: repetitions is more than 0
+      combinedText <- text + text
+      2. subtract one from repetitions
+      return: text + repeatString(combinedText, smallerRepetitions)
+
+*/
 
 // nope: repeats the text twice in each recursive call
 //  once with nextText
@@ -105,6 +165,21 @@ const recursionTry3 = (text = '', repetitions = 1) => {
   }
 };
 
+/* -- recursion --
+
+  try just passing the text into the recursive call
+  the problem was it was combined twice, once for nextText and once at return
+  this strategy only adds the text together once in the else
+
+  repeatString(text, repetitions)
+    base-case: repetitions is 0
+      return: empty string
+    recursive case: repetitions is more than 0
+      1. subtract one from repetitions
+      return: text + repeatString(text, smallerRepetitions)
+
+*/
+
 // success!
 //  removed the extra repetition with nextText
 const recursionTry4 = (text = '', repetitions = 1) => {
@@ -115,6 +190,11 @@ const recursionTry4 = (text = '', repetitions = 1) => {
     // combine the recursed value with text and return
     return text + recursionTry4(text, nextRepetitions);
   }
+};
+
+// success again
+const recursionTry4Ternary = (text = '', repetitions = 1) => {
+  return repetitions === 0 ? '' : text + recursionTry4(text, repetitions - 1);
 };
 
 // oops, tried this already.  it was recursionTry2
@@ -131,7 +211,7 @@ const recursionTry5 = (text = '', repetitions = 1) => {
 };
 
 /*
-  your notes go here
+  your strategy goes here
 */
 
 for (const solution of [
@@ -140,11 +220,14 @@ for (const solution of [
   // forLoopTry1,
   // forLoopTry2,
   // forLoopTry3, // success!
+  // whileLoop, // success again
+  iterateWhileTooShort, // success
   // withoutExtraVariable,
   // recursionTry1,
   // recursionTry2,
   // recursionTry3,
   recursionTry4, // success!
+  // recursionTry4Ternary, // success again
   // recursionTry5,
 ]) {
   // the main test suite for the function

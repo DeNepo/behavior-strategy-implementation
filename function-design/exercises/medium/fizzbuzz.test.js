@@ -14,7 +14,8 @@ const expect = require('chai').expect;
  */
 const stub = () => {};
 
-/* */
+/*  describe this solution's strategy
+ */
 const whileLoop = max => {
   let countUp = _;
   const result = [];
@@ -25,7 +26,8 @@ const whileLoop = max => {
   return result;
 };
 
-/* */
+/* describe this solution's strategy
+ */
 const oneLineforLoop = max => {
   const result = [];
   for (let i = 0; i < _; )
@@ -35,7 +37,8 @@ const oneLineforLoop = max => {
   // https://codeburst.io/javascript-breaking-down-the-shortest-possible-fizzbuzz-answer-94a0ad9d128a
 };
 
-/* */
+/* describe this solution's strategy
+ */
 const manySmallFunctions = max => {
   const threeDivides = n => n % _ === 0;
   const fiveDivides = n => n % _ === 0;

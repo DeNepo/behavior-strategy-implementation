@@ -11,6 +11,8 @@ const expect = require('chai').expect;
  */
 const stub = () => {};
 
+/* describe this solution's strategy
+ */
 const mapFilterReduce = arr => {
   // these work, you need to pass them to the right array methods
   const isNotNaN = entry => !Number.isNaN(entry);

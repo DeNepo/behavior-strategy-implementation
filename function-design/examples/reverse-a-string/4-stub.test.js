@@ -14,7 +14,7 @@ const stub = (text = '', repetitions = 1) => {
 };
 
 /*
-  your notes go here
+  your strategy goes here
 */
 
 // a for-of loop that will let you control which function is being tested
