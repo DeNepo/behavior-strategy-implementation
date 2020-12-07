@@ -6,38 +6,41 @@
 */
 
 /**
- * returns true if a value is falsy, false if it is truthy
+ * returns true if a value is truthy, false if it is falsy
  * @param {any} entry
  * @returns {boolean}
  */
-const isFalsy = entry => {
-  return !Boolean(entry);
+const isTruthy = entry => {
+  return Boolean(entry);
 };
 
-// test isFalsy
-const isFalsyTest1 = isFalsy(0) === true;
-console.assert(isFalsyTest1, '0 is not truthy');
+// test isTruthy
+const isTruthyTest1 = isTruthy(0) === false;
+console.assert(isTruthyTest1, '0 is not truthy');
 
-const isFalsyTest2 = isFalsy(1) === false;
-console.assert(isFalsyTest2, '1 is not truthy');
+const isTruthyTest2 = isTruthy(1) === true;
+console.assert(isTruthyTest2, '1 is truthy');
 
-const isFalsyTest3 = isFalsy('') === true;
-console.assert(isFalsyTest3, '"" is not truthy');
+const isTruthyTest3 = isTruthy('') === false;
+console.assert(isTruthyTest3, '"" is not truthy');
 
-const isFalsyTest4 = isFalsy('hi') === false;
-console.assert(isFalsyTest4, '"hi" is truthy');
+const isTruthyTest4 = isTruthy('hi') === true;
+console.assert(isTruthyTest4, '"hi" is truthy');
 
-// use isFalsy to process this array with different methods
+// use isTruthy to process this array with different methods
 const _0_array = ['hi!', 0, 199, '', false, true];
 
-// create a new array filled with the return values of isFalsy
-const _1_mapped = _0_array.map(isFalsy);
+// create a new array filled with the return values of isTruthy
+const _1_mapped = _0_array.map(isTruthy);
 
-// create a new array with only the falsy values
-const _2_filtered = _0_array.filter(isFalsy);
+// create a new array with only the truthy values
+const _2_filtered = _0_array.filter(isTruthy);
 
-// find the first falsy entry
-const _3_found = _0_array.find(isFalsy);
+// find the first truthy entry
+const _3_found = _0_array.find(isTruthy);
 
-// determine if every entry in the array is falsy
-const _4_everyed = _0_array.every(isFalsy);
+// determine if every entry in the array is truthy
+const _4_everyed = _0_array.every(isTruthy);
+
+// determine if some entries in the array are truthy
+const _5_somed = _0_array.some(isTruthy);
