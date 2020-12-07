@@ -900,6 +900,7 @@ Use this in your `group-project` issue:
 ## Class Recordings
 
 - **Students**: Here you can find recordings of this module from past classes. Enjoy!
+  - Do you have a favorite? Send a PR giving it a :+1:
 - **Coaches**: When sending your PR's with links please ...
   - Indicate which class you were teaching
   - Which week it was (if the module is more than 1 week)
@@ -929,7 +930,7 @@ Use this in your `group-project` issue:
 
 ## class-11-12
 
-> [Evan](https://github.com/), [Thibault](https://github.com/ThibaultLesuisse), [Joel](https://github.com/JoeCamacho)
+> [Evan](https://github.com/colevandersWands), [Thibault](https://github.com/ThibaultLesuisse), [Joel](https://github.com/JoeCamacho)
 
 1. [Week 1](https://meet.openknowledge.be/playback/presentation/2.0/playback.html?meetingId=48966e92bc14f80c53d450f9e59dc77e812b2f8b-1605437686426)
 2. Week 2 - server crash :(

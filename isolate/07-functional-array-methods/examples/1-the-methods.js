@@ -10,7 +10,7 @@
  * @param {any} entry
  * @returns {boolean}
  */
-const isFalsy = (entry) => {
+const isFalsy = entry => {
   return !Boolean(entry);
 };
 
@@ -26,8 +26,6 @@ console.assert(isFalsyTest3, '"" is not truthy');
 
 const isFalsyTest4 = isFalsy('hi') === false;
 console.assert(isFalsyTest4, '"hi" is truthy');
-
-
 
 // use isFalsy to process this array with different methods
 const _0_array = ['hi!', 0, 199, '', false, true];
