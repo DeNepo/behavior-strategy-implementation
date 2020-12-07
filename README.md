@@ -668,7 +668,6 @@ Helpful resources for this module
   - [Una Kravets](https://css-tricks.com/an-illustrated-and-musical-guide-to-map-reduce-and-filter-array-methods/)
   - [Cheat Sheet](https://jrsinclair.com/javascript-array-methods-cheat-sheet)
   - Oliverjam: [learn-map-filter](https://github.com/oliverjam/learn-map-filter), [tdd-array-methods](https://github.com/oliverjam/tdd-array-methods)
-  -
 
 #### Objects
 
