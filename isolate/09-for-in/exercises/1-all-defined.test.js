@@ -9,11 +9,11 @@ const assert = require('chai').assert;
  */
 const allEntriesDefined = (obj) => {
 
-  let allAreDefined = _;
-  for (const _ in _) {
-    const value = _;
-    const valueIsDefined = _;
-    allAreDefined = _ && _;
+  let allAreDefined = true;
+  for (const entry in obj) {
+    const value = obj[entry];
+    const valueIsDefined = typeof value !== 'undefined';
+    allAreDefined = allAreDefined && valueIsDefined;
   }
 
   return allAreDefined;
