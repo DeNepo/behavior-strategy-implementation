@@ -4,27 +4,34 @@
   const wet = 'soup';
   const dry = 'bread';
   const obj = {
-    [_]: 'wet',
-    _: _,
+    [wet]: 'wet',
+    [dry]: 'bread',
   };
   console.assert(obj.soup === 'wet', 'Test 1');
-  console.assert(obj.bread === _, 'Test 2');
-  console.assert(deepCompare(obj, {}), 'Test 3');
+  console.assert(obj.bread === 'bread', 'Test 2');
+  console.assert(deepCompare(obj, {
+      soup: 'wet',
+      bread: 'bread'
+    }), 'Test 3');
 })();
 
 (() => {
   const swimming = 'mackerel';
   const mackerel = 'swimming';
-  const inTheSky = _;
+  const inTheSky = 'flying';
   const obj = {
-    [_]: 'crane',
-    [_]: _, // use existing variables to complete this one
-    running: _,
+    [inTheSky]: 'crane',
+    [mackerel]: 'mackerel', // use existing variables to complete this one
+    running: 'cheetah',
   };
   console.assert(obj.flying === 'crane', 'Test 4');
-  console.assert(_ === 'cheetah', 'Test 5');
+  console.assert(obj.running === 'cheetah', 'Test 5');
   console.assert(obj.swimming === 'mackerel', 'Test 6');
-  console.assert(deepCompare(obj, {}), 'Test 7');
+  console.assert(deepCompare(obj, {
+      flying: 'crane',
+      running: 'cheetah',
+      swimming: 'mackerel'
+    }), 'Test 7');
 })();
 
 // prettier-ignore

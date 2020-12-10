@@ -1,27 +1,34 @@
 'use strict';
 
 (() => {
-  const orite = _;
+  const orite = 'bread';
   const obj = {
     fav: orite,
-    _: 'soup',
+    wet: 'soup',
   };
-  console.assert(obj._ === 'bread', 'Test 1');
+  console.assert(obj.fav === 'bread', 'Test 1');
   console.assert(obj.wet === 'soup', 'Test 2');
-  console.assert(deepCompare(obj, {}), 'Test 3');
+  console.assert(deepCompare(obj, {
+    fav: 'bread',
+    wet: 'soup'
+    }), 'Test 3');
 })();
 
 (() => {
   const swimming = 'mackerel';
   const obj = {
-    flying: _,
-    _: swimming,
-    _: 'cheetah',
+    flying: 'crane',
+    swimming: swimming,
+    running: 'cheetah'
   };
-  console.assert(_ === 'crane', 'Test 4');
-  console.assert(obj.running === _, 'Test 5');
+  console.assert(obj.flying === 'crane', 'Test 4');
+  console.assert(obj.running === 'cheetah', 'Test 5');
   console.assert(obj.swimming === 'mackerel', 'Test 6');
-  console.assert(deepCompare(obj, {}), 'Test 7');
+  console.assert(deepCompare(obj, {
+    flying: 'crane',
+    swimming: 'mackerel',
+    running: 'cheetah'
+    }), 'Test 7');
 })();
 
 // prettier-ignore
