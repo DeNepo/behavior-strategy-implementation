@@ -2,7 +2,7 @@
 
 /* Passing Objects as Arguments
 
-  Objects are reference-types just like objects, careful of side-effects!
+  Objects are reference-types just like arrays, careful of side-effects!
   you will need to use the same strategy that you used with objects:
 
   1. create a new object
