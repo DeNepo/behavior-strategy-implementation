@@ -9,14 +9,14 @@ const assert = require('chai').assert;
  */
 const keepTruthyEntries = (obj) => {
 
-  const objEntries = Object._(_);
+  const objEntries = Object.entries(obj);
   const allTruthyEntries = objEntries
-    ._(entry => {
+    .filter(entry => {
       const value = entry[1];
-      return _;
+      return value && value !== false;
     });
 
-  const truthyObject = Object._(_);
+  const truthyObject = Object.fromEntries(allTruthyEntries);
 
   return truthyObject;
 };

@@ -9,18 +9,24 @@ const assert = require('chai').assert;
  */
 const swapem = (obj) => {
 
-  const objEntries = Object._(_);
+  const objEntries = Object.entries(obj);
   const swappedEntries = objEntries
     .map((entry) => {
-      const key = _;
-      const value = _;
-      if (_) {
-        return [_, _];
-      } else {
-        return [_, _];
+      const key = entry[0];
+      const value = entry[1];
+      
+      if (typeof value === 'string') {
+          
+          //console.log('value', value);
+          
+        return [value, key];
+      } 
+      
+      else {
+        return [key, value];
       }
     });
-  const swapped = Object._(_);
+  const swapped = Object.fromEntries(swappedEntries);
 
   return swapped;
 };
