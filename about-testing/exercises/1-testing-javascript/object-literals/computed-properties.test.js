@@ -23,7 +23,7 @@ describe('computed properties', () => {
     const inTheSky = _;
     const obj = {
       [_]: 'crane',
-      [_]: _,
+      [_]: _, // use existing variables to complete this one
       running: _,
     };
     it('obj.flying', () => {
@@ -33,7 +33,7 @@ describe('computed properties', () => {
       expect(_).to.equal('cheetah');
     });
     it('obj.swimming', () => {
-      expect(obj[mackerel]).to.equal(swimming);
+      expect(obj.swimming).to.equal('mackerel');
     });
   });
 });

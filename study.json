@@ -3,7 +3,8 @@
     "eval": true,
     "flowchart": true,
     "loopGuard": true,
-    "save": true
+    "save": true,
+    "tested": ["test"]
   },
   "port": 4005
 }

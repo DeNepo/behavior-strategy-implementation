@@ -4,15 +4,15 @@ const expect = require('chai').expect;
 
 describe('dot notation', () => {
   describe('types of tasty treats', () => {
-    const favorite = _;
+    const orite = _;
     const obj = {
-      _: favorite,
-      dry: _
+      fav: orite,
+      _: 'soup',
     };
-    it('dry', () => {
-      expect(_).to.equal('bread');
+    it('bread', () => {
+      expect(obj._).to.equal('bread');
     });
-    it('wet', () => {
+    it('soup', () => {
       expect(obj.wet).to.equal('soup');
     });
   });
@@ -21,7 +21,7 @@ describe('dot notation', () => {
     const obj = {
       flying: _,
       _: swimming,
-      _: 'cheetah'
+      _: 'cheetah',
     };
     it('obj.flying', () => {
       expect(_).to.equal('crane');
