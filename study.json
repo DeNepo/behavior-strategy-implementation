@@ -4,7 +4,7 @@
     "flowchart": true,
     "loopGuard": true,
     "save": true,
-    "tested": ["test"]
+    "testExtensions": ["test"]
   },
   "--port": 4006
 }
