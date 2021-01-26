@@ -65,51 +65,49 @@ const repeatString = (text = '', repetitions = 0) => {
 ```js
 'use strict';
 
-const expect = require('chai').expect;
-
-const repeatString = require('./repeat-string.js');
+import { repeatString } from './repeat-string.js';
 
 describe('repeats a string any number of times:', () => {
   describe('default values', () => {
     it('repetitions default should be 1', () => {
-      expect(repeatString('asdf')).to.equal('asdf');
+      expect(repeatString('asdf')).toBe('asdf');
     });
     it('text default should be an empty string', () => {
-      expect(repeatString().to.equal('');
+      expect(repeatString()).toBe('');
     });
   });
   describe('an empty string', () => {
     it('0 times', () => {
-      expect(repeatString('', 0)).to.equal('');
+      expect(repeatString('', 0)).toBe('');
     });
     it('10 times', () => {
-      expect(repeatString('', 10)).to.equal('');
+      expect(repeatString('', 10)).toBe('');
     });
     it('100 times', () => {
-      expect(repeatString('', 100)).to.equal('');
+      expect(repeatString('', 100)).toBe('');
     });
   });
   describe('zero repetitions', () => {
     it('"asdf"', () => {
-      expect(repeatString('asdf', 0)).to.equal('');
+      expect(repeatString('asdf', 0)).toBe('');
     });
     it('"tommywalk"', () => {
-      expect(repeatString('tommywalk', 0)).to.equal('');
+      expect(repeatString('tommywalk', 0)).toBe('');
     });
   });
   describe('standard use cases', () => {
     it('repeat a phrase 3 times', () => {
-      expect(repeatString('go to school', 3)).to.equal(
+      expect(repeatString('go to school', 3)).toBe(
         'go to schoolgo to schoolgo to school'
       );
     });
     it('phrases with punctuation', () => {
-      expect(repeatString('"Go!", said Dr. Seuss?', 2)).to.equal(
+      expect(repeatString('"Go!", said Dr. Seuss?', 2)).toBe(
         '"Go!", said Dr. Seuss?"Go!", said Dr. Seuss?'
       );
     });
     it('special characters', () => {
-      expect(repeatString('\\ \n \t s', 2)).to.equal('\\ \n \t s\\ \n \t s');
+      expect(repeatString('\\ \n \t s', 2)).toBe('\\ \n \t s\\ \n \t s');
     });
   });
 });
