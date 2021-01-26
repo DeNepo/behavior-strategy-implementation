@@ -11,14 +11,10 @@
       "type": "node",
       "request": "launch",
       "name": "Current JS File (with tests)",
-      "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
-      "args": [
-        "${file}"
-      ],
+      "args": ["${file}"],
+      "runtimeExecutable": "jest",
       "internalConsoleOptions": "openOnSessionStart",
-      "skipFiles": [
-        "<node_internals>/**"
-      ]
+      "skipFiles": ["<node_internals>/**"]
     }
   ]
 }

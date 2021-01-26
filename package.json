@@ -6,6 +6,9 @@
     "type": "git",
     "url": "git+https://github.com/HackYourFutureBelgium/behavior-strategy-implementation.git"
   },
+  "scripts": {
+    "test-one": "jest "
+  },
   "author": "HackYourFutureBelgium",
   "license": "MIT",
   "bugs": {
@@ -14,7 +17,6 @@
   "homepage": "https://github.com/HackYourFutureBelgium/behavior-strategy-implementation#readme",
   "devDependencies": {},
   "dependencies": {
-    "jest": "^26.6.3",
     "jest-cli": "^26.6.3"
   }
 }

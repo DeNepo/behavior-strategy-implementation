@@ -483,7 +483,7 @@ const repeatString = (text = '', repetitions = 1) => {
    - _console_: `node path/to/file.js`, simple and easy
 3. Running files ending in `.test.js`:
    - _debugger_: open the file, select the debug option from your VSCode side-bar, choose the `Current JS File (with tests)` option, and click `|>`.
-   - _console_: files ending in .test.js must be run with `mocha` -> `mocha path/to/file.test.js`. You will need to globally install mocha for this (`npm install -g mocha`)
+   - _console_: files ending in .test.js must be run with `jest` -> `jest path/to/file.test.js`. You will need to globally install mocha for this (`npm install -g jest-cli`)
 
 [TOP](#behavior-strategy-implementation)
 
