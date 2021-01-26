@@ -53,7 +53,7 @@ for (const solution of [
       it('returns a new array', () => {
         const arg = [];
         const actual = solution(arg);
-        expect(actual)._.not._(arg);
+        expect(actual).not._(arg);
       });
       it('does not modify the argument', () => {
         const arg = [{ pass: true }, { pass: false }, { hello: 'good bye' }];
