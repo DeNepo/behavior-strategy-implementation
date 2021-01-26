@@ -1,4 +1,3 @@
-
 'use strict';
 
 const expect = require('chai').expect;
@@ -11,7 +10,7 @@ describe('repeats a string any number of times:', () => {
       expect(repeatString('asdf')).to.equal('asdf');
     });
     it('text default should be an empty string', () => {
-      expect(repeatString().to.equal('');
+      expect(repeatString()).to.equal('');
     });
   });
   describe('an empty string', () => {
