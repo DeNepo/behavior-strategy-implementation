@@ -5,28 +5,24 @@
  * @param {Object} obj - an object
  * @returns {Object} - the swapped object
  */
-const swapem = (obj) => {
-
+const swapem = obj => {
   const objEntries = Object._(_);
-  const swappedEntries = objEntries
-    .map((entry) => {
-      const key = _;
-      const value = _;
-      if (_) {
-        return [_, _];
-      } else {
-        return [_, _];
-      }
-    });
+  const swappedEntries = objEntries.map(entry => {
+    const key = _;
+    const value = _;
+    if (_) {
+      return [_, _];
+    } else {
+      return [_, _];
+    }
+  });
   const swapped = Object._(_);
 
   return swapped;
 };
 
-
 describe('swapem switches the key and value for each entry', () => {
-
-  describe("it correctly swaps the entries", () => {
+  describe('it correctly swaps the entries', () => {
     it('returns an empty object for an empty object', () => {
       const actual = swapem({});
       assert.deepStrictEqual(actual, {});
@@ -40,19 +36,19 @@ describe('swapem switches the key and value for each entry', () => {
       assert.deepStrictEqual(actual, {
         H: 'a',
         Y: 'b',
-        F: 'c'
+        F: 'c',
       });
     });
     it('swaps no entries when none are strings', () => {
       const actual = swapem({
         a: 1,
         b: true,
-        c: null
+        c: null,
       });
       assert.deepStrictEqual(actual, {
         a: 1,
         b: true,
-        c: null
+        c: null,
       });
     });
     it('only swaps string entries in a mixed object', () => {
@@ -83,8 +79,8 @@ describe('swapem switches the key and value for each entry', () => {
     it('returns a new object', () => {
       const arg = {};
       const returned = swapem(arg);
-      expect(returned).not.toBe(arg);
+      const areNotTheSameObject = arg !== returned;
+      expect(areNotTheSameObject).toStrictEqual(true);
     });
   });
 });
-

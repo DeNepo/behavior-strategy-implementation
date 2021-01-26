@@ -1,6 +1,5 @@
 'use strict';
 
-
 /**
  * this function reverses a string
  * @param {string} [text=''] - the string to reverse
@@ -18,29 +17,25 @@ const reverse = (text = '') => {
   return reversed;
 };
 
-
 describe('it should reverse strings', () => {
   describe('when no argument is passed', () => {
     it('default parameter is an empty string', () => {
-      expect(reverse()).toBe('');
+      expect(reverse()).toStrictEqual('');
     });
   });
   describe('when argument is a string', () => {
     it('empty string', () => {
-      expect(reverse('')).toBe(_);
+      expect(reverse('')).toStrictEqual(_);
     });
     it('"toads"', () => {
-      expect(reverse(_)).toBe('sdaot');
+      expect(reverse(_)).toStrictEqual('sdaot');
     });
     // write at least 5 more tests
-
-
   });
   describe('when argument is not a string', () => {
     it('true', () => {
-      expect(reverse(true)).toBe(_);
+      expect(reverse(true)).toStrictEqual(_);
     });
     // write at least 3 more tests
-
   });
 });

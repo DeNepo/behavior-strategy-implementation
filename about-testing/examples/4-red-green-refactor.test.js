@@ -6,7 +6,7 @@
  * @param {any} value
  * @returns {(number|string)}
  */
-const numberOrType = (value) => {
+const numberOrType = value => {
   // pass the first test
   return 14;
 
@@ -37,18 +37,17 @@ const numberOrType = (value) => {
   // } else {
   //   return typeof value;
   // }
-
 };
 
 describe('numberOrType', () => {
   describe('returns numbers unchanged', () => {
     it('returns 14', () => {
       const actual = numberOrType(14);
-      expect(actual).toBe(14);
+      expect(actual).toStrictEqual(14);
     });
     it('returns Infinity', () => {
       const actual = numberOrType(Infinity);
-      expect(actual).toBe(Infinity);
+      expect(actual).toStrictEqual(Infinity);
     });
     it('returns NaN', () => {
       const actual = numberOrType(NaN);
@@ -58,24 +57,19 @@ describe('numberOrType', () => {
   describe('returns the type of any other value', () => {
     it('returns the type of strings', () => {
       const actual = numberOrType('asdf');
-      expect(actual).toBe('string');
+      expect(actual).toStrictEqual('string');
     });
     it('returns the type of booleans', () => {
       const actual = numberOrType(false);
-      expect(actual).toBe('boolean');
+      expect(actual).toStrictEqual('boolean');
     });
     it('returns the type of null', () => {
       const actual = numberOrType(null);
-      expect(actual).toBe('object');
+      expect(actual).toStrictEqual('object');
     });
     it('returns the type of undefined', () => {
       const actual = numberOrType(undefined);
-      expect(actual).toBe('undefined');
+      expect(actual).toStrictEqual('undefined');
     });
   });
 });
-
-
-
-
-

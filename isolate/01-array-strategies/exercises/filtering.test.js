@@ -7,16 +7,16 @@
  * @returns {Array} - a new array with no strings
  */
 const filterOutStrings = (arr = []) => {
-  if (!Array.isArray(arr)) { throw new TypeError('arr is not an array'); }
+  if (!Array.isArray(arr)) {
+    throw new TypeError('arr is not an array');
+  }
 
   const noStrings = [];
   for (const _ of _) {
-
   }
 
   return noStrings;
 };
-
 
 describe('filterOutStrings removes all "string" values from an array', () => {
   describe('it correctly filters the values in an array', () => {
@@ -45,7 +45,8 @@ describe('filterOutStrings removes all "string" values from an array', () => {
     it('returns a new array', () => {
       const arg = [];
       const returned = filterOutStrings([]);
-      expect(returned).not.toBe(arg);
+      const areNotTheSameArray = arg !== returned;
+      expect(areNotTheSameArray).toStrictEqual(true);
     });
     it('does not modify the argument', () => {
       const arg = ['a', 1, true, null, undefined];
@@ -58,12 +59,3 @@ describe('filterOutStrings removes all "string" values from an array', () => {
     });
   });
 });
-
-
-
-
-
-
-
-
-

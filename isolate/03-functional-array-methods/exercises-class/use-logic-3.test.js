@@ -7,9 +7,9 @@
  * @param {string[]} arr
  * @returns {string} a sentence
  */
-const sentenceIt = (arr) => {
+const sentenceIt = arr => {
   // these work, you need to use them with the right array methods
-  const isWord = (entry) => {
+  const isWord = entry => {
     return /^[a-zA-Z]+$/.test(entry);
   };
   const twoWords = (acc, next) => {
@@ -17,35 +17,39 @@ const sentenceIt = (arr) => {
   };
 
   // fill in the array method to use the logic above
-  const sentenceIt = arr
-    ._(_)
-    ._(_, _);
+  const sentenceIt = arr._(_)._(_, _);
 
   return sentenceIt;
 };
-
 
 describe('sentenceIt: converts an array of strings into a sentence', () => {
   describe('it correctly compares all entries', () => {
     it('returns an empty string for an empty array', () => {
       const expected = '';
       const actual = sentenceIt([]);
-      expect(actual).toBe(expected);
+      expect(actual).toStrictEqual(expected);
     });
     it('returns an empty string if there are no words', () => {
       const expected = '';
       const actual = sentenceIt(['1', '.', '=+/12']);
-      expect(actual).toBe(expected);
+      expect(actual).toStrictEqual(expected);
     });
     it('returns a sentence if there are only words', () => {
       const expected = ' hello frog princess';
       const actual = sentenceIt(['hello', 'frog', 'princess']);
-      expect(actual).toBe(expected);
+      expect(actual).toStrictEqual(expected);
     });
     it('creates a sentence using only the words', () => {
       const expected = ' hello frog princess';
-      const actual = sentenceIt(['12', 'hello', '----', 'frog', 'princess', '*']);
-      expect(actual).toBe(expected);
+      const actual = sentenceIt([
+        '12',
+        'hello',
+        '----',
+        'frog',
+        'princess',
+        '*',
+      ]);
+      expect(actual).toStrictEqual(expected);
     });
   });
   describe('it uses the argument correctly', () => {

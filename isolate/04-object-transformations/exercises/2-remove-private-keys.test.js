@@ -18,26 +18,21 @@
  *  userName: 'public'
  * });
  */
-const removePrivateKeys = (obj) => {
-
+const removePrivateKeys = obj => {
   const objKeys = Object._(obj);
-  const filteredKeys = objKeys
-    ._((key) => {
-      return _;
-    });
-  const secureObj = filteredKeys
-    ._((newObj, nextKey) => {
-      newObj[_] = obj[_];
-      return newObj;
-    }, {});
+  const filteredKeys = objKeys._(key => {
+    return _;
+  });
+  const secureObj = filteredKeys._((newObj, nextKey) => {
+    newObj[_] = obj[_];
+    return newObj;
+  }, {});
 
   return secureObj;
 };
 
-
 describe('removePrivateKeys removes all entries beginning with an underscore', () => {
-
-  describe("correctly filters the object", () => {
+  describe('correctly filters the object', () => {
     it('returns an empty object for an empty object', () => {
       const actual = removePrivateKeys({});
       assert.deepStrictEqual(actual, {});
@@ -46,7 +41,7 @@ describe('removePrivateKeys removes all entries beginning with an underscore', (
       const actual = removePrivateKeys({
         _a: 1,
         _b: 2,
-        _c: 3
+        _c: 3,
       });
       assert.deepStrictEqual(actual, {});
     });
@@ -54,13 +49,13 @@ describe('removePrivateKeys removes all entries beginning with an underscore', (
       const arg = {
         a: 1,
         b: 2,
-        c: 3
+        c: 3,
       };
       const actual = removePrivateKeys(arg);
       assert.deepStrictEqual(actual, {
         a: 1,
         b: 2,
-        c: 3
+        c: 3,
       });
     });
     it('removes only the private keys in mixed objects', () => {
@@ -68,12 +63,12 @@ describe('removePrivateKeys removes all entries beginning with an underscore', (
         a: 1,
         _b: 2,
         _c: 3,
-        d: 4
+        d: 4,
       };
       const actual = removePrivateKeys(arg);
       assert.deepStrictEqual(actual, {
         a: 1,
-        d: 4
+        d: 4,
       });
     });
   });
@@ -87,8 +82,8 @@ describe('removePrivateKeys removes all entries beginning with an underscore', (
     it('returns a new object', () => {
       const arg = {};
       const returned = removePrivateKeys(arg);
-      expect(returned).not.toBe(arg);
+      const areNotTheSameObject = arg !== returned;
+      expect(areNotTheSameObject).toStrictEqual(true);
     });
   });
 });
-

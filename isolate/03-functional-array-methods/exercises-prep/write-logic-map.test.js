@@ -5,24 +5,23 @@
  * @param {string} str - the string to reverse
  * @returns {string} the string, reversed
  */
-const reverseString = (str) => {
+const reverseString = str => {
   return _;
 };
-
 
 describe('reverseString: reverses a string', () => {
   describe('can be used on its own', () => {
     it('returns an empty string for the empty string', () => {
-      expect(reverseString('')).toBe('');
+      expect(reverseString('')).toStrictEqual('');
     });
     it('"reverses" single characters', () => {
-      expect(reverseString('f')).toBe('f');
+      expect(reverseString('f')).toStrictEqual('f');
     });
     it('reverses non-empty strings', () => {
-      expect(reverseString('table')).toBe('elbat');
+      expect(reverseString('table')).toStrictEqual('elbat');
     });
     it('reverses palindromes', () => {
-      expect(reverseString('racecar')).toBe('racecar');
+      expect(reverseString('racecar')).toStrictEqual('racecar');
     });
   });
   describe('can be used as a callback for Array.map', () => {

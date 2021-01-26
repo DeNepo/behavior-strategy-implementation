@@ -7,16 +7,16 @@
  * @returns {Array} - a new array of number values
  */
 const mapToNumber = (arr = []) => {
-  if (!Array.isArray(arr)) { throw new TypeError('arr is not an array'); }
+  if (!Array.isArray(arr)) {
+    throw new TypeError('arr is not an array');
+  }
 
   const numberValues = [];
   for (const _ of _) {
-
   }
 
   return numberValues;
 };
-
 
 describe('mapToNumber casts each element in an array to type "number"', () => {
   describe('it correctly converts the values in an array', () => {
@@ -55,7 +55,8 @@ describe('mapToNumber casts each element in an array to type "number"', () => {
     it('returns a new array', () => {
       const arg = [];
       const returned = mapToNumber([]);
-      expect(returned).not.toBe(arg);
+      const areNotTheSameArray = arg !== returned;
+      expect(areNotTheSameArray).toStrictEqual(true);
     });
     it('does not modify the argument', () => {
       const arg = ['a', 1, true, null, undefined];
@@ -68,12 +69,3 @@ describe('mapToNumber casts each element in an array to type "number"', () => {
     });
   });
 });
-
-
-
-
-
-
-
-
-

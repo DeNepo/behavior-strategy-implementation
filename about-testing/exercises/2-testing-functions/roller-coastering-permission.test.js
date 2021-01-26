@@ -6,29 +6,23 @@
  * @returns {string} a message to display to the possible passenger
  */
 const rollerCoasterPermission = (height = 0) => {
-
   if (typeof height !== 'number') {
     return 'height is not a number';
-
   } else if (height < 100) {
     return 'too short, sorry  :(';
-
   } else if (height > 100) {
     return 'hop on the roller coaster!';
-
   } else {
     return 'just right, hop on!';
   }
-
 };
-
 
 describe('a function that tells you are tall enough', () => {
   describe('when height is not a number', () => {
     it('passing true', () => {
       const actual = rollerCoasterPermission(true);
       const expected = _;
-      expect(actual).toBe(expected);
+      expect(actual).toStrictEqual(expected);
     });
     it('passing "tall"', () => {
       const expected = _;

@@ -6,27 +6,26 @@
  * @param {string} str - the string to check
  * @returns {boolean} is the string longer than 5?
  */
-const longerThanFive = (str) => {
+const longerThanFive = str => {
   return _;
 };
-
 
 describe('longerThanFive: determines if a string is longer than 5 characters', () => {
   describe('can be used on its own', () => {
     it('returns false for the empty string', () => {
-      expect(longerThanFive('')).toBe(false);
+      expect(longerThanFive('')).toStrictEqual(false);
     });
     it('returns false for a short string', () => {
-      expect(longerThanFive('abc')).toBe(false);
+      expect(longerThanFive('abc')).toStrictEqual(false);
     });
     it('returns false for strings of length 5', () => {
-      expect(longerThanFive('abcde')).toBe(false);
+      expect(longerThanFive('abcde')).toStrictEqual(false);
     });
     it('returns true for strings of length 6', () => {
-      expect(longerThanFive('abcdef')).toBe(true);
+      expect(longerThanFive('abcdef')).toStrictEqual(true);
     });
     it('and for longer strings', () => {
-      expect(longerThanFive('abcdefghijklmnopqrstuvwxyz')).toBe(true);
+      expect(longerThanFive('abcdefghijklmnopqrstuvwxyz')).toStrictEqual(true);
     });
   });
   describe('can be used as a callback for Array.filter', () => {

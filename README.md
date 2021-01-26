@@ -70,44 +70,46 @@ import { repeatString } from './repeat-string.js';
 describe('repeats a string any number of times:', () => {
   describe('default values', () => {
     it('repetitions default should be 1', () => {
-      expect(repeatString('asdf')).toBe('asdf');
+      expect(repeatString('asdf')).toStrictEqual('asdf');
     });
     it('text default should be an empty string', () => {
-      expect(repeatString()).toBe('');
+      expect(repeatString()).toStrictEqual('');
     });
   });
   describe('an empty string', () => {
     it('0 times', () => {
-      expect(repeatString('', 0)).toBe('');
+      expect(repeatString('', 0)).toStrictEqual('');
     });
     it('10 times', () => {
-      expect(repeatString('', 10)).toBe('');
+      expect(repeatString('', 10)).toStrictEqual('');
     });
     it('100 times', () => {
-      expect(repeatString('', 100)).toBe('');
+      expect(repeatString('', 100)).toStrictEqual('');
     });
   });
   describe('zero repetitions', () => {
     it('"asdf"', () => {
-      expect(repeatString('asdf', 0)).toBe('');
+      expect(repeatString('asdf', 0)).toStrictEqual('');
     });
     it('"tommywalk"', () => {
-      expect(repeatString('tommywalk', 0)).toBe('');
+      expect(repeatString('tommywalk', 0)).toStrictEqual('');
     });
   });
   describe('standard use cases', () => {
     it('repeat a phrase 3 times', () => {
-      expect(repeatString('go to school', 3)).toBe(
+      expect(repeatString('go to school', 3)).toStrictEqual(
         'go to schoolgo to schoolgo to school'
       );
     });
     it('phrases with punctuation', () => {
-      expect(repeatString('"Go!", said Dr. Seuss?', 2)).toBe(
+      expect(repeatString('"Go!", said Dr. Seuss?', 2)).toStrictEqual(
         '"Go!", said Dr. Seuss?"Go!", said Dr. Seuss?'
       );
     });
     it('special characters', () => {
-      expect(repeatString('\\ \n \t s', 2)).toBe('\\ \n \t s\\ \n \t s');
+      expect(repeatString('\\ \n \t s', 2)).toStrictEqual(
+        '\\ \n \t s\\ \n \t s'
+      );
     });
   });
 });
@@ -626,9 +628,7 @@ Helpful resources for this module
   1. [Writing tests for personal projects](https://www.youtube.com/watch?v=ib2Pt9_zciA)
   1. [Why Unit Tests?](https://www.youtube.com/watch?v=Eu35xM76kKY)
   1. [Your First Tests](https://www.youtube.com/watch?v=XsFQEUP1MxI)
-- Oliverjam
-  - [roman-numeral-tdd-codealong](https://github.com/oliverjam/roman-numeral-tdd-codealong)
-  - [learn-unit-testing](https://github.com/oliverjam/learn-unit-testing)
+- [js-unit-testing-guide](https://github.com/mawrkus/js-unit-testing-guide) (very detailed)
 
 ### JS References & Tutorials
 

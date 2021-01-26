@@ -18,13 +18,13 @@ for (const solution of [
   // the main test suite for the function
   describe(solution.name + ': reverses a string', () => {
     it('default parameter is an empty string', () => {
-      expect(solution()).toBe('');
+      expect(solution()).toStrictEqual('');
     });
     it('an empty string', () => {
-      expect(solution('')).toBe('');
+      expect(solution('')).toStrictEqual('');
     });
     it('all capital letters', () => {
-      expect(solution('ASDF')).toBe('FDSA');
+      expect(solution('ASDF')).toStrictEqual('FDSA');
     });
     // write at least 5 more tests ...
   });

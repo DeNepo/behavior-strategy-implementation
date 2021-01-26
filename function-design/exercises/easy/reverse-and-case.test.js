@@ -23,17 +23,17 @@ for (const solution of [
     () => {
       describe("the function's default parameters", () => {
         it('second parameter defaults to true', () => {
-          expect(solution('asdf')).toBe('fdsa');
+          expect(solution('asdf')).toStrictEqual('fdsa');
         });
         it('first parameter defaults to an empty string', () => {
-          expect(solution()).toBe('');
+          expect(solution()).toStrictEqual('');
         });
       });
       // write the tests indicated by the comments
       describe('when set to lower case', () => {
         // when the text is an empty string
         it(_, () => {
-          expect(solution(_, _)).toBe(_);
+          expect(solution(_, _)).toStrictEqual(_);
         });
         // when the text is all upper case
         // when the text is all lower case

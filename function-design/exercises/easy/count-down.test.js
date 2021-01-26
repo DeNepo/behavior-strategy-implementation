@@ -19,13 +19,13 @@ for (const solution of [
   // the main test suite for the function
   describe(solution.name + ': counts down to 0', () => {
     it('default parameter', () => {
-      expect(solution()).toEqual([0]);
+      expect(solution()).toStrictEqual([0]);
     });
     it('0', () => {
-      expect(solution(0)).toEqual([0]);
+      expect(solution(0)).toStrictEqual([0]);
     });
     it('1', () => {
-      expect(solution(1)).toEqual([1, 0]);
+      expect(solution(1)).toStrictEqual([1, 0]);
     });
     // write at least 5 more tests ...
   });

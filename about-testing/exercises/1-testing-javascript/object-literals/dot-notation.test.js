@@ -8,10 +8,10 @@ describe('dot notation', () => {
       _: 'soup',
     };
     it('bread', () => {
-      expect(obj._).toBe('bread');
+      expect(obj._).toStrictEqual('bread');
     });
     it('soup', () => {
-      expect(obj.wet).toBe('soup');
+      expect(obj.wet).toStrictEqual('soup');
     });
   });
   describe('a menagerie', () => {
@@ -22,13 +22,13 @@ describe('dot notation', () => {
       _: 'cheetah',
     };
     it('obj.flying', () => {
-      expect(_).toBe('crane');
+      expect(_).toStrictEqual('crane');
     });
     it('obj.running', () => {
-      expect(obj.running).toBe(_);
+      expect(obj.running).toStrictEqual(_);
     });
     it('obj.swimming', () => {
-      expect(obj.swimming).toBe('mackerel');
+      expect(obj.swimming).toStrictEqual('mackerel');
     });
   });
 });

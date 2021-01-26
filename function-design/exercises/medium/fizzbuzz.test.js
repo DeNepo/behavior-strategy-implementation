@@ -74,25 +74,25 @@ for (const solution of [
   describe(solution.name + ': fizzbuzz', () => {
     describe('numbers divisible by 3', () => {
       it('3', () => {
-        expect(solution(3)).toEqual(['fizzbuzz', 1, 2]);
+        expect(solution(3)).toStrictEqual(['fizzbuzz', 1, 2]);
       });
       // write more of these
     });
     describe('numbers divisible by neither 3 nor 5', () => {
       it('4', () => {
-        expect(solution(4)).toEqual(['fizzbuzz', 1, 2, 'fizz']);
+        expect(solution(4)).toStrictEqual(['fizzbuzz', 1, 2, 'fizz']);
       });
       // write more of these
     });
     describe('numbers divisible by 5', () => {
       it('5', () => {
-        expect(solution(5)).toEqual(['fizzbuzz', 1, 2, 'fizz', 4]);
+        expect(solution(5)).toStrictEqual(['fizzbuzz', 1, 2, 'fizz', 4]);
       });
       // write more of these
     });
     describe('numbers divisible by 3 and 5', () => {
       it('15', () => {
-        expect(solution(15)).toEqual([
+        expect(solution(15)).toStrictEqual([
           'fizzbuzz',
           1,
           2,

@@ -20,13 +20,13 @@ for (const solution of [
   describe(solution.name + ': counts up from 0', () => {
     it('default parameter', () => {
       const actual = solution();
-      expect(actual).toEqual([0]);
+      expect(actual).toStrictEqual([0]);
     });
     it('0', () => {
-      expect(solution(0)).toEqual([0]);
+      expect(solution(0)).toStrictEqual([0]);
     });
     it('1', () => {
-      expect(solution(1)).toEqual([0, 1]);
+      expect(solution(1)).toStrictEqual([0, 1]);
     });
     // write at least 5 more tests ...
   });

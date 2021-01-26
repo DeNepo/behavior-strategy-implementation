@@ -2,6 +2,7 @@
   "name": "behavior-strategy-implementation",
   "version": "1.0.0",
   "description": "when you learn how to solve coding challenges",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/HackYourFutureBelgium/behavior-strategy-implementation.git"

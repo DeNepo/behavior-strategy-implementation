@@ -5,24 +5,20 @@
  * @param {Object} obj - the object to filter
  * @returns {Object} - the filtered object
  */
-const keepTruthyEntries = (obj) => {
-
+const keepTruthyEntries = obj => {
   const objEntries = Object._(_);
-  const allTruthyEntries = objEntries
-    ._(entry => {
-      const value = entry[1];
-      return _;
-    });
+  const allTruthyEntries = objEntries._(entry => {
+    const value = entry[1];
+    return _;
+  });
 
   const truthyObject = Object._(_);
 
   return truthyObject;
 };
 
-
 describe('keepTruthyEntries keeps all the truthy entries', () => {
-
-  describe("it correctly filters the object", () => {
+  describe('it correctly filters the object', () => {
     it('returns an empty object for an empty object', () => {
       const actual = keepTruthyEntries({});
       assert.deepStrictEqual(actual, {});
@@ -33,7 +29,7 @@ describe('keepTruthyEntries keeps all the truthy entries', () => {
         b: false,
         c: undefined,
         d: '',
-        e: null
+        e: null,
       });
       assert.deepStrictEqual(actual, {});
     });
@@ -41,12 +37,12 @@ describe('keepTruthyEntries keeps all the truthy entries', () => {
       const actual = keepTruthyEntries({
         a: 1,
         b: true,
-        c: 'hello'
+        c: 'hello',
       });
       assert.deepStrictEqual(actual, {
         a: 1,
         b: true,
-        c: 'hello'
+        c: 'hello',
       });
     });
     it('correctly filters a mixed object', () => {
@@ -57,13 +53,13 @@ describe('keepTruthyEntries keeps all the truthy entries', () => {
         d: '',
         e: true,
         f: false,
-        g: null
+        g: null,
       };
       const actual = keepTruthyEntries(arg);
       assert.deepStrictEqual(actual, {
         a: 1,
         c: 'hello',
-        e: true
+        e: true,
       });
     });
   });
@@ -77,8 +73,8 @@ describe('keepTruthyEntries keeps all the truthy entries', () => {
     it('returns a new object', () => {
       const arg = {};
       const returned = keepTruthyEntries(arg);
-      expect(returned).not.toBe(arg);
+      const areNotTheSameObject = arg !== returned;
+      expect(areNotTheSameObject).toStrictEqual(true);
     });
   });
 });
-

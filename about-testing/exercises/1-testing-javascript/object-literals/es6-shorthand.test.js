@@ -6,23 +6,23 @@ describe('ES6 object literal shorthand', () => {
     const dry = 'bread';
     const obj = { _, _ };
     it('obj.dry', () => {
-      expect(obj.dry).toBe(_);
+      expect(obj.dry).toStrictEqual(_);
     });
     it('obj.wet', () => {
-      expect(obj._).toBe('soup');
+      expect(obj._).toStrictEqual('soup');
     });
   });
   describe('ES5, ES6', () => {
     const tall = 'tree';
     const obj = {
       _,
-      _: 'bush'
+      _: 'bush',
     };
     it('obj.short', () => {
-      expect(obj.short).toBe(_);
+      expect(obj.short).toStrictEqual(_);
     });
     it('obj.tall', () => {
-      expect(_).toBe('tree');
+      expect(_).toStrictEqual('tree');
     });
   });
   describe('a menagerie', () => {
@@ -30,16 +30,16 @@ describe('ES6 object literal shorthand', () => {
     const obj = {
       flying: _,
       _,
-      _: 'cheetah'
+      _: 'cheetah',
     };
     it('obj.flying', () => {
-      expect(_).toBe('crane');
+      expect(_).toStrictEqual('crane');
     });
     it('obj.running', () => {
-      expect(obj.running).toBe(_);
+      expect(obj.running).toStrictEqual(_);
     });
     it('obj.swimming', () => {
-      expect(_).toBe('mackerel');
+      expect(_).toStrictEqual('mackerel');
     });
   });
 });
