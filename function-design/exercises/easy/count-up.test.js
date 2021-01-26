@@ -1,7 +1,5 @@
 'use strict';
 
-const expect = require('chai').expect;
-
 /**
  * builds an array counting up from 0 to `max`
  * @param {number} [max=0] - the number to count up to
@@ -22,13 +20,13 @@ for (const solution of [
   describe(solution.name + ': counts up from 0', () => {
     it('default parameter', () => {
       const actual = solution();
-      expect(actual).to.deep.equal([0]);
+      expect(actual).toEqual([0]);
     });
     it('0', () => {
-      expect(solution(0)).to.deep.equal([0]);
+      expect(solution(0)).toEqual([0]);
     });
     it('1', () => {
-      expect(solution(1)).to.deep.equal([0, 1]);
+      expect(solution(1)).toEqual([0, 1]);
     });
     // write at least 5 more tests ...
   });

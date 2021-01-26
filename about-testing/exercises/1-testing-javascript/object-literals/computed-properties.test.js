@@ -1,7 +1,5 @@
 'use strict';
 
-const expect = require('chai').expect;
-
 describe('computed properties', () => {
   describe('types of tasty treats', () => {
     const wet = 'soup';
@@ -11,10 +9,10 @@ describe('computed properties', () => {
       _: _,
     };
     it('obj.soup', () => {
-      expect(obj.soup).to.equal('wet');
+      expect(obj.soup).toBe('wet');
     });
     it('obj.dry', () => {
-      expect(obj.bread).to.equal(_);
+      expect(obj.bread).toBe(_);
     });
   });
   describe('a menagerie', () => {
@@ -27,13 +25,13 @@ describe('computed properties', () => {
       running: _,
     };
     it('obj.flying', () => {
-      expect(obj.flying).to.equal('crane');
+      expect(obj.flying).toBe('crane');
     });
     it('obj.running', () => {
-      expect(_).to.equal('cheetah');
+      expect(_).toBe('cheetah');
     });
     it('obj.swimming', () => {
-      expect(obj.swimming).to.equal('mackerel');
+      expect(obj.swimming).toBe('mackerel');
     });
   });
 });

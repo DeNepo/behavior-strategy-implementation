@@ -12,8 +12,9 @@
     "url": "https://github.com/HackYourFutureBelgium/behavior-strategy-implementation/issues"
   },
   "homepage": "https://github.com/HackYourFutureBelgium/behavior-strategy-implementation#readme",
-  "devDependencies": {
-    "chai": "^3.5.0",
-    "mocha": "^8.2.1"
+  "devDependencies": {},
+  "dependencies": {
+    "jest": "^26.6.3",
+    "jest-cli": "^26.6.3"
   }
 }

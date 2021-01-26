@@ -1,7 +1,5 @@
 'use strict';
 
-const expect = require('chai').expect;
-
 /**
  * sets all the characters in a string to upper or lower case
  * @param {string} [text=''] - the text to casify
@@ -23,17 +21,17 @@ for (const solution of [
   describe(solution.name + ': sets a text to lower or upper case', () => {
     describe("the function's default parameters", () => {
       it('second parameter defaults to true', () => {
-        expect(solution('asdf')).to.equal('asdf');
+        expect(solution('asdf')).toBe('asdf');
       });
       it('first parameter defaults to an empty string', () => {
-        expect(solution()).to.equal('');
+        expect(solution()).toBe('');
       });
     });
     // write the tests indicated by the comments
     describe('when set to lower case', () => {
       // when the text is an empty string
       it(_, () => {
-        expect(solution(_, _)).to.equal(_);
+        expect(solution(_, _)).toBe(_);
       });
       // when the text is all upper case
       // when the text is all lower case

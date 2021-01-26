@@ -1,7 +1,5 @@
 'use strict';
 
-const expect = require('chai').expect;
-
 
 /**
  * this function reverses a string
@@ -24,15 +22,15 @@ const reverse = (text = '') => {
 describe('it should reverse strings', () => {
   describe('when no argument is passed', () => {
     it('default parameter is an empty string', () => {
-      expect(reverse()).to.equal('');
+      expect(reverse()).toBe('');
     });
   });
   describe('when argument is a string', () => {
     it('empty string', () => {
-      expect(reverse('')).to.equal(_);
+      expect(reverse('')).toBe(_);
     });
     it('"toads"', () => {
-      expect(reverse(_)).to.equal('sdaot');
+      expect(reverse(_)).toBe('sdaot');
     });
     // write at least 5 more tests
 
@@ -40,7 +38,7 @@ describe('it should reverse strings', () => {
   });
   describe('when argument is not a string', () => {
     it('true', () => {
-      expect(reverse(true)).to.equal(_);
+      expect(reverse(true)).toBe(_);
     });
     // write at least 3 more tests
 

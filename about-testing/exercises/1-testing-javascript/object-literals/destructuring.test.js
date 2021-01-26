@@ -1,7 +1,5 @@
 'use strict';
 
-const expect = require('chai').expect;
-
 describe('destructuring', () => {
   describe('types of tasty treats', () => {
     const { dry, wet } = {
@@ -9,10 +7,10 @@ describe('destructuring', () => {
       dry: 'bread'
     };
     it('dry', () => {
-      expect(_).to.equal('bread');
+      expect(_).toBe('bread');
     });
     it('wet', () => {
-      expect(wet).to.equal('soup');
+      expect(wet).toBe('soup');
     });
   });
   describe('a menagerie', () => {
@@ -30,13 +28,13 @@ describe('destructuring', () => {
       running
     } = obj;
     it('flying', () => {
-      expect(flying).to.equal(_);
+      expect(flying).toBe(_);
     });
     it('running', () => {
-      expect(_).to.equal('cheetah');
+      expect(_).toBe('cheetah');
     });
     it('swimming', () => {
-      expect(swimming).to.equal('mackerel');
+      expect(swimming).toBe('mackerel');
     });
   });
 });

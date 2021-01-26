@@ -1,7 +1,5 @@
 'use strict';
 
-const expect = require('chai').expect;
-
 /**
  * returns a description of how similar two values are
  *  if they are strictly equal -> 'strictly equal'
@@ -24,7 +22,7 @@ for (const solution of [
   describe(solution.name + ': determines how similar two values are', () => {
     describe('when values are strictly equal', () => {
       it('strings', () => {
-        expect(solution('hello', 'hello')).to.equal(_);
+        expect(solution('hello', 'hello')).toBe(_);
       });
       it('numbers', () => {
         // 1, 1.0
@@ -33,10 +31,10 @@ for (const solution of [
     });
     describe('when values have the same type', () => {
       it('strings', () => {
-        expect(_).to.equal('same type');
+        expect(_).toBe('same type');
       });
       it('numbers', () => {
-        expect(_).to.equal(_);
+        expect(_).toBe(_);
       });
       it('booleans', () => {});
     });

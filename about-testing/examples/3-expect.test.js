@@ -1,33 +1,12 @@
 'use strict';
 
-/* chai
-
-  chai is an assertion library, assertion libraries are used to test code
-  it's like console.assert but fancier
-  - you can test for more than just truthiness and falsiness
-  - if an assertion fails, a descriptive error is thrown
-
-  A very common syntax in testing is the `expect` syntax:
-
-    expect(actualValue).to.equal(expectedValue);
-
-  It's a best practice to have only one `expect` inside each `it`
-
-  chai is an assertion library that supports expect syntax
-    it is what you will use for tests in this repo's exercises
-  https://www.chaijs.com/api/bdd/
-
-*/
-
-const expect = require('chai').expect;
-
 describe('about expect', () => {
   describe('strict equality : ===', () => {
     it('passing', () => {
-      expect(true).equal(true);
+      expect(true).toBe(true);
     });
     it('failing', () => {
-      expect(true).equal(false);
+      expect(true).toBe(false);
     });
   });
 
@@ -35,10 +14,10 @@ describe('about expect', () => {
     // you can add .to. in your tests to make it more readable
     // this won't change how the test works
     it('passing', () => {
-      expect(true).to.equal(true);
+      expect(true).toBe(true);
     });
     it('failing', () => {
-      expect(true).to.equal(false);
+      expect(true).toBe(false);
     });
   });
 
@@ -47,16 +26,16 @@ describe('about expect', () => {
     // this will check that they store the same values
     //  remember isolate/reference-vs-value?
     it('passing array', () => {
-      expect([1, 2, 3]).to.deep.equal([1, 2, 3]);
+      expect([1, 2, 3]).toEqual([1, 2, 3]);
     });
     it('failing array', () => {
-      expect([1, '2', 3]).to.deep.equal([1, 2, 3]);
+      expect([1, '2', 3]).toEqual([1, 2, 3]);
     });
     it('passing object', () => {
-      expect({ a: 1, b: 2 }).to.deep.equal({ b: 2, a: 1 });
+      expect({ a: 1, b: 2 }).toEqual({ b: 2, a: 1 });
     });
     it('failing object', () => {
-      expect({ a: 'x', b: 2 }).to.deep.equal({ b: 2, a: 1 });
+      expect({ a: 'x', b: 2 }).toEqual({ b: 2, a: 1 });
     });
   });
 
@@ -67,17 +46,17 @@ describe('about expect', () => {
       const throwsCorrectError = () => {
         throw Error('hello');
       };
-      expect(throwsCorrectError).to.throw(Error, 'hello');
+      expect(throwsCorrectError).toThrowError(Error);
     });
     it('failing: wrong error', () => {
       const throwsWrongError = () => {
         throw TypeError('userName is not a string');
       };
-      expect(throwsWrongError).to.throw(Error, 'hello');
+      expect(throwsWrongError).toThrowError(Error);
     });
     it('failing: does not throw', () => {
       const doesNotThrow = () => {};
-      expect(doesNotThrow).to.throw(Error, 'hello');
+      expect(doesNotThrow).toThrowError(Error);
     });
   });
 });

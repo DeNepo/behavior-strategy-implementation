@@ -1,7 +1,5 @@
 'use strict';
 
-const expect = require('chai').expect;
-
 /**
  * removes all odd numbers from an array of numbers
  * does not modify the argument (no side-effects)

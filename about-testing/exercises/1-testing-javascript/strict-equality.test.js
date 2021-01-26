@@ -1,13 +1,11 @@
 'use strict';
 
-const expect = require('chai').expect;
-
 describe('strict equality compares the type and the value', () => {
   describe('strings', () => {
     it(`' and " are the same`, () => {
       const actual = 'hello' === "hello";
       const expected = _;
-      expect(actual).to.equal(expected);
+      expect(actual).toBe(expected);
     });
     it('capital and lower case are not the same', () => {
       const actual = 'HI' === 'hi';

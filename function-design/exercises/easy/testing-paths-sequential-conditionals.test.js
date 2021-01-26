@@ -1,7 +1,5 @@
 'use strict';
 
-const expect = require('chai').expect;
-
 /**
  * converts two boolean values into a binary string
  *  true become "1", false becomes "0"
@@ -28,11 +26,11 @@ for (const solution of [
   describe(solution.name + ': converts two booleans to binary', () => {
     it('true, true --> "11"', () => {
       const actual = solution(_, _);
-      expect(actual).to.equal(_);
+      expect(actual).toBe(_);
     });
     it('true, false --> "10"', () => {
       const actual = _;
-      expect(actual).to.equal('10');
+      expect(actual).toBe('10');
     });
     it('false, true --> "01"', () => {
       const actual = _;

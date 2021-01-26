@@ -15,7 +15,6 @@
  * @returns {Array} a new array with the reduceped items
  */
 const reduce = (arr, callback, initialValue) => {
-
   let accumulator = initialValue;
   for (const currentValue of arr) {
     accumulator = callback(accumulator, currentValue);
@@ -23,9 +22,7 @@ const reduce = (arr, callback, initialValue) => {
   return accumulator;
 };
 
-
 const numbersArray = [0, 1, 2, 3, 4];
-
 
 const addNumbers = (sum, nextNumber) => {
   return sum + nextNumber;
@@ -36,10 +33,12 @@ const _1_actual = reduce(numbersArray, addNumbers);
 console.assert(_1_actual === _1_expect, 'Test 1: add numbers');
 
 // with initial value argument
-const _1_expect = 15;
-const _1_actual = reduce(numbersArray, addNumbers, 5);
-console.assert(_1_actual === _1_expect, 'Test 3: add numbers, with initial value');
-
+const _2_expect = 15;
+const _2_actual = reduce(numbersArray, addNumbers, 5);
+console.assert(
+  _2_actual === _2_expect,
+  'Test 3: add numbers, with initial value'
+);
 
 const multiplyNumbers = (product, nextNumber) => {
   return product * nextNumber;
@@ -48,8 +47,6 @@ const multiplyNumbers = (product, nextNumber) => {
 const _3_expect = 24;
 const _3_actual = reduce(numbersArray, castToNumber);
 console.assert(_3_actual === _3_expect, 'Test 3: multiply numbers');
-
-
 
 const stringsArray = ['a', 'b', 'c'];
 
@@ -64,5 +61,7 @@ console.assert(_4_actual === _4_expect, 'Test 4: concatenate strings');
 // with initial value argument
 const _1_expect = 'hi-a-b-c';
 const _1_actual = reduce(stringsArray, concatenateStrings, 'hi');
-console.assert(_1_actual === _1_expect, 'Test 5: concatenate strings, with initial value');
-
+console.assert(
+  _1_actual === _1_expect,
+  'Test 5: concatenate strings, with initial value'
+);

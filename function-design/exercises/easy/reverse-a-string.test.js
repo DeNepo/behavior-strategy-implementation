@@ -1,7 +1,5 @@
 'use strict';
 
-const expect = require('chai').expect;
-
 /**
  * reverses a string
  * @param {string} [toReverse=''] - the string to reverse
@@ -20,13 +18,13 @@ for (const solution of [
   // the main test suite for the function
   describe(solution.name + ': reverses a string', () => {
     it('default parameter is an empty string', () => {
-      expect(solution()).to.equal('');
+      expect(solution()).toBe('');
     });
     it('an empty string', () => {
-      expect(solution('')).to.equal('');
+      expect(solution('')).toBe('');
     });
     it('all capital letters', () => {
-      expect(solution('ASDF')).to.equal('FDSA');
+      expect(solution('ASDF')).toBe('FDSA');
     });
     // write at least 5 more tests ...
   });

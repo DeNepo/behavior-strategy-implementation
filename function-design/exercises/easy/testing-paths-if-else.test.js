@@ -1,7 +1,5 @@
 'use strict';
 
-const expect = require('chai').expect;
-
 /**
  * returns true if the value is truthy
  * returns false if the value is falsy
@@ -26,14 +24,14 @@ for (const solution of [
     describe('solution can identify truthy values', () => {
       it('strings', () => {
         const actual = solution(_);
-        expect(actual).to.equal(true);
+        expect(actual).toBe(true);
       });
       it('numbers', () => {
         const actual = _;
-        expect(actual).to.equal(true);
+        expect(actual).toBe(true);
       });
       it('booleans', () => {
-        expect(solution(_)).to.equal(true);
+        expect(solution(_)).toBe(true);
       });
     });
     // the else path

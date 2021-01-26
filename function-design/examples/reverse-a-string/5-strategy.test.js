@@ -1,7 +1,5 @@
 'use strict';
 
-const expect = require('chai').expect;
-
 /**
  * repeats a string a specific number of times
  * @param {string} [text=''] - the string to repeat. defaults to empty string
@@ -33,44 +31,40 @@ for (const solution of [
   describe(solution.name + ': repeating a string:', () => {
     describe('default parameters', () => {
       it('repeat once if no repetitions is passed', () => {
-        expect(solution('asdf')).to.equal('asdf');
+        expect(solution('asdf')).toBe('asdf');
       });
       it('expect an empty string if no arguments are passed', () => {
-        expect(solution()).to.equal('');
+        expect(solution()).toBe('');
       });
     });
     describe('an empty string', () => {
       it('0 times', () => {
-        expect(solution('', 0)).to.equal('');
+        expect(solution('', 0)).toBe('');
       });
       it('10 times', () => {
-        expect(solution('', 10)).to.equal('');
+        expect(solution('', 10)).toBe('');
       });
       it('100 times', () => {
-        expect(solution('', 100)).to.equal('');
+        expect(solution('', 100)).toBe('');
       });
     });
     describe('zero repetitions', () => {
       it('"asdf"', () => {
-        expect(solution('asdf', 0)).to.equal('');
+        expect(solution('asdf', 0)).toBe('');
       });
       it('"tommywalk"', () => {
-        expect(solution('tommywalk', 0)).to.equal('');
+        expect(solution('tommywalk', 0)).toBe('');
       });
     });
     describe('standard use cases', () => {
       it('repeat a phrase 3 times', () => {
-        expect(solution('go to school', 3)).to.equal(
-          'go to schoolgo to schoolgo to school'
-        );
+        expect(solution('go to school', 3)).toBe('go to schoolgo to schoolgo to school');
       });
       it('phrases with punctuation', () => {
-        expect(solution('"Go!", said Dr. Seuss?', 2)).to.equal(
-          '"Go!", said Dr. Seuss?"Go!", said Dr. Seuss?'
-        );
+        expect(solution('"Go!", said Dr. Seuss?', 2)).toBe('"Go!", said Dr. Seuss?"Go!", said Dr. Seuss?');
       });
       it('special characters', () => {
-        expect(solution('\\ \n \t s', 2)).to.equal('\\ \n \t s\\ \n \t s');
+        expect(solution('\\ \n \t s', 2)).toBe('\\ \n \t s\\ \n \t s');
       });
     });
   });

@@ -1,7 +1,5 @@
 'use strict';
 
-const expect = require('chai').expect;
-
 /**
  * reverses a string and sets all the characters to upper or lower case
  * @param {string} [text=''] - the text to reverse and casify
@@ -25,17 +23,17 @@ for (const solution of [
     () => {
       describe("the function's default parameters", () => {
         it('second parameter defaults to true', () => {
-          expect(solution('asdf')).to.equal('fdsa');
+          expect(solution('asdf')).toBe('fdsa');
         });
         it('first parameter defaults to an empty string', () => {
-          expect(solution()).to.equal('');
+          expect(solution()).toBe('');
         });
       });
       // write the tests indicated by the comments
       describe('when set to lower case', () => {
         // when the text is an empty string
         it(_, () => {
-          expect(solution(_, _)).to.equal(_);
+          expect(solution(_, _)).toBe(_);
         });
         // when the text is all upper case
         // when the text is all lower case

@@ -1,7 +1,5 @@
 'use strict';
 
-const expect = require('chai').expect;
-
 /**
  * A function that takes an array of strings, reverses it, and combines the strings
  * it does not modify the original array

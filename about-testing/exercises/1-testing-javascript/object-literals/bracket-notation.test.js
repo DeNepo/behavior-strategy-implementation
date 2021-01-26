@@ -1,7 +1,5 @@
 'use strict';
 
-const expect = require('chai').expect;
-
 describe('bracket notation', () => {
   describe('types of tasty treats', () => {
     const key1 = 'dry';
@@ -10,10 +8,10 @@ describe('bracket notation', () => {
     obj[key2] = _;
     obj[_] = 'bread'
     it('obj.wet', () => {
-      expect(obj.wet).to.equal('soup');
+      expect(obj.wet).toBe('soup');
     });
     it('obj.dry', () => {
-      expect(obj[_]).to.equal(_);
+      expect(obj[_]).toBe(_);
     });
   });
   describe('a menagerie', () => {
@@ -26,13 +24,13 @@ describe('bracket notation', () => {
     obj[_] = _;
     obj['flying'] = _;
     it('obj.flying', () => {
-      expect(obj.flying).to.equal('crane');
+      expect(obj.flying).toBe('crane');
     });
     it('obj.running', () => {
-      expect(obj.running).to.equal(fastAnimal);
+      expect(obj.running).toBe(fastAnimal);
     });
     it('obj.swimming', () => {
-      expect(obj[water]).to.equal('mackerel');
+      expect(obj[water]).toBe('mackerel');
     });
   });
 });

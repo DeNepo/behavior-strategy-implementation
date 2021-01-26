@@ -1,7 +1,5 @@
 'use strict';
 
-const expect = require('chai').expect;
-
 /**
  * repeats a string a specific number of times
  * @param {string} [text=''] - the string to repeat. defaults to empty string

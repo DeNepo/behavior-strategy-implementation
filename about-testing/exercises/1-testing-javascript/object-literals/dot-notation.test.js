@@ -1,7 +1,5 @@
 'use strict';
 
-const expect = require('chai').expect;
-
 describe('dot notation', () => {
   describe('types of tasty treats', () => {
     const orite = _;
@@ -10,10 +8,10 @@ describe('dot notation', () => {
       _: 'soup',
     };
     it('bread', () => {
-      expect(obj._).to.equal('bread');
+      expect(obj._).toBe('bread');
     });
     it('soup', () => {
-      expect(obj.wet).to.equal('soup');
+      expect(obj.wet).toBe('soup');
     });
   });
   describe('a menagerie', () => {
@@ -24,13 +22,13 @@ describe('dot notation', () => {
       _: 'cheetah',
     };
     it('obj.flying', () => {
-      expect(_).to.equal('crane');
+      expect(_).toBe('crane');
     });
     it('obj.running', () => {
-      expect(obj.running).to.equal(_);
+      expect(obj.running).toBe(_);
     });
     it('obj.swimming', () => {
-      expect(obj.swimming).to.equal('mackerel');
+      expect(obj.swimming).toBe('mackerel');
     });
   });
 });

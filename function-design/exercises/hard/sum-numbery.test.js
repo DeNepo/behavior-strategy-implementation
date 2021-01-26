@@ -1,7 +1,5 @@
 'use strict';
 
-const expect = require('chai').expect;
-
 /**
  * sums all numbery strings in an array of strings
  * returns 0 if the array is empty

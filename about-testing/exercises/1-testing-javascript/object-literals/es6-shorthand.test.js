@@ -1,17 +1,15 @@
 'use strict';
 
-const expect = require('chai').expect;
-
 describe('ES6 object literal shorthand', () => {
   describe('types of tasty treats', () => {
     const wet = 'soup';
     const dry = 'bread';
     const obj = { _, _ };
     it('obj.dry', () => {
-      expect(obj.dry).to.equal(_);
+      expect(obj.dry).toBe(_);
     });
     it('obj.wet', () => {
-      expect(obj._).to.equal('soup');
+      expect(obj._).toBe('soup');
     });
   });
   describe('ES5, ES6', () => {
@@ -21,10 +19,10 @@ describe('ES6 object literal shorthand', () => {
       _: 'bush'
     };
     it('obj.short', () => {
-      expect(obj.short).to.equal(_);
+      expect(obj.short).toBe(_);
     });
     it('obj.tall', () => {
-      expect(_).to.equal('tree');
+      expect(_).toBe('tree');
     });
   });
   describe('a menagerie', () => {
@@ -35,13 +33,13 @@ describe('ES6 object literal shorthand', () => {
       _: 'cheetah'
     };
     it('obj.flying', () => {
-      expect(_).to.equal('crane');
+      expect(_).toBe('crane');
     });
     it('obj.running', () => {
-      expect(obj.running).to.equal(_);
+      expect(obj.running).toBe(_);
     });
     it('obj.swimming', () => {
-      expect(_).to.equal('mackerel');
+      expect(_).toBe('mackerel');
     });
   });
 });

@@ -1,7 +1,5 @@
 'use strict';
 
-const expect = require('chai').expect;
-
 /**
  * builds an array counting down from `start` to 0
  * @param {number} [start=0] - the number to count down from
@@ -21,13 +19,13 @@ for (const solution of [
   // the main test suite for the function
   describe(solution.name + ': counts down to 0', () => {
     it('default parameter', () => {
-      expect(solution()).to.deep.equal([0]);
+      expect(solution()).toEqual([0]);
     });
     it('0', () => {
-      expect(solution(0)).to.deep.equal([0]);
+      expect(solution(0)).toEqual([0]);
     });
     it('1', () => {
-      expect(solution(1)).to.deep.equal([1, 0]);
+      expect(solution(1)).toEqual([1, 0]);
     });
     // write at least 5 more tests ...
   });

@@ -1,7 +1,5 @@
 'use strict';
 
-const expect = require('chai').expect;
-
 /**
  * takes an array of strings and returns a new array of numbers
  *  the new array contains all the numbery strings, cast to numbers

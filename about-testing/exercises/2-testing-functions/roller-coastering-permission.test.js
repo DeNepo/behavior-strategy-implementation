@@ -1,7 +1,5 @@
 'use strict';
 
-const expect = require('chai').expect;
-
 /**
  * lets you know if you are tall enough to ride the roller coaster
  * @param {number} [height=0] - the rider's height in centimeters
@@ -30,7 +28,7 @@ describe('a function that tells you are tall enough', () => {
     it('passing true', () => {
       const actual = rollerCoasterPermission(true);
       const expected = _;
-      expect(actual).to.equal(expected);
+      expect(actual).toBe(expected);
     });
     it('passing "tall"', () => {
       const expected = _;
