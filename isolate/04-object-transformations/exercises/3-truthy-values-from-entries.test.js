@@ -1,7 +1,5 @@
 'use strict';
 
-const assert = require('chai').assert;
-
 /**
  * creates a copy of the object with all falsy entries removed
  * @param {Object} obj - the object to filter
@@ -79,7 +77,7 @@ describe('keepTruthyEntries keeps all the truthy entries', () => {
     it('returns a new object', () => {
       const arg = {};
       const returned = keepTruthyEntries(arg);
-      assert.notStrictEqual(returned, arg);
+      expect(returned).not.toBe(arg);
     });
   });
 });

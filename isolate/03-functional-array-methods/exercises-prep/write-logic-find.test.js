@@ -1,7 +1,5 @@
 'use strict';
 
-const assert = require('chai').assert;
-
 /**
  * returns true if a string is excited
  * (meaning it contains an "!")
@@ -15,37 +13,37 @@ const isExcited = (str) => {
 describe('isExcited: determines if a string is excited or not', () => {
   describe('can be used on its own', () => {
     it('returns true if "!" is at the beginning', () => {
-      assert.strictEqual(isExcited('!asdf'), true);
+      expect(isExcited('!asdf')).toBe(true);
     });
     it('returns true if "!" is in the middle', () => {
-      assert.strictEqual(isExcited('as!df'), true);
+      expect(isExcited('as!df')).toBe(true);
     });
     it('returns true if "!" is at the end', () => {
-      assert.strictEqual(isExcited('asdf!'), true);
+      expect(isExcited('asdf!')).toBe(true);
     });
     it('returns false if there is no "!"', () => {
-      assert.strictEqual(isExcited('asdf'), false);
+      expect(isExcited('asdf')).toBe(false);
     });
     it('returns false for the empty string', () => {
-      assert.strictEqual(isExcited(''), false);
+      expect(isExcited('')).toBe(false);
     });
   });
   describe('can be used as a callback for Array.find', () => {
     it('finds the only excited string', () => {
       const actual = ['', 'asdf', 'B!', ':('].find(isExcited);
-      assert.strictEqual(actual, 'B!');
+      expect(actual).toBe('B!');
     });
     it('finds the first excited string', () => {
       const actual = ['', 'asdf', 'B!', 'A!', ':('].find(isExcited);
-      assert.strictEqual(actual, 'B!');
+      expect(actual).toBe('B!');
     });
     it('returns undefined if there is no excited string', () => {
       const actual = ['', 'asdf', 'B', ':('].find(isExcited);
-      assert.strictEqual(actual, undefined);
+      expect(actual).toBe(undefined);
     });
     it('returns undefined for the empty array', () => {
       const actual = [].find(isExcited);
-      assert.strictEqual(actual, undefined);
+      expect(actual).toBe(undefined);
     });
   });
 });

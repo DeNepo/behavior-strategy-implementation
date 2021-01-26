@@ -59,9 +59,9 @@ const _4_actual = reduce(stringsArray, concatenateStrings);
 console.assert(_4_actual === _4_expect, 'Test 4: concatenate strings');
 
 // with initial value argument
-const _1_expect = 'hi-a-b-c';
-const _1_actual = reduce(stringsArray, concatenateStrings, 'hi');
+const _5_expect = 'hi-a-b-c';
+const _5_actual = reduce(stringsArray, concatenateStrings, 'hi');
 console.assert(
-  _1_actual === _1_expect,
+  _5_actual === _5_expect,
   'Test 5: concatenate strings, with initial value'
 );

@@ -1,7 +1,5 @@
 'use strict';
 
-const assert = require('chai').assert;
-
 /**
  * takes an array of strings and returns a new array
  *  the new array contains all the numbery strings, cast to number

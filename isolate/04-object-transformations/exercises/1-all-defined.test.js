@@ -1,7 +1,5 @@
 'use strict';
 
-const assert = require('chai').assert;
-
 /**
  * determines if all the entries in an object are defined
  * @param {Object} obj - the object to check
@@ -24,11 +22,11 @@ describe('allEntriesDefined checks if all the entries in an object are defined',
   describe("it returns true if there are no undefined entries", () => {
     it('returns true for an empty object', () => {
       const actual = allEntriesDefined({});
-      assert.strictEqual(actual, true);
+      expect(actual).toBe(true);
     });
     it('works for small objects', () => {
       const actual = allEntriesDefined({ a: 1, b: 2 });
-      assert.strictEqual(actual, true);
+      expect(actual).toBe(true);
     });
     it('works for large objects', () => {
       const arg = {
@@ -41,13 +39,13 @@ describe('allEntriesDefined checks if all the entries in an object are defined',
         g: null
       };
       const actual = allEntriesDefined(arg);
-      assert.strictEqual(actual, true);
+      expect(actual).toBe(true);
     });
   });
   describe("it returns false if there are undefined entries", () => {
     it('returns false for only undefined values', () => {
       const actual = allEntriesDefined({ a: undefined });
-      assert.strictEqual(actual, false);
+      expect(actual).toBe(false);
     });
     it('returns false for all undefined values', () => {
       const arg = {
@@ -57,7 +55,7 @@ describe('allEntriesDefined checks if all the entries in an object are defined',
         d: undefined,
       };
       const actual = allEntriesDefined(arg);
-      assert.strictEqual(actual, false);
+      expect(actual).toBe(false);
     });
     it('returns false for mixed values', () => {
       const arg = {
@@ -67,7 +65,7 @@ describe('allEntriesDefined checks if all the entries in an object are defined',
         d: 'goodbye',
       };
       const actual = allEntriesDefined(arg);
-      assert.strictEqual(actual, false);
+      expect(actual).toBe(false);
     });
   });
 

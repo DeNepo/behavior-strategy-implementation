@@ -10,9 +10,10 @@
   libraries will make certain parts of your life much easier
   but other parts will become more complicated
 
-  all exercises that have tests (file.test.js) in this repository have 2 dependencies:
-  - chai
-  - describe/it
+  all exercises that have tests (file.test.js) in this repository have 3 global dependencies:
+  - describe
+  - it
+  - expect
   these files WILL NOT RUN IN JS TUTOR
 
   to run tested files you will need to either:
@@ -25,13 +26,9 @@
 
 // go ahead and try running these lines of code in Js Tutor, then in your debuggers:
 
-
-// const chai = require('chai');
-
-// const expect = chai.expect;
-
-// expect(true).to.equal(true);
+// expect(true).toBe(true);
 
 // describe('hello', () => { });
 
 // it('hello', () => { });
+

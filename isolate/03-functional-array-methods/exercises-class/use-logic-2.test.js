@@ -1,7 +1,5 @@
 'use strict';
 
-const assert = require('chai').assert;
-
 /**
  * find the first negative number, returns undefined if there is none
  *  does not modify the array
@@ -31,32 +29,32 @@ describe('firstNegativeNumber: returns the first falsy string', () => {
     it('returns undefined for an empty array', () => {
       const expected = undefined;
       const actual = firstNegativeNumber([]);
-      assert.strictEqual(actual, expected);
+      expect(actual).toBe(expected);
     });
     it('returns undefined if there are no numbers', () => {
       const expected = undefined;
       const actual = firstNegativeNumber(['hi!', '.', '=+/12']);
-      assert.strictEqual(actual, expected);
+      expect(actual).toBe(expected);
     });
     it('returns undefined if all numbers are positive', () => {
       const expected = undefined;
       const actual = firstNegativeNumber([1, 2, 3]);
-      assert.strictEqual(actual, expected);
+      expect(actual).toBe(expected);
     });
     it('returns the first negative number', () => {
       const expected = -1;
       const actual = firstNegativeNumber([-1, -200]);
-      assert.strictEqual(actual, expected);
+      expect(actual).toBe(expected);
     });
     it('is not fooled by negative strings', () => {
       const expected = -2;
       const actual = firstNegativeNumber(['-3', -2]);
-      assert.strictEqual(actual, expected);
+      expect(actual).toBe(expected);
     });
     it('works with messy array', () => {
       const expected = -3;
       const actual = firstNegativeNumber([false, undefined, '-100', 3, -3, 40]);
-      assert.strictEqual(actual, expected);
+      expect(actual).toBe(expected);
     });
   });
   describe('it uses the argument correctly', () => {

@@ -1,7 +1,5 @@
 'use strict';
 
-const assert = require('chai').assert;
-
 /**
  * creates a new object with all private entries removed
  *  by convention, private keys begin with an underscore
@@ -89,7 +87,7 @@ describe('removePrivateKeys removes all entries beginning with an underscore', (
     it('returns a new object', () => {
       const arg = {};
       const returned = removePrivateKeys(arg);
-      assert.notStrictEqual(returned, arg);
+      expect(returned).not.toBe(arg);
     });
   });
 });

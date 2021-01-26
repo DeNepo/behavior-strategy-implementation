@@ -1,7 +1,5 @@
 'use strict';
 
-const assert = require('chai').assert;
-
 /**
  * casts each item in an array to Number
  * returns a new array without modifying the original
@@ -57,7 +55,7 @@ describe('mapToNumber casts each element in an array to type "number"', () => {
     it('returns a new array', () => {
       const arg = [];
       const returned = mapToNumber([]);
-      assert.notStrictEqual(returned, arg);
+      expect(returned).not.toBe(arg);
     });
     it('does not modify the argument', () => {
       const arg = ['a', 1, true, null, undefined];
@@ -66,7 +64,7 @@ describe('mapToNumber casts each element in an array to type "number"', () => {
     });
     it('throws a TypeError if the argument is not an array', () => {
       const shouldThrow = () => mapToNumber(14);
-      assert.throws(shouldThrow, TypeError, 'arr');
+      expect(shouldThrow).toThrow();
     });
   });
 });

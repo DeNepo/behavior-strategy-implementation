@@ -1,7 +1,5 @@
 'use strict';
 
-const assert = require('chai').assert;
-
 /**
  * casts all values to a string and concatenates
  * returns a new array without modifying the original
@@ -56,7 +54,7 @@ describe('concatenateAsStrings casts values to "string" and joins them together'
     });
     it('throws a TypeError if the argument is not an array', () => {
       const shouldThrow = () => concatenateAsStrings(14);
-      assert.throws(shouldThrow, TypeError, 'arr');
+      expect(shouldThrow).toThrow();
     });
   });
 });

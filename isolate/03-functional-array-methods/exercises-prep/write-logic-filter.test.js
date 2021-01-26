@@ -1,7 +1,5 @@
 'use strict';
 
-const assert = require('chai').assert;
-
 /**
  * returns true if a string is longer than 5 characters
  * otherwise returns false
@@ -16,19 +14,19 @@ const longerThanFive = (str) => {
 describe('longerThanFive: determines if a string is longer than 5 characters', () => {
   describe('can be used on its own', () => {
     it('returns false for the empty string', () => {
-      assert.strictEqual(longerThanFive(''), false);
+      expect(longerThanFive('')).toBe(false);
     });
     it('returns false for a short string', () => {
-      assert.strictEqual(longerThanFive('abc'), false);
+      expect(longerThanFive('abc')).toBe(false);
     });
     it('returns false for strings of length 5', () => {
-      assert.strictEqual(longerThanFive('abcde'), false);
+      expect(longerThanFive('abcde')).toBe(false);
     });
     it('returns true for strings of length 6', () => {
-      assert.strictEqual(longerThanFive('abcdef'), true);
+      expect(longerThanFive('abcdef')).toBe(true);
     });
     it('and for longer strings', () => {
-      assert.strictEqual(longerThanFive('abcdefghijklmnopqrstuvwxyz'), true);
+      expect(longerThanFive('abcdefghijklmnopqrstuvwxyz')).toBe(true);
     });
   });
   describe('can be used as a callback for Array.filter', () => {

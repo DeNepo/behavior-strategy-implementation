@@ -1,7 +1,5 @@
 'use strict';
 
-const assert = require('chai').assert;
-
 /**
  * switches the key and value for each string entry in an object
  * @param {Object} obj - an object
@@ -91,7 +89,7 @@ describe('swapem switches the key and value for each entry', () => {
     it('returns a new object', () => {
       const arg = {};
       const returned = swapem(arg);
-      assert.notStrictEqual(returned, arg);
+      expect(returned).not.toBe(arg);
     });
   });
 });

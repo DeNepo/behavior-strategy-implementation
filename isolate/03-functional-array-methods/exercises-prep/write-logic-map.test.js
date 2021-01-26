@@ -1,7 +1,5 @@
 'use strict';
 
-const assert = require('chai').assert;
-
 /**
  * reverses a string
  * @param {string} str - the string to reverse
@@ -15,16 +13,16 @@ const reverseString = (str) => {
 describe('reverseString: reverses a string', () => {
   describe('can be used on its own', () => {
     it('returns an empty string for the empty string', () => {
-      assert.strictEqual(reverseString(''), '');
+      expect(reverseString('')).toBe('');
     });
     it('"reverses" single characters', () => {
-      assert.strictEqual(reverseString('f'), 'f');
+      expect(reverseString('f')).toBe('f');
     });
     it('reverses non-empty strings', () => {
-      assert.strictEqual(reverseString('table'), 'elbat');
+      expect(reverseString('table')).toBe('elbat');
     });
     it('reverses palindromes', () => {
-      assert.strictEqual(reverseString('racecar'), 'racecar');
+      expect(reverseString('racecar')).toBe('racecar');
     });
   });
   describe('can be used as a callback for Array.map', () => {

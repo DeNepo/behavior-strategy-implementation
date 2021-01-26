@@ -1,7 +1,5 @@
 'use strict';
 
-const assert = require('chai').assert;
-
 /**
  * sums all numbery strings in an array
  * returns 0 if the array is empty
@@ -43,28 +41,28 @@ describe('sumNumbery: sums all the numbery strings in an array', () => {
     it('returns zero for an empty array', () => {
       const expected = 0;
       const actual = sumNumbery([]);
-      assert.strictEqual(actual, expected);
+      expect(actual).toBe(expected);
     });
     it('returns zero if all strings are NaNy', () => {
       const expected = 0;
       const actual = sumNumbery(['hi!', '.', '=+/12']);
-      assert.strictEqual(actual, expected);
+      expect(actual).toBe(expected);
     });
     it('returns the sum if all strings are Numbery', () => {
       const expected = 6;
       const actual = sumNumbery(['1', '2', '3']);
-      assert.strictEqual(actual, expected);
+      expect(actual).toBe(expected);
     });
     it('only sums Numbery strings', () => {
       const expected = 6;
       const actual = sumNumbery(['.', '1', '3#', '2', '3', '-=-']);
-      assert.strictEqual(actual, expected);
+      expect(actual).toBe(expected);
     });
   });
   describe('it uses the argument correctly', () => {
     it('throws an error if all entries are not strings', () => {
       const arg = ['hello', 'goodbye', true];
-      assert.throws(() => sumNumbery(arg), TypeError, 'arr is not all strings');
+      expect(() => sumNumbery(arg)).toThrow();
     });
     it('does not modify the argument', () => {
       const arg = ['hello', 'goodbye'];

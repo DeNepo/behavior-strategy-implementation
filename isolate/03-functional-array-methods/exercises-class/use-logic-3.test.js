@@ -1,7 +1,5 @@
 'use strict';
 
-const assert = require('chai').assert;
-
 /**
  * converts an array of strings into a sentence
  *  removes all non-words and combines the words with a space
@@ -32,22 +30,22 @@ describe('sentenceIt: converts an array of strings into a sentence', () => {
     it('returns an empty string for an empty array', () => {
       const expected = '';
       const actual = sentenceIt([]);
-      assert.strictEqual(actual, expected);
+      expect(actual).toBe(expected);
     });
     it('returns an empty string if there are no words', () => {
       const expected = '';
       const actual = sentenceIt(['1', '.', '=+/12']);
-      assert.strictEqual(actual, expected);
+      expect(actual).toBe(expected);
     });
     it('returns a sentence if there are only words', () => {
       const expected = ' hello frog princess';
       const actual = sentenceIt(['hello', 'frog', 'princess']);
-      assert.strictEqual(actual, expected);
+      expect(actual).toBe(expected);
     });
     it('creates a sentence using only the words', () => {
       const expected = ' hello frog princess';
       const actual = sentenceIt(['12', 'hello', '----', 'frog', 'princess', '*']);
-      assert.strictEqual(actual, expected);
+      expect(actual).toBe(expected);
     });
   });
   describe('it uses the argument correctly', () => {

@@ -1,7 +1,5 @@
 'use strict';
 
-const assert = require('chai').assert;
-
 /**
  * removes all strings from an array
  * returns a new array without modifying the original
@@ -47,7 +45,7 @@ describe('filterOutStrings removes all "string" values from an array', () => {
     it('returns a new array', () => {
       const arg = [];
       const returned = filterOutStrings([]);
-      assert.notStrictEqual(returned, arg);
+      expect(returned).not.toBe(arg);
     });
     it('does not modify the argument', () => {
       const arg = ['a', 1, true, null, undefined];
@@ -56,7 +54,7 @@ describe('filterOutStrings removes all "string" values from an array', () => {
     });
     it('throws a TypeError if the argument is not an array', () => {
       const shouldThrow = () => filterOutStrings(14);
-      assert.throws(shouldThrow, TypeError, 'arr');
+      expect(shouldThrow).toThrow();
     });
   });
 });

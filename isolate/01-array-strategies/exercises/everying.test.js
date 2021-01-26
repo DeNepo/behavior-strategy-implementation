@@ -1,7 +1,5 @@
 'use strict';
 
-const assert = require('chai').assert;
-
 /**
  * returns true if no values are numbers, otherwise returns false
  * does not modify the argument array
@@ -80,7 +78,7 @@ describe('containsNoNumbers checks if an array contains no numbers', () => {
     });
     it('throws a TypeError if the argument is not an array', () => {
       const shouldThrow = () => containsNoNumbers(14);
-      assert.throws(shouldThrow, TypeError, 'arr');
+      expect(shouldThrow).toThrow();
     });
   });
 });
