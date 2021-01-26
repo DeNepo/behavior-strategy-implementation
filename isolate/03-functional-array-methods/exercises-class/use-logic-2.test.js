@@ -58,7 +58,7 @@ describe('firstNegativeNumber: returns the first falsy string', () => {
     it('does not modify the argument', () => {
       const arg = ['hello', 'goodbye'];
       firstNegativeNumber(arg);
-      assert.deepStrictEqual(arg, ['hello', 'goodbye']);
+      expect(arg).toStrictEqual(['hello', 'goodbye']);
     });
   });
 });

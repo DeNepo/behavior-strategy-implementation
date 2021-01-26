@@ -14,7 +14,7 @@
  *
  * const secureUser = removePrivateKeys(user);
  *
- * assert.deepStrictEqual(secureUser, {
+ * expect(secureUser).toStrictEqual({
  *  userName: 'public'
  * });
  */
@@ -35,7 +35,7 @@ describe('removePrivateKeys removes all entries beginning with an underscore', (
   describe('correctly filters the object', () => {
     it('returns an empty object for an empty object', () => {
       const actual = removePrivateKeys({});
-      assert.deepStrictEqual(actual, {});
+      expect(actual).toStrictEqual({});
     });
     it('removes all entries if all keys are private', () => {
       const actual = removePrivateKeys({
@@ -43,7 +43,7 @@ describe('removePrivateKeys removes all entries beginning with an underscore', (
         _b: 2,
         _c: 3,
       });
-      assert.deepStrictEqual(actual, {});
+      expect(actual).toStrictEqual({});
     });
     it('removes no keys if all keys are public', () => {
       const arg = {
@@ -52,7 +52,7 @@ describe('removePrivateKeys removes all entries beginning with an underscore', (
         c: 3,
       };
       const actual = removePrivateKeys(arg);
-      assert.deepStrictEqual(actual, {
+      expect(actual).toStrictEqual({
         a: 1,
         b: 2,
         c: 3,
@@ -66,7 +66,7 @@ describe('removePrivateKeys removes all entries beginning with an underscore', (
         d: 4,
       };
       const actual = removePrivateKeys(arg);
-      assert.deepStrictEqual(actual, {
+      expect(actual).toStrictEqual({
         a: 1,
         d: 4,
       });
@@ -77,7 +77,7 @@ describe('removePrivateKeys removes all entries beginning with an underscore', (
     it('does not modify the argument', () => {
       const arg = { e: 'hello', f: undefined, g: 'goodbye' };
       removePrivateKeys(arg);
-      assert.deepStrictEqual(arg, { e: 'hello', f: undefined, g: 'goodbye' });
+      expect(arg).toStrictEqual({ e: 'hello', f: undefined, g: 'goodbye' });
     });
     it('returns a new object', () => {
       const arg = {};

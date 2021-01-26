@@ -66,7 +66,7 @@ describe('sumNumbery: sums all the numbery strings in an array', () => {
     it('does not modify the argument', () => {
       const arg = ['hello', 'goodbye'];
       sumNumbery(arg);
-      assert.deepStrictEqual(arg, ['hello', 'goodbye']);
+      expect(arg).toStrictEqual(['hello', 'goodbye']);
     });
   });
 });

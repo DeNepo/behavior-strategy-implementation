@@ -27,15 +27,15 @@ describe('reverseString: reverses a string', () => {
   describe('can be used as a callback for Array.map', () => {
     it('returns an empty array for the empty array', () => {
       const actual = [].map(reverseString);
-      assert.deepStrictEqual(actual, []);
+      expect(actual).toStrictEqual([]);
     });
     it('reverses all strings in an array', () => {
       const actual = ['1234', 'uiop', '', '-|-'].map(reverseString);
-      assert.deepStrictEqual(actual, ['4321', 'poiu', '', '-|-']);
+      expect(actual).toStrictEqual(['4321', 'poiu', '', '-|-']);
     });
     it('reverses an array of palindromes', () => {
       const actual = ['racecar', '-|-', 'do geese see god'].map(reverseString);
-      assert.deepStrictEqual(actual, ['racecar', '-|-', 'dog ees eseeg od']);
+      expect(actual).toStrictEqual(['racecar', '-|-', 'dog ees eseeg od']);
     });
   });
 });

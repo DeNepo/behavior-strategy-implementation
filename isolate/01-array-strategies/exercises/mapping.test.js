@@ -23,32 +23,32 @@ describe('mapToNumber casts each element in an array to type "number"', () => {
     it('returns an empty array if an empty array is passed', () => {
       const expected = [];
       const actual = mapToNumber([]);
-      assert.deepStrictEqual(actual, expected);
+      expect(actual).toStrictEqual(expected);
     });
     it('converts strings to Number', () => {
       const expected = [1, 0, 20, NaN, Infinity];
       const actual = mapToNumber(['1', '', '20', 'asdf', 'Infinity']);
-      assert.deepStrictEqual(actual, expected);
+      expect(actual).toStrictEqual(expected);
     });
     it('converts booleans to Number', () => {
       const expected = [1, 0];
       const actual = mapToNumber([true, false]);
-      assert.deepStrictEqual(actual, expected);
+      expect(actual).toStrictEqual(expected);
     });
     it('converts null and undefined to Number', () => {
       const expected = [0, NaN];
       const actual = mapToNumber([null, undefined]);
-      assert.deepStrictEqual(actual, expected);
+      expect(actual).toStrictEqual(expected);
     });
     it('converts numbers to Number', () => {
       const expected = [14, -14, 0, NaN, Infinity];
       const actual = mapToNumber([14, -14, 0, NaN, Infinity]);
-      assert.deepStrictEqual(actual, expected);
+      expect(actual).toStrictEqual(expected);
     });
     it('converts mixed type arrays to Number', () => {
       const expected = [NaN, 1, 1, 0, NaN];
       const actual = mapToNumber(['a', 1, true, null, undefined]);
-      assert.deepStrictEqual(actual, expected);
+      expect(actual).toStrictEqual(expected);
     });
   });
   describe('it uses the argument array correctly', () => {
@@ -61,7 +61,7 @@ describe('mapToNumber casts each element in an array to type "number"', () => {
     it('does not modify the argument', () => {
       const arg = ['a', 1, true, null, undefined];
       mapToNumber(arg);
-      assert.deepStrictEqual(arg, ['a', 1, true, null, undefined]);
+      expect(arg).toStrictEqual(['a', 1, true, null, undefined]);
     });
     it('throws a TypeError if the argument is not an array', () => {
       const shouldThrow = () => mapToNumber(14);

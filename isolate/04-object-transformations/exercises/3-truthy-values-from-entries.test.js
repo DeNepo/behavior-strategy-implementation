@@ -21,7 +21,7 @@ describe('keepTruthyEntries keeps all the truthy entries', () => {
   describe('it correctly filters the object', () => {
     it('returns an empty object for an empty object', () => {
       const actual = keepTruthyEntries({});
-      assert.deepStrictEqual(actual, {});
+      expect(actual).toStrictEqual({});
     });
     it('removes all entries when all are falsy', () => {
       const actual = keepTruthyEntries({
@@ -31,7 +31,7 @@ describe('keepTruthyEntries keeps all the truthy entries', () => {
         d: '',
         e: null,
       });
-      assert.deepStrictEqual(actual, {});
+      expect(actual).toStrictEqual({});
     });
     it('keeps all entries when they are truthy', () => {
       const actual = keepTruthyEntries({
@@ -39,7 +39,7 @@ describe('keepTruthyEntries keeps all the truthy entries', () => {
         b: true,
         c: 'hello',
       });
-      assert.deepStrictEqual(actual, {
+      expect(actual).toStrictEqual({
         a: 1,
         b: true,
         c: 'hello',
@@ -56,7 +56,7 @@ describe('keepTruthyEntries keeps all the truthy entries', () => {
         g: null,
       };
       const actual = keepTruthyEntries(arg);
-      assert.deepStrictEqual(actual, {
+      expect(actual).toStrictEqual({
         a: 1,
         c: 'hello',
         e: true,
@@ -68,7 +68,7 @@ describe('keepTruthyEntries keeps all the truthy entries', () => {
     it('does not modify the argument', () => {
       const arg = { e: 'hello', f: undefined, g: 'goodbye' };
       keepTruthyEntries(arg);
-      assert.deepStrictEqual(arg, { e: 'hello', f: undefined, g: 'goodbye' });
+      expect(arg).toStrictEqual({ e: 'hello', f: undefined, g: 'goodbye' });
     });
     it('returns a new object', () => {
       const arg = {};

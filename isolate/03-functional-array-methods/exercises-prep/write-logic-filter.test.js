@@ -32,22 +32,22 @@ describe('longerThanFive: determines if a string is longer than 5 characters', (
     it('finds nothing in an empty array', () => {
       const expected = [];
       const actual = [].filter(longerThanFive);
-      assert.deepStrictEqual(actual, expected);
+      expect(actual).toStrictEqual(expected);
     });
     it('keeps all items when all are over 5 long', () => {
       const expected = ['123456', 'abcdef'];
       const actual = ['123456', 'abcdef'].filter(longerThanFive);
-      assert.deepStrictEqual(actual, expected);
+      expect(actual).toStrictEqual(expected);
     });
     it('removes all items when all are under 5 long', () => {
       const expected = [];
       const actual = ['12345', 'abcde'].filter(longerThanFive);
-      assert.deepStrictEqual(actual, expected);
+      expect(actual).toStrictEqual(expected);
     });
     it('keeps only the correct items', () => {
       const expected = ['abcdef'];
       const actual = ['12345', 'abcdef'].filter(longerThanFive);
-      assert.deepStrictEqual(actual, expected);
+      expect(actual).toStrictEqual(expected);
     });
   });
 });

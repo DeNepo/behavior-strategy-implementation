@@ -69,7 +69,7 @@ describe('allEntriesDefined checks if all the entries in an object are defined',
     it('does not modify the argument', () => {
       const arg = { e: 'hello', f: undefined, g: 'goodbye' };
       allEntriesDefined(arg);
-      assert.deepStrictEqual(arg, { e: 'hello', f: undefined, g: 'goodbye' });
+      expect(arg).toStrictEqual({ e: 'hello', f: undefined, g: 'goodbye' });
     });
   });
 });

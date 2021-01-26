@@ -56,7 +56,7 @@ describe('sentenceIt: converts an array of strings into a sentence', () => {
     it('does not modify the argument', () => {
       const arg = ['hello', 'goodbye'];
       sentenceIt(arg);
-      assert.deepStrictEqual(arg, ['hello', 'goodbye']);
+      expect(arg).toStrictEqual(['hello', 'goodbye']);
     });
   });
 });

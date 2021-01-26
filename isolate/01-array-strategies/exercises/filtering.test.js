@@ -23,22 +23,22 @@ describe('filterOutStrings removes all "string" values from an array', () => {
     it('returns an empty array if an empty array is passed', () => {
       const expected = [];
       const actual = filterOutStrings([]);
-      assert.deepStrictEqual(actual, expected);
+      expect(actual).toStrictEqual(expected);
     });
     it('returns an empty array if only strings are passed', () => {
       const expected = [];
       const actual = filterOutStrings(['1', '', '20', 'asdf', 'Infinity']);
-      assert.deepStrictEqual(actual, expected);
+      expect(actual).toStrictEqual(expected);
     });
     it('keeps all values that are not strings', () => {
       const expected = [false, null, undefined, 100, NaN];
       const actual = filterOutStrings([false, null, undefined, 100, NaN]);
-      assert.deepStrictEqual(actual, expected);
+      expect(actual).toStrictEqual(expected);
     });
     it('can handle arrays with mixed types', () => {
       const expected = [1, true, null, undefined];
       const actual = filterOutStrings([1, 'a', true, null, 'b', undefined]);
-      assert.deepStrictEqual(actual, expected);
+      expect(actual).toStrictEqual(expected);
     });
   });
   describe('it uses the argument array correctly', () => {
@@ -51,7 +51,7 @@ describe('filterOutStrings removes all "string" values from an array', () => {
     it('does not modify the argument', () => {
       const arg = ['a', 1, true, null, undefined];
       filterOutStrings(arg);
-      assert.deepStrictEqual(arg, ['a', 1, true, null, undefined]);
+      expect(arg).toStrictEqual(['a', 1, true, null, undefined]);
     });
     it('throws a TypeError if the argument is not an array', () => {
       const shouldThrow = () => filterOutStrings(14);

@@ -7,47 +7,44 @@
  * @param {string[]} arr - the array of strings
  * @returns {number[]} an array containing numbers that aren't NaN
  */
-const numberyNumberify = (arr) => {
+const numberyNumberify = arr => {
   // these work, you need to use them with the right array methods
-  const isNotNaN = (entry) => {
+  const isNotNaN = entry => {
     return !Number.isNaN(entry);
   };
-  const castToNumber = (entry) => {
+  const castToNumber = entry => {
     return Number(entry);
   };
 
   // fill in the array methods and which logic to use
-  const allValidNumbers = arr
-    ._(_)
-    ._(_);
+  const allValidNumbers = arr._(_)._(_);
 
   return allValidNumbers;
 };
-
 
 describe('numberyNumberify: converts an array of strings into an array of numbery numbers', () => {
   describe('it correctly processes an array of strings', () => {
     it('returns an empty array for the empty array', () => {
       const expected = [];
       const actual = numberyNumberify([]);
-      assert.deepStrictEqual(actual, expected);
+      expect(actual).toStrictEqual(expected);
     });
     it('maps all entries to Number', () => {
       const expected = [1, 2, 3];
       const actual = numberyNumberify(['1', '2', '3']);
-      assert.deepStrictEqual(actual, expected);
+      expect(actual).toStrictEqual(expected);
     });
     it('filters all NaN values', () => {
       const expected = [1, 2, 3];
       const actual = numberyNumberify(['1', '$%@#', '2', 'e', '3']);
-      assert.deepStrictEqual(actual, expected);
+      expect(actual).toStrictEqual(expected);
     });
   });
   describe('it uses the argument correctly', () => {
     it('does not modify the argument', () => {
       const arg = ['asdf', '1', ''];
       numberyNumberify(arg);
-      assert.deepStrictEqual(arg, ['asdf', '1', '']);
+      expect(arg).toStrictEqual(['asdf', '1', '']);
     });
   });
 });
