@@ -8,8 +8,8 @@
     it is used in test files without being declared
   to run test files you need a specialized test environment
     you can run these files in the browser using `study-lenses`
-    or from node using `$ mocha path/to/file.js`
-  if
+    or with the VSCode debugger using the "Current JS File (with tests)" option
+    or from node using `$ jest path/to/file.js`
 
 */
 
