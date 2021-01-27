@@ -6,7 +6,7 @@
  * @param {object[]} users - an array of user objects
  * @returns {object[]} an array of only active users
  */
-export const findActiveInUsers = users => {
+export const findActiveUsers = users => {
   if (!Array.isArray(users)) {
     throw new TypeError('users is not an array');
   }

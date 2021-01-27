@@ -483,9 +483,9 @@ const repeatString = (text = '', repetitions = 1) => {
 2. Running files in `.js` (without .test):
    - _debugger_: open the file, select the debug option from your VSCode side-bar, choose the `Current JS File (no tests)` option, and click `|>`.
    - _console_: `node path/to/file.js`, simple and easy
-3. Running files ending in `.test.js`:
+3. Running files ending in `.test.js` or `.spec.js`:
    - _debugger_: open the file, select the debug option from your VSCode side-bar, choose the `Current JS File (with tests)` option, and click `|>`.
-   - _console_: files ending in .test.js must be run with `jest` -> `jest path/to/file.test.js`. You will need to globally install jest for this (`npm install -g jest-cli`)
+   - _console_: files ending in .test.js or .spec.js must be run with `npm run test-one path/to/file.test.js`. (When a test fails there will be an NPM error, that's ok! it will go away when the tests all pass)
 
 [TOP](#behavior-strategy-implementation)
 
