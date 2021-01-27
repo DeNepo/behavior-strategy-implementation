@@ -11,8 +11,8 @@
       "type": "node",
       "request": "launch",
       "name": "Current JS File (with tests)",
-      "args": ["${file}"],
-      "runtimeExecutable": "jest",
+      "args": ["run", "test-one", "${file}"],
+      "runtimeExecutable": "npm",
       "internalConsoleOptions": "openOnSessionStart",
       "skipFiles": ["<node_internals>/**"]
     }

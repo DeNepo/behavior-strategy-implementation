@@ -1,5 +1,5 @@
 {
   "--defaults": {
-    ".html": "study"
+    ".js": "highlight"
   }
 }
