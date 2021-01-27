@@ -485,7 +485,7 @@ const repeatString = (text = '', repetitions = 1) => {
    - _console_: `node path/to/file.js`, simple and easy
 3. Running files ending in `.test.js` or `.spec.js`:
    - _debugger_: open the file, select the debug option from your VSCode side-bar, choose the `Current JS File (with tests)` option, and click `|>`.
-   - _console_: files ending in .test.js or .spec.js must be run with `npm run test-one path/to/file.test.js`. (When a test fails there will be an NPM error, that's ok! it will go away when the tests all pass)
+   - _console_: files ending in .test.js or .spec.js must be run with `npm run test-one --silent path/to/file.test.js`.
 
 [TOP](#behavior-strategy-implementation)
 
