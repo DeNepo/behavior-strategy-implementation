@@ -27,17 +27,17 @@ describe('sentenceIt: converts an array of strings into a sentence', () => {
     it('returns an empty string for an empty array', () => {
       const expected = '';
       const actual = sentenceIt([]);
-      expect(actual).toStrictEqual(expected);
+      expect(actual).toEqual(expected);
     });
     it('returns an empty string if there are no words', () => {
       const expected = '';
       const actual = sentenceIt(['1', '.', '=+/12']);
-      expect(actual).toStrictEqual(expected);
+      expect(actual).toEqual(expected);
     });
     it('returns a sentence if there are only words', () => {
       const expected = ' hello frog princess';
       const actual = sentenceIt(['hello', 'frog', 'princess']);
-      expect(actual).toStrictEqual(expected);
+      expect(actual).toEqual(expected);
     });
     it('creates a sentence using only the words', () => {
       const expected = ' hello frog princess';
@@ -49,14 +49,14 @@ describe('sentenceIt: converts an array of strings into a sentence', () => {
         'princess',
         '*',
       ]);
-      expect(actual).toStrictEqual(expected);
+      expect(actual).toEqual(expected);
     });
   });
   describe('it uses the argument correctly', () => {
     it('does not modify the argument', () => {
       const arg = ['hello', 'goodbye'];
       sentenceIt(arg);
-      expect(arg).toStrictEqual(['hello', 'goodbye']);
+      expect(arg).toEqual(['hello', 'goodbye']);
     });
   });
 });

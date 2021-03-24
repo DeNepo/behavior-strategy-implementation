@@ -21,17 +21,17 @@ for (const solution of [
   describe(solution.name + ': sets a text to lower or upper case', () => {
     describe("the function's default parameters", () => {
       it('second parameter defaults to true', () => {
-        expect(solution('asdf')).toStrictEqual('asdf');
+        expect(solution('asdf')).toEqual('asdf');
       });
       it('first parameter defaults to an empty string', () => {
-        expect(solution()).toStrictEqual('');
+        expect(solution()).toEqual('');
       });
     });
     // write the tests indicated by the comments
     describe('when set to lower case', () => {
       // when the text is an empty string
       it(_, () => {
-        expect(solution(_, _)).toStrictEqual(_);
+        expect(solution(_, _)).toEqual(_);
       });
       // when the text is all upper case
       // when the text is all lower case

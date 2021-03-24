@@ -30,7 +30,7 @@ describe('swapem switches the key and value for each entry', () => {
   describe('it correctly swaps the entries', () => {
     it('returns an empty object for an empty object', () => {
       const actual = swapem({});
-      expect(actual).toStrictEqual({});
+      expect(actual).toEqual({});
     });
     it('swaps all entries when all values are strings', () => {
       const actual = swapem({
@@ -38,7 +38,7 @@ describe('swapem switches the key and value for each entry', () => {
         b: 'Y',
         c: 'F',
       });
-      expect(actual).toStrictEqual({
+      expect(actual).toEqual({
         H: 'a',
         Y: 'b',
         F: 'c',
@@ -50,7 +50,7 @@ describe('swapem switches the key and value for each entry', () => {
         b: true,
         c: null,
       });
-      expect(actual).toStrictEqual({
+      expect(actual).toEqual({
         a: 1,
         b: true,
         c: null,
@@ -65,7 +65,7 @@ describe('swapem switches the key and value for each entry', () => {
         e: true,
       };
       const actual = swapem(arg);
-      expect(actual).toStrictEqual({
+      expect(actual).toEqual({
         a: 1,
         b: 0,
         hello: 'c',
@@ -79,13 +79,13 @@ describe('swapem switches the key and value for each entry', () => {
     it('does not modify the argument', () => {
       const arg = { e: 'hello', f: '', g: 'goodbye' };
       swapem(arg);
-      expect(arg).toStrictEqual({ e: 'hello', f: '', g: 'goodbye' });
+      expect(arg).toEqual({ e: 'hello', f: '', g: 'goodbye' });
     });
     it('returns a new object', () => {
       const arg = {};
       const returned = swapem(arg);
       const areNotTheSameObject = arg !== returned;
-      expect(areNotTheSameObject).toStrictEqual(true);
+      expect(areNotTheSameObject).toEqual(true);
     });
   });
 });

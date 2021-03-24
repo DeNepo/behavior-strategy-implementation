@@ -8,10 +8,10 @@ describe('bracket notation', () => {
     obj[key2] = _;
     obj[_] = 'bread';
     it('obj.wet', () => {
-      expect(obj.wet).toStrictEqual('soup');
+      expect(obj.wet).toEqual('soup');
     });
     it('obj.dry', () => {
-      expect(obj[_]).toStrictEqual(_);
+      expect(obj[_]).toEqual(_);
     });
   });
   describe('a menagerie', () => {
@@ -24,13 +24,13 @@ describe('bracket notation', () => {
     obj[_] = _;
     obj['flying'] = _;
     it('obj.flying', () => {
-      expect(obj.flying).toStrictEqual('crane');
+      expect(obj.flying).toEqual('crane');
     });
     it('obj.running', () => {
-      expect(obj.running).toStrictEqual(fastAnimal);
+      expect(obj.running).toEqual(fastAnimal);
     });
     it('obj.swimming', () => {
-      expect(obj[water]).toStrictEqual('mackerel');
+      expect(obj[water]).toEqual('mackerel');
     });
   });
 });

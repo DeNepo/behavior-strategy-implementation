@@ -18,11 +18,11 @@ describe('allEntriesDefined checks if all the entries in an object are defined',
   describe('it returns true if there are no undefined entries', () => {
     it('returns true for an empty object', () => {
       const actual = allEntriesDefined({});
-      expect(actual).toStrictEqual(true);
+      expect(actual).toEqual(true);
     });
     it('works for small objects', () => {
       const actual = allEntriesDefined({ a: 1, b: 2 });
-      expect(actual).toStrictEqual(true);
+      expect(actual).toEqual(true);
     });
     it('works for large objects', () => {
       const arg = {
@@ -35,13 +35,13 @@ describe('allEntriesDefined checks if all the entries in an object are defined',
         g: null,
       };
       const actual = allEntriesDefined(arg);
-      expect(actual).toStrictEqual(true);
+      expect(actual).toEqual(true);
     });
   });
   describe('it returns false if there are undefined entries', () => {
     it('returns false for only undefined values', () => {
       const actual = allEntriesDefined({ a: undefined });
-      expect(actual).toStrictEqual(false);
+      expect(actual).toEqual(false);
     });
     it('returns false for all undefined values', () => {
       const arg = {
@@ -51,7 +51,7 @@ describe('allEntriesDefined checks if all the entries in an object are defined',
         d: undefined,
       };
       const actual = allEntriesDefined(arg);
-      expect(actual).toStrictEqual(false);
+      expect(actual).toEqual(false);
     });
     it('returns false for mixed values', () => {
       const arg = {
@@ -61,7 +61,7 @@ describe('allEntriesDefined checks if all the entries in an object are defined',
         d: 'goodbye',
       };
       const actual = allEntriesDefined(arg);
-      expect(actual).toStrictEqual(false);
+      expect(actual).toEqual(false);
     });
   });
 
@@ -69,7 +69,7 @@ describe('allEntriesDefined checks if all the entries in an object are defined',
     it('does not modify the argument', () => {
       const arg = { e: 'hello', f: undefined, g: 'goodbye' };
       allEntriesDefined(arg);
-      expect(arg).toStrictEqual({ e: 'hello', f: undefined, g: 'goodbye' });
+      expect(arg).toEqual({ e: 'hello', f: undefined, g: 'goodbye' });
     });
   });
 });

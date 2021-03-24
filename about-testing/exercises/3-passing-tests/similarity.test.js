@@ -13,50 +13,48 @@ describe('determine how similar two values are', () => {
     const expected = 'exactly the same';
     it('1000 and 1e3', () => {
       const actual = howSimilarAre(1000, 1e3);
-      expect(actual).toStrictEqual(expected);
+      expect(actual).toEqual(expected);
     });
     it('NaN and NaN', () => {
       const actual = howSimilarAre(NaN, NaN);
-      expect(actual).toStrictEqual(expected);
+      expect(actual).toEqual(expected);
     });
     it('"hello" and "hello"', () => {
       const actual = howSimilarAre('hello', 'hello');
-      expect(actual).toStrictEqual(expected);
+      expect(actual).toEqual(expected);
     });
     it(' and ', () => {
       const actual = howSimilarAre('hello', 'hello');
-      expect(actual).toStrictEqual(expected);
+      expect(actual).toEqual(expected);
     });
   });
   describe('the same type', () => {
     const expected = 'the same type';
     it('"hello" and "goodbye"', () => {
-      expect(howSimilarAre('hello', 'goodbye')).toStrictEqual(expected);
+      expect(howSimilarAre('hello', 'goodbye')).toEqual(expected);
     });
     it('100 and -100', () => {
-      expect(howSimilarAre(100, -100)).toStrictEqual(expected);
+      expect(howSimilarAre(100, -100)).toEqual(expected);
     });
     it('true and false', () => {
-      expect(howSimilarAre(true, false)).toStrictEqual(expected);
+      expect(howSimilarAre(true, false)).toEqual(expected);
     });
     it('[] and null', () => {
-      expect(howSimilarAre([], null)).toStrictEqual(expected);
+      expect(howSimilarAre([], null)).toEqual(expected);
     });
   });
   describe('nothing alike', () => {
     it('true and 10', () => {
-      expect(howSimilarAre(true, 10)).toStrictEqual('nothing alike');
+      expect(howSimilarAre(true, 10)).toEqual('nothing alike');
     });
     it('"asdf" and { hi: "mom" }', () => {
-      expect(howSimilarAre('asdf', { hi: 'mom' })).toStrictEqual(
-        'nothing alike'
-      );
+      expect(howSimilarAre('asdf', { hi: 'mom' })).toEqual('nothing alike');
     });
     it('null and undefined', () => {
-      expect(howSimilarAre(null, undefined)).toStrictEqual('nothing alike');
+      expect(howSimilarAre(null, undefined)).toEqual('nothing alike');
     });
     it('"4" and 4', () => {
-      expect(howSimilarAre('4', 4)).toStrictEqual('nothing alike');
+      expect(howSimilarAre('4', 4)).toEqual('nothing alike');
     });
   });
 });

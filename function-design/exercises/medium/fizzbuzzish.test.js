@@ -23,15 +23,15 @@ for (const solution of [
   describe(solution.name + ': fizbuzzish', () => {
     describe('default parameter is 0', () => {
       it('returns "fizzbuzz" when no argument is passed', () =>
-        expect(solution()).toStrictEqual('fizzbuzz'));
+        expect(solution()).toEqual('fizzbuzz'));
     });
 
     describe('not divisible by 3 or 5', () => {
       it('1', () => {
-        expect(solution(1)).toStrictEqual(1);
+        expect(solution(1)).toEqual(1);
       });
       it('2', () => {
-        expect(solution(2)).toStrictEqual(2);
+        expect(solution(2)).toEqual(2);
       });
       // write more tests in this category
     });
@@ -39,10 +39,10 @@ for (const solution of [
     describe('only divisible by only 3', () => {
       const expectedValue = 'fizz';
       it('3', () => {
-        expect(solution(3)).toStrictEqual(expectedValue);
+        expect(solution(3)).toEqual(expectedValue);
       });
       it('6', () => {
-        expect(solution(6)).toStrictEqual(expectedValue);
+        expect(solution(6)).toEqual(expectedValue);
       });
       // write more tests in this category
     });
@@ -50,10 +50,10 @@ for (const solution of [
     describe('only divisible by only 5', () => {
       const expectedValue = 'buzz';
       it('5', () => {
-        expect(solution(5)).toStrictEqual(expectedValue);
+        expect(solution(5)).toEqual(expectedValue);
       });
       it('10', () => {
-        expect(solution(10)).toStrictEqual(expectedValue);
+        expect(solution(10)).toEqual(expectedValue);
       });
       // write more tests in this category
     });
@@ -61,10 +61,10 @@ for (const solution of [
     describe('divisible by 5 and 3', () => {
       const expectedValue = 'fizzbuzz';
       it('15', () => {
-        expect(solution(15)).toStrictEqual(expectedValue);
+        expect(solution(15)).toEqual(expectedValue);
       });
       it('30', () => {
-        expect(solution(30)).toStrictEqual(expectedValue);
+        expect(solution(30)).toEqual(expectedValue);
       });
       // write more tests in this category
     });

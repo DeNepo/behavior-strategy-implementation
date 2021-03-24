@@ -5,7 +5,7 @@ describe('strict equality compares the type and the value', () => {
     it(`' and " are the same`, () => {
       const actual = 'hello' === 'hello';
       const expected = _;
-      expect(actual).toStrictEqual(expected);
+      expect(actual).toEqual(expected);
     });
     it('capital and lower case are not the same', () => {
       const actual = 'HI' === 'hi';

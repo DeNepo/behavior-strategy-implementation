@@ -22,7 +22,7 @@ for (const solution of [
   describe(solution.name + ': determines how similar two values are', () => {
     describe('when values are strictly equal', () => {
       it('strings', () => {
-        expect(solution('hello', 'hello')).toStrictEqual(_);
+        expect(solution('hello', 'hello')).toEqual(_);
       });
       it('numbers', () => {
         // 1, 1.0
@@ -31,10 +31,10 @@ for (const solution of [
     });
     describe('when values have the same type', () => {
       it('strings', () => {
-        expect(_).toStrictEqual('same type');
+        expect(_).toEqual('same type');
       });
       it('numbers', () => {
-        expect(_).toStrictEqual(_);
+        expect(_).toEqual(_);
       });
       it('booleans', () => {});
     });

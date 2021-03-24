@@ -26,7 +26,7 @@
 
 // go ahead and try running these lines of code in Js Tutor, then in your debuggers:
 
-// expect(true).toStrictEqual(true);
+// expect(true).toEqual(true);
 
 // describe('hello', () => { });
 

@@ -26,11 +26,11 @@ for (const solution of [
   describe(solution.name + ': converts two booleans to binary', () => {
     it('true, true --> "11"', () => {
       const actual = solution(_, _);
-      expect(actual).toStrictEqual(_);
+      expect(actual).toEqual(_);
     });
     it('true, false --> "10"', () => {
       const actual = _;
-      expect(actual).toStrictEqual('10');
+      expect(actual).toEqual('10');
     });
     it('false, true --> "01"', () => {
       const actual = _;

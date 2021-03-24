@@ -65,51 +65,58 @@ const repeatString = (text = '', repetitions = 0) => {
 ```js
 'use strict';
 
-import { repeatString } from './repeat-string.js';
+/**
+ * repeats a string a specific number of times
+ * @param {string} [text=''] - the string to repeat. defaults to empty string
+ * @param {number} [repetitions=1] - how many times to repeat. defaults to 1
+ *  repetitions cannot be negative, and must be an integer
+ * @return {string} the text repeated as many times as repetitions
+ */
+const repeatString = (text = '', repetitions = 0) => {
+  // some code
+};
 
 describe('repeats a string any number of times:', () => {
   describe('default values', () => {
     it('repetitions default should be 1', () => {
-      expect(repeatString('asdf')).toStrictEqual('asdf');
+      expect(repeatString('asdf')).toEqual('asdf');
     });
     it('text default should be an empty string', () => {
-      expect(repeatString()).toStrictEqual('');
+      expect(repeatString()).toEqual('');
     });
   });
   describe('an empty string', () => {
     it('0 times', () => {
-      expect(repeatString('', 0)).toStrictEqual('');
+      expect(repeatString('', 0)).toEqual('');
     });
     it('10 times', () => {
-      expect(repeatString('', 10)).toStrictEqual('');
+      expect(repeatString('', 10)).toEqual('');
     });
     it('100 times', () => {
-      expect(repeatString('', 100)).toStrictEqual('');
+      expect(repeatString('', 100)).toEqual('');
     });
   });
   describe('zero repetitions', () => {
     it('"asdf"', () => {
-      expect(repeatString('asdf', 0)).toStrictEqual('');
+      expect(repeatString('asdf', 0)).toEqual('');
     });
     it('"tommywalk"', () => {
-      expect(repeatString('tommywalk', 0)).toStrictEqual('');
+      expect(repeatString('tommywalk', 0)).toEqual('');
     });
   });
   describe('standard use cases', () => {
     it('repeat a phrase 3 times', () => {
-      expect(repeatString('go to school', 3)).toStrictEqual(
+      expect(repeatString('go to school', 3)).toEqual(
         'go to schoolgo to schoolgo to school'
       );
     });
     it('phrases with punctuation', () => {
-      expect(repeatString('"Go!", said Dr. Seuss?', 2)).toStrictEqual(
+      expect(repeatString('"Go!", said Dr. Seuss?', 2)).toEqual(
         '"Go!", said Dr. Seuss?"Go!", said Dr. Seuss?'
       );
     });
     it('special characters', () => {
-      expect(repeatString('\\ \n \t s', 2)).toStrictEqual(
-        '\\ \n \t s\\ \n \t s'
-      );
+      expect(repeatString('\\ \n \t s', 2)).toEqual('\\ \n \t s\\ \n \t s');
     });
   });
 });

@@ -9,10 +9,10 @@ describe('computed properties', () => {
       _: _,
     };
     it('obj.soup', () => {
-      expect(obj.soup).toStrictEqual('wet');
+      expect(obj.soup).toEqual('wet');
     });
     it('obj.dry', () => {
-      expect(obj.bread).toStrictEqual(_);
+      expect(obj.bread).toEqual(_);
     });
   });
   describe('a menagerie', () => {
@@ -25,13 +25,13 @@ describe('computed properties', () => {
       running: _,
     };
     it('obj.flying', () => {
-      expect(obj.flying).toStrictEqual('crane');
+      expect(obj.flying).toEqual('crane');
     });
     it('obj.running', () => {
-      expect(_).toStrictEqual('cheetah');
+      expect(_).toEqual('cheetah');
     });
     it('obj.swimming', () => {
-      expect(obj.swimming).toStrictEqual('mackerel');
+      expect(obj.swimming).toEqual('mackerel');
     });
   });
 });

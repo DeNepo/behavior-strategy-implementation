@@ -1,6 +1,8 @@
 'use strict';
 
-import { findActiveUsers } from './their-code.js';
+// your code
+
+import { findActiveUsers } from './find-active-users.js';
 
 /**
  * returns an array of all active user names

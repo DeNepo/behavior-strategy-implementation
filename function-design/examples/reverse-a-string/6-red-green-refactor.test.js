@@ -94,54 +94,54 @@ for (const solution of [
   describe(solution.name + ': repeating a string:', () => {
     describe('default parameters', () => {
       it('repeat once if no repetitions is passed', () => {
-        expect(solution('asdf')).toStrictEqual('asdf');
+        expect(solution('asdf')).toEqual('asdf');
       });
       it('expect an empty string if no arguments are passed', () => {
-        expect(solution()).toStrictEqual('');
+        expect(solution()).toEqual('');
       });
     });
     describe('an empty string', () => {
       it('0 times', () => {
-        expect(solution('', 0)).toStrictEqual('');
+        expect(solution('', 0)).toEqual('');
       });
       it('10 times', () => {
-        expect(solution('', 10)).toStrictEqual('');
+        expect(solution('', 10)).toEqual('');
       });
       it('100 times', () => {
-        expect(solution('', 100)).toStrictEqual('');
+        expect(solution('', 100)).toEqual('');
       });
     });
     describe('zero repetitions', () => {
       it('"asdf"', () => {
-        expect(solution('asdf', 0)).toStrictEqual('');
+        expect(solution('asdf', 0)).toEqual('');
       });
       it('"tommywalk"', () => {
-        expect(solution('tommywalk', 0)).toStrictEqual('');
+        expect(solution('tommywalk', 0)).toEqual('');
       });
     });
     describe('standard use cases', () => {
       // added more test cases for clarity
       it('repeat a phrase 1 time', () => {
-        expect(solution('.', 1)).toStrictEqual('.');
+        expect(solution('.', 1)).toEqual('.');
       });
       it('repeat a phrase 2 times', () => {
-        expect(solution('.', 2)).toStrictEqual('..');
+        expect(solution('.', 2)).toEqual('..');
       });
       it('repeat a phrase 3 times', () => {
-        expect(solution('go to school', 3)).toStrictEqual(
+        expect(solution('go to school', 3)).toEqual(
           'go to schoolgo to schoolgo to school'
         );
       });
       it('repeat a phrase 4 times', () => {
-        expect(solution('.', 4)).toStrictEqual('....');
+        expect(solution('.', 4)).toEqual('....');
       });
       it('phrases with punctuation', () => {
-        expect(solution('"Go!", said Dr. Seuss?', 2)).toStrictEqual(
+        expect(solution('"Go!", said Dr. Seuss?', 2)).toEqual(
           '"Go!", said Dr. Seuss?"Go!", said Dr. Seuss?'
         );
       });
       it('special characters', () => {
-        expect(solution('\\ \n \t s', 2)).toStrictEqual('\\ \n \t s\\ \n \t s');
+        expect(solution('\\ \n \t s', 2)).toEqual('\\ \n \t s\\ \n \t s');
       });
     });
   });

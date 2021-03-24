@@ -6,21 +6,21 @@ describe('listActiveUsers: an array of all active user names', () => {
   describe('filters out the inactive users from a valid array', () => {
     it('returns an empty array for an empty array', () => {
       const actual = listActiveUsers([]);
-      expect(actual).toStrictEqual([]);
+      expect(actual).toEqual([]);
     });
     it('returns an empty array when there are only inactive users', () => {
       const actual = listActiveUsers([
         { userName: 'a', name: '', active: false },
         { userName: 'b', name: '', active: false },
       ]);
-      expect(actual).toStrictEqual([]);
+      expect(actual).toEqual([]);
     });
     it('returns all users when all users are active', () => {
       const actual = listActiveUsers([
         { userName: 'a', name: '', active: true },
         { userName: 'b', name: '', active: true },
       ]);
-      expect(actual).toStrictEqual(['a', 'b']);
+      expect(actual).toEqual(['a', 'b']);
     });
     it('correctly filters an array of mixed users', () => {
       const actual = listActiveUsers([
@@ -29,7 +29,7 @@ describe('listActiveUsers: an array of all active user names', () => {
         { userName: 'c', name: '', active: false },
         { userName: 'e', name: '', active: true },
       ]);
-      expect(actual).toStrictEqual(['a', 'e']);
+      expect(actual).toEqual(['a', 'e']);
     });
   });
   describe('uses the argument correctly', () => {
@@ -39,7 +39,7 @@ describe('listActiveUsers: an array of all active user names', () => {
         { userName: 'b', name: '', active: false },
       ];
       listActiveUsers(usersArg);
-      expect(usersArg).toStrictEqual([
+      expect(usersArg).toEqual([
         { userName: 'a', name: '', active: true },
         { userName: 'b', name: '', active: false },
       ]);
@@ -51,7 +51,7 @@ describe('listActiveUsers: an array of all active user names', () => {
       ];
       const returned = listActiveUsers(usersArg);
       const areNotTheSameArray = usersArg !== returned;
-      expect(areNotTheSameArray).toStrictEqual(true);
+      expect(areNotTheSameArray).toEqual(true);
     });
   });
   describe('guards against invalid arguments', () => {

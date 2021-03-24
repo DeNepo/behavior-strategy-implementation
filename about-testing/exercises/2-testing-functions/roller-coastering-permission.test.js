@@ -22,7 +22,7 @@ describe('a function that tells you are tall enough', () => {
     it('passing true', () => {
       const actual = rollerCoasterPermission(true);
       const expected = _;
-      expect(actual).toStrictEqual(expected);
+      expect(actual).toEqual(expected);
     });
     it('passing "tall"', () => {
       const expected = _;

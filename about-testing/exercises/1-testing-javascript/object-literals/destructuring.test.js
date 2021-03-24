@@ -7,10 +7,10 @@ describe('destructuring', () => {
       dry: 'bread',
     };
     it('dry', () => {
-      expect(_).toStrictEqual('bread');
+      expect(_).toEqual('bread');
     });
     it('wet', () => {
-      expect(wet).toStrictEqual('soup');
+      expect(wet).toEqual('soup');
     });
   });
   describe('a menagerie', () => {
@@ -24,13 +24,13 @@ describe('destructuring', () => {
     obj[birdy] = _;
     const { swimming, flying, running } = obj;
     it('flying', () => {
-      expect(flying).toStrictEqual(_);
+      expect(flying).toEqual(_);
     });
     it('running', () => {
-      expect(_).toStrictEqual('cheetah');
+      expect(_).toEqual('cheetah');
     });
     it('swimming', () => {
-      expect(swimming).toStrictEqual('mackerel');
+      expect(swimming).toEqual('mackerel');
     });
   });
 });

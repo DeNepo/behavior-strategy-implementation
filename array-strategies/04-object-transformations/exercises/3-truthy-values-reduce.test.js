@@ -25,7 +25,7 @@ describe('keepTruthyEntries keeps all the truthy entries', () => {
   describe('it correctly filters the object', () => {
     it('returns an empty object for an empty object', () => {
       const actual = keepTruthyEntries({});
-      expect(actual).toStrictEqual({});
+      expect(actual).toEqual({});
     });
     it('removes all entries when all are falsy', () => {
       const actual = keepTruthyEntries({
@@ -35,7 +35,7 @@ describe('keepTruthyEntries keeps all the truthy entries', () => {
         d: '',
         e: null,
       });
-      expect(actual).toStrictEqual({});
+      expect(actual).toEqual({});
     });
     it('keeps all entries when they are truthy', () => {
       const actual = keepTruthyEntries({
@@ -43,7 +43,7 @@ describe('keepTruthyEntries keeps all the truthy entries', () => {
         b: true,
         c: 'hello',
       });
-      expect(actual).toStrictEqual({
+      expect(actual).toEqual({
         a: 1,
         b: true,
         c: 'hello',
@@ -60,7 +60,7 @@ describe('keepTruthyEntries keeps all the truthy entries', () => {
         g: null,
       };
       const actual = keepTruthyEntries(arg);
-      expect(actual).toStrictEqual({
+      expect(actual).toEqual({
         a: 1,
         c: 'hello',
         e: true,
@@ -72,13 +72,13 @@ describe('keepTruthyEntries keeps all the truthy entries', () => {
     it('does not modify the argument', () => {
       const arg = { e: 'hello', f: undefined, g: 'goodbye' };
       keepTruthyEntries(arg);
-      expect(arg).toStrictEqual({ e: 'hello', f: undefined, g: 'goodbye' });
+      expect(arg).toEqual({ e: 'hello', f: undefined, g: 'goodbye' });
     });
     it('returns a new object', () => {
       const arg = {};
       const returned = keepTruthyEntries(arg);
       const areNotTheSameObject = arg !== returned;
-      expect(areNotTheSameObject).toStrictEqual(true);
+      expect(areNotTheSameObject).toEqual(true);
     });
   });
 });

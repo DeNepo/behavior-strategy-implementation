@@ -43,11 +43,11 @@ describe('numberOrType', () => {
   describe('returns numbers unchanged', () => {
     it('returns 14', () => {
       const actual = numberOrType(14);
-      expect(actual).toStrictEqual(14);
+      expect(actual).toEqual(14);
     });
     it('returns Infinity', () => {
       const actual = numberOrType(Infinity);
-      expect(actual).toStrictEqual(Infinity);
+      expect(actual).toEqual(Infinity);
     });
     it('returns NaN', () => {
       const actual = numberOrType(NaN);
@@ -57,19 +57,19 @@ describe('numberOrType', () => {
   describe('returns the type of any other value', () => {
     it('returns the type of strings', () => {
       const actual = numberOrType('asdf');
-      expect(actual).toStrictEqual('string');
+      expect(actual).toEqual('string');
     });
     it('returns the type of booleans', () => {
       const actual = numberOrType(false);
-      expect(actual).toStrictEqual('boolean');
+      expect(actual).toEqual('boolean');
     });
     it('returns the type of null', () => {
       const actual = numberOrType(null);
-      expect(actual).toStrictEqual('object');
+      expect(actual).toEqual('object');
     });
     it('returns the type of undefined', () => {
       const actual = numberOrType(undefined);
-      expect(actual).toStrictEqual('undefined');
+      expect(actual).toEqual('undefined');
     });
   });
 });

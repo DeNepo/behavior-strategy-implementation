@@ -8,8 +8,7 @@
     "url": "git+https://github.com/HackYourFutureBelgium/behavior-strategy-implementation.git"
   },
   "scripts": {
-    "test-one": "node --experimental-vm-modules node_modules/.bin/jest ",
-    "test-one-": "npm --silent run test-one-internal"
+    "test-one": "node --experimental-vm-modules node_modules/.bin/jest "
   },
   "author": "HackYourFutureBelgium",
   "license": "MIT",

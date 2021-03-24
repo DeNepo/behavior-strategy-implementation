@@ -12,30 +12,30 @@ const reverseString = str => {
 describe('reverseString: reverses a string', () => {
   describe('can be used on its own', () => {
     it('returns an empty string for the empty string', () => {
-      expect(reverseString('')).toStrictEqual('');
+      expect(reverseString('')).toEqual('');
     });
     it('"reverses" single characters', () => {
-      expect(reverseString('f')).toStrictEqual('f');
+      expect(reverseString('f')).toEqual('f');
     });
     it('reverses non-empty strings', () => {
-      expect(reverseString('table')).toStrictEqual('elbat');
+      expect(reverseString('table')).toEqual('elbat');
     });
     it('reverses palindromes', () => {
-      expect(reverseString('racecar')).toStrictEqual('racecar');
+      expect(reverseString('racecar')).toEqual('racecar');
     });
   });
   describe('can be used as a callback for Array.map', () => {
     it('returns an empty array for the empty array', () => {
       const actual = [].map(reverseString);
-      expect(actual).toStrictEqual([]);
+      expect(actual).toEqual([]);
     });
     it('reverses all strings in an array', () => {
       const actual = ['1234', 'uiop', '', '-|-'].map(reverseString);
-      expect(actual).toStrictEqual(['4321', 'poiu', '', '-|-']);
+      expect(actual).toEqual(['4321', 'poiu', '', '-|-']);
     });
     it('reverses an array of palindromes', () => {
       const actual = ['racecar', '-|-', 'do geese see god'].map(reverseString);
-      expect(actual).toStrictEqual(['racecar', '-|-', 'dog ees eseeg od']);
+      expect(actual).toEqual(['racecar', '-|-', 'dog ees eseeg od']);
     });
   });
 });

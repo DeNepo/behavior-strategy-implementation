@@ -27,24 +27,24 @@ describe('numberyNumberify: converts an array of strings into an array of number
     it('returns an empty array for the empty array', () => {
       const expected = [];
       const actual = numberyNumberify([]);
-      expect(actual).toStrictEqual(expected);
+      expect(actual).toEqual(expected);
     });
     it('maps all entries to Number', () => {
       const expected = [1, 2, 3];
       const actual = numberyNumberify(['1', '2', '3']);
-      expect(actual).toStrictEqual(expected);
+      expect(actual).toEqual(expected);
     });
     it('filters all NaN values', () => {
       const expected = [1, 2, 3];
       const actual = numberyNumberify(['1', '$%@#', '2', 'e', '3']);
-      expect(actual).toStrictEqual(expected);
+      expect(actual).toEqual(expected);
     });
   });
   describe('it uses the argument correctly', () => {
     it('does not modify the argument', () => {
       const arg = ['asdf', '1', ''];
       numberyNumberify(arg);
-      expect(arg).toStrictEqual(['asdf', '1', '']);
+      expect(arg).toEqual(['asdf', '1', '']);
     });
   });
 });

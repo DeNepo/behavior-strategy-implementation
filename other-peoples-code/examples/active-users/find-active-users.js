@@ -1,5 +1,7 @@
 'use strict';
 
+// their code
+
 /**
  * takes an array of user objects and keeps all the active users
  * a user object must have with a boolean .active property

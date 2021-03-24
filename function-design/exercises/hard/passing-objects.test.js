@@ -17,15 +17,15 @@ for (const solution of [
     describe('correctly filters an array', () => {
       it('an empty array returns an empty array', () => {
         const actual = solution(_);
-        expect(_).toStrictEqual(_);
+        expect(_).toEqual(_);
       });
       it('keeps all entries when all are passing', () => {
         const actual = solution([{ pass: _ }, { pass: _ }]);
-        expect(actual).toStrictEqual([{ pass: true }, { pass: true }]);
+        expect(actual).toEqual([{ pass: true }, { pass: true }]);
       });
       it('removes all entries when all are not passing', () => {
         const actual = solution([{ pass: _ }, { pass: _ }]);
-        expect(actual).toStrictEqual(_);
+        expect(actual).toEqual(_);
       });
       it('removes only not-passing entries', () => {
         const actual = solution([
@@ -33,11 +33,11 @@ for (const solution of [
           { pass: false },
           { pass: true },
         ]);
-        expect(actual).toStrictEqual([{ _: _ }, { _: _ }]);
+        expect(actual).toEqual([{ _: _ }, { _: _ }]);
       });
       it('removes entries with a truthy, but not true, .pass value', () => {
         const actual = solution([{ pass: 100 }, { pass: 'hello' }, { _: _ }]);
-        expect(actual).toStrictEqual([{ pass: true }]);
+        expect(actual).toEqual([{ pass: true }]);
       });
       it('removes entries with no .pass property', () => {
         const actual = solution([
@@ -54,12 +54,12 @@ for (const solution of [
         const arg = [];
         const actual = solution(arg);
         const areNotTheSameArray = arg !== actual;
-        expect(areNotTheSameArray).toStrictEqual(true);
+        expect(areNotTheSameArray).toEqual(true);
       });
       it('does not modify the argument', () => {
         const arg = [{ pass: true }, { pass: false }, { hello: 'good bye' }];
         solution(arg);
-        expect(arg).toStrictEqual([{ _: _ }, { _: _ }, { _: _ }]);
+        expect(arg).toEqual([{ _: _ }, { _: _ }, { _: _ }]);
       });
     });
   });

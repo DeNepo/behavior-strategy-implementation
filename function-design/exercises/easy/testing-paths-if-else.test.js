@@ -24,14 +24,14 @@ for (const solution of [
     describe('solution can identify truthy values', () => {
       it('strings', () => {
         const actual = solution(_);
-        expect(actual).toStrictEqual(true);
+        expect(actual).toEqual(true);
       });
       it('numbers', () => {
         const actual = _;
-        expect(actual).toStrictEqual(true);
+        expect(actual).toEqual(true);
       });
       it('booleans', () => {
-        expect(solution(_)).toStrictEqual(true);
+        expect(solution(_)).toEqual(true);
       });
     });
     // the else path

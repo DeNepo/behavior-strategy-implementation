@@ -23,32 +23,32 @@ describe('mapToNumber casts each element in an array to type "number"', () => {
     it('returns an empty array if an empty array is passed', () => {
       const expected = [];
       const actual = mapToNumber([]);
-      expect(actual).toStrictEqual(expected);
+      expect(actual).toEqual(expected);
     });
     it('converts strings to Number', () => {
       const expected = [1, 0, 20, NaN, Infinity];
       const actual = mapToNumber(['1', '', '20', 'asdf', 'Infinity']);
-      expect(actual).toStrictEqual(expected);
+      expect(actual).toEqual(expected);
     });
     it('converts booleans to Number', () => {
       const expected = [1, 0];
       const actual = mapToNumber([true, false]);
-      expect(actual).toStrictEqual(expected);
+      expect(actual).toEqual(expected);
     });
     it('converts null and undefined to Number', () => {
       const expected = [0, NaN];
       const actual = mapToNumber([null, undefined]);
-      expect(actual).toStrictEqual(expected);
+      expect(actual).toEqual(expected);
     });
     it('converts numbers to Number', () => {
       const expected = [14, -14, 0, NaN, Infinity];
       const actual = mapToNumber([14, -14, 0, NaN, Infinity]);
-      expect(actual).toStrictEqual(expected);
+      expect(actual).toEqual(expected);
     });
     it('converts mixed type arrays to Number', () => {
       const expected = [NaN, 1, 1, 0, NaN];
       const actual = mapToNumber(['a', 1, true, null, undefined]);
-      expect(actual).toStrictEqual(expected);
+      expect(actual).toEqual(expected);
     });
   });
   describe('it uses the argument array correctly', () => {
@@ -56,12 +56,12 @@ describe('mapToNumber casts each element in an array to type "number"', () => {
       const arg = [];
       const returned = mapToNumber([]);
       const areNotTheSameArray = arg !== returned;
-      expect(areNotTheSameArray).toStrictEqual(true);
+      expect(areNotTheSameArray).toEqual(true);
     });
     it('does not modify the argument', () => {
       const arg = ['a', 1, true, null, undefined];
       mapToNumber(arg);
-      expect(arg).toStrictEqual(['a', 1, true, null, undefined]);
+      expect(arg).toEqual(['a', 1, true, null, undefined]);
     });
     it('throws a TypeError if the argument is not an array', () => {
       const shouldThrow = () => mapToNumber(14);
