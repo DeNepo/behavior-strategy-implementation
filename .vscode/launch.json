@@ -5,7 +5,10 @@
       "type": "node",
       "request": "launch",
       "name": "Current JS File (no tests)",
-      "program": "${file}"
+      "args": ["${file}"],
+      "runtimeExecutable": "node",
+      "internalConsoleOptions": "openOnSessionStart",
+      "skipFiles": ["<node_internals>/**"]
     },
     {
       "type": "node",

@@ -1,0 +1,8 @@
+{
+  "study": {
+    "run": true,
+    "eval": false,
+    "trace": false,
+    "flowchart": false
+  }
+}

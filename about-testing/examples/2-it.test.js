@@ -24,7 +24,7 @@ describe('an entire test suite', () => {
     console.log(hello);
   });
   it('a single failing test', () => {
-    const not = 'a function';
-    not();
+    const notAFunction = 'hello !';
+    notAFunction();
   });
 });
