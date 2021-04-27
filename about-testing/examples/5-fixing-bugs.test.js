@@ -1,8 +1,14 @@
 'use strict';
 
-// this comment describes how the function should behave
-//  maybe the function does not do that!
-//  the test will help you find out ;)
+/*
+  the docs and the tests describes how the function should behave
+    but maybe there's a bug!
+    the test will help you find out ;)
+
+  practice trusting the tests to help you find your solution
+    which tests cases pass? which fail?
+    what does this tell you about your function?
+*/
 
 /**
  * replaces a specific entry in an array

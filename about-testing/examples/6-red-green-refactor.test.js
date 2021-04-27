@@ -1,5 +1,25 @@
 'use strict';
 
+/*
+  an important concept with testing is Red, Green, Refactor
+    this is a habit for incremental programming
+
+  Red
+    at the beginning all of your tests fail
+  Green
+    then you pick one test to pass, and you pass it
+    the rest will still fail, you'll get to them later
+  Refactor
+    read through your function and find a nicer way to write it
+    without failing any tests you already passed!
+  ... repeat -> Red, Green, Refactor
+    choose another test to pass and write code to pass it
+    careful not to fail any tests you've already passed!
+
+  you will study this process in more depth with Function Design
+
+*/
+
 /**
  * returns the value if it's a number
  * otherwise returns the type of the value

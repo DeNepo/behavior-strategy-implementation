@@ -508,7 +508,12 @@ You can write hashtags in your comments while you're studying, then search for t
 - `// #not-done, still a few blanks left` - search for `#not-done` in VScode to find all the exercises you've started and not finished
 - `// coercion is confusing, #review this again next week` - search for `#review` to find the files you need to study again
 - ... anything goes! Find the hashtags that work for you
-  [TOP](#behavior-strategy-implementation)
+
+### Module Project Boards
+
+If you create a fork of this repository you can open a project board in your fork to track your progress through the module. Just 3 columns can be enough: _Todo_, _Doing_, _Done_.
+
+[TOP](#behavior-strategy-implementation)
 
 ---
 
@@ -636,19 +641,81 @@ The best problem solvers don't start from nothing, they've seen many similar pro
 
 This week take your first step to becoming an expert problem solver by studying the many ways people before you have solved common problems.
 
-<details>
+<details open>
 <summary>expand/collapse</summary>
 <br>
 
 ### Before Class
 
-- Look through the [solution-write-ups](https://github.com/HackYourFutureBelgium/solution-write-ups) README
+- Fork [solution-write-ups](https://github.com/HackYourFutureBelgium/solution-write-ups)
+  - Read through the README, this will be your main exercise for the week.
+  - create a new folder called `add-up-the-numbers-from-a-single-number`
+  - create a README.md file in this folder using the `write-up-template.md`
+  - create an empty javascript file called `sandbox.test.js`
+- Read through [./about-testing/examples](./about-testing/examples) to be familiar with the syntax for `describe`, `it`, and `expect`
+- Create an account on [Edabit](https://edabit.com)
 
 ### During Class
 
+In class you will practice writing tests and analyzing solutions using a challenge from [Edabit](https://edabit.com/):
+
+- [Add up the Numbers from a Single Number](https://edabit.com/challenge/4gzDuDkompAqujpRi)
+
 #### Before Break
 
+Description, Syntax, Test Cases and Use Cases.
+
+- All together:
+  - look through the examples at the beginning of this README. What is behavior, strategy and implementation?
+  - go over the README from [solution-write-ups](https://github.com/HackYourFutureBelgium/solution-write-ups)
+  - read through the first 4 sections in the example from [solution-write-ups](https://github.com/HackYourFutureBelgium/solution-write-ups)
+- In small groups:
+  - Complete the first 4 sections of the writeup for `Add up the Numbers ...`
+  - You can use the most popular solution solution by **\_sir** to write your tests:
+    ```js
+    function addUp(num) {
+      return (num * (num + 1)) / 2;
+    }
+    ```
+
 #### After Break
+
+Strategy, Implementation and Possible Refactors.
+
+- All together:
+  - read through the rest of the example in [solution-write-ups](https://github.com/HackYourFutureBelgium/solution-write-ups)
+- In small groups:
+
+  - practice writing up 2-3 solutions to the `Add up the Numbers ...` challenge (be sure to test them all!)
+  - <details><summary>here's a few suggestions to study:</summary>
+
+    ```js
+    // _sir
+    function addUp(num) {
+      return (num * (num + 1)) / 2;
+    }
+
+    // Gabriel
+    function addUp(num) {
+      let sum = 0;
+      for (let i = 1; i <= num; i++) {
+        sum += i;
+      }
+      return sum;
+    }
+
+    // doodledob
+    function addUp(num) {
+      x = 0;
+      while (num >= 0) {
+        x += num;
+        num--;
+      }
+      return x;
+    }
+    ```
+
+    </details>
 
 ### After Class
 
@@ -683,10 +750,6 @@ Learn to write unit tests and to write your own solutions one step at a time.
 <br>
 
 ### Before Class
-
-Familiarize yourself with the syntax of unit tests so we can focus on problem solving in class:
-
-- [./about-testing/examples](./about-testing/examples)
 
 Read through the steps of Function Design and study the example
 

@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 /* testing functions
 
@@ -22,38 +22,45 @@
  * @returns {Array} an new array with the same elements, in reverse order
  */
 const reverseArray = (arr = []) => {
-  return [...arr].reverse();
+  const reversed = [];
+  for (const item of arr) {
+    reversed.unshift(item);
+  }
+  return reversed;
+
+  // // another possible solution:
+  // return [...arr].reverse();
 };
 
-describe("reverseArray should reverse an array", () => {
-  it("has an empty array as default parameter", () => {
+describe('reverseArray should reverse an array', () => {
+  it('has an empty array as default parameter', () => {
     const actual = reverseArray();
     const expected = [];
     expect(actual).toEqual(expected);
   });
-  it("reverses an empty array", () => {
+  it('reverses an empty array', () => {
     const actual = reverseArray([]);
     const expected = [];
     expect(actual).toEqual(expected);
   });
-  it("reverses an array of primitives", () => {
-    const actual = reverseArray([1, "2", true, null, undefined]);
-    const expected = [undefined, null, true, "2", 1];
+  it('reverses an array of primitives', () => {
+    const actual = reverseArray([1, '2', true, null, undefined]);
+    const expected = [undefined, null, true, '2', 1];
     expect(actual).toEqual(expected);
   });
-  it("reverses an array of objects", () => {
+  it('reverses an array of objects', () => {
     const actual = reverseArray([{ a: 1 }, { b: 2 }, { c: 3 }]);
     const expected = [{ c: 3 }, { b: 2 }, { a: 1 }];
     expect(actual).toEqual(expected);
   });
-  it("returns a new array", () => {
+  it('returns a new array', () => {
     // test for reference equality
     const toReverse = [{ a: 1 }, { b: 2 }, { c: 3 }];
     const returned = reverseArray(toReverse);
     const areSameArray = toReverse === returned;
     expect(areSameArray).toEqual(false);
   });
-  it("does not modify the original array", () => {
+  it('does not modify the original array', () => {
     // test for side-effects
     const toReverse = [{ a: 1 }, { b: 2 }, { c: 3 }];
     reverseArray(toReverse);
