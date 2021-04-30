@@ -178,7 +178,6 @@ Here are four possible strategies to approach repeating a string. Each one is wr
       recursedValue = recursively call repeatString with text and nextRepetitions
       return: text + recursedValue
 
-
 */
 ```
 
@@ -188,7 +187,7 @@ Here are four possible strategies to approach repeating a string. Each one is wr
 <summary>Native JS methods</summary>
 
 ```js
-/* use native .js methods
+/* use built-in .js methods
 
   repeatString(text, repetitions) =>
     1. make sure the data is the correct type and format for the method you're using
@@ -311,7 +310,7 @@ const repeatString = (text = '', repetitions = 1) => {
 const repeatString = (text = '', repetitions = 1) => {
   let repeatedText = '';
   let count = 0;
-  while (count < repetitions) {
+  while (count < repetitions.length) {
     repeatedText = repeatedText + text;
     count++;
   }
@@ -330,7 +329,7 @@ const repeatString = (text = '', repetitions = 1) => {
 */
 const repeatString = (text = '', repetitions = 1) => {
   let repeatedText = '';
-  for (let count = 0; count < repetitions; count++) {
+  for (let count = 0; count < repetitions.length; count++) {
     repeatedText += text;
   }
   return repeatedText;
@@ -346,7 +345,7 @@ const repeatString = (text = '', repetitions = 1) => {
 
 ```js
 // in all it's ES6 one-line glory
-// beautiful to look at, harder to read
+// some people find this easier to read than conditionals
 const repeatString = (text = '', repetitions = 1) =>
   repetitions === 0 ? '' : text + repeatString(text, nextRepetitions - 1);
 ```
@@ -357,7 +356,8 @@ const repeatString = (text = '', repetitions = 1) =>
 <summary>Conditional Statement</summary>
 
 ```js
-// good old fashioned (readable) conditional blocks
+// good old fashioned conditional blocks
+// some people find this easier to read than ternaries
 const repeatString = (text = '', repetitions = 1) => {
   if (repetitions === 0) {
     return '';
@@ -392,7 +392,7 @@ const repeatString = (text = '', repetitions = 1, repeated = '') => {
 
 </details>
 
-### Native JS Methods
+### Built-In JS Methods
 
 <details>
 <summary>Sting.prototype.repeat</summary>
@@ -573,7 +573,8 @@ Helpful resources for this module
   - 🥚: **[./about-testing](./about-testing)**: A quick introduction to `describe`, `it`, and `expect`
   - 🥚: **[./array-methods](./array-methods)**: Learn array methods by first understanding the strategies they are designed for.
   - 🐣 **[./hoisting](./hoisting)**: That famous thing about JS! It's not so bad once you get it, the key to understanding hoisting is to understand the program life-cycle: _creation phase_ and _execution phase_. This chapter is more abstract, hoisting is something "invisible" about JavaScript program execution. These exercises will help you see hoisting by exploring the debugger at different points in program execution.
-  - 🐣: [./function-design](./function-design): Learn a structured approach to understanding and solving coding challenges
+  - 🐣: **[./parsons-problems](./parsons-problems)**: Explore behavior, strategy and implementation by reconstructing different solutions to coding challenges.
+  - 🐣: **[./function-design](./function-design)**: Learn a structured approach to understanding and solving coding challenges
 - 🐥: **More Practice:**
   - [rolling-scopes-school](https://github.com/rolling-scopes-school/js-assignments)
   - [Functions and Arrays](https://github.com/ironhack-labs/lab-javascript-functions-and-arrays/)
@@ -641,7 +642,7 @@ The best problem solvers don't start from nothing, they've seen many similar pro
 
 This week take your first step to becoming an expert problem solver by studying the many ways people before you have solved common problems.
 
-<details open>
+<details>
 <summary>expand/collapse</summary>
 <br>
 
@@ -725,7 +726,7 @@ Complete as many write-ups as you can. No need to rush ahead! Take your time stu
 
 - **[Solution Write-Ups](https://github.com/HackYourFutureBelgium/solution-write-ups)**
 
-Here's two important concepts you should study while doing your write-ups:
+Here's two important JS concepts you should study while doing your write-ups:
 
 - 🐣 **[./array-methods](./array-methods)**
 - 🐣 **[./hoisting](./hoisting)**
@@ -733,6 +734,10 @@ Here's two important concepts you should study while doing your write-ups:
 These exercises will help you understand test cases, and be important for next week:
 
 - 🐣 **[./about-testing](./about-testing)**
+
+While these are great for when you need a little break:
+
+- 🐣 **[./parsons-problems](./parsons-problems)**
 
 </details>
 <br>
@@ -767,6 +772,7 @@ Read through the steps of Function Design and study the example
 Continue writing [Solution Write-Ups](https://github.com/HackYourFutureBelgium/solution-write-ups). To help you gain a deeper understanding of how to write your own solutions, take some time to study these exercises:
 
 - 🐣 **[./about-testing](./about-testing)**
+- 🐣 **[./parsons-problems](./parsons-problems)**
 - 🐣 **[./function-design](./function-design)**
 
 Just like last week, there's no reason to rush yourself. You can learn how to write tests and how to design functions with simple challenges just as well as with hard challenges. So find your level, settle in, and study as many problems as you can.
