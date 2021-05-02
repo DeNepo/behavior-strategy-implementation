@@ -705,6 +705,15 @@ Strategy, Implementation and Possible Refactors.
       return sum;
     }
 
+    // 범두
+    function addUp(num) {
+      var a = 0;
+      for (var i = num; i > 0; i--) {
+        a += i;
+      }
+      return a;
+    }
+
     // doodledob
     function addUp(num) {
       x = 0;

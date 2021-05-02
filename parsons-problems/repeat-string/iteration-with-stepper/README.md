@@ -3,8 +3,8 @@
 
   repeatString(text, repetitions) =>
     1. create a new string to fill with many text's
-    2. create a stepper variable, starting at 0
-    3. iterate from 0 to repetitions
+    2. create and initialize a stepper variable
+    3. iterate repetitions number of times
       a. check if stepper is still less than repetitions
         keep going if it is, otherwise stop iterating
       b. append text to the new string
