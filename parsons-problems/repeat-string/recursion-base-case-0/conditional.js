@@ -1,6 +1,6 @@
 /* 2 extra lines */
 
-/* recursion with base-case 0
+/* parsons-collapse: recursion with base-case 0
 
   i'm using 0 as the base-case because that is the fewest possible repetitions
   zero repetitions is an empty string, so if repetitions is 0 it will return ''

@@ -1,6 +1,6 @@
 /* 4 extra lines */
 
-/* use built-in .js methods
+/* parsons-collapse: use built-in .js methods
 
   repeatString(text, repetitions) =>
     1. make sure the data is the correct type and format for the method you're using

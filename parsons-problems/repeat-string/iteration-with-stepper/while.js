@@ -1,6 +1,6 @@
 /* 4 extra lines */
 
-/* iterating over the number of repetitions
+/* parsons-collapse: iterating over the number of repetitions
 
   repeatString(text, repetitions) =>
     1. create a new string to fill with many text's

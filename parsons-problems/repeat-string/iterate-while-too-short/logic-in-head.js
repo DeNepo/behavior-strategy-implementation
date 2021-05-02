@@ -1,6 +1,6 @@
 /* 3 extra lines */
 
-/* iterating until the new string's length is correct
+/* parsons-collapse: iterating until the new string's length is correct
 
   repeatString(text, repetitions) =>
     1. calculate the final length for the new string
