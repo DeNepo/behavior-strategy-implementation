@@ -29,6 +29,7 @@ describe('a function that tells you are tall enough', () => {
       const actual = rollerCoasterPermission('tall');
       _;
     });
+    // more tests?
   });
   describe('when height is a number', () => {
     it('less than 100', () => {
@@ -46,5 +47,7 @@ describe('a function that tells you are tall enough', () => {
       const actual = rollerCoasterPermission(_);
       _;
     });
+    // more tests?
   });
+  // more tests?
 });

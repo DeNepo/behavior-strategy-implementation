@@ -447,6 +447,7 @@ const repeatString = (text = '', repetitions = 1) => {
    - `gh repo clone HackYourFutureBelgium/behavior-strategy-implementation` (GH CLI)
 1. `cd` into the repository
    - `cd behavior-strategy-implementation`
+1. Install dependencies: `npm install`
 
 ### In the Browser
 
@@ -563,19 +564,21 @@ Helpful resources for this module
 ### Exercises & Practice
 
 - **Separate Repositories**
-  - 🥚,🐣,🐥: **[Solution Write-Ups](https://github.com/HackYourFutureBelgium/solution-write-ups)** Learn to solve coding challenges by studying other people's solutions.
+  - 🥚,🐣,🐥 **[Solution Write-Ups](https://github.com/HackYourFutureBelgium/solution-write-ups)** Learn to solve coding challenges by studying other people's solutions.
     1. Fork the repository
     2. Clone your fork
     3. Push your work regularly so others can study it
-  - 🐣: **[document-and-pass](https://github.com/HackYourFutureBelgium/document-and-pass)**: write your own solutions and documentation to some coding challenges. Practice debugging and using testing libraries in VSCode
-  - 🐣: [practice-code-review]() (_coming soon for week 3_)
+  - 🐣 **[document-and-pass](https://github.com/HackYourFutureBelgium/document-and-pass)**: write your own solutions and documentation to some coding challenges. Practice debugging and using testing libraries in VSCode
+  - 🐣 **[practice-code-review](https://github.com/HackYourFutureBelgium/practice-code-review)**: (_coming soon for week 3_)
 - **In this Repo**
-  - 🥚: **[./about-testing](./about-testing)**: A quick introduction to `describe`, `it`, and `expect`
-  - 🥚: **[./array-methods](./array-methods)**: Learn array methods by first understanding the strategies they are designed for.
+  - 🥚 **[./about-testing](./about-testing)**: A quick introduction to `describe`, `it`, and `expect`
+  - 🥚 **[./array-methods](./array-methods)**: Learn array methods by first understanding the strategies they are designed for.
+  - 🥚 **[./linting](./linting)**: Practice using feedback from ESLint to write code that uses consistent style and best practices.
   - 🐣 **[./hoisting](./hoisting)**: That famous thing about JS! It's not so bad once you get it, the key to understanding hoisting is to understand the program life-cycle: _creation phase_ and _execution phase_. This chapter is more abstract, hoisting is something "invisible" about JavaScript program execution. These exercises will help you see hoisting by exploring the debugger at different points in program execution.
-  - 🐣: **[./parsons-problems](./parsons-problems)**: Explore behavior, strategy and implementation by reconstructing different solutions to coding challenges.
-  - 🐣: **[./function-design](./function-design)**: Learn a structured approach to understanding and solving coding challenges
-- 🐥: **More Practice:**
+  - 🐣 **[./parsons-problems](./parsons-problems)**: Explore behavior, strategy and implementation by reconstructing different solutions to coding challenges.
+  - 🐣 **[./function-design](./function-design)**: Learn a structured approach to understanding and solving coding challenges
+  - 🐣 **[./ecmascript-modules](./ecmascript-modules)**: Learn the first basics of using `import` and `export`. Just enough to complete this module's group exercises.
+- 🐥: **More Practice**
   - [rolling-scopes-school](https://github.com/rolling-scopes-school/js-assignments)
   - [Functions and Arrays](https://github.com/ironhack-labs/lab-javascript-functions-and-arrays/)
   - [Advanced Collection Methods](https://github.com/ironhack-labs/lab-javascript-advanced-collection-methods)
@@ -585,6 +588,7 @@ Helpful resources for this module
   - [fuzz](https://hackyourfuturebelgium.github.io/fuzz)
   - [KBPsystem777](https://github.com/KBPsystem777/JSexercises)
   - [JavaScript Questions](https://github.com/lydiahallie/javascript-questions/)
+  - [If Hemingway Wrote JavaScript](https://github.com/janke-learning/if-hemingway)
 
 > Are we missing a great set of exercises? Send a PR!
 
@@ -613,8 +617,9 @@ Helpful resources for this module
 - [Una Kravets](https://css-tricks.com/an-illustrated-and-musical-guide-to-map-reduce-and-filter-array-methods/)
 - [Cheat Sheet](https://jrsinclair.com/javascript-array-methods-cheat-sheet)
 - Oliverjam: [learn-map-filter](https://github.com/oliverjam/learn-map-filter), [tdd-array-methods](https://github.com/oliverjam/tdd-array-methods)
+- [Reduce](https://github.com/remarcmij/arr-reduce)
 
-#### Arrays of Objects
+### Arrays of Objects
 
 - [short, sweet, with a loop](https://www.youtube.com/watch?v=ivNWS9s7vhA) (video)
 - [Sorting an Array of Objects](https://www.youtube.com/watch?v=0d76_2sksWY) (video)
@@ -623,11 +628,29 @@ Helpful resources for this module
 - [Create, Update and Loop](https://www.freecodecamp.org/news/javascript-array-of-objects-tutorial-how-to-create-update-and-loop-through-objects-using-js-array-methods/) (article)
 - [The Coding Train](https://www.youtube.com/watch?v=fBqaA7zRO58) (video)
 
-#### Recursion
+### Recursion
 
 - [FunFunFunction](https://www.youtube.com/watch?v=k7-N8R0-KY4&list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84&index=7)
 - [javascriptutorial](https://www.javascripttutorial.net/javascript-recursive-function/)
 - [Beau](https://www.youtube.com/watch?v=vPEJSJMg4jY)
+
+## ECMAScript Modules (ES Modules)
+
+> `import`/`export`
+
+- [javascript.info](https://javascript.info/modules-intro)
+- [Web Dev Simplified](https://www.youtube.com/watch?v=cRHQNNcYf6s)
+- [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
+- [JavaScript Tutorial](https://www.javascripttutorial.net/es6/es6-modules/)
+
+### Code Quality
+
+- **ESLint**
+  - [ESLint and VSCode](https://www.youtube.com/watch?v=slEtjbr8sVY)
+- https://eslint.org/docs/rules/
+- https://github.com/Extersky/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules
+
+### Code Review
 
 </details>
 <br>
@@ -691,11 +714,6 @@ Strategy, Implementation and Possible Refactors.
   - <details><summary>here's a few suggestions to study:</summary>
 
     ```js
-    // _sir
-    function addUp(num) {
-      return (num * (num + 1)) / 2;
-    }
-
     // Gabriel
     function addUp(num) {
       let sum = 0;
@@ -722,6 +740,11 @@ Strategy, Implementation and Possible Refactors.
         num--;
       }
       return x;
+    }
+
+    // _sir
+    function addUp(num) {
+      return (num * (num + 1)) / 2;
     }
     ```
 
@@ -757,7 +780,7 @@ While these are great for when you need a little break:
 
 ## Week 2
 
-Learn to write unit tests and to write your own solutions one step at a time.
+Learn to write unit tests and to design your own solutions one step at a time.
 
 <details>
 <summary>expand/collapse</summary>
@@ -765,26 +788,36 @@ Learn to write unit tests and to write your own solutions one step at a time.
 
 ### Before Class
 
-Read through the steps of Function Design and study the example
-
-- [./function-design/README.md](./function-design/README.md)
-- [./function-design/examples/reverse-a-string](./function-design/examples/reverse-a-string)
+- Practice Testing Functions from [./about-testing/exercises](./about-testing/exercises)
+- Read through the steps of Function Design and study the example:
+  - [./function-design/README.md](./function-design/README.md)
+  - [./function-design/examples/reverse-a-string](./function-design/examples/reverse-a-string)
 
 ### During Class
 
 #### Before Break
 
+Practice writing unit tests for functions.
+
+- **All together**: Introduce the syntax for unit testing, and go through the `testing-functions.test.js` example
+- **In small groups**: Write some tests!
+
 #### After Break
+
+Practice some [./function-design](./function-design)
+
+- **All Together**: What is function design? What are the steps? Why is this important?
+- **In small groups**: Write some functions!
 
 ### After Class
 
-Continue writing [Solution Write-Ups](https://github.com/HackYourFutureBelgium/solution-write-ups). To help you gain a deeper understanding of how to write your own solutions, take some time to study these exercises:
+Begin studying [document-and-pass](https://github.com/HackYourFutureBelgium/document-and-pass), and continue with the [solution-write-ups](https://github.com/HackYourFutureBelgium/solution-write-ups). Just like last week, there's no reason to rush yourself. You can learn how to write tests and how to design functions with simple challenges just as well as with hard challenges. So find your level, settle in, and study as many problems as you can.
+
+To help you gain a deeper understanding of how to write and test your own solutions, take some time to study these exercises:
 
 - 🐣 **[./about-testing](./about-testing)**
 - 🐣 **[./parsons-problems](./parsons-problems)**
 - 🐣 **[./function-design](./function-design)**
-
-Just like last week, there's no reason to rush yourself. You can learn how to write tests and how to design functions with simple challenges just as well as with hard challenges. So find your level, settle in, and study as many problems as you can.
 
 </details>
 <br>
@@ -795,7 +828,15 @@ Just like last week, there's no reason to rush yourself. You can learn how to wr
 
 ## Week 3
 
-Code Review! Practice reviewing
+Code Quality! Code Review!
+
+In the last two weeks you've explored all the different ways people solve coding problems, and discovered many of the strange things JavaScript is capable of. This week it's time to focus in on best practices. You will learn how to use automated tools to check your own code's quality, and a check-list to review each other's code:
+
+- **Generated Documentation**: Use [jsdoc-to-markdown](https://github.com/jsdoc2md/jsdoc-to-markdown/) to convert your JSDoc comments into markdown documentation in a README file.
+- **Testing**: Use unit tests to show that your code does what you think it does.
+- **Formatting**: Use [Prettier](https://prettier.io/) to format your code, making sure that all the code in your group's repository is formatted the same way and is easy to read.
+- **Linting**: Just because your code runs doesn't mean it's good! Use [ESLint](https://eslint.org/) to make sure that everyone's code is easy to read, avoids common mistakes, and uses a consistent style. Linting will be the trickiest thing to get used to, it's basically a loud voice saying "_NO!_" to all sorts of things in your code. But it's for your own good, linting makes it easier to write quality code and to collaborate on a group exercise.
+- **Code Review**: Not everything can be automated, you will also learn how to review each other's code. This week's group exercise comes with at Pull Request template that has a big checklist of everything you need to check. Before you can merge any pull request all of the boxes need to be checked. Also a little annoying at first, but better in the long run.
 
 <details>
 <summary>expand/collapse</summary>
@@ -803,22 +844,57 @@ Code Review! Practice reviewing
 
 ### Before Class
 
+Clone the [practice-code-review](https://github.com/hackyourfuturebelgium/practice-code-review) repository and spend some time studying the example solution. You will want to:
+
+- install the repository dependencies
+- practice running the solution and the tests
+- practice running the code quality scripts
+
 ### During Class
 
 #### Before Break
 
+What is Linting? Why is it important?
+
+- **All together**: Fix a few style mistakes in the [./linting](./linting) exercises
+- **In small groups**: take a look through the `practice-code-review` repo one someone's local computer. Can you figure out how to run all the code quality scripts?
+
 #### After Break
+
+What is code review? Why is it important?
+
+- **All together**: Discuss code review, your coach's personal experience, and the [code review checklist](https://github.com/hackyourfuturebelgium/practice-code-review/tree/master/.github/PULL_REQUEST_TEMPLATE/solution-code-review.md). (PS. GitHub has great tools for reviewing code in a Pull Request)
+- **In small groups**: Read through the code review checklist and prepare for the week
 
 ### After Class
 
 > group exercises
 
-[practice-code-review]() (_coming soon_)
+This week's assignment is a group exercise. Your goal isn't to solve as many problems as possible, it's to solve problems as _well_ as possible. You will put extra time into your solutions to make sure everything is perfect - strategy, formatting, linting, testing, and documentation. It will feel like a whole lot of extra work for only small changes, but this is the way of collaboration! Once you get used to it you will see that clean and consistent code saves you lots of time in the long run.
 
-#### Checklist
+One person in your group should fork [practice-code-review](https://github.com/hackyourfuturebelgium/practice-code-review), everyone in your group will work from that repository. There is no need to have a plan or a development strategy since you are not building a project - each pull request will be for a stand-alone solution. Practicing code review now will prepare you for the next module when you begin building collaborative JS websites .
 
 ```markdown
+## Practice Code Review
+
+- [ ] [repo]()
+- [project board]()
+  - [ ] issues are created with the `new solution` template
+  - [ ] issues have a label for their challenge and for their strategy
+  - (no need for milestones)
+- [Pull Requests]()
+  - [ ] every solution is pushed to a separate branch (no pushing to main/master!)
+  - [ ] every pull request is created with the code-review template
+  - [ ] every pull request is labeled with the challenge and strategy
+  - [ ] every box is checked _before_ merging a branch to master/main
+
+> no need for planning this week. Just open a new issue on the project board each time you start a solution
 ```
+
+Take a look at these examples/exercises, they will be helpful:
+
+- 🥚 **[./linting](./linting)**: Practice using feedback from ESLint to write code that uses consistent style and best practices.
+- 🐣 **[./ecmascript-modules](./ecmascript-modules)**: Learn the first basics of using `import` and `export`. Just enough to complete this module's group exercises.
 
 </details>
 <br>
@@ -865,3 +941,9 @@ Code Review! Practice reviewing
 1. [Week 1](https://meet.openknowledge.be/playback/presentation/2.0/playback.html?meetingId=48966e92bc14f80c53d450f9e59dc77e812b2f8b-1605437686426)
 2. Week 2 - server crash :(
 3. Week 3: [Objects Pt. 1](https://meet.openknowledge.be/playback/presentation/2.0/playback.html?meetingId=48966e92bc14f80c53d450f9e59dc77e812b2f8b-1606646910775), [Objects Pt. 2](https://vimeo.com/485101057), [Project Intro](https://vimeo.com/485101478)
+
+## class-13-14
+
+> [Thibault](https://github.com/ThibaultLesuisse), [Evan](https://github.com/colevandersWands), [Emilien](https://github.com/EmilienD)
+
+- Week 1: [solution write-ups](https://vimeo.com/545439077), [behavior vs. strategy vs. implementation](https://vimeo.com/545440098)
