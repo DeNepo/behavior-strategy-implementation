@@ -659,7 +659,7 @@ Helpful resources for this module
 - **Formatting**
   - [prettier.io](https://prettier.io/)
 - **Linting**
-  - what is linting? [Envato tuts+](https://www.youtube.com/watch?v=rrzC1RbMLiQ), [ictshore](https://www.ictshore.com/javascript/what-is-javascript-linting/)
+  - what is linting? [Envato tuts+](https://www.youtube.com/watch?v=rrzC1RbMLiQ), [ictshore](https://www.ictshore.com/javascript/what-is-javascript-linting/), [(static analysis?)](https://deepsource.io/blog/static-analysis-javascript/)
   - Why is linting important? [freecodecamp](https://www.freecodecamp.org/news/what-is-linting-and-how-can-it-save-you-time/), [ibuildmvps](https://ibuildmvps.com/blog/the-importance-of-linting/), [quora](https://www.quora.com/What-is-the-purpose-of-a-code-style-linting-tool?share=1)
   - [ESLint sandbox](https://eslint.org/demo/)
   - [ESLint rules](https://eslint.org/docs/rules/)
@@ -667,7 +667,12 @@ Helpful resources for this module
 - **in VSCode**
   - remember all those extensions you installed in the precourse? now they make more sense : )
 
-### Code Review
+And last, but not least: **Code Review**:
+
+- [How to do code reviews like a human](https://www.youtube.com/watch?v=0t4_MfHgb_A)
+- [The science of code reviews](https://www.youtube.com/watch?v=EyL7mqwpZhk)
+- [Code review on GitHub](https://www.youtube.com/watch?v=HW0RPaJqm4g)
+- [An example code review](https://www.youtube.com/watch?v=cix7wQSsN7U)
 
 </details>
 <br>
