@@ -634,7 +634,13 @@ Helpful resources for this module
 - [javascriptutorial](https://www.javascripttutorial.net/javascript-recursive-function/)
 - [Beau](https://www.youtube.com/watch?v=vPEJSJMg4jY)
 
-## ECMAScript Modules (ES Modules)
+### Algorithm Visualizations
+
+- [visualgo.net](https://visualgo.net/en)
+- [algorithm-visualizer.org](https://algorithm-visualizer.org/)
+- [pathfinding.js](https://qiao.github.io/PathFinding.js/visual/)
+
+### ECMAScript Modules (ES Modules)
 
 > `import`/`export`
 
@@ -645,10 +651,21 @@ Helpful resources for this module
 
 ### Code Quality
 
-- **ESLint**
-  - [ESLint and VSCode](https://www.youtube.com/watch?v=slEtjbr8sVY)
-- https://eslint.org/docs/rules/
-- https://github.com/Extersky/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules
+- **Code Style**
+  - [what is programming style?](https://en.wikipedia.org/wiki/Programming_style)
+  - why is style important? [stackoverflow](https://stackoverflow.com/questions/127916/is-programming-style-important-how-important), [Nicholas C. Zakas](https://www.smashingmagazine.com/2012/10/why-coding-style-matters/)
+  - [what is a style guide?](https://www.youtube.com/watch?v=UQd-50Pew94)
+  - [airbnb style guide](https://github.com/airbnb/javascript)
+- **Formatting**
+  - [prettier.io](https://prettier.io/)
+- **Linting**
+  - what is linting? [Envato tuts+](https://www.youtube.com/watch?v=rrzC1RbMLiQ), [ictshore](https://www.ictshore.com/javascript/what-is-javascript-linting/)
+  - Why is linting important? [freecodecamp](https://www.freecodecamp.org/news/what-is-linting-and-how-can-it-save-you-time/), [ibuildmvps](https://ibuildmvps.com/blog/the-importance-of-linting/), [quora](https://www.quora.com/What-is-the-purpose-of-a-code-style-linting-tool?share=1)
+  - [ESLint sandbox](https://eslint.org/demo/)
+  - [ESLint rules](https://eslint.org/docs/rules/)
+  - [Linting rules for JSDocs](https://github.com/Extersky/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules)
+- **in VSCode**
+  - remember all those extensions you installed in the precourse? now they make more sense : )
 
 ### Code Review
 
@@ -877,8 +894,8 @@ One person in your group should fork [practice-code-review](https://github.com/h
 ```markdown
 ## Practice Code Review
 
-- [ ] [repo]()
-- [project board]()
+- [ ] [Repo]()
+- [Project Board]()
   - [ ] issues are created with the `new solution` template
   - [ ] issues have a label for their challenge and for their strategy
   - (no need for milestones)
@@ -887,6 +904,7 @@ One person in your group should fork [practice-code-review](https://github.com/h
   - [ ] every pull request is created with the code-review template
   - [ ] every pull request is labeled with the challenge and strategy
   - [ ] every box is checked _before_ merging a branch to master/main
+- [Retrospective]()
 
 > no need for planning this week. Just open a new issue on the project board each time you start a solution
 ```
