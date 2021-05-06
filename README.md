@@ -886,7 +886,7 @@ What is Linting? Why is it important?
 
 What is code review? Why is it important?
 
-- **All together**: Discuss code review, your coach's personal experience, and the [code review checklist](https://github.com/hackyourfuturebelgium/practice-code-review/tree/master/.github/PULL_REQUEST_TEMPLATE/solution-code-review.md). (PS. GitHub has great tools for reviewing code in a Pull Request)
+- **All together**: Discuss code review, your coach's personal experience, and the [code review checklist](https://github.com/hackyourfuturebelgium/practice-code-review/tree/master/.github/PULL_REQUEST_TEMPLATE/code-review-checklist.md). (PS. GitHub has great tools for reviewing code in a Pull Request)
 - **In small groups**: Read through the code review checklist and prepare for the week
 
 ### After Class
