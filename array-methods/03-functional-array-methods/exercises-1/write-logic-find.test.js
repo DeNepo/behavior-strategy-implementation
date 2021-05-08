@@ -6,7 +6,7 @@
  * @param {string} str - the string
  * @returns {boolean} is it excited?
  */
-const isExcited = str => {
+const isExcited = (str) => {
   return _;
 };
 

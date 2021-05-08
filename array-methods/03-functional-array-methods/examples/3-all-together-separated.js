@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 // a function with array methods, extra variables, and separated logic
 
@@ -9,8 +10,8 @@
  * @param {number[]} arr - contains to numbers to operate on
  * @returns {number} the sum of all even numbers in the array
  */
-const sumEvenNumbers = arr => {
-  const isEven = entry => {
+const sumEvenNumbers = (arr) => {
+  const isEven = (entry) => {
     return entry % 2 === 0;
   };
   const sumNumbers = (sum, next) => {
@@ -32,3 +33,5 @@ const _2_arg = [-2, -3, -4, -5, -6];
 const _2_expect = -12;
 const _2_actual = sumEvenNumbers(_2_arg);
 console.assert(_2_actual === _2_expect, 'sums -1 to -6');
+
+console.log('-- end --');

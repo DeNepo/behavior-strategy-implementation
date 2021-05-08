@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 // write an isEnthusiastic function to pass the tests
 
@@ -46,6 +47,8 @@ const _4_expect = ['hi!', '!'];
 const _4_actual = filter([':(', 'hi!', '!', ''], isEnthusiastic);
 const _4_test = deepCompare(_4_actual, _4_expect);
 console.assert(_4_test, 'Test 4');
+
+console.log('-- end --');
 
 // hoisted to keep it out of your way in the editor
 // in one line so it's out of your way in JS Tutor

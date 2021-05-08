@@ -18,9 +18,9 @@
  *  userName: 'public'
  * });
  */
-const removePrivateKeys = obj => {
+const removePrivateKeys = (obj) => {
   const objKeys = Object._(obj);
-  const filteredKeys = objKeys._(key => {
+  const filteredKeys = objKeys._((key) => {
     return _;
   });
   const secureObj = filteredKeys._((newObj, nextKey) => {

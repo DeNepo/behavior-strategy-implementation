@@ -6,7 +6,7 @@
  * @param {number} num - the number
  * @returns {boolean} is the number even?
  */
-const isEven = num => {
+const isEven = (num) => {
   return _;
 };
 

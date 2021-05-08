@@ -5,7 +5,7 @@
  * @param {string} str - the string to reverse
  * @returns {string} the string, reversed
  */
-const reverseString = str => {
+const reverseString = (str) => {
   return _;
 };
 

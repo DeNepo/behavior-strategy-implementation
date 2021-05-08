@@ -1,8 +1,11 @@
 'use strict';
+console.log('-- begin --');
 
 /* everying with a callback
   you might have noticed that these loops strategies are repetitive
   higher order functions will help you write more reusable code
+
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Every
 */
 
 /**
@@ -14,8 +17,9 @@
  */
 const every = (arr, callback) => {
   let allAreTrue = true;
-  for (const entry of arr) {
-    const isTrue = callback(entry);
+  for (let i = 0; i < arr.length; i++) {
+    const entry = arr[i];
+    const isTrue = callback(entry, i);
     allAreTrue = isTrue && allAreTrue;
   }
   return allAreTrue;
@@ -40,6 +44,8 @@ const isNotBoolean = val => {
 const _2_expect = true;
 const _2_actual = every(argArray, isNotBoolean);
 console.assert(deepCompare(_2_actual, _2_expect), 'Test 2');
+
+console.log('-- end --');
 
 // hoisted to keep it out of your way in the editor
 // in one line so it's out of your way in JS Tutor

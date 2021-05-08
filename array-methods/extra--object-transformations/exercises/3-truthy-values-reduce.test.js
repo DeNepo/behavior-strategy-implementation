@@ -5,9 +5,9 @@
  * @param {Object} obj - the object to filter
  * @returns {Object} - the filtered object
  */
-const keepTruthyEntries = obj => {
+const keepTruthyEntries = (obj) => {
   const objEntries = Object._(_);
-  const truthyEntries = objEntries._(entry => {
+  const truthyEntries = objEntries._((entry) => {
     const value = _;
     return _;
   });

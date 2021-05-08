@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 // Object.values(anObject)
 
@@ -22,4 +23,4 @@ console.log('valuesWithLoop:', valuesWithLoop);
 const valuesWithMethod = Object.values(menagerie);
 console.log('valuesWithMethod:', valuesWithMethod);
 
-
+console.log('-- end --');

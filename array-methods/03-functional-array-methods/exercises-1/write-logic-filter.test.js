@@ -6,7 +6,7 @@
  * @param {string} str - the string to check
  * @returns {boolean} is the string longer than 5?
  */
-const longerThanFive = str => {
+const longerThanFive = (str) => {
   return _;
 };
 

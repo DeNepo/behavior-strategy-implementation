@@ -7,12 +7,12 @@
  * @param {string[]} arr - the array of strings
  * @returns {number[]} an array containing numbers that aren't NaN
  */
-const numberyNumberify = arr => {
+const numberyNumberify = (arr) => {
   // these work, you need to use them with the right array methods
-  const isNotNaN = entry => {
+  const isNotNaN = (entry) => {
     return !Number.isNaN(entry);
   };
-  const castToNumber = entry => {
+  const castToNumber = (entry) => {
     return Number(entry);
   };
 

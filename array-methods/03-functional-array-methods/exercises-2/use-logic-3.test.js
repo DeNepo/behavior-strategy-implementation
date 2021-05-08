@@ -7,9 +7,9 @@
  * @param {string[]} arr
  * @returns {string} a sentence
  */
-const sentenceIt = arr => {
+const sentenceIt = (arr) => {
   // these work, you need to use them with the right array methods
-  const isWord = entry => {
+  const isWord = (entry) => {
     return /^[a-zA-Z]+$/.test(entry);
   };
   const twoWords = (acc, next) => {

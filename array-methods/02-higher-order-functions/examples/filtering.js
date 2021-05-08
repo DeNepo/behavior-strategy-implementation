@@ -1,8 +1,11 @@
 'use strict';
+console.log('-- begin --');
 
 /* filtering with a callback
   you might have noticed that these loops strategies are repetitive
   higher order functions will help you write more reusable code
+
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Filter
 */
 
 /**
@@ -16,8 +19,9 @@
  */
 const filter = (arr, callback) => {
   const filtered = [];
-  for (const entry of arr) {
-    const keepIt = callback(entry);
+  for (let i = 0; i < arr.length; i++) {
+    const entry = arr[i];
+    const keepIt = callback(entry, i);
     if (keepIt) {
       filtered.push(entry);
     }
@@ -44,6 +48,8 @@ const isTruthy = val => {
 const _2_expect = [3, true, 'hi'];
 const _2_actual = filter(argArray, isTruthy);
 console.assert(deepCompare(_2_actual, _2_expect), 'Test 2: all truthy values');
+
+console.log('-- end --');
 
 // hoisted to keep it out of your way in the editor
 // in one line so it's out of your way in JS Tutor

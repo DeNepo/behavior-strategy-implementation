@@ -1,8 +1,11 @@
 'use strict';
+console.log('-- begin --');
 
 /* mapping with a callback
   you might have noticed that these loops strategies are repetitive
   higher order functions will help you write more reusable code
+
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Map
 */
 
 /**
@@ -15,8 +18,9 @@
  */
 const map = (arr, callback) => {
   const mappedEntries = [];
-  for (const entry of arr) {
-    const mapped = callback(entry);
+  for (let i = 0; i < arr.length; i++) {
+    const entry = arr[i];
+    const mapped = callback(entry, i);
     mappedEntries.push(mapped);
   }
   return mappedEntries;
@@ -44,6 +48,8 @@ console.assert(
   deepCompare(_2_actual, _2_expect),
   "Test 2: map to the value's type"
 );
+
+console.log('-- end --');
 
 // hoisted to keep it out of your way in the editor
 // in one line so it's out of your way in JS Tutor

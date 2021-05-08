@@ -6,12 +6,12 @@
  * @param {any[]} arr - the array of values
  * @returns {(number|undefined)} the first negative number
  */
-const firstNegativeNumber = arr => {
+const firstNegativeNumber = (arr) => {
   // these work, you need to pass them to the right array methods
-  const isNegative = entry => {
+  const isNegative = (entry) => {
     return entry < 0;
   };
-  const isNumber = entry => {
+  const isNumber = (entry) => {
     return typeof entry === 'number';
   };
 

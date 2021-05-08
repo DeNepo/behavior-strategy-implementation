@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /* array methods use callbacks
   you can write and test your logic as a separate function
@@ -10,7 +11,7 @@
  * @param {any} entry
  * @returns {boolean}
  */
-const isTruthy = entry => {
+const isTruthy = (entry) => {
   return Boolean(entry);
 };
 
@@ -44,3 +45,5 @@ const _4_everyed = _0_array.every(isTruthy);
 
 // determine if some entries in the array are truthy
 const _5_somed = _0_array.some(isTruthy);
+
+console.log('-- end --');

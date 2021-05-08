@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 // Object.keys(anObject)
 
@@ -10,7 +11,6 @@ const menagerie = {
 };
 console.log('menagerie:', menagerie);
 
-
 // use a for ... in loop to create an array of all keys
 const keysWithLoop = [];
 for (let key in menagerie) {
@@ -18,9 +18,8 @@ for (let key in menagerie) {
 }
 console.log('keysWithLoop:', keysWithLoop);
 
-
 // use Object.keys to create an array of all keys
 const keysWithMethod = Object.keys(menagerie);
 console.log('keysWithMethod:', keysWithMethod);
 
-
+console.log('-- end --');

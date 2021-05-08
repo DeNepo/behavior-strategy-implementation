@@ -5,7 +5,7 @@
  * @param {Object} obj - the object to check
  * @returns {boolean} - are all the entries defined?
  */
-const allEntriesDefined = obj => {
+const allEntriesDefined = (obj) => {
   const objValues = Object._(obj);
   const allAreDefined = objValues.reduce((acc, next) => {
     return acc && next !== undefined;

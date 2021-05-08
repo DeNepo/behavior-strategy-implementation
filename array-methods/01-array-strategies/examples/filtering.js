@@ -1,11 +1,11 @@
 'use strict';
+console.log('-- begin --');
 
 // filtering is when you are given many things and only keep a few of them
 // filtering an array is the same, given an array of many things
 //  create a new array containing only some of them
 // psst.  use the Debugger or JS Tutor
 //  practice using breakpoints to skip to the lines you want to study
-
 
 const _1_words = ['chair', 'quote', 'bucket', 'sofa'];
 // keep the words with an "a"
@@ -15,7 +15,6 @@ for (const word of _1_words) {
     _1_wordsWithA.push(word);
   }
 }
-
 
 const _2_numbers = [-5, 0, 13, 100];
 
@@ -34,3 +33,5 @@ for (const number of _2_numbers) {
     _3_evenNumbers.push(number);
   }
 }
+
+console.log('-- end --');

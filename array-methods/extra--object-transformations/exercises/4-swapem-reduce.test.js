@@ -5,9 +5,9 @@
  * @param {Object} obj - an object
  * @returns {Object} - the swapped object
  */
-const swapem = obj => {
+const swapem = (obj) => {
   const objEntries = Object._(_);
-  const swappedEntries = objEntries._(entry => {
+  const swappedEntries = objEntries._((entry) => {
     const key = _;
     const value = _;
     if (_) {
