@@ -23,8 +23,9 @@ const replaceEntry = (arr, index, newEntry) => {
     return 'index cannot be less than 0';
   }
 
-  const copy = [...arr];
-  copy[index] = newEntry;
+  const copy = [arr];
+  // const copy = [...arr];
+  copy[index] = newEntry; 
   return copy;
 };
 
@@ -62,7 +63,7 @@ describe('replaceEntry: replaces a specific entry in an array', () => {
     });
     it('it can replace the last value', () => {
       const expected = ['a', 'b', 'x'];
-      const actual = replaceEntry(['a', 'b', 'c'], expected.length - 1, 'x');
+      const actual = replaceEntry(['a', 'b', 'c'], 2, 'x');
       expect(actual).toEqual(expected);
     });
   });

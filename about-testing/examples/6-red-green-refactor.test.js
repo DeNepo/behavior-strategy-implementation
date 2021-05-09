@@ -71,7 +71,7 @@ describe('numberOrType', () => {
     });
     it('returns NaN', () => {
       const actual = numberOrType(NaN);
-      expect(actual).toBeNaN();
+      expect(actual).toEqual(NaN);
     });
   });
   describe('returns the type of any other value', () => {

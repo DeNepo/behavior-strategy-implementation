@@ -90,28 +90,4 @@ describe("about expect", () => {
       expect(areTheSameObject).toEqual(false);
     });
   });
-
-  describe(".toThrowError", () => {
-    // this assertion checks to make sure a function throws an error
-    // you wont' need to know this unless you study /using-errors
-    it("passing", () => {
-      const throwsCorrectError = () => {
-        throw Error("hello");
-      };
-      expect(throwsCorrectError).toThrowError(Error);
-    });
-    it("passing: error and message", () => {
-      const throwsWrongError = () => {
-        throw TypeError("userName is not a string");
-      };
-      expect(throwsWrongError).toThrowError(
-        TypeError,
-        "userName is not a string"
-      );
-    });
-    it("failing: does not throw", () => {
-      const doesNotThrow = () => {};
-      expect(doesNotThrow).toThrowError(Error);
-    });
-  });
 });
