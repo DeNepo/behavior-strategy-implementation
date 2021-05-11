@@ -90,4 +90,39 @@ describe("about expect", () => {
       expect(areTheSameObject).toEqual(false);
     });
   });
+
+  // this assertion checks to make sure a function throws an error
+  //  .toThrowError is a challenge, not required for class
+  //  you can skip this example if you want to
+  describe(".toThrowError", () => {
+    it("should throw any error", () => {
+      const throwsAnError = () => {
+        null.someProperty;
+      };
+      expect(throwsAnError).toThrowError();
+    });
+    it("should throw a specific error (1)", () => {
+      const throwsWrongError = () => {
+        null();
+      };
+      expect(throwsWrongError).toThrowError(
+        TypeError,
+        "null is not a function"
+      );
+    });
+    it("should throw a specific error (2)", () => {
+      const throwsWrongError = () => {
+        null();
+      };
+      expect(throwsWrongError).toThrowError(
+        new TypeError("null is not a function")
+      );
+    });
+    it("failing: does not throw", () => {
+      const doesNotThrow = () => {
+        "hello!";
+      };
+      expect(doesNotThrow).toThrowError();
+    });
+  });
 });

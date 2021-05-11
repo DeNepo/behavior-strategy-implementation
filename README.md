@@ -971,3 +971,4 @@ Take a look at these examples/exercises, they will be helpful:
 > [Thibault](https://github.com/ThibaultLesuisse), [Evan](https://github.com/colevandersWands), [Emilien](https://github.com/EmilienD)
 
 - Week 1: [solution write-ups](https://vimeo.com/545439077), [behavior vs. strategy vs. implementation](https://vimeo.com/545440098)
+- Week 2: [about testing](https://vimeo.com/547835556/)
