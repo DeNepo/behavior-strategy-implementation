@@ -40,7 +40,7 @@ for (const solution of [
     });
     describe('when values are nothing alike', () => {
       it('obvious comparisons', () => {
-        _(_(null, 4))._._(_);
+        _(_(null, 4))._(_);
       });
       it('deceptive comparisons', () => {
         // "4" and 4
