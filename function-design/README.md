@@ -50,7 +50,7 @@ Building this understanding before writing your function will make the problem s
 > In the programming world, boilerplat is lines of code that can be used as a template.
 > The boilerplate code will be provided to you in the exercises.
 
-- <a href='./examples/reverse-a-string/0-boilerplate.test.js?study' target='_blank'>./examples/reverse-a-string/0-boilerplate.test.js</a>
+- <a href='./examples/repeat-a-string/0-boilerplate.test.js?study' target='_blank'>./examples/repeat-a-string/0-boilerplate.test.js</a>
 
 Create an empty JSDoc comment, an empty function, and empty unit tests. This code is 100% generic to any coding challenge.
 
@@ -60,7 +60,7 @@ Create an empty JSDoc comment, an empty function, and empty unit tests. This cod
 
 > This step will also be provided to you in the exercises.
 
-- <a href='./examples/reverse-a-string/1-signature.test.js?study' target='_blank'>./examples/reverse-a-string/1-signature.test.js</a>
+- <a href='./examples/repeat-a-string/1-signature.test.js?study' target='_blank'>./examples/repeat-a-string/1-signature.test.js</a>
 
 At this point in your coding journey, a _function signature_ is simple enough:
 
@@ -76,7 +76,7 @@ To complete this step of the workflow, fill in the `params` and `returns` in you
 
 > This step will also be provided to you in the exercises.
 
-- <a href='./examples/reverse-a-string/2-description.test.js?study' target='_blank'>./examples/reverse-a-string/2-description.test.js</a>
+- <a href='./examples/repeat-a-string/2-description.test.js?study' target='_blank'>./examples/repeat-a-string/2-description.test.js</a>
 
 Describe your function's behavior and usage in more detail by completing the JSDoc comment, and by filling in the main test suite's description.
 
@@ -86,7 +86,7 @@ Describe your function's behavior and usage in more detail by completing the JSD
 
 > some exercises will come with starter tests, that's just a start. add more!
 
-- <a href='./examples/reverse-a-string/3-tests.test.js?study' target='_blank'>./examples/reverse-a-string/3-tests.test.js</a>
+- <a href='./examples/repeat-a-string/3-tests.test.js?study' target='_blank'>./examples/repeat-a-string/3-tests.test.js</a>
 
 Don't rush this step! Taking a little extra time to think about your function's behavior and
 to consider [_edge cases_](https://www.geeksforgeeks.org/dont-forget-edge-cases/) will help in more than one way:
@@ -112,7 +112,7 @@ Finally, don't worry yourself trying to write perfect tests for every possible c
 > Stub is a piece of code that is a placeholder (i.e. something you are going to fill up).
 > This is the first step you will have to complete on your own.
 
-- <a href='./examples/reverse-a-string/4-stub.test.js?study' target='_blank'>./examples/reverse-a-string/4-stub.test.js</a>
+- <a href='./examples/repeat-a-string/4-stub.test.js?study' target='_blank'>./examples/repeat-a-string/4-stub.test.js</a>
 
 Fill in the empty function with arguments and return type matching the JSDoc.
 You will now want to comment out `secretSolution` in the `for-of` loop and uncomment the `stub`,
@@ -124,7 +124,7 @@ run the tests and see what happens! (there will be many failures, that's to be e
 
 > A strategy is a high-level plan for how to solve a problem, this should not be working code. You might include numbered steps, pseudo-code or a short paragraph, whatever helps you most
 
-- <a href='./examples/reverse-a-string/5-strategy.test.js?study' target='_blank'>./examples/reverse-a-string/5-strategy.test.js</a>
+- <a href='./examples/repeat-a-string/5-strategy.test.js?study' target='_blank'>./examples/repeat-a-string/5-strategy.test.js</a>
 
 Create a block comment to organize your thoughts about this problem. Anything goes, this is a chance to think big and imagine all the ways you could approach this problem without worrying about how you will code it. You'll explore different implementations in the next step.
 
@@ -134,7 +134,7 @@ Create a block comment to organize your thoughts about this problem. Anything go
 
 > some exercises will come with starter solutions, this is just a suggestion. create your own strategies as well!
 
-- <a href='./examples/reverse-a-string/6-red-green-refactor.test.js?study' target='_blank'>./examples/reverse-a-string/6-red-green-refactor.test.js</a>
+- <a href='./examples/repeat-a-string/6-red-green-refactor.test.js?study' target='_blank'>./examples/repeat-a-string/6-red-green-refactor.test.js</a>
 
 Enter the [TDD development cycle](https://www.youtube.com/watch?v=m43Ma_8TPH0):
 
@@ -164,7 +164,7 @@ Enter the [TDD development cycle](https://www.youtube.com/watch?v=m43Ma_8TPH0):
 
 ### 7. Pivot
 
-- <a href='./examples/reverse-a-string/7-pivot.test.js?study' target='_blank'>./examples/reverse-a-string/7-pivot.test.js</a>
+- <a href='./examples/repeat-a-string/7-pivot.test.js?study' target='_blank'>./examples/repeat-a-string/7-pivot.test.js</a>
 
 So you've solved the challenge? Pick a new strategy and try solving it again!
 
