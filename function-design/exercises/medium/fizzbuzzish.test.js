@@ -7,7 +7,7 @@
  *    numbers divisible by only 5 return "buzz"
  *    all other numbers are returned un-changed
  *  @param {number} [num=0] - the number to convert
- *    max must be an integer greater than or equal to 0
+ *    num must be an integer greater than or equal to 0
  *  @returns {number|string} either "fizz", "buzz", "fizzbuzz" or the original number
  */
 const stub = () => {};
