@@ -578,6 +578,7 @@ Helpful resources for this module
   - 🐣 **[./parsons-problems](./parsons-problems)**: Explore behavior, strategy and implementation by reconstructing different solutions to coding challenges.
   - 🐣 **[./function-design](./function-design)**: Learn a structured approach to understanding and solving coding challenges
   - 🐣 **[./ecmascript-modules](./ecmascript-modules)**: Learn the first basics of using `import` and `export`. Just enough to complete this module's group exercises.
+  - 🐥 **[./throw-and-catch](./throw-and-catch)**: Go deeper into errors and error handling by throwing and catching your own errors.
 - 🐥: **More Practice**
   - [rolling-scopes-school](https://github.com/rolling-scopes-school/js-assignments)
   - [Functions and Arrays](https://github.com/ironhack-labs/lab-javascript-functions-and-arrays/)
@@ -842,6 +843,8 @@ To help you gain a deeper understanding of how to write and test your own soluti
 - 🐣 **[./about-testing](./about-testing)**
 - 🐣 **[./parsons-problems](./parsons-problems)**
 - 🐣 **[./function-design](./function-design)**
+- Looking for an extra challenge in function-design? try writing and passing tests for a function that throws errors:
+  - 🐥 **[./throw-and-catch](./throw-and-catch)**
 
 </details>
 <br>
