@@ -7,10 +7,6 @@
  * @returns {Array} - a new array with no strings
  */
 const filterOutStrings = (arr = []) => {
-  if (!Array.isArray(arr)) {
-    throw new TypeError('arr is not an array');
-  }
-
   const noStrings = [];
   for (const _ of _) {
   }
@@ -52,10 +48,6 @@ describe('filterOutStrings removes all "string" values from an array', () => {
       const arg = ['a', 1, true, null, undefined];
       filterOutStrings(arg);
       expect(arg).toEqual(['a', 1, true, null, undefined]);
-    });
-    it('throws a TypeError if the argument is not an array', () => {
-      const shouldThrow = () => filterOutStrings(14);
-      expect(shouldThrow).toThrow();
     });
   });
 });

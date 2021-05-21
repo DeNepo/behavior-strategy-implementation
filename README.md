@@ -676,6 +676,7 @@ And last, but not least: **Code Review**:
 - [The science of code reviews](https://www.youtube.com/watch?v=EyL7mqwpZhk)
 - [Code review on GitHub](https://www.youtube.com/watch?v=HW0RPaJqm4g)
 - [An example code review](https://www.youtube.com/watch?v=cix7wQSsN7U)
+- [all-about-code-review](https://github.com/mgreiler/all-about-code-review)
 
 </details>
 <br>
@@ -977,5 +978,3 @@ Take a look at these examples/exercises, they will be helpful:
 - Week 1: [solution write-ups](https://vimeo.com/545439077), [behavior vs. strategy vs. implementation](https://vimeo.com/545440098)
 - Week 2: [about testing](https://vimeo.com/547835625), [function design](https://vimeo.com/547835556/)
 - Week 3: [code quality & code review](https://vimeo.com/551501941) By hero Thibault!
-
-

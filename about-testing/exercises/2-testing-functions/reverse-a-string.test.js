@@ -24,16 +24,16 @@ describe('it should reverse strings', () => {
     });
   });
   describe('when argument is a string', () => {
-    it('empty string', () => {
+    it('the empty string should return an empty string', () => {
       expect(reverse('')).toEqual(_);
     });
-    it('"toads"', () => {
+    it('"toads" should return "sdaot"', () => {
       expect(reverse(_)).toEqual('sdaot');
     });
     // write at least 5 more tests
   });
   describe('when argument is not a string', () => {
-    it('true', () => {
+    it('true should return "text is not a string"', () => {
       expect(reverse(true)).toEqual(_);
     });
     // write at least 3 more tests

@@ -9,7 +9,7 @@ const rollerCoasterPermission = (height = 0) => {
   if (typeof height !== 'number') {
     return 'height is not a number';
   } else if (height < 100) {
-    return 'too short, sorry  :(';
+    return 'too short, sorry :(';
   } else if (height > 100) {
     return 'hop on the roller coaster!';
   } else {
@@ -18,13 +18,13 @@ const rollerCoasterPermission = (height = 0) => {
 };
 
 describe('a function that tells you are tall enough', () => {
-  describe('when height is not a number', () => {
-    it('passing true', () => {
+  describe('when height is not a number, the function says so', () => {
+    it('true -> "height is not a number"', () => {
       const actual = rollerCoasterPermission(true);
       const expected = _;
       expect(actual).toEqual(expected);
     });
-    it('passing "tall"', () => {
+    it('"tall" -> "height is not a number"', () => {
       const expected = _;
       const actual = rollerCoasterPermission('tall');
       _;
@@ -32,17 +32,17 @@ describe('a function that tells you are tall enough', () => {
     // more tests?
   });
   describe('when height is a number', () => {
-    it('less than 100', () => {
-      const expected = 'too short, sorry  :(';
+    it('numbers less than 100 return "too short, sorry :("', () => {
+      const expected = 'too short, sorry :(';
       const actual = rollerCoasterPermission(_);
       _;
     });
-    it('exactly 100', () => {
+    it('numbers equal to 100 return "just right, hop on!"', () => {
       const expected = 'just right, hop on!';
       const actual = rollerCoasterPermission(_);
       _;
     });
-    it('greater than 100', () => {
+    it('numbers greater than 100 return "hope on the roller coaster!"', () => {
       const expected = 'hop on the roller coaster!';
       const actual = rollerCoasterPermission(_);
       _;

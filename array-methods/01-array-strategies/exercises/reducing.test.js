@@ -7,10 +7,6 @@
  * @returns {Array} - a new array with no strings
  */
 const concatenateAsStrings = (arr = []) => {
-  if (!Array.isArray(arr)) {
-    throw new TypeError('arr is not an array');
-  }
-
   let concatenated = _;
   for (const _ of _) {
   }
@@ -59,10 +55,6 @@ describe('concatenateAsStrings casts values to "string" and joins them together'
       const arg = ['a', 1, true, null, undefined];
       concatenateAsStrings(arg);
       expect(arg).toEqual(['a', 1, true, null, undefined]);
-    });
-    it('throws a TypeError if the argument is not an array', () => {
-      const shouldThrow = () => concatenateAsStrings(14);
-      expect(shouldThrow).toThrow();
     });
   });
 });

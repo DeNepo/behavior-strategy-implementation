@@ -20,8 +20,8 @@
 
 describe('an entire test suite', () => {
   it('a single passing test', () => {
-    const hello = 'from in a describe';
-    console.log(hello);
+    const hello = 'hello';
+    // nothing wrong here!
   });
   it('a single failing test', () => {
     const notAFunction = 'hello !';

@@ -20,35 +20,36 @@ for (const solution of [
       when testing conditionals, you need to be test all paths
   */
   describe(solution.name + ': determines if a value is truthy', () => {
-    // the if path
     describe('solution can identify truthy values', () => {
-      it('strings', () => {
+      it('non-empty strings -> true', () => {
         const actual = solution(_);
         expect(actual).toEqual(true);
       });
-      it('numbers', () => {
+      it('numbers that are not 0 or NaN -> true', () => {
         const actual = _;
         expect(actual).toEqual(true);
       });
-      it('booleans', () => {
+      it('true -> true', () => {
         expect(solution(_)).toEqual(true);
       });
     });
-    // the else path
     describe('solution can identify falsy values', () => {
-      it('strings', () => {
+      it('"" -> flase', () => {
         _;
       });
-      it('numbers', () => {
+      it('0 -> false', () => {
         _;
       });
-      it('booleans', () => {
+      it('NaN -> false', () => {
         _;
       });
-      it('undefined', () => {
+      it('false -> false', () => {
         _;
       });
-      it('null', () => {
+      it('undefined -> false', () => {
+        _;
+      });
+      it('null -> false', () => {
         _;
       });
     });

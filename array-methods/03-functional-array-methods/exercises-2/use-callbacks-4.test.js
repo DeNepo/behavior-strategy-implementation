@@ -22,12 +22,9 @@ const sumNumbery = (arr) => {
   };
 
   // fill in the array methods and pass the correct logic
-  const areAllStrings = arr._(_);
-  if (!areAllStrings) {
-    throw new TypeError('arr is not all strings');
-  }
+  const areAllStrings = arr._(_); // a boolean value
 
-  const sumOfNumber = arr._(_)._(_)._(_, _);
+  const sumOfNumber = arr._(_)._(_)._(_, _); // a number
 
   return sumOfNumber;
 };
@@ -56,10 +53,6 @@ describe('sumNumbery: sums all the numbery strings in an array', () => {
     });
   });
   describe('it uses the argument correctly', () => {
-    it('throws an error if all entries are not strings', () => {
-      const arg = ['hello', 'goodbye', true];
-      expect(() => sumNumbery(arg)).toThrow();
-    });
     it('does not modify the argument', () => {
       const arg = ['hello', 'goodbye'];
       sumNumbery(arg);

@@ -7,10 +7,6 @@
  * @returns {Array} - a new array of number values
  */
 const mapToNumber = (arr = []) => {
-  if (!Array.isArray(arr)) {
-    throw new TypeError('arr is not an array');
-  }
-
   const numberValues = [];
   for (const _ of _) {
   }
@@ -62,10 +58,6 @@ describe('mapToNumber casts each element in an array to type "number"', () => {
       const arg = ['a', 1, true, null, undefined];
       mapToNumber(arg);
       expect(arg).toEqual(['a', 1, true, null, undefined]);
-    });
-    it('throws a TypeError if the argument is not an array', () => {
-      const shouldThrow = () => mapToNumber(14);
-      expect(shouldThrow).toThrow();
     });
   });
 });

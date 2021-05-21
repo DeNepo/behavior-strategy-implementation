@@ -239,46 +239,36 @@ for (const solution of [
       });
     });
     describe('an empty string', () => {
-      it('0 times', () => {
+      it('repeat an empty string 0 times -> ""', () => {
         expect(solution('', 0)).toEqual('');
       });
-      it('10 times', () => {
+      it('repeat an empty string 10 times -> ""', () => {
         expect(solution('', 10)).toEqual('');
       });
-      it('100 times', () => {
+      it('repeat an empty string 100 times -> ""', () => {
         expect(solution('', 100)).toEqual('');
       });
     });
     describe('zero repetitions', () => {
-      it('"asdf"', () => {
+      it('repeat "asdf" 0 times -> ""', () => {
         expect(solution('asdf', 0)).toEqual('');
       });
-      it('"tommywalk"', () => {
+      it('repeat "tommywalk" 0 times -> ""', () => {
         expect(solution('tommywalk', 0)).toEqual('');
       });
     });
     describe('standard use cases', () => {
-      // added more test cases for clarity
-      it('repeat a phrase 1 time', () => {
-        expect(solution('.', 1)).toEqual('.');
-      });
-      it('repeat a phrase 2 times', () => {
-        expect(solution('.', 2)).toEqual('..');
-      });
-      it('repeat a phrase 3 times', () => {
+      it('repeating a longer phrase 3 times', () => {
         expect(solution('go to school', 3)).toEqual(
           'go to schoolgo to schoolgo to school'
         );
       });
-      it('repeat a phrase 4 times', () => {
-        expect(solution('.', 4)).toEqual('....');
-      });
-      it('phrases with punctuation', () => {
+      it('repeating a phrase with punctuation', () => {
         expect(solution('"Go!", said Dr. Seuss?', 2)).toEqual(
           '"Go!", said Dr. Seuss?"Go!", said Dr. Seuss?'
         );
       });
-      it('special characters', () => {
+      it('a string with special characters can be repeated', () => {
         expect(solution('\\ \n \t s', 2)).toEqual('\\ \n \t s\\ \n \t s');
       });
     });
