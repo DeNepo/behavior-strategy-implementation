@@ -33,44 +33,44 @@ Functions behavior is generally described using **documentation**, **unit tests*
 ```js
 describe('repeats a string any number of times:', () => {
   describe('an empty string', () => {
-    it('0 times', () => {
+    it('should repeat "" 0 times', () => {
       expect(repeatString('', 0)).toEqual('');
     });
-    it('10 times', () => {
+    it('should repeat "" 10 times', () => {
       expect(repeatString('', 10)).toEqual('');
     });
-    it('100 times', () => {
+    it('should repeat "" 100 times', () => {
       expect(repeatString('', 100)).toEqual('');
     });
   });
   describe('zero repetitions', () => {
-    it('"asdf"', () => {
+    it('a non-empty string repeated 0 times -> ""', () => {
       expect(repeatString('asdf', 0)).toEqual('');
     });
-    it('"tommywalk"', () => {
+    it('a longer string repeated 0 times -> ""', () => {
       expect(repeatString('tommywalk', 0)).toEqual('');
     });
   });
   describe('standard use cases', () => {
-    it('repeat a phrase 3 times', () => {
+    it('should repeat a phrase 3 times', () => {
       expect(repeatString('go to school', 3)).toEqual(
         'go to schoolgo to schoolgo to school'
       );
     });
-    it('phrases with punctuation', () => {
+    it('should repeat phrases with punctuation', () => {
       expect(repeatString('"Go!", said Dr. Seuss?', 2)).toEqual(
         '"Go!", said Dr. Seuss?"Go!", said Dr. Seuss?'
       );
     });
-    it('special characters', () => {
+    it('should repeat strings with special characters', () => {
       expect(repeatString('\\ \n \t s', 2)).toEqual('\\ \n \t s\\ \n \t s');
     });
   });
   describe('default values', () => {
-    it('repetitions default should be 1', () => {
+    it('should repeat 1 time by default (second parameter)', () => {
       expect(repeatString('asdf')).toEqual('asdf');
     });
-    it('text default should be an empty string', () => {
+    it('should repeat "" by default (first parameter)', () => {
       expect(repeatString()).toEqual('');
     });
   });
@@ -599,7 +599,11 @@ Helpful resources for this module
   1. [Writing tests for personal projects](https://www.youtube.com/watch?v=ib2Pt9_zciA)
   1. [Why Unit Tests?](https://www.youtube.com/watch?v=Eu35xM76kKY)
   1. [Your First Tests](https://www.youtube.com/watch?v=XsFQEUP1MxI)
+- [the basics](https://javascript.plainenglish.io/javascript-unit-test-best-practices-basics-d411dc1968c)
 - [js-unit-testing-guide](https://github.com/mawrkus/js-unit-testing-guide) (very detailed)
+  - [Name your tests properly](https://github.com/mawrkus/js-unit-testing-guide#name-your-tests-properly)
+- [good test descriptions](https://softwareengineering.stackexchange.com/questions/362515/how-to-write-good-javascript-unit-test-descriptions)
+- [test behavior, not implementation](https://javascript.plainenglish.io/javascript-unit-test-best-practices-testing-behavior-4d1fd46ae03d)
 
 ### Higher-Order Functions
 
