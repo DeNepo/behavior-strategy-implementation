@@ -682,6 +682,20 @@ And last, but not least: **Code Review**:
 - [An example code review](https://www.youtube.com/watch?v=cix7wQSsN7U)
 - [all-about-code-review](https://github.com/mgreiler/all-about-code-review)
 
+### 🐥 Regular Expressions
+
+You can get by without them, but when they're helpful they're very helpful.
+
+- Interactives
+  - [regex.guide](https://regex.guide/): learn to build regular expressions one question at a time
+  - [regexer.com](https://regexr.com/): realtime regex with a visual breakdown of your regular expression
+  - [Regex Crossword](https://regexcrossword.com/): games to learn regular expressions
+- References
+  - [The Coding Train](https://shiffman.net/a2z/regex/)
+  - [javascript.info](https://javascript.info/regular-expressions)
+  - [FreeCodeCamp](https://www.youtube.com/watch?v=909NfO1St0A)
+  - [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
+
 </details>
 <br>
 
