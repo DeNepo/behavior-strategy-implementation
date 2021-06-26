@@ -29,7 +29,9 @@ __proto__: Array(0)  // expanding it, you will see all the built-in methods and 
 
 ```
 
-In this section ig going to be shown how are those methods under the hood, and in [functional array methods](array-methods/03-functional-array-methods) we will see them in action.
+In this section are going to be shown how the most important methods are under the hood, in [functional array methods](array-methods/03-functional-array-methods) we will see them in action.
+
+There are a lot methods and you don't need to master all of them in this chapter but is good to know where they are and during your journey in code you will master all of them
 
 Almost every object have their own prototype and this topic will be touched deeply in future modules `Object prototype and inheritance`, in mean time lets keep it only with Array-prototype
 
