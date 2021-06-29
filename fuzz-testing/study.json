@@ -1,0 +1,14 @@
+{
+  "--defaults": {
+    "directory": "fuzz"
+  },
+  "fuzz": {
+    "save": true,
+    "ask": { "levels": [1, 2, 3, 4] },
+    "run": {
+      "type": "module",
+      "debug": true,
+      "text": "fuzz"
+    }
+  }
+}

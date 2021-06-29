@@ -4,7 +4,6 @@
     "environment": true,
     "flowchart": false,
     "variables": false,
-    "loopGuards": false,
-    "tests": false
+    "loopGuard": false
   }
 }

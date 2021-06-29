@@ -1,6 +1,7 @@
 {
   "study": {
-    "eval": true,
+    "run": true,
+    "debug": true,
     "flowchart": true,
     "save": true,
     "variables": true,

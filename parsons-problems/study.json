@@ -1,5 +1,9 @@
 {
   "--defaults": {
     ".js": "parsons"
+  },
+  "study": {
+    "run": false,
+    "debug": false
   }
 }
