@@ -1,3 +1,0 @@
-pull from
-  coderbyte
-  tdd repos

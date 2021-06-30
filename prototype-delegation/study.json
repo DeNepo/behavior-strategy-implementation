@@ -1,0 +1,9 @@
+{
+  "study": {
+    "run": false,
+    "loopGuard": false,
+    "variables": false,
+    "flowchart": false,
+    "tests": false
+  }
+}

@@ -563,34 +563,34 @@ Helpful resources for this module
 
 ### Exercises & Practice
 
-- **Separate Repositories**
-  - 🥚,🐣,🐥 **[Solution Write-Ups](https://github.com/HackYourFutureBelgium/solution-write-ups)** Learn to solve coding challenges by studying other people's solutions.
-    1. Fork the repository
-    2. Clone your fork
-    3. Push your work regularly so others can study it
-  - 🐣 **[document-and-pass](https://github.com/HackYourFutureBelgium/document-and-pass)**: write your own solutions and documentation to some coding challenges. Practice debugging and using testing libraries in VSCode
-  - 🐣 **[practice-code-review](https://github.com/HackYourFutureBelgium/practice-code-review)**: (week 3 group exercises)
-- **In this Repo**
-  - 🥚 **[./about-testing](./about-testing)**: A quick introduction to `describe`, `it`, and `expect`
+- **JavaScript**
   - 🥚 **[./implicit-return](./implicit-return)**
   - 🥚 **[./array-methods](./array-methods)**: Learn array methods by first understanding the strategies they are designed for.
-  - 🥚 **[./linting](./linting)**: Practice using feedback from ESLint to write code that uses consistent style and best practices. (week 3)
-  - 🐣 **[./hoisting](./hoisting)**: That famous thing about JS! It's not so bad once you get it, the key to understanding hoisting is to understand the program life-cycle: _creation phase_ and _execution phase_. This chapter is more abstract, hoisting is something "invisible" about JavaScript program execution. These exercises will help you see hoisting by exploring the debugger at different points in program execution.
-  - 🐣 **[./parsons-problems](./parsons-problems)**: Explore behavior, strategy and implementation by reconstructing different solutions to coding challenges.
-  - 🐣 **[./function-design](./function-design)**: Learn a structured approach to understanding and solving coding challenges
-  - 🐣 **[./fuzz-testing](./fuzz-testing)**: Write multiple solutions to the same problem, and test your code with random test cases. Using random test cases makes it easier to catch sneaky bugs that you wouldn't think of testing yourself.
-  - 🐣 **[./ecmascript-modules](./ecmascript-modules)**: Learn the first basics of using `import` and `export`. Just enough to complete this module's group exercises. (week 3)
+  - 🥚 **[./ecmascript-modules](./ecmascript-modules)**: Learn the first basics of using `import` and `export`. Just enough to complete this module's group exercises. (week 3)
+  - 🐣 **[./hoisting](./hoisting)**: That famous thing about JS! It's not so bad once you get it, the key to understanding hoisting is to understand the program life-cycle: _creation phase_ and _execution phase_. This chapter is more abstract, hoisting is something "invisible" about JavaScript program execution. What's most important is that you are comfortable stepping through code that uses hoisting.
+  - 🐣 **[./linting](./linting)**: Practice using feedback from ESLint to write code that uses consistent style and best practices. (week 3)
   - 🐥 **[./throw-and-catch](./throw-and-catch)**: Go deeper into errors and error handling by throwing and catching your own errors.
+  - 🐥 **[./prototype-delegation](./prototype-delegation)**: you _do not_ need to master this! but it will help understand what you see in the debugger, where methods come from, and how to read MDN documentation.
+- **Practice**
+  - In this repo
+    - 🥚 **[./about-testing](./about-testing)**: A quick introduction to `describe`, `it`, and `expect`
+    - 🐣 **[./parsons-problems](./parsons-problems)**: Explore behavior, strategy and implementation by reconstructing different solutions to coding challenges.
+    - 🐣 **[./function-design](./function-design)**: Learn a structured approach to understanding and solving coding challenges
+    - 🐣 **[./fuzz-testing](./fuzz-testing)**: Write multiple solutions to the same problem, and test your code with random test cases. Using random test cases makes it easier to catch sneaky bugs that you wouldn't think of testing yourself.
+  - Other Repos
+    - 🥚,🐣,🐥 **[Solution Write-Ups](https://github.com/HackYourFutureBelgium/solution-write-ups)** Learn to solve coding challenges by studying other people's solutions.
+    - 🐣 **[document-and-pass](https://github.com/HackYourFutureBelgium/document-and-pass)**: write your own solutions and documentation to some coding challenges. Practice debugging and using testing libraries in VSCode
+    - 🐣 **[practice-code-review](https://github.com/HackYourFutureBelgium/practice-code-review)**: (week 3 group exercises)
 - 🐥: **More Practice**
+  - there's many great repos of exercises out there, you just need to find them!
+  - [javascript-practice](https://github.com/andrewborisov/javascript-practice)
   - [rolling-scopes-school](https://github.com/rolling-scopes-school/js-assignments)
   - [Functions and Arrays](https://github.com/ironhack-labs/lab-javascript-functions-and-arrays/)
   - [Advanced Collection Methods](https://github.com/ironhack-labs/lab-javascript-advanced-collection-methods)
   - [Native Array Methods](https://github.com/gSchool/native-array-methods-exercises/)
   - [clue](https://github.com/ironhack-labs/lab-javascript-clue/)
-  - [JavaScript-Koans](https://github.com/HackYourFutureBelgium/JavaScript-Koans/tree/master/src) (1-4)
   - [KBPsystem777](https://github.com/KBPsystem777/JSexercises)
   - [JavaScript Questions](https://github.com/lydiahallie/javascript-questions/)
-  - [If Hemingway Wrote JavaScript](https://github.com/colevandersWands/if-hemingway)
 
 > Are we missing a great set of exercises? Send a PR!
 
@@ -621,8 +621,16 @@ Helpful resources for this module
 - [bitsrc](https://blog.bitsrc.io/understanding-higher-order-functions-in-javascript-75461803bad)
 - [Mosh](https://programmingwithmosh.com/javascript/what-are-higher-order-functions-in-javascript/)
 
+### MDN Documentation
+
+- [FreeCodeCamp: the lingo](https://www.youtube.com/watch?v=NFaZKFTycmc)
+- [Zach Gollwitzer](https://www.youtube.com/watch?v=O3iR-CIufKM)
+- [DevSprout](https://www.youtube.com/watch?v=FSe_phZ2wmg)
+- [CodeAcademy](https://www.youtube.com/watch?v=s1PLS3SQHQ0) (MDN starts at 9:00)
+
 #### Array Methods
 
+- [doesitmutate.xyz](https://doesitmutate.xyz/)
 - [javascript.info](https://javascript.info/array-methods)
 - FunFun: [Map](https://www.youtube.com/watch?v=bCqtb-Z5YGQ&list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84&index=2), [Reduce Basics](https://www.youtube.com/watch?v=Wl98eZpkp-c&list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84&index=3)
 - [CYF](https://codeyourfuture.github.io/syllabus-london/js-core-3/array-methods.html)
@@ -810,19 +818,24 @@ Complete as many write-ups as you can. No need to rush ahead! Take your time stu
 
 - **[Solution Write-Ups](https://github.com/HackYourFutureBelgium/solution-write-ups)**
 
-Here's two important JS concepts you should study while doing your write-ups:
+Learning to read MDN Documentation will help you understand how JS works, and help you do a good write-up:
 
-- 🥚 **[./implicit-return](./implicit-return)**
-- 🐣 **[./array-methods](./array-methods)**
-- 🐣 **[./hoisting](./hoisting)**
+- [MDN Documentation](#mdn-documentation)
 
-Reconstruct different solutions to the same coding challenge:
+Practice reconstructing different solutions to the same coding challenge:
 
 - 🐣 **[./parsons-problems](./parsons-problems)**
 
 These exercises will help you understand test cases, and be important for next week:
 
 - 🐣 **[./about-testing](./about-testing)**
+
+Here's some important JS concepts you should start learning about:
+
+- 🥚 **[./implicit-return](./implicit-return)**: just a different way to write functions
+- 🐣 **[./array-methods](./array-methods)**: +1
+- 🐣 **[./hoisting](./hoisting)**: you _do not_ need to master this! but it will help you understand what's happening in the debugger, some strange bugs, and how `let`/`const` & `() => {}` are different from `var` and `function () {}`
+- 🐥 **[./prototype-delegation](./prototype-delegation)**: you _do not_ need to master this! but it will help understand what you see in the debugger, where methods come from, and how to read MDN documentation.
 
 </details>
 <br>
