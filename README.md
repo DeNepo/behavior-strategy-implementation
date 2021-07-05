@@ -1020,3 +1020,9 @@ Take a look at these examples/exercises, they will be helpful:
 - Week 1: [solution write-ups](https://vimeo.com/545439077), [behavior vs. strategy vs. implementation](https://vimeo.com/545440098)
 - Week 2: [about testing](https://vimeo.com/547835625), [function design](https://vimeo.com/547835556/)
 - Week 3: [code quality & code review](https://vimeo.com/551501941) By hero Thibault!
+
+## class-15
+
+> [Yildiray](https://github.com/yildiraykoyuncu), [Samir](https://github.com/samirm00), [Evan](https://github.com/colevanderswands)
+
+- Week 1: [behavior vs. strategy vs. implementation & solution write-ups](https://vimeo.com/571143720)
