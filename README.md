@@ -310,7 +310,7 @@ const repeatString = (text = '', repetitions = 1) => {
 const repeatString = (text = '', repetitions = 1) => {
   let repeatedText = '';
   let count = 0;
-  while (count < repetitions.length) {
+  while (count < repetitions) {
     repeatedText = repeatedText + text;
     count++;
   }
@@ -329,7 +329,7 @@ const repeatString = (text = '', repetitions = 1) => {
 */
 const repeatString = (text = '', repetitions = 1) => {
   let repeatedText = '';
-  for (let count = 0; count < repetitions.length; count++) {
+  for (let count = 0; count < repetitions; count++) {
     repeatedText += text;
   }
   return repeatedText;
