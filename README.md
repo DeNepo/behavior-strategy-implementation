@@ -443,11 +443,10 @@ const repeatString = (text = '', repetitions = 1) => {
 
 1. Clone this repository:
    - `git clone git@github.com:HackYourFutureBelgium/behavior-strategy-implementation.git` (SSH)
-   - `git clone https://github.com/HackYourFutureBelgium/behavior-strategy-implementation.git` (HTTPS)
-   - `gh repo clone HackYourFutureBelgium/behavior-strategy-implementation` (GH CLI)
-1. `cd` into the repository
+2. `cd` into the repository
    - `cd behavior-strategy-implementation`
-1. Install dependencies: `npm install`
+3. Install dependencies:
+   - `npm install`
 
 ### In the Browser
 

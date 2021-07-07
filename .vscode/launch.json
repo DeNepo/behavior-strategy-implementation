@@ -14,7 +14,7 @@
       "type": "node",
       "request": "launch",
       "name": "Current JS File (with tests)",
-      "args": ["run", "test-one", "${file}"],
+      "args": ["run", "test", "--", "${file}"],
       "runtimeExecutable": "npm",
       "internalConsoleOptions": "openOnSessionStart",
       "skipFiles": ["<node_internals>/**"]

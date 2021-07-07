@@ -17,6 +17,9 @@ describe('this is what describe does', () => {
   describe('when there is no error', () => {
     // if there are no errors, nothing special happens
     const hello = 'from in a describe';
+    // not all testing environments will print console.logs
+    //  you can use a sandbox.js file for unstructured experiments
+    //  tests will just test!
     console.log(hello);
   });
   describe('when an error occurs', () => {
