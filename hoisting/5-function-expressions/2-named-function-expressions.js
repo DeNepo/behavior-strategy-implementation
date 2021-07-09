@@ -6,34 +6,33 @@ debugger; /* named function expressions
 
 */
 
-function exampleScope() {
-  var aFunction = function aGreeting() {
-    console.log('hello');
-  };
+var aFunction = function aGreeting() {
+  console.log('hello');
+};
 
-  console.log(aFunction.name);
+console.log(aFunction.name);
 
-  aFunction();
-  aFunction();
+aFunction();
+aFunction();
 
-  debugger; /*
+debugger; /*
 
     reassigning the function will not change the name
 
   */
 
-  var aFunction2 = aFunction;
+var aFunction2 = aFunction;
 
-  console.log(aFunction2.name);
-  console.log(
-    'both variables reference the same function:',
-    aFunction === aFunction2
-  );
+console.log(aFunction2.name);
+console.log(
+  'both variables reference the same function:',
+  aFunction === aFunction2
+);
 
-  aFunction2();
-  aFunction2();
+aFunction2();
+aFunction2();
 
-  debugger; /*
+debugger; /*
 
     the declared name is NOT available to use in your program!
 
@@ -47,26 +46,10 @@ function exampleScope() {
 
   */
 
-  try {
-    aGreeting();
-  } catch (err) {
-    console.error(err);
-  }
-
-  debugger; /* prediction challenge:
-
-    you may have noticed that all of the built-in functions are named expressions!
-      they are assigned to a window object property with their name
-      AND each function value has it's own name
-
-    what will this code log?
-
-  */
-
-  var alertist = alert;
-  console.log(alertist.name);
-
-  // cool, so what's this good for?  it's useful for ...
+try {
+  aGreeting();
+} catch (err) {
+  console.error(err);
 }
 
-exampleScope();
+// cool, so what's this good for?  it's useful for ...

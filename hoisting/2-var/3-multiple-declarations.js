@@ -12,16 +12,15 @@ debugger; /* multiple declarations
 */
 
 // all these variables are hoisted in one declaration
+//  then assigned when the line is reached
 var a1 = 'hello', // a step of execution
   a2 = 'good bye', // a step of execution
-  a3, // not a step
-  a4; // not a step
+  a3; // not a step
 
-alert(a1);
+console.log(a1);
 
-a3 = confirm('are you confused?');
+a3 = 'I am confused';
 
-a4 = a3 ? 'you are confused' : 'you are not confused';
-alert(a4);
+console.log(a3);
 
-alert(a2);
+console.log(a2);

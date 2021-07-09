@@ -42,6 +42,7 @@ debugger; /*
 
 aDeclaredVariable = 'assigned before declaration line';
 
+// this line will break in JS tutor!
 anUndeclaredVariable = 'not hoisted: created by assignment';
 
 var aDeclaredVariable = 'hoisted because of declaration with `var`';

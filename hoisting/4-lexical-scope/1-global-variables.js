@@ -8,15 +8,15 @@ debugger; /* lexical scope: global variables
 
 */
 
-var aList = "";
+var aList = [];
 
-addToList();
-addToList();
-addToList();
+addToList('first');
+addToList('second');
+addToList('third');
+
 console.log(aList);
 
-function addToList() {
-  // pushed directly to a global variable
-  var newThing = prompt("add something to the list");
-  aList += newThing + ", ";
+function addToList(newThing) {
+  // push directly directly to a global variable
+  aList.push(newThing);
 }

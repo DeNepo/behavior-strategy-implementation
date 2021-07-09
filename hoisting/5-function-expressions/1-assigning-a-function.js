@@ -8,13 +8,14 @@ debugger; /* Function s
 
 */
 
+// this will not work! aFunction is still an unassigned variable
 try {
   aFunction();
 } catch (err) {
   console.error(err);
 }
 
-var aFunction = function() {
+var aFunction = function () {
   console.log('hello');
 };
 

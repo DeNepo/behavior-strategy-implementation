@@ -20,23 +20,16 @@ function aNewScope(food) {
   // you can use this variable before it's declaration
   //  even if the declaration is unreachable
   //  because it was hoisted a creation!
-  alert(yesOrNo);
-  yesOrNo = confirm(food + ': yes or no?');
-  alert(food + ': ' + yesOrNo);
+  isGoodFood = food.length > 5;
 
-  // block scopes don't matter for `var`!
-  //  the variable is still hoisted in the function scope
-  if (false) {
-    // `var` declarations do not take a step of execution, they were hoisted!
-    //    they happen during the scope's creation phase
-    //    it does not matter if this line is reached or not
-    //  PS. declaring variables at the bottom is a bad practice
-    //    it makes your code harder to read
-    //    there's a good reason let & const don't let you do this
-    var yesOrNo = 'this value will never be assigned';
-  }
+  console.log(food + (isGoodFood ? ' is good' : ' is bad'));
 
-  console.log(food, yesOrNo);
+  // `var` declarations do not take a step of execution, they were hoisted!
+  //    they happen during the scope's creation phase
+  //    it does not matter if this line is reached or not
+  // declaring variables after they are used makes your code harder to understand
+  //    there's a good reason let & const don't let you do this
+  var isGoodFood;
 }
 
 aNewScope('bread');

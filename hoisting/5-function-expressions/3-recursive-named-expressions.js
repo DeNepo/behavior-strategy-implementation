@@ -1,3 +1,9 @@
+/*
+
+  this example is a challenge! you can skip it and still learn everything you need for now
+
+*/
+
 debugger; /* recursing named expressions
 
   one of the best use-cases for a named function expression is recursion
@@ -7,42 +13,37 @@ debugger; /* recursing named expressions
     you never knew if a variable would be reassigned!
     so you needed a way to make sure the function always referenced itself
 
-  PS: this example is a challenge!
-    no worries if you don't understand it right away
-    you can take a closer look at recursion in the next module
-
 */
 
-function exampleScope() {
-  var aaNamed = function logNextLetter(text) {
-    if (text.length !== 0) {
-      console.log(text[0]);
-      // uses the function declared with this name
-      logNextLetter(text.slice(1));
-    }
-  };
+var aaNamed = function logNextLetter(text) {
+  if (text.length !== 0) {
+    console.log(text[0]);
+    // uses the function declared with this name
+    logNextLetter(text.slice(1));
+  }
+};
 
-  var aanUnnamed = function(text) {
-    if (text.length !== 0) {
-      console.log(text[0]);
-      // uses the value assigned to this variable
-      aanUnnamed(text.slice(1));
-    }
-  };
+var aanUnnamed = function (text) {
+  if (text.length !== 0) {
+    console.log(text[0]);
+    // uses the value assigned to this variable
+    aanUnnamed(text.slice(1));
+  }
+};
 
-  aaNamed('dog');
+aaNamed('dog');
 
-  aanUnnamed('cat');
+aanUnnamed('cat');
 
-  debugger; /* reassign the variables */
+debugger; /* reassign the variables */
 
-  var aanotherVariable1 = aaNamed;
-  var aanotherVariable2 = aanUnnamed;
+var aanotherVariable1 = aaNamed;
+var aanotherVariable2 = aanUnnamed;
 
-  aaNamed = null;
-  aanUnnamed = null;
+aaNamed = null;
+aanUnnamed = null;
 
-  debugger; /*
+debugger; /*
 
   prediction time!
   - which calls will throw an error?
@@ -50,35 +51,32 @@ function exampleScope() {
 
 */
 
-  try {
-    aaNamed('pig');
-  } catch (err) {
-    console.error(err);
-  }
-
-  try {
-    aanUnnamed('pig');
-  } catch (err) {
-    console.error(err);
-  }
-
-  try {
-    logNextLetter('pig');
-  } catch (err) {
-    console.error(err);
-  }
-
-  try {
-    aanotherVariable1('pig');
-  } catch (err) {
-    console.error(err);
-  }
-
-  try {
-    aanotherVariable2('pig');
-  } catch (err) {
-    console.error(err);
-  }
+try {
+  aaNamed('pig');
+} catch (err) {
+  console.error(err);
 }
 
-exampleScope();
+try {
+  aanUnnamed('pig');
+} catch (err) {
+  console.error(err);
+}
+
+try {
+  logNextLetter('pig');
+} catch (err) {
+  console.error(err);
+}
+
+try {
+  aanotherVariable1('pig');
+} catch (err) {
+  console.error(err);
+}
+
+try {
+  aanotherVariable2('pig');
+} catch (err) {
+  console.error(err);
+}

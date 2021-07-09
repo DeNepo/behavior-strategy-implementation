@@ -7,6 +7,8 @@ debugger; /* lexical scope: functions
 
 */
 
+aNewScope();
+
 function aNewScope() {
   // available because the function was hoisted
   aDeclaredFunction();
@@ -31,4 +33,4 @@ function aNewScope() {
   }
 }
 
-aNewScope()
+aNewScope();

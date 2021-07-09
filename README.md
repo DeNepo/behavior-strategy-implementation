@@ -732,9 +732,8 @@ This week take your first step to becoming an expert problem solver by studying 
 
 - Fork [solution-write-ups](https://github.com/HackYourFutureBelgium/solution-write-ups)
   - Read through the README, this will be your main exercise for the week.
-  - create a new folder called `add-up-the-numbers-from-a-single-number`
-  - create a README.md file in this folder using the `write-up-template.md`
-  - create an empty javascript file called `sandbox.test.js`
+  - Follow the instructions in **Getting Started** to locally set up your repository.
+  - Practice running the `sandbox.test.js` file in the example write-up, in VSCode and the browser. (instructions in **Getting Started**)
 - Read through [./about-testing/examples](./about-testing/examples) to be familiar with the syntax for `describe`, `it`, and `expect`
 - Create an account on [Edabit](https://edabit.com)
 

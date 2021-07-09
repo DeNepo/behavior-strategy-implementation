@@ -7,7 +7,7 @@ debugger; /*
   you can (and have!) use them as global variables
   you can use them as plain variables or as window properties
 
-  find the .alert property, this is what you use for interactions
+  find the .console.log property, this is what you use for interactions
   the rest of this file will explore changes to this property
 
   hint: firefox conveniently collapses built-ins under <default properties>
@@ -17,8 +17,8 @@ debugger; /*
 */
 
 console.log(
-  'alert is the same function as window.alert:',
-  alert === window.alert
+  'console.log is the same function as window.console.log:',
+  console.log === window.console.log
 );
 
 debugger; /*
@@ -29,17 +29,16 @@ debugger; /*
 
 */
 
-alert('using alert as a global variable');
-window.alert('using alert as a window property');
+console.log('using console.log as a global variable');
+window.console.log('using console.log as a window property');
 
-alert = 'reassign as global variable';
-console.log(window.alert);
+console.log = 'reassign as global variable';
+console.log(window.console.log);
 
-window.alert = 'reassign as window property';
-console.log(alert);
+window.console.log = 'reassign as window property';
 
 try {
-  alert('no longer a function!');
+  console.log('no longer a function!');
 } catch (err) {
   console.error(err);
 }
@@ -48,7 +47,7 @@ debugger; /*
 
   everything you will use in JS that you did not declare yourself is a built-in:
   - console
-  - prompt, alert, confirm
+  - prompt, console.log, confirm
   - fetch
   - document
   - localStorage

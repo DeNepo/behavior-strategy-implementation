@@ -1,8 +1,12 @@
 {
   "study": {
     "run": true,
+    "debug": false,
+    "openIn": "jsTutorLive",
     "eval": false,
     "trace": false,
-    "flowchart": false
+    "flowchart": false,
+    "tests": false,
+    "loopGuard": false
   }
 }
