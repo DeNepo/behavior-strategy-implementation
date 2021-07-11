@@ -62,14 +62,14 @@ describe('reverseArray should reverse an array', () => {
   });
   describe('has no side-effects', () => {
     it('returns a new array', () => {
-      // test for reference equality
+      // test for reference inequality (did the function return a new array?)
       const toReverse = [{ a: 1 }, { b: 2 }, { c: 3 }];
       const returned = reverseArray(toReverse);
       const areSameArray = toReverse === returned;
       expect(areSameArray).toEqual(false);
     });
     it('does not modify the original array', () => {
-      // test for side-effects
+      // test for side-effects (was the argument's reference modified?)
       const toReverse = [{ a: 1 }, { b: 2 }, { c: 3 }];
       reverseArray(toReverse);
       expect(toReverse).toEqual([{ a: 1 }, { b: 2 }, { c: 3 }]);

@@ -3,13 +3,13 @@
 describe('arrays and objects, similar but different.', () => {
   describe('arrays:', () => {
     it('an array is equal to itself', () => {
-      const actual = [1, 2, 3];
-      const expected = _;
-      expect(actual).toEqual(expected);
+      const array1 = [1, 2, 3];
+      const alsoArray1 = _;
+      expect(array1).toEqual(alsoArray1);
     });
     it('two different arrays are not strictly equal', () => {
-      const actual = [1, 2, 3];
-      const expected = [1, 2, 3];
+      const array1 = [1, 2, 3];
+      const array2 = [1, 2, 3];
       const areDifferentArrays = _;
       expect(areDifferentArrays).toEqual(true);
     });
@@ -27,13 +27,13 @@ describe('arrays and objects, similar but different.', () => {
   });
   describe('objects', () => {
     it('an object is equal to itself', () => {
-      const actual = { a: 1, b: 2 };
-      const expected = _;
-      expect(actual).toEqual(expected);
+      const object1 = { a: 1, b: 2 };
+      const alsoObject1 = _;
+      expect(object1).toEqual(alsoObject1);
     });
     it('two different objects are not strictly equal', () => {
-      const actual = { a: 1, b: 2 };
-      const expected = { a: 1, b: 2 };
+      const object1 = { a: 1, b: 2 };
+      const object2 = { a: 1, b: 2 };
       const areNotTheSameObject = _;
       expect(areNotTheSameObject).toEqual(true);
     });
