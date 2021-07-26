@@ -18,11 +18,14 @@
 
 */
 
+// the main test suite
 describe('an entire test suite', () => {
+  // one test
   it('a single passing test', () => {
     const hello = 'hello';
     // nothing wrong here!
   });
+  // another test
   it('a single failing test', () => {
     const notAFunction = 'hello !';
     notAFunction();

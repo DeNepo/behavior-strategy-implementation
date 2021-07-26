@@ -15,7 +15,7 @@ console.log('-- begin --');
  * @param {Function} callback - how to check each item
  * @returns {boolean} if the callback returned truthy for each item
  */
-const every = (arr, callback) => {
+const every = (arr = [], callback = () => {}) => {
   let allAreTrue = true;
   for (let i = 0; i < arr.length; i++) {
     const entry = arr[i];

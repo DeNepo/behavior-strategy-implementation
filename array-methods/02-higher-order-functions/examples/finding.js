@@ -15,7 +15,7 @@ console.log('-- begin --');
  * @param {Function} callback - how to check each item
  * @returns {any} the found item or undefined
  */
-const find = (arr, callback) => {
+const find = (arr = [], callback = () => {}) => {
   let found;
   for (let i = 0; i < arr.length; i++) {
     const entry = arr[i];

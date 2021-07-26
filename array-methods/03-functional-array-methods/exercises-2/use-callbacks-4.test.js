@@ -1,10 +1,11 @@
 'use strict';
 
 /**
- * sums all numbery strings in an array
- * returns 0 if the array is empty
- * @param {string[]} arr - the array of strings
- * @returns {number} the sum of all numbery strings
+ * Sums all numbery strings in an array.
+ * Returns 0 if the array is empty.
+ *
+ * @param {string[]} arr - The array of strings.
+ * @returns {number} The sum of all numbery strings.
  */
 const sumNumbery = (arr) => {
   // these work, you need to pass them to the right array methods
@@ -23,14 +24,22 @@ const sumNumbery = (arr) => {
 
   // fill in the array methods and pass the correct logic
   const areAllStrings = arr._(_); // a boolean value
+  if (!areAllStrings) {
+    return _;
+  }
 
-  const sumOfNumber = arr._(_)._(_)._(_, _); // a number
+  const sumOfNumbery = arr._(_)._(_)._(_, _);
 
-  return sumOfNumber;
+  return sumOfNumbery;
 };
 
 describe('sumNumbery: sums all the numbery strings in an array', () => {
   describe('it correctly sums the entries', () => {
+    it('returns zero if all values are not a string', () => {
+      const expected = 0;
+      const actual = sumNumbery(['1', 'e', 4, '!', true]);
+      expect(actual).toEqual(expected);
+    });
     it('returns zero for an empty array', () => {
       const expected = 0;
       const actual = sumNumbery([]);

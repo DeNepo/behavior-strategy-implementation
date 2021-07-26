@@ -15,8 +15,8 @@ console.log('-- begin --');
  * @param {any} initialValue - (optional) the initial accumulator value
  * @returns {Array} a new array with the reduceped items
  */
-const reduce = (arr, callback, initialValue) => {
-  let accumulator;
+const reduce = (arr = [], callback = () => {}, initialValue = arr[0]) => {
+  let accumulator = initialValue;
   let firstIndex;
 
   if (initialValue === undefined) {

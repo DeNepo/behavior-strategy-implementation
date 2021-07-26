@@ -17,7 +17,7 @@ const stub = () => {};
 const whileLoop = (max) => {
   let countUp = _;
   const result = [];
-  while (++countUp < max) {
+  while (_) {
     const nextEntry = countUp % 15 === 0 ? '_' : _ ? 'buzz' : _ ? 'fizz' : _;
     result.push(nextEntry);
   }

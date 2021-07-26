@@ -677,6 +677,7 @@ Helpful resources for this module
   - why is style important? [stackoverflow](https://stackoverflow.com/questions/127916/is-programming-style-important-how-important), [Nicholas C. Zakas](https://www.smashingmagazine.com/2012/10/why-coding-style-matters/)
   - [what is a style guide?](https://www.youtube.com/watch?v=UQd-50Pew94)
   - [airbnb style guide](https://github.com/airbnb/javascript)
+  - [writing readable code](https://www.youtube.com/watch?v=8WF4AjM-XW8)
 - **Formatting**
   - [prettier.io](https://prettier.io/)
 - **Linting**
@@ -898,7 +899,7 @@ Looking for an extra challenge? try writing and passing tests for a function tha
 
 Code Quality! Code Review!
 
-In the last two weeks you've explored all the different ways people solve coding problems, and discovered many of the strange things JavaScript is capable of. This week it's time to focus in on best practices. You will learn how to use automated tools to check your own code's quality, and a check-list to review each other's code:
+In the last two weeks you've explored all the different ways people solve coding problems, and discovered many of the strange things JavaScript is capable of. This week it's time to focus in on best practices and writing code that matches your group's conventions. You will learn how to use automated tools to check your own code's quality, and a check-list to review each other's code:
 
 - **Generated Documentation**: Use [jsdoc-to-markdown](https://github.com/jsdoc2md/jsdoc-to-markdown/) to convert your JSDoc comments into markdown documentation in a README file.
 - **Testing**: Use unit tests to show that your code does what you think it does.
@@ -1024,3 +1025,5 @@ Take a look at these examples/exercises, they will be helpful:
 > [Yildiray](https://github.com/yildiraykoyuncu), [Samir](https://github.com/samirm00), [Evan](https://github.com/colevanderswands)
 
 - Week 1: [behavior vs. strategy vs. implementation & solution write-ups](https://vimeo.com/571143720)
+- Week 2: [function design & fuzz testing](https://vimeo.com/579315057)
+- Week 2: [linting and code review](https://vimeo.com/579315724)

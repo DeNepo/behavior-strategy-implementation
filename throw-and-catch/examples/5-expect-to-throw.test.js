@@ -14,7 +14,7 @@ describe('.toThrow', () => {
     const throwsWrongError = () => {
       null();
     };
-    expect(throwsWrongError).toThrow(TypeError, 'null is not a function');
+    expect(throwsWrongError).toThrow('null is not a function');
   });
   it('should throw a specific error (2)', () => {
     const throwsWrongError = () => {

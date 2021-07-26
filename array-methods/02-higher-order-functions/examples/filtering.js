@@ -17,7 +17,7 @@ console.log('-- begin --');
  * @param {Function} callback - how to check each item
  * @returns {Array} a new array with the filtered items
  */
-const filter = (arr, callback) => {
+const filter = (arr = [], callback = () => {}) => {
   const filtered = [];
   for (let i = 0; i < arr.length; i++) {
     const entry = arr[i];

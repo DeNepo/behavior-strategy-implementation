@@ -1,7 +1,7 @@
 /* https://eslint.org/docs/rules/no-unreachable-loop
 
-  do not have lines of code that can never be reached
-  extra lines make your code harder to understand and debug
+  a loop that never repeats is confusing
+  people expect iteration but it's really just a single line of code
 
 */
 

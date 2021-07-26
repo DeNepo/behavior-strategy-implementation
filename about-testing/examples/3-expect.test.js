@@ -18,7 +18,9 @@ try {
   console.log(err);
 }
 
+// the main test suite
 describe('about expect', () => {
+  // a nested test suite focusing on how to test primitive values
   describe('toEqual: primitives', () => {
     // comparing primitives with toEqual is the same as using Object.is
     // the name toEqual is confusing because it makes you think of ===
@@ -43,6 +45,7 @@ describe('about expect', () => {
     });
   });
 
+  // a nested test suite focusing on how to test with deep comparison
   describe('toEqual: deep comparing arrays and objects', () => {
     // the assertion method toEqual is not the same as ===
     //  it will actually do a deep comparison of objects and arrays
@@ -62,6 +65,7 @@ describe('about expect', () => {
     });
   });
 
+  // a nested suite focusing on how to test references
   describe('toEqual: testing references', () => {
     // to check if two arrays or objects share a reference
     //  you can assert a check with ===
@@ -74,7 +78,7 @@ describe('about expect', () => {
     it('different arrays in memory', () => {
       const arr1 = [1, 2, 3];
       const arr2 = [1, 2, 3];
-      const areTheSameArray = arr1 === arr2;
+      const areTheSameArray = arr1w === arr2;
       expect(areTheSameArray).toEqual(false);
     });
     it('the same object in memory', () => {

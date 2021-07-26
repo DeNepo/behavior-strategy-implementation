@@ -37,7 +37,9 @@ const reverseArray = (arr = []) => {
   // return reversed
 };
 
+// the main test suite
 describe('reverseArray should reverse an array', () => {
+  // a nested test suite
   describe('returns the right things', () => {
     it('has an empty array as default parameter', () => {
       const actual = reverseArray();
@@ -60,6 +62,7 @@ describe('reverseArray should reverse an array', () => {
       expect(actual).toEqual(expected);
     });
   });
+  // another nested test suite
   describe('has no side-effects', () => {
     it('returns a new array', () => {
       // test for reference inequality (did the function return a new array?)

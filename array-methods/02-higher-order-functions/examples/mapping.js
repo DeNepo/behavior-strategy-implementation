@@ -16,7 +16,7 @@ console.log('-- begin --');
  * @param {Function} callback - how to map each item
  * @returns {Array} a new array with the mapped items
  */
-const map = (arr, callback) => {
+const map = (arr = [], callback) => {
   const mappedEntries = [];
   for (let i = 0; i < arr.length; i++) {
     const entry = arr[i];

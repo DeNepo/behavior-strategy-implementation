@@ -14,7 +14,7 @@ console.log('-- begin --');
  * @param {Function} callback - how to reduce each item
  * @returns {Array} a new array with the reduceped items
  */
-const reduce = (arr, callback) => {
+const reduce = (arr = [], callback = () => {}) => {
   let accumulator = arr[0];
   for (let i = 1; i < arr.length; i++) {
     const currentValue = arr[i];
