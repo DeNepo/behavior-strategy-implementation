@@ -7,7 +7,9 @@
  *  repetitions must be greater than zero, and must be an integer
  * @return {string} the text repeated as many times as repetitions
  */
-const stub = () => {};
+const stub = (text = '', repetitions = 1) => {
+  return ''; // return a default value of the correct type, to get started with something
+};
 
 /*
   your strategy goes here

@@ -82,7 +82,20 @@ Describe your function's behavior and usage in more detail by completing the JSD
 
 ---
 
-### 3. Tests
+### 3. Stub
+
+> Stub is a piece of code that is a placeholder (i.e. something you are going to fill up).
+> This is the first step you will have to complete on your own.
+
+- <a href='./examples/repeat-a-string/4-stub.test.js?study' target='_blank'>./examples/repeat-a-string/4-stub.test.js</a>
+
+Fill in the empty function with arguments and return type matching the JSDoc.
+You will now want to comment out `secretSolution` in the `for-of` loop and uncomment the `stub`,
+run the tests and see what happens! (there will be many failures, that's to be expected).
+
+---
+
+### 4. Tests
 
 > some exercises will come with starter tests, that's just a start. add more!
 
@@ -104,19 +117,6 @@ So be sure to run your tests against the `secretSolution` before testing your ow
 If a test fails the `secretSolution` then you know the test is bad, adjust it until it passes before moving on.
 
 Finally, don't worry yourself trying to write perfect tests for every possible case. You can always add more tests as you design your solution.
-
----
-
-### 4. Stub
-
-> Stub is a piece of code that is a placeholder (i.e. something you are going to fill up).
-> This is the first step you will have to complete on your own.
-
-- <a href='./examples/repeat-a-string/4-stub.test.js?study' target='_blank'>./examples/repeat-a-string/4-stub.test.js</a>
-
-Fill in the empty function with arguments and return type matching the JSDoc.
-You will now want to comment out `secretSolution` in the `for-of` loop and uncomment the `stub`,
-run the tests and see what happens! (there will be many failures, that's to be expected).
 
 ---
 
