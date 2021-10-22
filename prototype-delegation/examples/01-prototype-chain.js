@@ -1,3 +1,5 @@
+// #todo
+
 'use strict';
 
 /* the Prototype Chain
@@ -20,40 +22,30 @@
       JS Tutor does not visualize prototype chains as clearly as the debugger
 */
 
-
-
-
 // Object.prototype is referenced by the other main classes
 const _ObjectPrototype = Object.prototype;
 // Object.prototype.__proto__ references null
 const _ObjectPrototype__proto__ = Object.prototype.__proto__;
-
-
-
 
 // Array.prototype contains all the array methods
 const ArrayPrototype = Array.prototype;
 // Array.prototype.__proto__ references Object.prototype
 const ArrayPrototype__proto__ = Array.prototype.__proto__;
 
-
 // Boolean.prototype contains all the boolean methods
 const BooleanPrototype = Boolean.prototype;
 // Boolean.prototype.__proto__ references Object.prototype
 const BooleanPrototype__proto__ = Boolean.prototype.__proto__;
-
 
 // Function.prototype contains all the function methods
 const FunctionPrototype = Function.prototype;
 // Function.prototype.__proto__ references Object.prototype
 const FunctionPrototype__proto__ = Function.prototype.__proto__;
 
-
 // Number.prototype contains all the number methods
 const NumberPrototype = Number.prototype;
 // Function.prototype.__proto__ references Object.prototype
 const NumberPrototype__proto__ = Number.prototype.__proto__;
-
 
 // String.prototype contains all the string methods
 const StringPrototype = String.prototype;

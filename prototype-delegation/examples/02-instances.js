@@ -1,3 +1,5 @@
+// #todo
+
 'use strict';
 
 /* Instances
@@ -15,9 +17,8 @@
       JS Tutor does not visualize prototype chains as clearly as the debugger
 */
 
-
-
-{ // object literals - instances of Object
+{
+  // object literals - instances of Object
 
   const _2_objectLiteral = {};
 
@@ -31,9 +32,8 @@
   console.log('object literal:', _2_objectLiteral);
 }
 
-
-
-{ // array literals - instances of Array
+{
+  // array literals - instances of Array
   const _3_arrayLiteral = [];
 
   // these two variables reference the same value in JS memory
@@ -51,8 +51,8 @@
   console.log('array literal:', _3_arrayLiteral);
 }
 
-
-{ // string literals - instances of String
+{
+  // string literals - instances of String
   const _3_stringLiteral = '';
 
   // these two variables reference the same value in JS memory
@@ -69,8 +69,8 @@
   console.log('string literal:', _3_stringLiteral);
 }
 
-
-{ // number literals - instances of Number
+{
+  // number literals - instances of Number
   const _3_numberLiteral = 0;
 
   // these two variables reference the same value in JS memory
@@ -87,8 +87,8 @@
   console.log('number literal:', _3_numberLiteral);
 }
 
-
-{ // boolean literals - instances of Boolean
+{
+  // boolean literals - instances of Boolean
   const _3_booleanLiteral = 0;
 
   // these two variables reference the same value in JS memory
@@ -105,9 +105,9 @@
   console.log('boolean literal:', _3_booleanLiteral);
 }
 
-
-{ // es5 function literals - instances of Function
-  const _3_es5Function = function () { };
+{
+  // es5 function literals - instances of Function
+  const _3_es5Function = function () {};
 
   // these two variables reference the same value in JS memory
   const _2b_es5Function__proto__ = _3_es5Function.__proto__;
@@ -123,9 +123,9 @@
   console.log('es5 function literal:', _3_es5Function);
 }
 
-
-{ // es6 function literals - instances of Function
-  const _3_es6Function = () => { };
+{
+  // es6 function literals - instances of Function
+  const _3_es6Function = () => {};
 
   // these two variables reference the same value in JS memory
   const _2b_es6Function__proto__ = _3_es6Function.__proto__;

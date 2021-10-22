@@ -1,7 +1,7 @@
 export const solution = (arr) => {
-  const areAllNumbers = arr.every((entry) => typeof entry === "number");
+  const areAllNumbers = arr.every((entry) => typeof entry === 'number');
   if (!areAllNumbers) {
-    throw new TypeError("arr is not an array of numbers");
+    throw new TypeError('arr is not an array of numbers');
   }
 
   return arr.filter((entry) => entry % 2 === 0);

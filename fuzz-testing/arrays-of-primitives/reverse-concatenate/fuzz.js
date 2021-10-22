@@ -1,5 +1,5 @@
 export const solution = (arr) =>
-  [...arr].reverse().reduce((acc, next) => acc + next, "");
+  [...arr].reverse().reduce((acc, next) => acc + next, '');
 
 export const args = (chance) => {
   const newArgument = [];

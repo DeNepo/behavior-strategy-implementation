@@ -1,5 +1,6 @@
-'use strict';
+// #todo
 
+'use strict';
 
 const booleanLiteral = false;
 
@@ -14,7 +15,6 @@ console.assert(test2, '2. the next step in the delegation chain is ...');
 const test3 = Object._._ === _;
 console.assert(test3, '3. the final step in the delegation chain is ...');
 
-
 // instance methods & properties
 
 const test4 = booleanLiteral.hasOwnProperty('toString') === _;
@@ -25,7 +25,6 @@ console.assert(test5, '5. Boolean.prototype has own property .toString');
 
 const test6 = booleanLiteral.toString === Boolean._._;
 console.assert(test6, '6. booleans delegate .toString');
-
 
 // static methods
 

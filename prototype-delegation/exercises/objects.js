@@ -1,5 +1,6 @@
-'use strict';
+// #todo
 
+'use strict';
 
 const objectLiteral = {};
 
@@ -11,7 +12,6 @@ console.assert(test1, '1. objects delegate to ...');
 const test3 = Object._._ === _;
 console.assert(test3, '3. the final step in the delegation chain is ...');
 
-
 // instance methods & properties
 
 const test4 = objectLiteral.hasOwnProperty('hasOwnProperty') === _;
@@ -22,7 +22,6 @@ console.assert(test5, '5. Object.prototype has own property .hasOwnProperty');
 
 const test6 = objectLiteral.hasOwnProperty === Object._._;
 console.assert(test6, '6. objects delegate .hasOwnProperty');
-
 
 // static methods
 

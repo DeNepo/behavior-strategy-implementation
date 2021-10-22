@@ -1,3 +1,5 @@
+// #todo
+
 'use strict';
 
 /* try/catch blocks
@@ -12,8 +14,6 @@
   it's just nice to know about, and helpful for understanding errors
 
 */
-
-
 
 /*
   browser:
@@ -34,23 +34,16 @@ try {
   notAFunction();
   // nothing in the try block will be executed after the error
   console.log('never happens, error!');
-
 } catch (err) {
   // the error is passed as an argument to the catch block
   // you can do whatever you like in the catch block
   console.log(err.name);
   console.log(err.message);
-
 }
-
 
 try {
   notAFunction();
-
 } catch (o_0) {
   // you can use any variable name in the parenthesis
   console.error(o_0);
-
 }
-
-

@@ -1,3 +1,5 @@
+// #todo
+
 'use strict';
 
 /* console.error
@@ -10,7 +12,6 @@
   it's conventionally used along with try/catch
 
 */
-
 
 console.log('hello!');
 

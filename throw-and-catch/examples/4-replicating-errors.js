@@ -1,3 +1,5 @@
+// #todo
+
 'use strict';
 
 /* Replicate Errors
@@ -17,11 +19,13 @@ try {
   x = false;
   console.assert(false, 'it should throw');
 } catch (err) {
-  console.log(err.message)
+  console.log(err.message);
   console.assert(err.name === 'TypeError', 'name fail');
-  console.assert(err.message === 'Assignment to constant variable.', 'message fail');
+  console.assert(
+    err.message === 'Assignment to constant variable.',
+    'message fail'
+  );
 }
-
 
 console.log('- throw new -');
 try {
@@ -29,5 +33,8 @@ try {
   console.assert(false, 'it should throw');
 } catch (err) {
   console.assert(err.name === 'TypeError', 'name fail');
-  console.assert(err.message === 'Assigment to constant variable.', 'message fail');
+  console.assert(
+    err.message === 'Assigment to constant variable.',
+    'message fail'
+  );
 }

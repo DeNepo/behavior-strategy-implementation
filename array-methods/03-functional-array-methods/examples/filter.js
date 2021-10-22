@@ -1,3 +1,5 @@
+// #todo
+
 'use strict';
 console.log('-- begin --');
 
@@ -6,7 +8,7 @@ console.log('-- begin --');
  * @param {string} str - string to check for "!"
  * @returns {boolean} if str contains "!" or not
  */
-const isEnthusiastic = str => {
+const isEnthusiastic = (str) => {
   return str.includes('!');
 };
 

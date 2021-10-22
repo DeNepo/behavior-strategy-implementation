@@ -9,8 +9,8 @@
   },
   "scripts": {
     "test": "node --experimental-vm-modules node_modules/.bin/jest --silent ",
-    "lint": "eslint --format=codeframe",
-    "format": "prettier"
+    "lint:js": "eslint --format=codeframe",
+    "format": "prettier --write ./"
   },
   "author": "HackYourFutureBelgium",
   "license": "MIT",

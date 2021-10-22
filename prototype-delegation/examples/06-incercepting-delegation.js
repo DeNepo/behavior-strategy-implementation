@@ -1,3 +1,5 @@
+// #todo
+
 'use strict';
 
 /* Intercepting Delegation
@@ -9,11 +11,11 @@
 
 */
 
-
-{ // use the own property "map" instead of the delegated one
+{
+  // use the own property "map" instead of the delegated one
   const _3_arrayLiteral = [];
   _3_arrayLiteral.map = function () {
-    console.log('hello from instance!')
+    console.log('hello from instance!');
   };
   const _3__hasOwnPropertyToString = _3_arrayLiteral.hasOwnProperty('map');
 
@@ -35,8 +37,8 @@
   _3_arrayLiteral.map();
 }
 
-
-{ // you can find this inside of JavaScript as well!
+{
+  // you can find this inside of JavaScript as well!
 
   const _3_arrayLiteral = [];
   const _3__hasOwnPropertyToString = _3_arrayLiteral.hasOwnProperty('toString');
@@ -50,7 +52,9 @@
   //   these two variables reference the same value in JS memory
   const _1b_ArrayPrototype__proto__ = Array.prototype.__proto__;
   const _1a_ObjectPrototype = Object.prototype;
-  const _1__hasOwnPropertyToString = Object.prototype.hasOwnProperty('toString');
+  const _1__hasOwnPropertyToString = Object.prototype.hasOwnProperty(
+    'toString'
+  );
 
   // end of the prototype chain
   const _0_ObjectPrototype__proto__ = Object.prototype.__proto__;

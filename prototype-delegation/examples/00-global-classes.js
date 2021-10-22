@@ -1,3 +1,5 @@
+// #todo
+
 'use strict';
 
 /* Global Classes
@@ -14,34 +16,27 @@ const ArrayClass = Array;
 const ArrayClassType = typeof ArrayClass;
 console.log('Array:', Array);
 
-
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean
 const BooleanClass = Boolean;
 const BooleanClassType = typeof BooleanClass;
 console.log('Boolean:', Boolean);
-
 
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function
 const FunctionClass = Function;
 const FunctionClassType = typeof FunctionClass;
 console.log('Function:', Function);
 
-
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number
 const NumberClass = Number;
 const NumberClassType = typeof NumberClass;
 console.log('Number:', Number);
-
 
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
 const ObjectClass = Object;
 const ObjectClassType = typeof ObjectClass;
 console.log('Object:', Object);
 
-
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
 const StringClass = String;
 const StringClassType = typeof StringClass;
 console.log('String:', String);
-
-

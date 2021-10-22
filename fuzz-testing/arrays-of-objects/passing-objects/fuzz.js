@@ -1,5 +1,5 @@
 export const solution = (arr) =>
-  arr.filter((obj) => !obj.hasOwnProperty("pass") || obj.pass === true);
+  arr.filter((obj) => !obj.hasOwnProperty('pass') || obj.pass === true);
 
 export const args = (chance) => {
   const rando = () => {

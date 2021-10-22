@@ -1,3 +1,5 @@
+// #todo
+
 'use strict';
 console.log('-- begin --');
 
@@ -8,7 +10,7 @@ console.log('-- begin --');
  * @param {any} val - the value to convert
  * @returns {string} "truey" or "falsey"
  */
-const truthiness = _ => {
+const truthiness = (_) => {
   return _;
 };
 

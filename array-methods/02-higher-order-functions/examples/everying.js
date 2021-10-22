@@ -1,3 +1,5 @@
+// #todo
+
 'use strict';
 console.log('-- begin --');
 
@@ -28,7 +30,7 @@ const every = (arr = [], callback = () => {}) => {
 const argArray = [3, 2, null, 8, 'hi'];
 
 // are all values numbers?
-const isANumber = val => {
+const isANumber = (val) => {
   return typeof val === 'number';
 };
 
@@ -37,7 +39,7 @@ const _1_actual = every(argArray, isANumber);
 console.assert(deepCompare(_1_actual, _1_expect), 'Test 1');
 
 // are all values not boolean?
-const isNotBoolean = val => {
+const isNotBoolean = (val) => {
   return typeof val !== 'boolean';
 };
 

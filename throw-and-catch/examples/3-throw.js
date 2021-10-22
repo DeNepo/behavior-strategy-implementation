@@ -1,3 +1,5 @@
+// #todo
+
 'use strict';
 
 /* throw new Error()
@@ -8,8 +10,6 @@
   you can!
 
 */
-
-
 
 try {
   throw new Error('magic');

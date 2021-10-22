@@ -505,8 +505,8 @@ There's sooo many examples and exercises in this repository, it's easy to forget
 
 You can write hashtags in your comments while you're studying, then search for those hashtags later so you don't miss anything. Here's some ideas:
 
-- `// #not-done, still a few blanks left` - search for `#not-done` in VScode to find all the exercises you've started and not finished
-- `// coercion is confusing, #review this again next week` - search for `#review` to find the files you need to study again
+- `// #todo, still a few blanks left` - search for `#todo` in Study Lenses or VScode to find all the exercises you still need to study
+- `// #review, coercion is confusing this again next week` - search for `#review` to find the files you need to study again
 - ... anything goes! Find the hashtags that work for you
 
 ### Module Project Boards
@@ -566,16 +566,15 @@ Helpful resources for this module
   - 🥚 **[./implicit-return](./implicit-return)**
   - 🥚 **[./array-methods](./array-methods)**: Learn array methods by first understanding the strategies they are designed for.
   - 🥚 **[./ecmascript-modules](./ecmascript-modules)**: Learn the first basics of using `import` and `export`. Just enough to complete this module's group exercises. (week 3)
-  - 🐣 **[./hoisting](./hoisting)**: That famous thing about JS! It's not so bad once you get it, the key to understanding hoisting is to understand the program life-cycle: _creation phase_ and _execution phase_. This chapter is more abstract, hoisting is something "invisible" about JavaScript program execution. What's most important is that you are comfortable stepping through code that uses hoisting.
-  - 🐣 **[./linting](./linting)**: Practice using feedback from ESLint to write code that uses consistent style and best practices. (week 3)
   - 🐥 **[./throw-and-catch](./throw-and-catch)**: Go deeper into errors and error handling by throwing and catching your own errors.
   - 🐥 **[./prototype-delegation](./prototype-delegation)**: you _do not_ need to master this! but it will help understand what you see in the debugger, where methods come from, and how to read MDN documentation.
 - **Practice**
   - In this repo
-    - 🥚 **[./about-testing](./about-testing)**: A quick introduction to `describe`, `it`, and `expect`
+    - 🥚 **[./unit-testing](./unit-testing)**: An introduction to writing unit tests with `describe`, `it`, and `expect`
     - 🐣 **[./parsons-problems](./parsons-problems)**: Explore behavior, strategy and implementation by reconstructing different solutions to coding challenges.
     - 🐣 **[./function-design](./function-design)**: Learn a structured approach to understanding and solving coding challenges
     - 🐣 **[./fuzz-testing](./fuzz-testing)**: Write multiple solutions to the same problem, and test your code with random test cases. Using random test cases makes it easier to catch sneaky bugs that you wouldn't think of testing yourself.
+    - 🐥 **[./js-koans](./js-koans)**: study how JS works with unit testing syntax. like `/isolate` from Debugging but with tests instead of `console.assert`
   - Other Repos
     - 🥚,🐣,🐥 **[Solution Write-Ups](https://github.com/HackYourFutureBelgium/solution-write-ups)** Learn to solve coding challenges by studying other people's solutions.
     - 🐣 **[document-and-pass](https://github.com/HackYourFutureBelgium/document-and-pass)**: write your own solutions and documentation to some coding challenges. Practice debugging and using testing libraries in VSCode
@@ -735,7 +734,7 @@ This week take your first step to becoming an expert problem solver by studying 
   - Read through the README, this will be your main exercise for the week.
   - Follow the instructions in **Getting Started** to locally set up your repository.
   - Practice running the `sandbox.test.js` file in the example write-up, in VSCode and the browser. (instructions in **Getting Started**)
-- Read through [./about-testing/examples](./about-testing/examples) to be familiar with the syntax for `describe`, `it`, and `expect`
+- Read through [./unit-testing/examples](./unit-testing/examples) to be familiar with the syntax for `describe`, `it`, and `expect`
 - Create an account on [Edabit](https://edabit.com)
 
 ### During Class
@@ -827,7 +826,7 @@ Practice reconstructing different solutions to the same coding challenge:
 
 These exercises will help you understand test cases, and be important for next week:
 
-- 🐣 **[./about-testing](./about-testing)**
+- 🐣 **[./unit-testing](./unit-testing)**
 
 Here's some important JS concepts you should start learning about:
 
@@ -853,7 +852,7 @@ Learn to write unit tests and to design your own solutions one step at a time.
 
 ### Before Class
 
-- Practice Testing Functions from [./about-testing/exercises](./about-testing/exercises)
+- Practice Testing Functions from [./unit-testing/exercises](./unit-testing/exercises)
 - Read through the steps of Function Design and study the example:
   - [./function-design/README.md](./function-design/README.md)
   - [./function-design/examples/reverse-a-string](./function-design/examples/reverse-a-string)
@@ -880,7 +879,7 @@ Begin studying [document-and-pass](https://github.com/HackYourFutureBelgium/docu
 
 To help you gain a deeper understanding of how to write and test your own solutions, take some time to study these exercises:
 
-- 🥚 **[./about-testing](./about-testing)**
+- 🥚 **[./unit-testing](./unit-testing)**
 - 🐣 **[./function-design](./function-design)**
 - 🐣 **[./fuzz-testing](./fuzz-testing)**
 
@@ -925,7 +924,6 @@ Clone the [practice-code-review](https://github.com/hackyourfuturebelgium/practi
 
 What is Linting? Why is it important?
 
-- **All together**: Fix a few style mistakes in the [./linting](./linting) exercises
 - **In small groups**: take a look through the `practice-code-review` repo one someone's local computer. Can you figure out how to run all the code quality scripts?
 
 #### After Break
@@ -944,8 +942,6 @@ This week's assignment is a group exercise. Your goal isn't to solve as many pro
 One person in your group should fork [practice-code-review](https://github.com/hackyourfuturebelgium/practice-code-review), everyone in your group will work from that repository. There is no need to have a plan or a development strategy since you are not building a project - each pull request will be for a stand-alone solution. Practicing code review now will prepare you for the next module when you begin building collaborative JS websites .
 
 ```markdown
-## Practice Code Review
-
 - [ ] [Repo]()
 - [Project Board]()
   - [ ] issues are created with the `new solution` template
@@ -963,7 +959,6 @@ One person in your group should fork [practice-code-review](https://github.com/h
 
 Take a look at these examples/exercises, they will be helpful:
 
-- 🥚 **[./linting](./linting)**: Practice using feedback from ESLint to write code that uses consistent style and best practices.
 - 🐣 **[./ecmascript-modules](./ecmascript-modules)**: Learn the first basics of using `import` and `export`. Just enough to complete this module's group exercises.
 
 </details>

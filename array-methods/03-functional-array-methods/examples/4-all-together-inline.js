@@ -1,3 +1,5 @@
+// #todo
+
 'use strict';
 
 // a function with chained array methods and inline logic
