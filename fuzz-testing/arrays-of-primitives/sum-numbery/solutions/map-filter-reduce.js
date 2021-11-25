@@ -1,4 +1,4 @@
-const __name__ = (arr) => {
+export const mapFilterReduce = (arr) => {
   // these work, you need to pass them to the right array methods
   const isNotNaN = (entry) => !Number.isNaN(entry);
   const sumNumbers = (acc, next) => acc + next;

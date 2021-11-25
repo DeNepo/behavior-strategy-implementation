@@ -4,11 +4,19 @@
   },
   "fuzz": {
     "save": true,
-    "ask": { "levels": [1, 2, 3, 4] },
+    "ask": false,
+    "variables": false,
+    "flowchart": false,
+    "blanks": false,
+    "openIn": false,
+    "table": "values",
     "run": {
       "type": "module",
-      "debug": true,
       "text": "fuzz"
     }
+  },
+  "study": {
+    "environment": true,
+    "type": "module"
   }
 }

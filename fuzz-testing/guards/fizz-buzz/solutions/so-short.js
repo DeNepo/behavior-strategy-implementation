@@ -1,4 +1,4 @@
-const __name__ = (max) => {
+export const soShort = (max) => {
   if (typeof max !== 'number') {
     throw new _('_');
   }
