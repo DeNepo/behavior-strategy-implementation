@@ -16,7 +16,7 @@
     .prototype - stores an object that is referenced by other .__proto__ properties
 
   Study hints:
-    have the assets/prototype-chain-1.jpeg diagram open while studying this example
+    have the prototype-chain.jpeg diagram open while studying this example
       it will give you a good visual cue for what you're about to learn
     You should study these examples and exercises in the debugger
       JS Tutor does not visualize prototype chains as clearly as the debugger

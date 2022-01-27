@@ -4,8 +4,8 @@ export const mapFilter = (arr) => {
   const castToNumber = (entry) => Number(entry);
 
   // fill in the array methods and which logic to use
-  const numbers = arr._(_);
-  const allValidNumbers = numbers._(_);
+  const numbers = _._(_);
+  const allValidNumbers = _._(_);
 
   return allValidNumbers;
 };

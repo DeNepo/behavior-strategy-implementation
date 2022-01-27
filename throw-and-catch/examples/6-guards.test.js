@@ -69,20 +69,28 @@ describe('addTwoNumbers will only add two numbers', () => {
   });
   describe('both parameters have a type guard', () => {
     it('a must be a number', () => {
-      expect(() => addTwoNumbers('2', 1)).toThrow(
-        new TypeError('a is not a number')
-      );
+      const shouldThrow = () => {
+        addTwoNumbers('2', 1);
+      };
+      expect(shouldThrow).toThrow(new TypeError('a is not a number'));
     });
     it('a cannot be NaN', () => {
-      expect(() => addTwoNumbers(NaN, 1)).toThrow(new TypeError('a is NaN'));
+      const shouldThrow = () => {
+        addTwoNumbers(NaN, 1);
+      };
+      expect(shouldThrow).toThrow(new TypeError('a is NaN'));
     });
     it('b must be a number', () => {
-      expect(() => addTwoNumbers(1, true)).toThrow(
-        new TypeError('b is not a number')
-      );
+      const shouldThrow = () => {
+        addTwoNumbers(1, true);
+      };
+      expect(shouldThrow).toThrow(new TypeError('b is not a number'));
     });
     it('b cannot be NaN', () => {
-      expect(() => addTwoNumbers(1, NaN)).toThrow(new TypeError('b is NaN'));
+      const shouldThrow = () => {
+        addTwoNumbers(1, NaN);
+      };
+      expect(shouldThrow).toThrow(new TypeError('b is NaN'));
     });
   });
 });

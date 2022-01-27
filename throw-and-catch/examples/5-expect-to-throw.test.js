@@ -12,17 +12,23 @@ describe('.toThrow', () => {
     };
     expect(throwsAnError).toThrow();
   });
-  it('should throw a specific error (1)', () => {
-    const throwsWrongError = () => {
+  it('should throw a specific message', () => {
+    const shouldThrow = () => {
       null();
     };
-    expect(throwsWrongError).toThrow('null is not a function');
+    expect(shouldThrow).toThrow('null is not a function');
   });
-  it('should throw a specific error (2)', () => {
-    const throwsWrongError = () => {
+  it('should throw a specific error type', () => {
+    const shouldThrow = () => {
       null();
     };
-    expect(throwsWrongError).toThrow(new TypeError('null is not a function'));
+    expect(shouldThrow).toThrow(TypeError);
+  });
+  it("being more specific doesn't make a difference", () => {
+    const shouldThrow = () => {
+      null();
+    };
+    expect(shouldThrow).toThrow(new TypeError('null is not a function'));
   });
   it('failing: does not throw', () => {
     const doesNotThrow = () => {
