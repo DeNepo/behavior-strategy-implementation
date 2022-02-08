@@ -49,6 +49,12 @@ Examples, exercises and guides for the
 > [this StackOverflow answer](https://stackoverflow.com/a/63424744), that should
 > take care of it ; )
 
+### Running Tests from CLI
+
+You can also run any file with `.test.js` or `.spec.js` from the command line using the **`npm run test -- ./path`** command.
+
+This will use Jest to run the file and print unit test results to your terminal.
+
 ---
 
 ## Materials
