@@ -2,11 +2,8 @@
   "study": {
     "run": true,
     "debug": true,
-    "flowchart": true,
     "save": true,
-    "variables": true,
-    "loopGuard": true,
-    "trace": "values",
+    "table": true,
     "tests": [".test.js", ".spec.js"]
   },
   "--port": 4003

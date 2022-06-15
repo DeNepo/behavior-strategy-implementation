@@ -1,104 +1,426 @@
 # Behavior, Strategy, Implementation
 
-Examples, exercises and guides for the
-[Behavior, Strategy Implementation module](https://home.hackyourfuture.be/curriculum/behavior-strategy-implementation)
+> Be creative while inventing ideas, but be disciplined while implementing them.
+>
+> - [Amit Kalantri](https://amitkalantri.com/tag/quotes-about-creativity/)
+
+- [Learning Objectives](#learning-objectives)
+- [Behavior](#behavior)
+- [Strategy](#strategy)
+- [Implementation](#implementation)
+- [Study Tips](#study-tips)
 
 ---
 
-## Getting Started
+## Learning Objectives
 
-> You will need
-> [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) and
-> [nvm](https://github.com/nvm-sh/nvm#installing-and-updating) on your computer
-> to study this material
->
-> Using a browser with good DevTools will make your life easier:
-> [Chromium](http://www.chromium.org/getting-involved/download-chromium),
-> [FireFox](https://www.mozilla.org/en-US/firefox/new/),
-> [Edge](https://www.microsoft.com/edge),
-> [Chrome](https://www.google.com/chrome/)
+<details>
+<summary>Priorities: 🥚, 🐣, 🐥, 🐔 (click to learn more)</summary>
+<br>
 
-1. Install o update the `study-lenses` package globally
-   - `$ npm install -g study-lenses` (if you do not have it installed)
-   - `$ npm update -g study-lenses` (if you already have it installed)
-   - Didn't work? you may need to try:
-     - (mac) `$ sudo npm install -g study-lenses`
-   - having trouble updating?
-     - try this:
-       `$ npm uninstall -g study-lenses && npm install -g study-lenses`
-2. Fork and clone this repository:
-   1. fork the HackYourFuture repository to your personal account
-      - `git@github.com:HackYourFutureBelgium/behavior-strategy-implementation.git`
-   2. clone your fork to your computer
-   3. when there are updates to the module:
-      1. update your fork with a PR
-      2. pull the changes from your fork to your computer
-3. Navigate to the module repository in terminal
-   - `$ cd behavior-strategy-implementation`
-4. Run the `study` command from your CLI
-   - `$ study`
-5. The material will open in your default browser, you're good to go!
-   - you can read the `study-lenses` user guide from your browser by navigating
-     to `localhost:xxxx?--help`
+There is a lot to learn in this repository. If you can't master all the material
+at once, that's expected! Anything you don't master now will always be waiting
+for you to review when you need it. These 4 emoji's will help you prioritize
+your study time and to measure your progress:
 
-> If you have a windows computer and get this error:
->
-> - `... /study.ps1 cannot be loaded because running scripts ...`
->
-> follow the instructions in
-> [this StackOverflow answer](https://stackoverflow.com/a/63424744), that should
-> take care of it ; )
-
-### Running Tests from CLI
-
-You can also run any file with `.test.js` or `.spec.js` from the command line using the **`npm run test -- ./path`** command.
-
-This will use Jest to run the file and print unit test results to your terminal.
+- 🥚: Understanding this material is required, it covers the base skills you'll
+  need to move on. You do not need to finish all of them but should feel
+  comfortable that you could with enough time.
+- 🐣: You have started all of these exercises and feel you could complete them
+  all if you just had more time. It may not be easy for you but with effort you
+  can make it through.
+- 🐥: You have studied the examples and started some exercises if you had time.
+  You should have a big-picture understanding of these concepts/skills, but may
+  not be confident completing the exercises.
+- 🐔: These concepts or skills are not necessary but are related to this module.
+  If you are finished with 🥚, 🐣 and 🐥 you can use the 🐔 exercises to push
+  yourself without getting distracted from the module's main objectives.
 
 ---
 
-## Materials
+</details>
 
-- **JavaScript**: Learn important features of the JavaScript language:
-  - 🥚 **[./array-methods](./array-methods)**: Learn array methods by first understanding the strategies they are designed for.
-  - 🥚 **[./ecmascript-modules](./ecmascript-modules)**: Learn the first basics of using `import` and `export`. Just enough to complete this module's group exercises. (week 3)
-  - 🐣 **[./prototype-delegation](./prototype-delegation)**: you _do not_ need to master this! but it will help understand what you see in the debugger, where methods come from, and how to read MDN documentation.
-  - 🐥 **[./throw-and-catch](./throw-and-catch)**: Go deeper into errors and error handling by throwing and catching your own errors.
-  - 🐥 **[./js-koans](./js-koans)**: study how JS works with unit testing syntax. like `/isolate` from Debugging but with tests instead of `console.assert`
-- **Skills**: Build your programming skills with these exercises:
-  - 🥚,🐣,🐥 **[Solution Write-Ups](https://github.com/HackYourFutureBelgium/solution-write-ups)** Learn to solve coding challenges by studying other people's solutions. (_separate repository_)
-  - 🥚 **[./unit-testing](./unit-testing)**: An introduction to writing unit tests with `describe`, `it`, and `expect`
-  - 🐣 **[./parsons-problems](./parsons-problems)**: Explore behavior, strategy and implementation by reconstructing different solutions to coding challenges.
-  - 🐣 **[./function-design](./function-design)**: Learn a structured approach to understanding and solving coding challenges
-  - 🐣 **[./fuzz-testing](./fuzz-testing)**: Write multiple solutions to the same problem, and test your code with random test cases. Using random test cases makes it easier to catch sneaky bugs that you wouldn't think of testing yourself.
-  - 🐣 **[practice-code-review](https://github.com/HackYourFutureBelgium/practice-code-review)**: The Chapter 3 group exercises. (_separate repo_)
-  - 🐣 **[document-and-pass](https://github.com/HackYourFutureBelgium/document-and-pass)**: write your own solutions and documentation to some coding challenges. Practice behavior-strategy-implementation and using testing libraries in VSCode. (_separate repo_)
+### [1. Remix](./1-remix/)
 
-### Chapter 1
+Practice studying and remixing other people's solutions to coding challenges. Create your own solutions by mixing and matching pieces from other people's code.
 
-You're not expected to master this material in one week, but starting to
-practice in week 1 will make everything else easier. Practicing a little bit
-every day is the best way to improve.
+- 🐣 **Reconstructing**: You can reconstruct a variety of solutions to the same challenge when they are presented as parsons problems.
+- 🐣 **Analyzing**: You can analyze a function written at your level. This includes:
+  - [ ] **Behavior**: Write documentation, test cases and use cases to describe the function's behavior.
+  - [ ] **Strategy**: Describe the function's strategy using plain english.
+  - [ ] **Implementation**: List the language features in a function and explain how each one is used.
+  - [ ] **Small Changes**: You can think of 2+ changes to the function's _implementation_ that would not change it's _strategy_.
+- 🐣 **Remixing** You can analyze several solutions to the same challenge then ...
+  - [ ] **Write**: Your own solution by remixing the ones you studied.
+  - [ ] **Explain**: How the other solutions inspired yours; what ideas did you take from them? what ideas did you _not_ take?
+  - [ ] **Analyze**: Complete a write-up your own solution as though someone else wrote it.
 
-- 🥚,🐣,🐥 **[Solution Write-Ups](https://github.com/HackYourFutureBelgium/solution-write-ups)**
-- 🥚 **[./unit-testing](./unit-testing)**
-- 🥚 **[./array-methods](./array-methods)**
-- 🐣 **[./parsons-problems](./parsons-problems)**
-- 🐣 **[./prototype-delegation](./prototype-delegation)**
+### [2. Write](./2-write/)
 
-### Chapter 2
+- 🐣 **Function Design**:
+  - [ ] **Writing Tests**: Given a working function, you can write passing test cases to describe it's behavior.
+  - [ ] **Writing Functions**: You can design multiple solutions to the same code challenge, keeping notes about different experiments you tried along the way.
+- [ ] 🐣 **Generating Documentation**: You can write a JSDoc comment for your solutions and run a script to generate markdown documentation.
+- [ ] 🐣 **Fuzz Testing**: You write solutions that pass randomly generated test cases.
+- 🐣 **Test Driven Development**: You can solve open-ended, ambiguous coding challenges at your level:
+  - [ ] **Reading Docs**: You can understand what the function is supposed to do by reading it's JSDoc description.
+  - [ ] **Writing Tests**: You can write test cases _before_ there is a function to test.
+  - [ ] **Writing Functions**: You can write one function that passes the test cases you have prepared (even if it's just 1 test case!).
+  - [ ] **Refactoring**: You can improve your function's implementation _without_ failing any test cases that were passing.
+  - [ ] **Iterative Development**: You can repeat the TDD process until you are satisfied with your test cases and solution.
 
-- 🥚,🐣,🐥 **[Solution Write-Ups](https://github.com/HackYourFutureBelgium/solution-write-ups)**
-- 🐣 **[./function-design](./function-design)**
-- 🐣 **[./fuzz-testing](./fuzz-testing)**
-- 🐥 **[./throw-and-catch](./throw-and-catch)**
+### [3. Review](./3-review/)
 
-### Chapter 3
+- 🐣 **Continuous Integration**: You can check your code's quality _before_ pushing so your CI checks all pass.
+  - [ ] **Formatting**
+  - [ ] **Linting**
+  - [ ] **Testing**
+- [ ] 🐣 **Code Review**: You can use a checklist to give a thorough, positive and constructive review of your classmates' solutions.
+- [ ] 🐔 **Code Coverage**: You can explain what code coverage is, why it's important, and can write unit tests with 100% code coverage.
 
-- 🥚,🐣,🐥 **[Solution Write-Ups](https://github.com/HackYourFutureBelgium/solution-write-ups)**
-- 🥚 **[./ecmascript-modules](./ecmascript-modules)**
-- 🐣 **[practice-code-review](https://github.com/HackYourFutureBelgium/practice-code-review)**: The Chapter 3 group exercises. (_separate repo_)
-- 🐣 **[document-and-pass](https://github.com/HackYourFutureBelgium/document-and-pass)**: (_separate repo_)
+---
+
+## Behavior
+
+What does the function do? What are it’s arguments and it’s return value? How could you use it in a program? Behavior is all about what your function looks like "from the outside", without caring about what is written inside the body.
+
+Functions behavior is generally described using **documentation**, **unit tests** and **use cases**:
+
+### Documentation (JSDoc comment)
+
+```js
+/**
+ * Repeats a string a specific number of times.
+ *
+ * @param {string} [text=''] - the string to repeat. defaults to empty string
+ * @param {number} [repetitions=1] - how many times to repeat. defaults to 1
+ *  Repetitions cannot be negative, and must be an integer.
+ *
+ * @return {string} The text repeated as many times as repetitions.
+ */
+```
+
+### Unit Tests (pass/fail assertions)
+
+```js
+describe('repeats a string any number of times:', () => {
+  describe('an empty string', () => {
+    it('should repeat "" 0 times', () => {
+      expect(repeatString('', 0)).toEqual('');
+    });
+    it('should repeat "" 10 times', () => {
+      expect(repeatString('', 10)).toEqual('');
+    });
+    it('should repeat "" 100 times', () => {
+      expect(repeatString('', 100)).toEqual('');
+    });
+  });
+  describe('zero repetitions', () => {
+    it('a non-empty string repeated 0 times -> ""', () => {
+      expect(repeatString('asdf', 0)).toEqual('');
+    });
+    it('a longer string repeated 0 times -> ""', () => {
+      expect(repeatString('tommywalk', 0)).toEqual('');
+    });
+  });
+  describe('standard use cases', () => {
+    it('should repeat a phrase 3 times', () => {
+      expect(repeatString('go to school', 3)).toEqual(
+        'go to schoolgo to schoolgo to school'
+      );
+    });
+    it('should repeat phrases with punctuation', () => {
+      expect(repeatString('"Go!", said Dr. Seuss?', 2)).toEqual(
+        '"Go!", said Dr. Seuss?"Go!", said Dr. Seuss?'
+      );
+    });
+    it('should repeat strings with special characters', () => {
+      expect(repeatString('\\ \n \t s', 2)).toEqual('\\ \n \t s\\ \n \t s');
+    });
+  });
+  describe('default values', () => {
+    it('should repeat 1 time by default (second parameter)', () => {
+      expect(repeatString('asdf')).toEqual('asdf');
+    });
+    it('should repeat "" by default (first parameter)', () => {
+      expect(repeatString()).toEqual('');
+    });
+  });
+});
+```
+
+### Use Cases ("real-world" examples)
+
+```js
+// repeating a string from the DOM
+
+const userString = document.getElementById('text-input').value;
+const userRepetitions = document.getElementById('number-input').value;
+const repeatedInput = repeatString(userString, userRepetitions);
+document.getElementById('repeated-value-display').innerHTML = repeatedInput;
+```
+
+```js
+// repeating a string inside an I/O loop
+
+let repeatedText = '';
+while (true) {
+  const userString = getString('input a string to repeat');
+  const userRepetitions = getNumber('how many times to repeat it?');
+  const repeatedInput = repeatString(userString, userRepetitions);
+  const userConfirmed = confirm(`is this correct: "${repeatedInput}"`);
+  if (userConfirmed) {
+    repeatedText = repeatedInput;
+    break;
+  }
+}
+console.log(repeatedText);
+```
+
+## Strategy
+
+How do you approach solving the problem? There are many strategies to solve the same problem! A way to practice strategy is to think of transforming the arguments to the return value in small steps, _focusing on the data not the code_. This is the realm of flow charts, diagrams, and pseudo-code.
+
+One way to approach strategy is to solve the problem a few different ways by hand, writing what you expect to change in memory at each step. Like if you were the debugger and you couldn't see the source code. Using a pencil and paper is a the best way to go, pick a few test cases and see how you'd solve them manually.
+
+Here are four possible strategies to approach repeating a string. Each one is written as block comment with step-by-step goals focusing on _what_ should happen at each step, not _how_ it will happen. This type of comment is helpful to include in your code:
+
+### Iterate until string is long enough
+
+```js
+/* iterating until the new string's length is correct
+
+  repeatString(text, repetitions) =>
+    1. calculate the final length for the new string
+    2. create a new string to fill with many text's
+    3. iterate as long as the new string is too short
+      a. check if the new string is long enough
+        stop if it is, keep going if it is not
+      b. append text to the new string
+      c. repeat
+    return: the new repeated string
+
+*/
+```
+
+### Iteration with a stepper variable
+
+```js
+/* iterating over the number of repetitions
+
+  repeatString(text, repetitions) =>
+    1. create a new string to fill with many text's
+    2. create a stepper variable, starting at 0
+    3. iterate from 0 to repetitions
+      a. check if stepper is still less than repetitions
+        keep going if it is, otherwise stop iterating
+      b. append text to the new string
+      c. increment the stepper
+      d. repeat
+    return: the new repeated string
+
+*/
+```
+
+### Recurse with base-case 0
+
+```js
+/* recursion with base-case 0
+
+  i'm using 0 as the base-case because that is the fewest possible repetitions
+  zero repetitions is an empty string, so if repetitions is 0 it will return ''
+
+  otherwise i'll need to combine the text with a string that has one fewer reptitions
+
+  repeatString(text, repetitions) =>
+    base-case: repetitions is 0
+      return: an empty string
+    recursive case: repetitions is greater than 0
+      nextRepetitions = subtract one from repetitions
+      recursedValue = recursively call repeatString with text and nextRepetitions
+      return: text + recursedValue
+
+*/
+```
+
+### Native JS methods
+
+```js
+/* use built-in .js methods
+
+  repeatString(text, repetitions) =>
+    1. make sure the data is the correct type and format for the method you're using
+    2. use the method
+    return: the result
+
+*/
+```
+
+## Implementation
+
+Which language features and which lines of code can you use to make your strategy a reality? There are many ways to code the same strategy. let's look at multiple implementations for each strategy described above, all of these functions will pass the unit tests written in the _Behavior_ section:
+
+### Iterate Until String is Long Enough
+
+#### While loop, true and break
+
+```js
+/* unconventional and pretty old-school
+  there is a lot of reinventing the wheel
+  while loops are designed to check conditions, not iterate a fixed number of times
+  this is not the simplest solution to read or maintain
+*/
+const repeatString = (text = '', repetitions = 1) => {
+  const finalLength = text.length * repetitions;
+  let repeatedText = '';
+  while (true) {
+    if (repeatedText.length === finalLength) {
+      break;
+    }
+    repeatedText = repeatedText + text;
+  }
+  return repeatedText;
+};
+```
+
+#### While loop, logic in head
+
+```js
+/* the cleanest implementation for this strategy
+  it uses the language feature designed for this type of strategy
+*/
+const repeatString = (text = '', repetitions = 1) => {
+  const finalLength = text.length * repetitions;
+  let repeatedText = '';
+  while (repeatedText.length < finalLength) {
+    repeatedText += text;
+  }
+  return repeatedText;
+};
+```
+
+#### For loop with only a condition check
+
+```js
+/* not the best implementation, it's confusing to read
+  this strategy does not use stepping, and for loops are designed for stepping
+  implementing this strategy with a for loop is putting a square peg in a round hole
+
+  when someone sees a for loop they expect it to be used like a for loop
+  this implementation uses a for loop like a while loop
+  the computer doesn't care, but the intention is confusing for other devs
+*/
+const repeatString = (text = '', repetitions = 1) => {
+  const finalLength = text.length * repetitions;
+  let repeatedText = '';
+  for (; repeatedText.length < finalLength; ) {
+    repeatedText += text;
+  }
+  return repeatedText;
+};
+```
+
+### Iteration with Stepper Variable
+
+#### While loop, true and break
+
+```js
+/* unconventional and pretty old-school
+  there is a lot of reinventing the wheel
+  while loops are designed to check conditions, not iterate a fixed number of times
+  this is not the simplest solution to read or maintain
+*/
+const repeatString = (text = '', repetitions = 1) => {
+  let repeatedText = '';
+  let count = 0;
+  while (true) {
+    if (count === repetitions) {
+      break;
+    }
+    repeatedText += text;
+    count++;
+  }
+  return repeatedText;
+};
+```
+
+#### While loop, condition in head
+
+```js
+/* a better way to use the while loop since the condition is known
+  easier to read and more conventional than the previous implementation
+  maybe you find this easier to read than a for loop
+*/
+const repeatString = (text = '', repetitions = 1) => {
+  let repeatedText = '';
+  let count = 0;
+  while (count < repetitions) {
+    repeatedText = repeatedText + text;
+    count++;
+  }
+  return repeatedText;
+};
+```
+
+#### For loop
+
+```js
+/* the cleanest implementation for this strategy
+  it uses the language feature designed for stepping
+*/
+const repeatString = (text = '', repetitions = 1) => {
+  let repeatedText = '';
+  for (let count = 0; count < repetitions; count++) {
+    repeatedText += text;
+  }
+  return repeatedText;
+};
+```
+
+### Recursion with Base-Case 0
+
+#### Ternary Operator
+
+```js
+// in all it's ES6 one-line glory
+// some people find this easier to read than conditionals
+const repeatString = (text = '', repetitions = 1) =>
+  repetitions === 0 ? '' : text + repeatString(text, nextRepetitions - 1);
+```
+
+#### Conditional Statement
+
+```js
+// good old fashioned conditional blocks
+// some people find this easier to read than ternaries
+const repeatString = (text = '', repetitions = 1) => {
+  if (repetitions === 0) {
+    return '';
+  } else {
+    return text + repeatString(text, repetitions - 1);
+  }
+};
+```
+
+### Built-In JS Methods
+
+#### Sting.prototype.repeat
+
+```js
+// short and sweet, no room for mistakes
+const repeatString = (text = '', repetitions = 1) => text.repeat(repetitions);
+```
+
+#### Array.prototype.fill
+
+```js
+// less clear and more complex, but still pretty clear to read
+const repeatString = (text = '', repetitions = 1) => {
+  const oneEntryPerRepetition = Array(repetitions).fill(text);
+  const repeatedString = oneEntryPerRepetition.join('');
+  return repeatedString;
+};
+```
 
 ---
 

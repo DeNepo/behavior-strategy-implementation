@@ -1,0 +1,8 @@
+{
+  "--defaults": {
+    "directory": "stepped"
+  },
+  "study": {
+    "save": false
+  }
+}

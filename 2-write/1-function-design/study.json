@@ -1,0 +1,7 @@
+{
+  "stepped": {
+    "save": true,
+    "type": "module",
+    "tests": [".spec.js"]
+  }
+}

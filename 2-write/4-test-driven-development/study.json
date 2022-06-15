@@ -1,0 +1,9 @@
+{
+  "study": {
+    "type": "module",
+    "environment": true,
+    "trace": false,
+    "variables": false,
+    "loopGuard": false
+  }
+}
