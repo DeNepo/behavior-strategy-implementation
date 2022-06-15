@@ -86,7 +86,8 @@ What does the function do? What are it’s arguments and it’s return value? Ho
 
 Functions behavior is generally described using **documentation**, **unit tests** and **use cases**:
 
-### Documentation (JSDoc comment)
+<details>
+<summary><strong>Documentation (JSDoc comment)</strong></summary>
 
 ```js
 /**
@@ -100,9 +101,14 @@ Functions behavior is generally described using **documentation**, **unit tests*
  */
 ```
 
-### Unit Tests (pass/fail assertions)
+</details>
+
+<details>
+<summary><strong>Unit Tests (pass/fail assertions)</strong></summary>
 
 ```js
+import { repeatString } from './repeat-string.js';
+
 describe('repeats a string any number of times:', () => {
   describe('an empty string', () => {
     it('should repeat "" 0 times', () => {
@@ -149,33 +155,23 @@ describe('repeats a string any number of times:', () => {
 });
 ```
 
-### Use Cases ("real-world" examples)
+</details>
+
+<details>
+<summary><strong>Use Cases ("real-world" examples)</strong></summary>
 
 ```js
-// repeating a string from the DOM
+import { repeatString } from './repeat-string.js';
 
-const userString = document.getElementById('text-input').value;
-const userRepetitions = document.getElementById('number-input').value;
+const userString = document.getElementById('user-text').value;
+const userRepetitions = Number(document.getElementById('user-number').value);
+
 const repeatedInput = repeatString(userString, userRepetitions);
-document.getElementById('repeated-value-display').innerHTML = repeatedInput;
+
+document.getElementById('display-repeated').innerText = repeatedInput;
 ```
 
-```js
-// repeating a string inside an I/O loop
-
-let repeatedText = '';
-while (true) {
-  const userString = getString('input a string to repeat');
-  const userRepetitions = getNumber('how many times to repeat it?');
-  const repeatedInput = repeatString(userString, userRepetitions);
-  const userConfirmed = confirm(`is this correct: "${repeatedInput}"`);
-  if (userConfirmed) {
-    repeatedText = repeatedInput;
-    break;
-  }
-}
-console.log(repeatedText);
-```
+</details>
 
 ## Strategy
 
@@ -185,7 +181,8 @@ One way to approach strategy is to solve the problem a few different ways by han
 
 Here are four possible strategies to approach repeating a string. Each one is written as block comment with step-by-step goals focusing on _what_ should happen at each step, not _how_ it will happen. This type of comment is helpful to include in your code:
 
-### Iterate until string is long enough
+<details>
+<summary><strong>Iterate until string is long enough</strong></summary>
 
 ```js
 /* iterating until the new string's length is correct
@@ -203,7 +200,10 @@ Here are four possible strategies to approach repeating a string. Each one is wr
 */
 ```
 
-### Iteration with a stepper variable
+</details>
+
+<details>
+<summary><strong>Iteration with a stepper variable</strong></summary>
 
 ```js
 /* iterating over the number of repetitions
@@ -222,7 +222,10 @@ Here are four possible strategies to approach repeating a string. Each one is wr
 */
 ```
 
-### Recurse with base-case 0
+</details>
+
+<details>
+<summary><strong>Recursion with base-case 0</strong></summary>
 
 ```js
 /* recursion with base-case 0
@@ -243,7 +246,10 @@ Here are four possible strategies to approach repeating a string. Each one is wr
 */
 ```
 
-### Native JS methods
+</details>
+
+<details>
+<summary><strong>Built-In JS Methods</strong></summary>
 
 ```js
 /* use built-in .js methods
@@ -256,13 +262,18 @@ Here are four possible strategies to approach repeating a string. Each one is wr
 */
 ```
 
+</details>
+
 ## Implementation
 
 Which language features and which lines of code can you use to make your strategy a reality? There are many ways to code the same strategy. let's look at multiple implementations for each strategy described above, all of these functions will pass the unit tests written in the _Behavior_ section:
 
 ### Iterate Until String is Long Enough
 
-#### While loop, true and break
+</details>
+
+<details>
+<summary><strong>While Loop, true/break</strong></summary>
 
 ```js
 /* unconventional and pretty old-school
@@ -283,7 +294,10 @@ const repeatString = (text = '', repetitions = 1) => {
 };
 ```
 
-#### While loop, logic in head
+</details>
+
+<details>
+<summary><strong>While Loop, logic in head</strong></summary>
 
 ```js
 /* the cleanest implementation for this strategy
@@ -299,7 +313,10 @@ const repeatString = (text = '', repetitions = 1) => {
 };
 ```
 
-#### For loop with only a condition check
+</details>
+
+<details>
+<summary><strong>For Loop with only a condition</strong></summary>
 
 ```js
 /* not the best implementation, it's confusing to read
@@ -320,9 +337,12 @@ const repeatString = (text = '', repetitions = 1) => {
 };
 ```
 
+</details>
+
 ### Iteration with Stepper Variable
 
-#### While loop, true and break
+<details>
+<summary><strong>While Loop, true/break</strong></summary>
 
 ```js
 /* unconventional and pretty old-school
@@ -344,7 +364,10 @@ const repeatString = (text = '', repetitions = 1) => {
 };
 ```
 
-#### While loop, condition in head
+</details>
+
+<details>
+<summary><strong>While Loop, condition in head</strong></summary>
 
 ```js
 /* a better way to use the while loop since the condition is known
@@ -362,7 +385,10 @@ const repeatString = (text = '', repetitions = 1) => {
 };
 ```
 
-#### For loop
+</details>
+
+<details>
+<summary><strong>For Loop</strong></summary>
 
 ```js
 /* the cleanest implementation for this strategy
@@ -377,22 +403,16 @@ const repeatString = (text = '', repetitions = 1) => {
 };
 ```
 
+</details>
+
 ### Recursion with Base-Case 0
 
-#### Ternary Operator
-
-```js
-// in all it's ES6 one-line glory
-// some people find this easier to read than conditionals
-const repeatString = (text = '', repetitions = 1) =>
-  repetitions === 0 ? '' : text + repeatString(text, nextRepetitions - 1);
-```
-
-#### Conditional Statement
+<details>
+<summary><strong>If/Else with blocks</strong></summary>
 
 ```js
 // good old fashioned conditional blocks
-// some people find this easier to read than ternaries
+//  it takes more space but can be more clear to read
 const repeatString = (text = '', repetitions = 1) => {
   if (repetitions === 0) {
     return '';
@@ -402,16 +422,50 @@ const repeatString = (text = '', repetitions = 1) => {
 };
 ```
 
+</details>
+
+<details>
+<summary><strong>If/Else with blocks</strong></summary>
+
+```js
+// conditional statements without the blocks
+//  shorter, but still with helpful keywords
+const repeatString = (text = '', repetitions = 1) => {
+  if (repetitions === 0) return '';
+  else return text + repeatString(text, repetitions - 1);
+};
+```
+
+</details>
+
+<details>
+<summary><strong>Implicit Return with Ternary Operator</strong></summary>
+
+```js
+// in all it's ES6 two-line glory
+//  the shortest implementation, do you think it's easiest to read?
+const repeatString = (text = '', repetitions = 1) =>
+  repetitions === 0 ? '' : text + repeatString(text, nextRepetitions - 1);
+```
+
+</details>
+
 ### Built-In JS Methods
 
-#### Sting.prototype.repeat
+</details>
+
+<details>
+<summary><strong>Sting.prototype.repeat</strong></summary>
 
 ```js
 // short and sweet, no room for mistakes
 const repeatString = (text = '', repetitions = 1) => text.repeat(repetitions);
 ```
 
-#### Array.prototype.fill
+</details>
+
+<details>
+<summary><strong>Array.prototype.fill</strong></summary>
 
 ```js
 // less clear and more complex, but still pretty clear to read
@@ -421,6 +475,10 @@ const repeatString = (text = '', repetitions = 1) => {
   return repeatedString;
 };
 ```
+
+</details>
+
+[TOP](#behavior-strategy-implementation)
 
 ---
 
@@ -444,26 +502,6 @@ const repeatString = (text = '', repetitions = 1) => {
 - Take a look through the
   [Learning From Code](https://home.hackyourfuture.be/students/study-tips/learning-from-code)
   guide for more study tips
-
-### Priorities
-
-If you can't finish all the material in this repository, that's expected!
-Anything you don't finish now will always be waiting for you to review when you
-need it. These 4 emoji's will help you prioritize your study time and to measure
-your progress:
-
-- 🥚: Understanding this material is required, it covers the base skills you'll
-  need for this module and the next. You do not need to finish all of them but
-  should feel comfortable that you could with enough time.
-- 🐣: You have started all of these exercises and feel you could complete them
-  all if you just had more time. It may not be easy for you but with effort you
-  can make it through.
-- 🐥: You have studied the examples and started some exercises if you had time.
-  You should have a big-picture understanding of these concepts/skills, but may
-  not be confident completing the exercises.
-- 🐔: These concepts or skills are not necessary but are related to this module.
-  If you are finished with 🥚, 🐣 and 🐥 you can use the 🐔 exercises to push
-  yourself without getting distracted from the module's main objectives.
 
 ### Hashtags
 
@@ -493,56 +531,6 @@ These 4 columns may be helpful:
 - **to review**: material you want to review again in the future
 - **learned**: material you know well enough that you could help your classmates
   learn it
-
-</details>
-
-[TOP](#behavior-strategy-implementation)
-
----
-
-## Code Quality Scripts
-
-<details>
-<summary>expand/collapse</summary>
-<br>
-
-This repository comes with some scripts to check the quality of this code. You
-can run these scripts to check the code provided by HYF, and to check the code
-you write when experiment with the examples and complete the exercises.
-
-### `npm run format`
-
-This script will format all of the code in this repository making sure that all
-the indentations are correct, the code is easy to read, and letting you know if
-there are any syntax errors.
-
-### `npm run spell-check`
-
-This script will check all of the files in your repository for spelling
-mistakes. Spelling is not just a detail, is important! Good spelling helps
-others read and understand your programs with less effort.
-
-`spell-check` is not so clever though, it doesn't have _all_ possible words in
-it's dictionary and it won't know if you _wanted_ to spell a word incorrectly.
-If you think one of it's "Unknown word"s is not a problem, you can either ignore
-the suggestion or add the word to the `"words": [ ... ],` list in
-[.cspell.json](./.cspell.json).
-
-### `npm run lint:md`
-
-This script will [lint](https://en.wikipedia.org/wiki/Lint_%28software%29) all
-the Markdown files in this repository, checking for syntax mistakes and other
-bad practices. Fixing linting errors will help you learn to write better code by
-pointing out your mistakes _before_ they cause problems in your program.
-
-Some linting errors will take some practice to understand and fix, but it will
-be a good use of time.
-
-### `npm run lint:js -- ./path/to/code`
-
-Just like `lint:md`, but for `.js` files. This script will lint all of the JS
-files in this repository, letting you know if there are any syntax errors or bad
-practices.
 
 </details>
 
