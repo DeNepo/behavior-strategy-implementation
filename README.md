@@ -68,6 +68,7 @@ Practice studying and remixing other people's solutions to coding challenges. Cr
   - [ ] **Writing Functions**: You can write one function that passes the test cases you have prepared (even if it's just 1 test case!).
   - [ ] **Refactoring**: You can improve your function's implementation _without_ failing any test cases that were passing.
   - [ ] **Iterative Development**: You can repeat the TDD process until you are satisfied with your test cases and solution.
+- [ ] 🐔 **Code Golf**: Write your solutions with the fewest characters possible! This won't help you write readable code, but it will make you think deeply about JS, your strategy and implementation.
 
 ### [3. Review](./3-review/)
 
