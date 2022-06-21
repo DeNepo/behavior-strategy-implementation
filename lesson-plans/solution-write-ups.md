@@ -10,8 +10,7 @@ This week take your first step to becoming an expert problem solver by studying 
   - Read through the README, this will be your main exercise for the week.
   - Follow the instructions in **Getting Started** to locally set up your repository.
   - Practice running the `example-quarter-of-the-year/sandbox.test.js` file with Study Lenses in the browser (and in VSCode if you want). (instructions in **Getting Started**)
-- Read through [/about-testing/examples](https://github.com/HackYourFutureBelgium/behavior-strategy-implementation/tree/master/about-testing/examples) to be familiar with the syntax for `describe`, `it`, and `expect`
-- Create an account on [Edabit](https://edabit.com) and take a look through the [Add up the Numbers from a Single Number](https://edabit.com/challenge/4gzDuDkompAqujpRi) exercise.
+  - Create an account on [Edabit](https://edabit.com) and take a look through the [Add up the Numbers from a Single Number](https://edabit.com/challenge/4gzDuDkompAqujpRi) exercise.
 
 ## During Class
 
