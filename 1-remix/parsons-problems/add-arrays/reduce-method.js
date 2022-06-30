@@ -1,6 +1,6 @@
 /* https://www.codewars.com/kata/reviews/58677f75395d91ce1d000576/groups/60cab9c989d309000170ac65 */
 
-/* this exercise has 0 distractors */
+/* this exercise has 0 distractions */
 
 function addArrays(array1, array2) {
   if (array1.length !== array2.length) {
