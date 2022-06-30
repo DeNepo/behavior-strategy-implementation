@@ -5,8 +5,8 @@ Learn to write unit tests and to design your own solutions to coding challenges.
 ## Before Class
 
 - Read through the steps of Function Design and study the example:
-  - `./function-design/README.md`
-  - `./function-design/examples/reverse-a-string`
+  - [readme: function design](../2-write/1-function-design/README.md)
+  - [example: repeat-a-string](../2-write/1-function-design/examples/repeat-a-string)
 
 ## During Class
 
@@ -14,12 +14,12 @@ Learn to write unit tests and to design your own solutions to coding challenges.
 
 Practice writing unit tests for functions.
 
-- **All together**: Introduce the syntax for unit testing, and go through the `testing-functions.test.js` example
+- **All together**: Introduce the syntax for unit testing, and go through the example [repeat-a-string](../2-write/1-function-design/examples/repeat-a-string).
 - **In small groups**: Write some tests!
 
 ### After Break
 
-Practice some `./function-design`
+Practice some [function design exercises](../2-write/1-function-design/exercises/)
 
 - **All Together**: What is function design? What are the steps? Why is this important?
 - **In small groups**: Write some functions!
