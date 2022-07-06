@@ -62,7 +62,7 @@ Practice studying and remixing other people's solutions to coding challenges. Cr
   - [ ] **Writing Functions**: You can design multiple solutions to the same code challenge, keeping notes about different experiments you tried along the way.
 - [ ] 🐣 **Generating Documentation**: You can write a JSDoc comment for your solutions and run a script to generate markdown documentation.
 - [ ] 🐣 **Fuzz Testing**: You write solutions that pass randomly generated test cases.
-- 🐣 **Test Driven Development**: You can solve open-ended, ambiguous coding challenges at your level:
+- 🐥 **Test Driven Development**: You can solve open-ended, ambiguous coding challenges at your level:
   - [ ] **Reading Docs**: You can understand what the function is supposed to do by reading it's JSDoc description.
   - [ ] **Writing Tests**: You can write test cases _before_ there is a function to test.
   - [ ] **Writing Functions**: You can write one function that passes the test cases you have prepared (even if it's just 1 test case!).

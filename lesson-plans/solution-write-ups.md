@@ -88,7 +88,7 @@ Strategy, Implementation and Possible Refactors.
 
 Take your time this week to explore other people's code. In the past modules you've studied only a small part of what JS, now you're in the wild! You'll come across all sorts of JS features and new coding styles.
 
-Complete as many [solution write-ups](https://github.com/HackYourFutureBelgium/solution-write-ups) as you can. No need to rush ahead! Take your time studying solutions at your level. It's more helpful to study a variety of solutions than to study a few hard ones.
+Complete at least 3 [solution write-ups](https://github.com/HackYourFutureBelgium/solution-write-ups) (that means 3 different coding challenges!) No need to rush ahead. Take your time studying solutions at your level. It's more helpful to study a variety of solutions than to study a few hard ones.
 
 And, work your way through Chapter 1 in the [`behavior-strategy-implementation` repository](https://github.com/HackYourFutureBelgium/behavior-strategy-implementation), and continue studying your favorite tutorial(s).
 
