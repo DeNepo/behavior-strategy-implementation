@@ -1,3 +1,5 @@
+[<<< Inside JS](https://github.com/DeNepo/inside-js) || Behavior, Strategy, Implementation || [Separation of Concerns >>>](https://github.com/DeNepo/separation-of-concerns)
+
 # Behavior, Strategy, Implementation
 
 > Be creative while inventing ideas, but be disciplined while implementing them.
