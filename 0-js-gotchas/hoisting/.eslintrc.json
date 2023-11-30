@@ -1,0 +1,7 @@
+{
+  "plugins": ["prefer-arrow"],
+  "rules": {
+    "no-var": 0,
+    "prefer-arrow/prefer-arrow-functions": 0
+  }
+}

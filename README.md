@@ -54,6 +54,9 @@ Practice studying and remixing other people's solutions to coding challenges. Cr
   - [ ] **Write**: Your own solution by remixing the ones you studied.
   - [ ] **Explain**: How the other solutions inspired yours; what ideas did you take from them? what ideas did you _not_ take?
   - [ ] **Analyze**: Complete a write-up your own solution as though someone else wrote it.
+- 🐥 **Using Errors**:
+  - [ ] **Throwing**: You can throw helpful errors in your function when someone passes invalid parameters.
+  - [ ] **Testing Errors**: You can use the `.toThrow` to test functions that throw errors.
 
 ### [2. Write](./2-write/)
 
