@@ -431,7 +431,7 @@ const repeatString = (text = '', repetitions = 1) => {
 </details>
 
 <details>
-<summary><strong>If/Else with blocks</strong></summary>
+<summary><strong>If/Else without blocks</strong></summary>
 
 ```js
 // conditional statements without the blocks
