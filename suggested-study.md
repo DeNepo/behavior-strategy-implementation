@@ -74,7 +74,7 @@ there's many great repos of exercises out there, you just need to find them!
 - **in VSCode**
   - remember all those extensions you installed in the precourse? now they make more sense : )
 
-And last, but not least: **Code Review**:
+## Code Review
 
 - What? Why? [Wikipedia](https://en.wikipedia.org/wiki/Code_review), [Alex](https://dzone.com/articles/what-is-code-review-and-why-do-you-need-it)
 - [How to do code reviews like a human](https://www.youtube.com/watch?v=0t4_MfHgb_A)
