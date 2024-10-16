@@ -42,7 +42,15 @@ your study time and to measure your progress:
 
 </details>
 
-### [1. Analyze & Remix](./1-analyze-and-remix/)
+### [0. Hoisting](./0-hoisting)
+
+Explore how _hoisting_ works on `var` and `function name() {}` in your program's creation phase, and explore how _scoping_ evolved from ES5 to ES6.
+
+### [0. Using Errors](./0-using-errors)
+
+Explore how to throw & test helpful errors when a function is passed invalid arguments.
+
+### [1. Remix](./1-remix/)
 
 Practice studying and remixing other people's solutions to coding challenges. Create your own solutions by mixing and matching pieces from other people's code.
 

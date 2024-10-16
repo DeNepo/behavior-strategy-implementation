@@ -55,34 +55,11 @@ describe('listActiveUsers: an array of all active user names', () => {
   describe('guards against invalid arguments', () => {
     it('throws an error if the argument is not an array', () => {
       const notPassingAnArray = () => listActiveUsers('hello');
-      expect(notPassingAnArray).toThrowError(TypeError);
-      expect(notPassingAnArray).toThrowError('users is not an array');
+      expect(notPassingAnArray).toThrowError(_);
+      expect(notPassingAnArray).toThrowError(_);
     });
-    it('throws an error if the array contains non-objects (A)', () => {
-      const notPassingAnArray = () => listActiveUsers(['hello', true]);
-      expect(notPassingAnArray).toThrowError(TypeError);
-      expect(notPassingAnArray).toThrowError(
-        'users is not an array of objects'
-      );
-    });
-    it('throws an error if the array contains non-objects (B)', () => {
-      const notPassingAnArray = () => listActiveUsers([{}, null, {}]);
-      expect(notPassingAnArray).toThrowError(TypeError);
-      expect(notPassingAnArray).toThrowError(
-        'users is not an array of objects'
-      );
-    });
-    it('throws an error if the array is not all user objects', () => {
-      const notPassingAnArray = () =>
-        listActiveUsers([
-          { userName: '', name: '', active: true },
-          {},
-          { userName: '', name: '', active: false },
-        ]);
-      expect(notPassingAnArray).toThrowError(TypeError);
-      expect(notPassingAnArray).toThrowError(
-        'users is not an array of user objects'
-      );
-    });
+    it('throws an error if the array contains non-objects (A)', () => {});
+    it('throws an error if the array contains non-objects (B)', () => {});
+    it('throws an error if the array is not all user objects', () => {});
   });
 });
