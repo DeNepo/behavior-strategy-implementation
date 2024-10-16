@@ -1,0 +1,1 @@
+// Write a function that takes an array of numbers and returns an object with separate sums for the even and the odd numbers.
