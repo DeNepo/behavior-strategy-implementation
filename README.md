@@ -42,7 +42,7 @@ your study time and to measure your progress:
 
 </details>
 
-### [1. Remix](./1-remix/)
+### [1. Analyze & Remix](./1-analyze-and-remix/)
 
 Practice studying and remixing other people's solutions to coding challenges. Create your own solutions by mixing and matching pieces from other people's code.
 
