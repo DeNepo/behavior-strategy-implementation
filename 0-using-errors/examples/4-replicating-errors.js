@@ -30,6 +30,6 @@ try {
   console.assert(err.name === 'TypeError', 'name fail');
   console.assert(
     err.message === 'Assignment to constant variable.',
-    'message fail',
+    'message fail'
   );
 }

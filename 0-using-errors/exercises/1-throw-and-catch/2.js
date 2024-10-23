@@ -19,6 +19,6 @@ try {
   console.assert(err.name === 'TypeError', 'name fail');
   console.assert(
     err.message === "Cannot read property 'length' of undefined",
-    'message fail',
+    'message fail'
   );
 }

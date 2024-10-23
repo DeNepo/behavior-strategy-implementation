@@ -18,7 +18,7 @@ debugger; /*
 
 console.log(
   'console.log is the same function as window.console.log:',
-  console.log === window.console.log,
+  console.log === window.console.log
 );
 
 debugger; /*

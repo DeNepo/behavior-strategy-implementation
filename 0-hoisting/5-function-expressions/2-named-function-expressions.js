@@ -26,7 +26,7 @@ var aFunction2 = aFunction;
 console.log(aFunction2.name);
 console.log(
   'both variables reference the same function:',
-  aFunction === aFunction2,
+  aFunction === aFunction2
 );
 
 aFunction2();

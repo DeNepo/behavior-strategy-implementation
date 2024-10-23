@@ -19,6 +19,6 @@ try {
   console.assert(err.name === 'TypeError', 'name fail');
   console.assert(
     err.message === 'stringVariable is not a function',
-    'message fail',
+    'message fail'
   );
 }

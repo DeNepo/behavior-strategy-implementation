@@ -19,6 +19,6 @@ try {
   console.assert(err.name === 'ReferenceError', 'name fail');
   console.assert(
     err.message === "Cannot access 'turtle' before initialization",
-    'message fail',
+    'message fail'
   );
 }

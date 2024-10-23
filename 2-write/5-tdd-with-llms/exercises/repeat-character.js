@@ -1,1 +1,1 @@
-//  Write a function that takes in a single character and a number, then returns the repeated character. 
+//  Write a function that takes in a single character and a number, then returns the repeated character.

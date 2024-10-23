@@ -1,4 +1,27 @@
-debugger; /* arrow statements
+debugger;
+
+/* ------ implicit returns ------
+
+  if your arrow function contains only a single expression, you don't need to use a block or `return`
+  this is not the case for `function`s, they always need the block and a return statement
+
+*/
+
+// the logic in this function is a single expression, we don't need the block or `return`
+const arrowWithBlock = (a, b) => {
+  return a + b;
+};
+// this will also work!
+const arrowWithImplicitReturn = (a, b) => a + b;
+
+// good
+function add(a, b) {
+  return a + b;
+}
+// syntax error
+// function add(a, b)  a + b;
+
+/* ------ arrow statements ------
 
   you can just write an arrow function as a statement
     but there is no way to use it!
@@ -21,7 +44,6 @@ debugger; /* arrow statements
   - `this`
   - `new`
   - `arugments`
-  - implicit return
 
   references:
 
